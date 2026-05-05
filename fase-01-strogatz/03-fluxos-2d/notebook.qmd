@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Fluxos em 2D"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

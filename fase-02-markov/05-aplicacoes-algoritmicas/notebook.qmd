@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Aplicações algorítmicas"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Distribuições estacionárias"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

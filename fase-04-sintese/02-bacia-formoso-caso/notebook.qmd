@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Bacia do Formoso: caso BHRF"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

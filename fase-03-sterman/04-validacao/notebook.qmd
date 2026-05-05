@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Validação"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

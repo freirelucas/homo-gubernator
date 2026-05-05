@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Ciclos-limite"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

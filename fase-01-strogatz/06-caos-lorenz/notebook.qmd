@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Caos e atrator de Lorenz"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Cadeias finitas"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

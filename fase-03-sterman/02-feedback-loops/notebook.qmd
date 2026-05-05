@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Laços de feedback"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

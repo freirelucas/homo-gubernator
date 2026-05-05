@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Bifurcações em 1D"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Aplicação própria: diagnóstico de coordenação de curso"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python

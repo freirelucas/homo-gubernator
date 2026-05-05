@@ -1,6 +1,8 @@
 ---
 title: "Notebook — Fundamentos de SD"
 jupyter: python3
+execute:
+  eval: false
 ---
 
 ```python
