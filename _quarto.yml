@@ -12,6 +12,8 @@ website:
     left:
       - href: index.qmd
         text: Início
+      - href: personagem-narrativo.qmd
+        text: Personagem
       - href: plano/plano-estudos.qmd
         text: Plano
       - href: fase-01-strogatz/index.qmd
@@ -80,5 +82,5 @@ format:
       method: mathjax
       url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 bibliography: bibliografia.bib
-csl: https://www.zotero.org/styles/abnt-ipea
+csl: https://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas
 lang: pt-BR

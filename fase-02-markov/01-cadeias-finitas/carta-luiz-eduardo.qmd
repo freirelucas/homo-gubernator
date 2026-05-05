@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — Cadeias finitas"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** O estado de um estudante UAB-UNITINS num semestre — *matriculado*, *trancado*, *evadido*, *concluído*, *jubilado* — forma cadeia finita; a quantização das modalidades de matrícula pelo SisU (UNIFAL) ou vestibular EaD (UNITINS) define o alfabeto sobre o qual Joana monta a matriz $P$ comparada.

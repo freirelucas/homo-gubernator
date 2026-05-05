@@ -53,7 +53,7 @@ Critério de sucesso: zero warnings de citação faltante, zero `404`, navbar e 
 
 Riscos previstos:
 - `bibliografia.bib` referenciado de subdiretório (`../../bibliografia.bib`) pode falhar — verificar caminhos.
-- `csl: https://www.zotero.org/styles/abnt-ipea` requer download via internet na hora do render — fallback: baixar localmente em `assets/abnt-ipea.csl`.
+- `csl: https://www.zotero.org/styles/abnt` requer download via internet na hora do render — fallback: baixar localmente em `assets/abnt.csl`.
 - Notebooks `.qmd` com `jupyter: python3` precisam de kernel registrado: `python -m ipykernel install --user --name python3` em ambiente com `requirements.txt` instalado.
 
 ### Etapa M2 — GitHub Pages enable (5 min, humano)
@@ -115,7 +115,7 @@ Critério de sucesso: notebook executa em CI sem erro de kernel; figuras saem em
 | Risco | Probabilidade | Mitigação |
 |---|---|---|
 | Action `publish.yml` falha por motivo obscuro no primeiro run | média | Testar localmente com `quarto publish gh-pages --no-prompt` antes do merge |
-| CSL ABNT não carrega (Zotero down) | baixa | Baixar `abnt-ipea.csl` para `assets/` e referenciar local |
+| CSL ABNT não carrega (Zotero down) | baixa | Baixar `abnt.csl` para `assets/` e referenciar local |
 | Notebook quebra render por kernel ausente | média | Adicionar `freeze: true` no header dos notebooks até validar localmente |
 | Math do F4-01 renderiza estranho (subscripts $H(D)$ etc.) | baixa | MathJax 3 lida bem; verificar |
 | Aluno começa Semana 1 e percebe lacuna no F1-01 | alta | Bloquear MVP em F1-01 expandido (M5) — promover de "opcional" para obrigatório se houver banda |

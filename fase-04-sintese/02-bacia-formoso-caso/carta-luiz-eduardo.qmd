@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — Bacia do Formoso: caso BHRF"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** Fechamento das duas trilhas: como a Bacia do Formoso (Juliana 2022) é sistema viável aplicado em governança hídrica, e o capítulo de OpenCV é sistema viável aplicado em visão computacional, Joana adota *coordenação de curso* como seu próprio sistema viável aplicado — terceira instância concreta do mesmo formalismo.

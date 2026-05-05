@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — Fluxos em 2D"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** Joana modela em 2D a dinâmica conjunta de *engajamento* (acessos à plataforma) e *desempenho* (nota corrente) de um estudante UAB-UNITINS ao longo de um semestre; cada coorte gera um retrato de fase, e os filtros gaussianos de Luiz Eduardo entram como suavização espacial do mapa de calor por polo.

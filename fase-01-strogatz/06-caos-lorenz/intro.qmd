@@ -1,7 +1,6 @@
 ---
 title: "Caos e atrator de Lorenz"
 subtitle: "Fase 1 — Capítulo 6 (Strogatz cap. 9)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

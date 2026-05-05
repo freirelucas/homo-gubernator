@@ -1,7 +1,6 @@
 ---
 title: "Ciclos-limite"
 subtitle: "Fase 1 — Capítulo 4 (Strogatz cap. 7)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

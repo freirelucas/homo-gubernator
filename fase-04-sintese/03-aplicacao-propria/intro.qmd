@@ -1,7 +1,6 @@
 ---
-title: "Aplicação própria: diagnóstico DIEST"
+title: "Aplicação própria: diagnóstico VSM de uma coordenação de curso"
 subtitle: "Fase 4 — Capítulo 3 (síntese final)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

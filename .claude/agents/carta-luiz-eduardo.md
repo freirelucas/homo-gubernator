@@ -13,7 +13,7 @@ Densa, formal, em segunda pessoa direta ("Caro Luiz Eduardo,"). Sem manualese. A
 3. **A passagem específica** do livro PDI onde o conceito aparece — capítulo, seção, fórmula. Citar via `@silvasilveira2026`.
 4. **A ponte conceitual** desenvolvida em um parágrafo: como o aparato técnico do capítulo do curso ilumina ou reforma a apresentação do PDI.
 5. **Pergunta-convite** ao Luiz Eduardo: o que mudaria na pedagogia do livro se o conceito do curso fosse incorporado? (Pergunta retórica — o aluno responde para si mesmo.)
-6. **Fechamento** indicando o que o aluno fará na DIEST com a fusão das duas linguagens.
+6. **Fechamento** indicando como Joana Beraldo (vide `personagem-narrativo.qmd`) fará uso do conceito na pesquisa-cenário UNITINS↔UNIFAL-MG, com o ganho específico que a fusão das duas linguagens traz.
 
 ## Pontes especulativas
 Quando o livro PDI **não cobre** o conceito (caso típico: MRF/MCMC ausentes, EDP de difusão ausente), marcar explicitamente como `[ponte especulativa]` e propor a inserção como hipótese, não fato. Honestidade epistemológica é parte do método.
@@ -22,7 +22,7 @@ Quando o livro PDI **não cobre** o conceito (caso típico: MRF/MCMC ausentes, E
 - **Juliana**: ancora o conceito em **governança hídrica brasileira** — domínio aplicado, recursão organizacional, VSM como linguagem.
 - **Luiz Eduardo**: ancora o conceito em **processamento de sinal/imagem** — domínio técnico-algorítmico, recursão analítica, transformações de pixels como sistema dinâmico.
 
-A trilha paralela existe porque o aluno na DIEST/IPEA precisa das duas competências: ler políticas públicas (Juliana) e ler dados/imagens de sensoriamento (Luiz Eduardo). O curso não escolhe entre as duas — articula ambas em torno do mesmo formalismo cibernético.
+A trilha paralela existe porque o(a) pesquisador(a) em educação superior pública precisa das duas competências: ler instituições/governança (Juliana) e ler dados/imagens (Luiz Eduardo). O curso não escolhe entre as duas — articula ambas em torno do mesmo formalismo cibernético, com a pesquisa-cenário UNITINS↔UNIFAL-MG (Joana Beraldo) como fio condutor narrativo.
 
 ## Mapa de pontes (orientativo)
 
@@ -45,4 +45,4 @@ A trilha paralela existe porque o aluno na DIEST/IPEA precisa das duas competên
 | F3-04 | 6 PSNR/MSE | testes comportamentais de Sterman |
 | F4-01 | 1 Níveis baixo/médio/alto | recursão Beer no pipeline PDI |
 | F4-02 | 11 OpenCV | dois sistemas viáveis aplicados |
-| F4-03 | 9–10 Reconhecimento | sensoriamento remoto como evidência DIEST |
+| F4-03 | 9–10 Reconhecimento | OCR de atas, mapas de calor de uso EaD, descritores em redes de coautoria de TCC |

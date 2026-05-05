@@ -25,4 +25,4 @@
 | 21 |        |     | redação   |       |                   |                |                |       |
 | 22 |        |     | redação   |       |                   |                |                |       |
 | 23 |        |     | redação   |       |                   |                |                |       |
-| 24 |        |     | apresentação IPEA |   |                |                |                |       |
+| 24 |        |     | comunicação colegiado |   |                |                |                |       |

@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — Bifurcações em 1D [ponte metafórica]"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** No campus UNITINS-Palmas, a definição da *nota de corte* para monitoria em Programação I tem histograma bimodal de notas; a metáfora Otsu-bifurcação serve para Joana mostrar quando uma pequena mudança no calendário acadêmico desloca o argmax descontinuamente — um efeito-bifurcação institucional sobre o critério de seleção.

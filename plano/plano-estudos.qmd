@@ -31,4 +31,4 @@ Ambas devem ser produzidas no mesmo capítulo. A intenção pedagógica é forç
 | 18 | 4 | 01-vsm-ashby-beer | capítulo-âncora | (síntese) | Carta #16 (níveis baixo/médio/alto) |
 | 19 | 4 | 02-bacia-formoso-caso | memorando + carta | Memorando #14 (peça central) | Carta #17 (OpenCV aplicado) |
 | 20 | 4 | 03-aplicacao-propria | diagnóstico + carta | (síntese) | Carta #18 (sensoriamento remoto, se aplicável) |
-| 21–24 | — | redação do diagnóstico próprio + apresentação interna IPEA | documento final | — | — |
+| 21–24 | — | redação do diagnóstico próprio + comunicação ao colegiado | documento final | — | — |

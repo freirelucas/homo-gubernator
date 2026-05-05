@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — Tempo contínuo"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** A difusão do conhecimento em uma sala virtual da UAB-UNITINS, modelada como processo markoviano em tempo contínuo, tem matriz geradora $Q$ cujos autovalores controlam o tempo característico — exatamente o paralelo do filtro gaussiano de Luiz Eduardo aplicado ao mapa de calor de respostas no fórum, com $\sigma^2 = 2t$.

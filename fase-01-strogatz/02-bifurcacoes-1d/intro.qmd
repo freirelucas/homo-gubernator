@@ -1,7 +1,6 @@
 ---
 title: "Bifurcações em 1D"
 subtitle: "Fase 1 — Capítulo 2 (Strogatz cap. 3)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Cadeias finitas"
 subtitle: "Fase 2 — Capítulo 1 (Häggström caps. 1–4)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Notebook — Aplicação própria: diagnóstico DIEST"
+title: "Notebook — Aplicação própria: diagnóstico de coordenação de curso"
 jupyter: python3
 ---
 

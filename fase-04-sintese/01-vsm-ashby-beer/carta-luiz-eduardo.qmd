@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — VSM como linguagem integradora"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** A hierarquia baixo/médio/alto do PDI (filtragem → segmentação → interpretação) é o diagrama VSM-em-recursão que Joana usa para situar o pipeline de análise da própria tese: o nível baixo é o dado bruto da plataforma EaD; o médio, segmentação de coortes; o alto, interpretação cibernética em VSM.

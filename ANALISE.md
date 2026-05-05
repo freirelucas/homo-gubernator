@@ -103,7 +103,7 @@ Esta é a inversão pedagógica importante: **os capítulos secundários são en
 
 ### 3.4 Horizonte 3 — produto final (semanas 21–24)
 
-Diagnóstico VSM da DIEST (objetivo declarado em `CLAUDE.md`). Pré-requisitos: F4-01 e F4-02 (Bacia do Formoso) prontos. Saída: documento autônomo + apresentação interna IPEA. Fora do escopo deste repositório-curso; entra como `fase-04-sintese/03-aplicacao-propria/diagnostico-diest.qmd`.
+Diagnóstico VSM de uma coordenação de curso (objetivo declarado em `personagem-narrativo.qmd`). Pré-requisitos: F4-01 e F4-02 (Bacia do Formoso) prontos. Saída: documento autônomo + comunicação ao colegiado interinstitucional. Fora do escopo deste repositório-curso; entra como `fase-04-sintese/03-aplicacao-propria/diagnostico.qmd`.
 
 ## 4. Decisões pendentes para o usuário
 
@@ -111,7 +111,7 @@ Questões que não posso resolver sozinho e que afetam o plano:
 
 1. **Recuperação do âncora F4**: o conteúdo "produzido na entrega anterior" pode ser recuperado de outro chat/arquivo? Ou aceitar que está perdido e produzi-lo do zero na primeira sessão?
 2. **Cronograma real**: 24 semanas calendário ou 24 "blocos-semana" elásticos? O `PROGRESSO.md` aceita os dois, mas ritmo afeta a recomendação do horizonte 2.
-3. **Formato final do diagnóstico DIEST**: nota técnica IPEA, TD (Texto para Discussão), ou apresentação? A escolha define qual template Quarto deve ser preparado em paralelo.
+3. **Formato final do diagnóstico**: nota técnica curta, artigo acadêmico, ou apresentação ao colegiado? A escolha define qual template Quarto deve ser preparado em paralelo.
 4. **Branch de trabalho**: confirmar se este repositório vai virar o `homo-gubernator-curriculum` final ou se o bundle será extraído em outro repo. O caminho atual mistura raiz com uma futura subpasta.
 
 ## 5. Próximo passo recomendado

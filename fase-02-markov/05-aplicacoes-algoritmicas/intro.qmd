@@ -1,7 +1,6 @@
 ---
 title: "Aplicações algorítmicas"
 subtitle: "Fase 2 — Capítulo 5 (Häggström caps. 8–10)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

@@ -1,7 +1,6 @@
 ---
 title: "Validação"
 subtitle: "Fase 3 — Capítulo 4 (Sterman cap. 21)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

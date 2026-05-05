@@ -1,7 +1,6 @@
 ---
 title: "VSM como linguagem integradora"
 subtitle: "Fase 4 — Capítulo-âncora (Ashby, Beer, Juliana)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---
@@ -10,7 +9,7 @@ format: html
 
 Por que três fases técnicas — Strogatz, Markov, Sterman — convergem para o **Modelo do Sistema Viável** (VSM) de @beer1979 e não para qualquer outra ontologia organizacional? A resposta curta: porque o VSM é a única arquitetura que torna *operável* a Lei da Variedade Requisita de @ashby1956. Operável no sentido literal: oferece cinco posições de observação (S1–S5) e seis canais de informação que, em conjunto, permitem ao analista responder à pergunta diagnóstica fundamental — *este sistema absorve a variedade que precisa absorver para permanecer viável?* — com algo mais consistente do que a intuição.
 
-Este capítulo articula três pontos: (i) o que cada fase técnica anterior contribui para a linguagem do VSM; (ii) como a obra de Juliana Mariano Alves traduz essa linguagem para a governança hídrica brasileira (BHRF — Bacia Hidrográfica do Rio Formoso, Tocantins); (iii) o que isso implica para o trabalho do aluno na DIEST/IPEA.
+Este capítulo articula três pontos: (i) o que cada fase técnica anterior contribui para a linguagem do VSM; (ii) como a obra de Juliana Mariano Alves traduz essa linguagem para a governança hídrica brasileira (BHRF — Bacia Hidrográfica do Rio Formoso, Tocantins); (iii) o que isso implica para a **pesquisa-cenário do curso** — a comparação ficcional, conduzida por Joana Beraldo, entre a UNITINS (Palmas-TO, EaD via UAB) e a UNIFAL-MG (Alfenas, presencial) como dois sistemas viáveis com a mesma função-fim e arquiteturas opostas (vide `personagem-narrativo.qmd`).
 
 ## A Lei da Variedade Requisita, formalizada
 
@@ -64,21 +63,21 @@ A escolha de @alves2022 como referência-âncora não é arbitrária. Três moti
 
 A peça central dos memorandos é o caso BHRF: outorga de água em um sistema sob estresse hídrico crescente, com o Ministério Público estadual em ação civil pública desde 2016, criação do Grupo de Acompanhamento e Negociação (GAN), e a tese diagnosticando S2/S3/S4 ausentes e propondo redesenho.
 
-## Aplicação à DIEST/IPEA
+## Aplicação à pesquisa-cenário (UNITINS ↔ UNIFAL-MG)
 
-A DIEST estuda o Estado, suas instituições e a democracia — domínio em que o VSM é particularmente útil porque o objeto de análise é, ele próprio, um sistema viável recursivo. Três caminhos imediatos:
+A pesquisa de Joana Beraldo (vide `personagem-narrativo.qmd`) toma duas universidades públicas brasileiras como sistemas viáveis comparáveis — domínio em que o VSM é particularmente útil porque cada universidade é, ela própria, um sistema viável recursivo (curso ⊂ instituto ⊂ universidade ⊂ rede federal/estadual). Três caminhos imediatos:
 
-1. **Diagnóstico de uma política finalística** como um S1 dentro de um Ministério (S2/S3/S4 do Ministério, S5 da Presidência). A pergunta diagnóstica é: *quais funções estão presentes e quais estão ausentes?* Na maioria dos diagnósticos institucionais brasileiros, S2 e S4 são as ausências sistemáticas.
-2. **Análise de variedade** sobre indicadores de execução orçamentária. O formalismo de @ashby1956 pode ser instanciado quantitativamente: $H(D)$ é a entropia da distribuição de demandas; $H(R)$ é a entropia do conjunto de respostas administrativas observadas. A diferença é a "lacuna de variedade".
-3. **Modelagem-como-governança** [@alvesschwaninger2025]: construir um modelo formal (cadeia de Markov ou modelo SD) cujo *propósito* não é prever, mas funcionar como **órgão regulador adicional** — ampliando $H(R)$ via o canal Conant-Ashby.
+1. **Diagnóstico de uma coordenação de curso** como um S1 dentro de um instituto (S2/S3/S4 do instituto, S5 da reitoria). A pergunta diagnóstica é: *quais funções estão presentes e quais estão ausentes?* No caso UNITINS-EaD, a hipótese de Joana é que S2 (antioscilação entre polos UAB) e S4 (inteligência sobre evasão regional) são as ausências sistemáticas; no caso UNIFAL-presencial, a hipótese-espelho é que S4 está consolidado mas S2 entre departamentos pode falhar em momentos de pressão (Cálculo I como gargalo recorrente).
+2. **Análise de variedade** sobre indicadores acadêmicos. O formalismo de @ashby1956 pode ser instanciado quantitativamente: $H(D)$ é a entropia da distribuição de perfis discentes (origem geográfica, escolaridade prévia, modalidade de ingresso); $H(R)$ é a entropia do conjunto de respostas pedagógicas observadas (monitorias, plantões, atendimento por polo). A diferença é a "lacuna de variedade" do sistema-curso.
+3. **Modelagem-como-governança** [@alvesschwaninger2025]: construir um modelo formal (cadeia de Markov sobre estados de matrícula, ou modelo SD da coorte) cujo *propósito* não é prever a evasão, mas funcionar como **órgão regulador adicional** da coordenação — ampliando $H(R)$ via o canal Conant-Ashby.
 
 ::: {.callout-important}
-A diferença prática entre "modelagem como descrição" e "modelagem como regulação" é o que separa pesquisa-relatório de pesquisa-instrumento. Esta segunda postura é o que @alvesschwaninger2025 chama de *model-based governance* e é, na minha leitura, o ponto de partida natural para a DIEST.
+A diferença prática entre "modelagem como descrição" e "modelagem como regulação" é o que separa pesquisa-relatório de pesquisa-instrumento. Esta segunda postura é o que @alvesschwaninger2025 chama de *model-based governance* e é, na leitura deste curso, o ponto de partida natural para qualquer pesquisa em educação superior pública.
 :::
 
 ## Pergunta de verificação
 
-Identifique, no seu trabalho atual na DIEST, **um sistema concreto** (uma política, um arranjo de governança, um indicador) que você queira diagnosticar. Em um parágrafo: (a) descreva-o como um sistema viável de uma recursão escolhida (qual é o S1?); (b) liste quais dos cinco subsistemas estão claramente presentes e quais estão visivelmente ausentes; (c) estime, qualitativamente, $H(D)$, $H(R)$ e $H(O)$, e diga onde está a lacuna de variedade dominante; (d) proponha uma intervenção do tipo "atenuar $H(D)$", "ampliar $H(R)$" ou "alargar $H(O)$" e justifique.
+Identifique, na sua experiência educacional concreta (curso em que estuda, coordenação que conhece, polo UAB que frequenta) ou no caso-andaime de Joana (UNITINS ou UNIFAL-MG), **um sistema concreto** (um curso, uma disciplina-marco, um indicador acadêmico) que você queira diagnosticar. Em um parágrafo: (a) descreva-o como um sistema viável de uma recursão escolhida (qual é o S1?); (b) liste quais dos cinco subsistemas estão claramente presentes e quais estão visivelmente ausentes; (c) estime, qualitativamente, $H(D)$, $H(R)$ e $H(O)$, e diga onde está a lacuna de variedade dominante; (d) proponha uma intervenção do tipo "atenuar $H(D)$", "ampliar $H(R)$" ou "alargar $H(O)$" e justifique.
 
 Esta pergunta volta na semana 20 (capítulo F4-03), onde será a base do diagnóstico próprio que fecha o curso.
 

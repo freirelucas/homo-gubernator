@@ -1,12 +1,18 @@
 ---
 title: "Homo Gubernator — Curso"
-subtitle: "Cibernética aplicada à governança pública"
+subtitle: "Cibernética aplicada à educação pública"
 ---
 
-Este sítio organiza o curso de auto-estudo de 24 semanas. Quatro fases técnicas — Strogatz, Markov, Sterman, Síntese — articuladas pela linguagem do Modelo do Sistema Viável (Beer) e ancoradas na obra brasileira de **Juliana Mariano Alves** (UNITINS/UFT).
+Este sítio organiza o curso de auto-estudo de 24 semanas. Quatro fases técnicas — Strogatz, Markov, Sterman, Síntese — articuladas pela linguagem do Modelo do Sistema Viável (Beer) e ancoradas em duas trilhas paralelas: a obra brasileira de **Juliana Mariano Alves** (UNITINS) e o livro de **Luiz Eduardo da Silva** (UNIFAL-MG).
 
 ## Como navegar
-Linha do tempo: comece pelo `plano/plano-estudos.qmd`. Em cada capítulo, leia primeiro `intro.qmd`, depois trabalhe `exercicios.qmd`, depois leia `memorando-juliana.qmd` para fixar a ponte com a aplicação brasileira.
+Linha do tempo: comece pelo `plano/plano-estudos.qmd`. Em cada capítulo, leia primeiro `intro.qmd`, depois trabalhe `exercicios.qmd`, depois leia em sequência `memorando-juliana.qmd` (trilha governança) e `carta-luiz-eduardo.qmd` (trilha técnica). A linha ficcional que costura tudo está em `personagem-narrativo.qmd`.
 
 ## Sobre Juliana Mariano Alves
-Professora da Universidade Estadual do Tocantins (UNITINS), Member-at-Large da American Society for Cybernetics pelo Sul Global (mandato desde 2024), conselheira do Metaphorum (UK), organizadora da ASC Brazil 2026 (centenário de Stafford Beer), parceira do ITA (Carmen Belderrain). Apresentou no IPEA/DIEST em junho de 2025. Trabalhos âncora deste curso: tese UFT 2022 (BHRF/VSM); Alves et al. (2020) *SRBS*; Alves et al. (2022) *J. Land Use Sci.*; Alves & Schwaninger (2025) *Environmental Management*; Alves (2025) *Constructivist Foundations*.
+Professora da Universidade Estadual do Tocantins (UNITINS), Member-at-Large da American Society for Cybernetics pelo Sul Global (mandato desde 2024), conselheira do Metaphorum (UK), organizadora da ASC Brazil 2026 (centenário de Stafford Beer), parceira do ITA (Carmen Belderrain). Trabalhos âncora deste curso: tese UFT 2022 (BHRF/VSM); Alves et al. (2020) *SRBS*; Alves et al. (2022) *J. Land Use Sci.*; Alves & Schwaninger (2025) *Environmental Management*; Alves (2025) *Constructivist Foundations*.
+
+## Sobre Luiz Eduardo da Silva
+Professor da Universidade Federal de Alfenas (UNIFAL-MG, sul de Minas Gerais), atua no curso de Ciência da Computação. Co-autor de @silvasilveira2026 — *Processamento Digital de Imagens* — livro-texto interativo construído com P5.js e GeoGebra, disponível em <https://luizedsilva.github.io/livro-pdi/>.
+
+## Linha narrativa
+A pesquisa-cenário ficcional que costura os capítulos é conduzida por **Joana Beraldo**, doutoranda em Educação em cotutela UNITINS-UNIFAL, comparando duas universidades públicas brasileiras como sistemas viáveis. Detalhes em `personagem-narrativo.qmd`.

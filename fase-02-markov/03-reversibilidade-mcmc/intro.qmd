@@ -1,7 +1,6 @@
 ---
 title: "Reversibilidade e MCMC"
 subtitle: "Fase 2 — Capítulo 3 (Häggström caps. 7–11)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

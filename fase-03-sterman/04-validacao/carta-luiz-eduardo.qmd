@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — Validação"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** Validar o modelo SD da coordenação (replicação histórica de matrícula 2010–2024) é estruturalmente análogo a validar JPEG por PSNR: ambos são testes de fidelidade comportamental sobre uma compressão (do real → modelo, da imagem → arquivo). Joana usa as duas métricas em paralelo no capítulo metodológico da tese.

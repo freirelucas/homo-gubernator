@@ -1,7 +1,6 @@
 ---
 title: "Bifurcações em 2D"
 subtitle: "Fase 1 — Capítulo 5 (Strogatz cap. 8)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

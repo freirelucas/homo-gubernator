@@ -1,7 +1,6 @@
 ---
 title: "Modelagem formal"
 subtitle: "Fase 3 — Capítulo 3 (Sterman caps. 7–13)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

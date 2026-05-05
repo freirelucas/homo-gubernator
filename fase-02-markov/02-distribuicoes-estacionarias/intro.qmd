@@ -1,7 +1,6 @@
 ---
 title: "Distribuições estacionárias"
 subtitle: "Fase 2 — Capítulo 2 (Häggström caps. 5–6)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

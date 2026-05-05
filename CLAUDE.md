@@ -1,7 +1,9 @@
 # CLAUDE.md — guia de operação
 
 ## Sobre o aluno
-Lucas Freire — pesquisador IPEA/DIEST (Brasília). Direito + Economia + Data Science. ~17 anos de carreira no serviço público federal. Objetivo: dominar cibernética organizacional aplicada para uso direto na pesquisa institucional do IPEA.
+Pesquisador(a) anônimo(a) em educação superior, com formação cruzada em ciências sociais aplicadas e métodos quantitativos. Objetivo: dominar cibernética organizacional aplicada para uso direto em pesquisa sobre redes públicas de ensino.
+
+A persona-andaime ficcional do curso é **Joana Beraldo**, doutoranda em Educação em cotutela UNITINS-UNIFAL, comparando duas universidades públicas brasileiras como sistemas viáveis. Detalhes em `personagem-narrativo.qmd`. Quem lê o curso pode (i) seguir Joana como caso, (ii) substituir por seu próprio caso, ou (iii) usar Joana como contraprova-andaime.
 
 ## Modos de operação
 - **tutor**: explicar conceito até saturação.
@@ -42,4 +44,4 @@ Cada capítulo tem **dois memorandos**, executando o mesmo conceito em vocabulá
 - **Memorando Juliana** → ancora o conceito em **governança hídrica brasileira** (Alves 2022; BHRF; VSM aplicado).
 - **Carta a Luiz Eduardo** → ancora o conceito em **processamento digital de imagens** [@silvasilveira2026].
 
-A trilha paralela existe porque o pesquisador da DIEST precisa simultaneamente ler políticas (Juliana) e ler dados/imagens (Luiz Eduardo). O curso não escolhe entre as duas competências — articula ambas em torno do mesmo formalismo cibernético.
+A trilha paralela existe porque o(a) pesquisador(a) em educação superior pública precisa simultaneamente ler instituições (Juliana, governança) e ler dados/imagens (Luiz Eduardo, técnica). O curso não escolhe entre as duas competências — articula ambas em torno do mesmo formalismo cibernético, com a pesquisa-cenário UNITINS↔UNIFAL-MG (Joana Beraldo) como fio condutor narrativo.

@@ -1,7 +1,6 @@
 ---
 title: "Laços de feedback"
 subtitle: "Fase 3 — Capítulo 2 (Sterman caps. 4–5, 16)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — Aplicações algorítmicas"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** Joana aplica MCMC para estimar a distribuição posterior do *risco-de-evasão* de um estudante condicional a polo, modalidade e perfil — uma instância onde a entropia de Shannon do classificador é, simultaneamente, a métrica de variedade ashbyana $H(R)$ disponível à coordenação.

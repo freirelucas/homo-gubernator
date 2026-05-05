@@ -8,4 +8,4 @@ title: "Memorando Juliana — Fundamentos de SD"
 
 **Onde aparece em Alves.** [Identificar a passagem específica e descrevê-la.]
 
-**Pergunta de pesquisa para a DIEST.** [Conexão concreta ao trabalho do aluno.]
+**Pergunta de pesquisa para o projeto.** [Conexão concreta ao projeto de Joana Beraldo (vide `personagem-narrativo.qmd`): UNITINS, UNIFAL-MG, ou a rede educacional pública como sistema viável.]

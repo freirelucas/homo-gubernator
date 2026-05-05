@@ -9,4 +9,4 @@ title: "Exercícios — Laços de feedback"
 **5.** [Enunciado.]
 **6.** [Enunciado.]
 **7.** [Conexão Ashby/Beer.]
-**8.** (Aberto.) [Aplicação ao próprio trabalho na DIEST.]
+**8.** (Aberto.) [Identifique um indicador da própria experiência educacional do leitor — UNITINS, UNIFAL-MG, ou a instituição em que estuda — onde o conceito deste capítulo se aplique. Vide `personagem-narrativo.qmd` para a pesquisa-cenário de Joana Beraldo.]

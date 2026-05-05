@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — Fundamentos de SD"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** O pipeline UNIFAL-MG vestibular → matrícula → integralização → diplomação é literal cadeia de estoques-fluxos; Joana monta $dS/dt = \phi_{in}-\phi_{out}$ para cada estado da carreira e compara com a versão UAB-UNITINS, onde os atrasos entre os fluxos são sistematicamente maiores.

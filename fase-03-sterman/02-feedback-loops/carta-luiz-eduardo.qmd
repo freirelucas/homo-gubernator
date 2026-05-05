@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — Laços de feedback"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** *Reforço de qualidade* na UNIFAL-MG (pesquisa atrai bons alunos → alunos publicam → reputação cresce → mais pesquisa) é laço R clássico; *erosão por evasão* na UAB-UNITINS é laço B com atraso. Joana usa o capítulo de Luiz Eduardo sobre filtros iterativos para entender como cada laço se comporta sob ruído de matrícula.

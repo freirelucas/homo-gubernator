@@ -1,7 +1,6 @@
 ---
 title: "Tempo contínuo"
 subtitle: "Fase 2 — Capítulo 4 (Norris cap. 2–3)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

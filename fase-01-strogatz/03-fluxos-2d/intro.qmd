@@ -1,7 +1,6 @@
 ---
 title: "Fluxos em 2D"
 subtitle: "Fase 1 — Capítulo 3 (Strogatz cap. 5–6)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

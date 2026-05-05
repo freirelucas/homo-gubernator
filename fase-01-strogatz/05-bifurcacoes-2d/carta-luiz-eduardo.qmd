@@ -12,4 +12,4 @@ title: "Carta a Luiz Eduardo — Bifurcações em 2D"
 
 **Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
 
-**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
+**Para o projeto.** Watershed segmenta polos UAB-UNITINS por bacia de atração no plano (acesso médio, taxa de conclusão); polos próximos coalescem em bacias maiores conforme se eleva o limiar de corte — Joana usa a sequência de bifurcações topológicas para identificar agrupamentos regionais sem assumir ex-ante quais municípios pertencem a qual cluster.

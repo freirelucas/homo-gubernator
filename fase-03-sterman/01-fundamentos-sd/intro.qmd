@@ -1,7 +1,6 @@
 ---
 title: "Fundamentos de SD"
 subtitle: "Fase 3 — Capítulo 1 (Sterman caps. 1–6)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---

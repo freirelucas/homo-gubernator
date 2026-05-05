@@ -1,7 +1,6 @@
 ---
 title: "Bacia do Formoso: caso BHRF"
 subtitle: "Fase 4 — Capítulo 2 (Alves 2022; Alves & Schwaninger 2025)"
-author: "Lucas Freire"
 bibliography: ../../bibliografia.bib
 format: html
 ---
