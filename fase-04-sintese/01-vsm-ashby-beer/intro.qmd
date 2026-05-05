@@ -14,15 +14,21 @@ Este capítulo articula três pontos: (i) o que cada fase técnica anterior cont
 
 ## A Lei da Variedade Requisita, formalizada
 
-A formulação canônica de Ashby é:
+@ashby1956 (cap. 11) apresenta a Lei em duas formas equivalentes. Na forma **multiplicativa**, em termos de cardinalidades dos conjuntos de estados:
 
 $$
-V_o \;\geq\; V_d \;-\; V_r,
-$$ {#eq-ashby}
+V_R \cdot V_O \;\geq\; V_D,
+$$ {#eq-ashby-mult}
 
-onde $V_d$ é a variedade do conjunto de distúrbios, $V_r$ a variedade do regulador, e $V_o$ a variedade do resultado tolerada pelo essencial-a-preservar do sistema. Em palavras: para manter o estado essencial dentro de uma faixa $V_o$ aceitável diante de distúrbios de variedade $V_d$, o regulador precisa exibir variedade $V_r$ ao menos igual ao excesso $V_d - V_o$.
+ou, tomando logaritmos (i.e., trabalhando com **entropia de Shannon** das distribuições correspondentes), na forma **aditiva**:
 
-A leitura cibernética importante é que **a variedade não é um mau a combater; é o orçamento de complexidade que precisa fluir**. O regulador pode (a) ampliar sua própria variedade, (b) atenuar a variedade do distúrbio, ou (c) alargar a faixa do resultado tolerável. Toda intervenção institucional é uma combinação desses três movimentos. Uma agência reguladora que cria zoneamento (atenua $V_d$), contrata fiscais especializados (amplia $V_r$) e aceita uma faixa maior de variação no indicador (alarga $V_o$) está, simultaneamente, exercendo as três alavancas.
+$$
+H(O) \;\geq\; H(D) - H(R),
+$$ {#eq-ashby-log}
+
+onde $H(D)$ é a entropia do conjunto de distúrbios, $H(R)$ a entropia do regulador, e $H(O)$ a entropia residual do resultado. Em palavras: para manter o estado essencial dentro de uma faixa $H(O)$ aceitável diante de distúrbios de entropia $H(D)$, o regulador precisa exibir entropia $H(R)$ ao menos igual ao excesso $H(D) - H(O)$. No restante do capítulo, "variedade" sem qualificação refere-se à forma logarítmica (entropia), seguindo a convenção da literatura cibernética contemporânea.
+
+A leitura cibernética importante é que **a variedade não é um mau a combater; é o orçamento de complexidade que precisa fluir**. O regulador pode (a) ampliar sua própria variedade $H(R)$, (b) atenuar a variedade do distúrbio $H(D)$, ou (c) alargar a faixa do resultado tolerável $H(O)$. Toda intervenção institucional é uma combinação desses três movimentos. Uma agência reguladora que cria zoneamento (atenua $H(D)$), contrata fiscais especializados (amplia $H(R)$) e aceita uma faixa maior de variação no indicador (alarga $H(O)$) está, simultaneamente, exercendo as três alavancas.
 
 ## Os cinco subsistemas e os canais
 
@@ -36,14 +42,14 @@ O VSM opera com cinco subsistemas funcionais e seis canais. Não são "níveis h
 
 O **sinal algedônico** (do grego *algos*, dor; *hedos*, prazer) é o canal vertical de baixíssima banda que conecta diretamente S1 a S5 em emergência, contornando S2/S3/S4. É a função do "alarme" — em organizações, tipicamente o telefone direto do operador para o gabinete da presidência.
 
-Crucialmente, cada S1 é, ele próprio, um sistema viável completo em **recursão menor** ($V_{n+1} \subseteq V_n$). Esta é a propriedade que falta a quase toda outra ontologia organizacional, e é o que permite ao VSM aplicar-se igualmente à União, ao Estado, ao município, à associação de usuários e ao indivíduo.
+Crucialmente, cada S1 é, ele próprio, um sistema viável completo em **recursão menor**: o sistema $\mathcal{S}_{n+1}$ está estruturalmente contido no $\mathcal{S}_n$ que o opera, com seus próprios cinco subsistemas internos. Esta é a propriedade que falta a quase toda outra ontologia organizacional, e é o que permite ao VSM aplicar-se igualmente à União, ao Estado, ao município, à associação de usuários e ao indivíduo.
 
 ## O que cada fase técnica oferece ao VSM
 
 | Fase | Conceito-chave | Função no VSM |
 |------|----------------|----------------|
 | Strogatz | ponto fixo, bacia de atração, ciclo-limite, atrator | a homeostase de S1 e a dinâmica de S2 |
-| Markov | distribuição estacionária, tempo de mistura, reversibilidade | medida formal da variedade $V_d$ e do tempo de absorção |
+| Markov | distribuição estacionária, tempo de mistura, reversibilidade | medida formal de $H(D)$ e do tempo de absorção |
 | Sterman | estoque, fluxo, laço de feedback, modos canônicos | linguagem de S3 — alocação, atrasos, *bullwhip* institucional |
 
 A Fase 1 dá a geometria; a Fase 2 dá a métrica; a Fase 3 dá a álgebra das interações. O VSM é o que organiza as três numa única linguagem diagnóstica.
@@ -63,8 +69,8 @@ A peça central dos memorandos é o caso BHRF: outorga de água em um sistema so
 A DIEST estuda o Estado, suas instituições e a democracia — domínio em que o VSM é particularmente útil porque o objeto de análise é, ele próprio, um sistema viável recursivo. Três caminhos imediatos:
 
 1. **Diagnóstico de uma política finalística** como um S1 dentro de um Ministério (S2/S3/S4 do Ministério, S5 da Presidência). A pergunta diagnóstica é: *quais funções estão presentes e quais estão ausentes?* Na maioria dos diagnósticos institucionais brasileiros, S2 e S4 são as ausências sistemáticas.
-2. **Análise de variedade** sobre indicadores de execução orçamentária. O formalismo de @ashby1956 pode ser instanciado quantitativamente: $V_d$ é a entropia da distribuição de demandas; $V_r$ é a entropia do conjunto de respostas administrativas observadas. A diferença é a "lacuna de variedade".
-3. **Modelagem-como-governança** [@alvesschwaninger2025]: construir um modelo formal (cadeia de Markov ou modelo SD) cujo *propósito* não é prever, mas funcionar como **órgão regulador adicional** — ampliando $V_r$ via o canal Conant-Ashby.
+2. **Análise de variedade** sobre indicadores de execução orçamentária. O formalismo de @ashby1956 pode ser instanciado quantitativamente: $H(D)$ é a entropia da distribuição de demandas; $H(R)$ é a entropia do conjunto de respostas administrativas observadas. A diferença é a "lacuna de variedade".
+3. **Modelagem-como-governança** [@alvesschwaninger2025]: construir um modelo formal (cadeia de Markov ou modelo SD) cujo *propósito* não é prever, mas funcionar como **órgão regulador adicional** — ampliando $H(R)$ via o canal Conant-Ashby.
 
 ::: {.callout-important}
 A diferença prática entre "modelagem como descrição" e "modelagem como regulação" é o que separa pesquisa-relatório de pesquisa-instrumento. Esta segunda postura é o que @alvesschwaninger2025 chama de *model-based governance* e é, na minha leitura, o ponto de partida natural para a DIEST.
@@ -72,7 +78,7 @@ A diferença prática entre "modelagem como descrição" e "modelagem como regul
 
 ## Pergunta de verificação
 
-Identifique, no seu trabalho atual na DIEST, **um sistema concreto** (uma política, um arranjo de governança, um indicador) que você queira diagnosticar. Em um parágrafo: (a) descreva-o como um sistema viável de uma recursão escolhida (qual é o S1?); (b) liste quais dos cinco subsistemas estão claramente presentes e quais estão visivelmente ausentes; (c) estime, qualitativamente, $V_d$, $V_r$ e $V_o$, e diga onde está a lacuna de variedade dominante; (d) proponha uma intervenção do tipo "atenuar $V_d$", "ampliar $V_r$" ou "alargar $V_o$" e justifique.
+Identifique, no seu trabalho atual na DIEST, **um sistema concreto** (uma política, um arranjo de governança, um indicador) que você queira diagnosticar. Em um parágrafo: (a) descreva-o como um sistema viável de uma recursão escolhida (qual é o S1?); (b) liste quais dos cinco subsistemas estão claramente presentes e quais estão visivelmente ausentes; (c) estime, qualitativamente, $H(D)$, $H(R)$ e $H(O)$, e diga onde está a lacuna de variedade dominante; (d) proponha uma intervenção do tipo "atenuar $H(D)$", "ampliar $H(R)$" ou "alargar $H(O)$" e justifique.
 
 Esta pergunta volta na semana 20 (capítulo F4-03), onde será a base do diagnóstico próprio que fecha o curso.
 

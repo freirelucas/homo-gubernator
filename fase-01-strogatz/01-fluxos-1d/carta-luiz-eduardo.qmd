@@ -6,7 +6,7 @@ title: "Carta a Luiz Eduardo — Fluxos em uma dimensão"
 
 **Conceito técnico do capítulo do curso.** Estabilidade linear de pontos fixos em $\dot{x}=f(x)$: $f'(x^*)<0 \Rightarrow$ atrator local.
 
-**Onde aparece em Silva & Silveira (2026).** O capítulo 3 introduz as transformações de intensidade — linear, logarítmica, gama, equalização — como funções $T: [0,L-1] \to [0,L-1]$ aplicadas pixel a pixel. A iteração discreta $g_{n+1}(x,y) = T(g_n(x,y))$ é, formalmente, um fluxo unidimensional autônomo no espaço de cinza.
+**Onde aparece em Silva & Silveira (2026).** O capítulo 3 introduz as transformações de intensidade — linear, logarítmica, gama, equalização — como funções $T: [0,L-1] \to [0,L-1]$ aplicadas pixel a pixel. A iteração $g_{n+1}(x,y) = T(g_n(x,y))$ é, formalmente, um **mapa unidimensional iterado** (dinâmica em tempo discreto, não fluxo contínuo): seus pontos fixos são as intensidades $g^*$ com $T(g^*)=g^*$, e o critério de estabilidade análogo ao do capítulo é $|T'(g^*)|<1$. A correspondência com o caso contínuo $\dot{x}=f(x)$ se dá via embedding (e.g., método de Euler aplicado ao gradient flow $\dot{x} = T(x)-x$).
 
 **Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
 

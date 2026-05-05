@@ -1,12 +1,12 @@
 ---
-title: "Carta a Luiz Eduardo — Bifurcações em 1D"
+title: "Carta a Luiz Eduardo — Bifurcações em 1D [ponte metafórica]"
 ---
 
 **Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **8. Segmentação (método de Otsu)**.
 
 **Conceito técnico do capítulo do curso.** Bifurcações canônicas de 1D: sela-nó $\dot{x}=r+x^2$, transcrítica, tridente.
 
-**Onde aparece em Silva & Silveira (2026).** O método de Otsu escolhe o limiar $t^*$ que maximiza a variância entre classes. Variando o histograma da imagem (ou um parâmetro de iluminação), $t^*$ pode saltar descontinuamente — uma bifurcação no espaço de partições.
+**Onde aparece em Silva & Silveira (2026).** O método de Otsu escolhe o limiar $t^*$ que maximiza a variância entre classes. Variando o histograma (ou um parâmetro de iluminação), $t^*$ tipicamente varia continuamente, mas em **histogramas bimodais com modas próximas** o argmax da variância pode saltar entre dois mínimos locais quando se cruza o ponto de igualdade — analogia com bifurcação sela-nó *no funcional objetivo*, não no fluxo. Honestamente: a ponte é metafórica, mas a metáfora é precisa o suficiente para ser pedagogicamente útil.
 
 **Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
 
