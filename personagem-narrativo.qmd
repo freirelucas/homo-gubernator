@@ -1,0 +1,63 @@
+---
+title: "Personagem narrativo — Joana Beraldo"
+subtitle: "A linha ficcional que costura o curso"
+---
+
+::: {.callout-note}
+Este documento apresenta a **persona ficcional** que dá unidade narrativa ao curso. Toda menção a "trabalho do aluno", "projeto de pesquisa", "aplicação própria", "diagnóstico final" remete à pesquisa hipotética da Joana. Quem lê o curso pode (i) seguir Joana como caso, (ii) substituir por seu próprio caso, ou (iii) usar Joana como contraprova-andaime quando o próprio caso ainda não está claro.
+:::
+
+## A pesquisa-cenário
+
+**Joana Beraldo** é doutoranda em Educação em **cotutela** entre a Universidade Estadual do Tocantins (UNITINS, Palmas) e a Universidade Federal de Alfenas (UNIFAL-MG, Alfenas). Sua tese investiga **a viabilidade de programas de graduação na rede pública brasileira sob a perspectiva da cibernética organizacional**, comparando dois sistemas-caso situados em pontas opostas do território nacional, com geografias e arquiteturas pedagógicas radicalmente distintas.
+
+### Caso A — UNITINS, Palmas (Tocantins)
+
+Universidade estadual do Tocantins, fundada em 1990, com trajetória institucional turbulenta — passou por reestruturação em 2003 com cessão de patrimônio à UFT, retomou cursos presenciais em 2010, voltou ao status de autarquia estadual em 2016. Hoje opera 21 cursos de graduação em cinco câmpus físicos (Palmas, Araguatins, Augustinópolis, Dianópolis, Paraíso do Tocantins) **e** ampla oferta EaD via Universidade Aberta do Brasil (UAB), com nota máxima do MEC no recredenciamento EaD.
+
+**Variedade dominante** (em termos de Ashby): a $H(D)$ — heterogeneidade demográfica e geográfica do alunado de Tocantins, conectividade desigual entre polos, sazonalidade rural. **Profa. Dra. Juliana Mariano Alves** atua na UNITINS no programa de Engenharia Agronômica (Palmas), com doutorado em Desenvolvimento Regional pela UFT (2022). É a referência teórica que importa o aparato VSM para o diagnóstico desse sistema. O caso de governança hídrica da Bacia do Formoso, que ela estudou em sua tese, oferece a Joana o **paralelo institucional**: como uma bacia hidrográfica é a uma rede educacional regional, mantidas as devidas distâncias.
+
+**Inserção internacional de Juliana e por que importa para o curso.** Em janeiro de 2024 Juliana iniciou mandato como **Member-at-Large da American Society for Cybernetics (ASC)** representando o **Sul Global**, eleita pelos 200+ membros após avaliação detalhada da relevância acadêmica e ética profissional. Em junho de 2024 apresentou no **ASC 2024 (60th Anniversary, Washington DC, 15–19 jun)** a palestra **"The Water-Energy-Food Nexus: an integrative lens on a fragmented landscape"**, com bolsa de viagem da própria ASC, dividindo programa com Paul Pangaro (Carnegie Mellon, presidente do congresso), Claudia Westermann (vice-presidente ASC) e Raul Espejo (recipiente da Norbert Wiener Medal naquela edição). Em 2023 foi eleita ao **Diretório do Metaphorum** (UK), comunidade de prática focada na obra de Stafford Beer, e palestrou no **Metaphorum 2025**. Publica em *Constructivist Foundations* [@alves2025variety]. Para a pesquisa de Joana, isso significa que a interlocutora da trilha governança não é figura local de Tocantins — é nó ativo da rede internacional de cibernética organizacional **com base institucional em Palmas-TO**, posição rara que torna o caso BHRF defensável como exemplar internacional.
+
+### Caso B — UNIFAL-MG, Alfenas (Minas Gerais)
+
+Universidade federal mineira, fundada em 1914 como Escola de Farmácia e Odontologia de Alfenas, federalizada em 1960 e transformada em universidade plena em 2005. Hoje opera quatro câmpus (Alfenas-Sede, Alfenas-Santa Clara, Poços de Caldas, Varginha) com mais de trinta cursos de graduação. Tradicionalmente forte em saúde e biológicas; o curso de **Ciência da Computação** mantém um laboratório de Processamento Digital de Imagens onde **Prof. Luiz Eduardo da Silva** desenvolve seu livro-texto interativo [@silvasilveira2026] em parceria com Tiago Silveira.
+
+**Variedade dominante**: a $H(R)$ — alta capacidade técnica concentrada em um campus físico compacto, infraestrutura laboratorial estável, tradição cinquentenária consolidada. O contraste com UNITINS é deliberado: dois sistemas viáveis com a **mesma função-fim** (formar profissionais públicos competentes) e **arquiteturas opostas** (rede dispersa de baixa-banda em larga geografia vs. campus compacto de alta-banda em geografia restrita).
+
+**Ponto de contato real entre Luiz Eduardo e o ecossistema EaD brasileiro:** Luiz Eduardo atua como **representante substituto da UNIFAL-MG na UniRede** (Associação Universidade em Rede), o consórcio fundado em 1999 que organiza o **ESUD — Congresso Brasileiro de Ensino Superior a Distância** (e desde 2015 o CIESUD internacional). Foi o **primeiro docente do curso de Ciência da Computação** da UNIFAL-MG e palestrante de abertura da 5ª SACIC (2016, 10 anos do BCC). É via essa representação UniRede, e não via coordenação formal de EaD (atualmente do Prof. Gabriel Hornink no CEAD-UNIFAL), que a pesquisa de Joana encontra interlocutor natural com Luiz Eduardo no ecossistema institucional EaD.
+
+## A pergunta-fim
+
+Joana pergunta: a **rede educacional pública brasileira** — composta pelas universidades estaduais, federais, IFs, UAB e MEC — pode ser modelada como **sistema viável de recursão maior**, em que cada universidade é um S1, a UAB e o MEC operam como S2/S3, e a Rede Federal de Educação Profissional como S4? Onde estão os atrasos, as oscilações e os atratores estranhos da evasão?
+
+A tese é estruturada em três escalas:
+
+1. **Escala micro** (cada capítulo do curso): um indicador concreto — taxa de aprovação em Cálculo I, padrão de uso da biblioteca digital, distribuição de notas em uma disciplina-marco — analisado com o ferramental matemático da fase corrente.
+2. **Escala meso** (por fase): uma **coordenação de curso** vista como sistema viável; aqui a Fase 4 entrega o diagnóstico VSM da coordenação escolhida.
+3. **Escala macro** (síntese final): a rede educacional pública como sistema viável de recursão maior; aqui Joana entrega a comunicação ao colegiado interinstitucional.
+
+## Indicadores fictícios concretos do curso
+
+São os exemplos canônicos que substituem, ao longo das cartas e memorandos, o "indicador institucional do Estado brasileiro" da entrega original:
+
+| Indicador | Fase relevante | Conceito que ilumina |
+|---|---|---|
+| Taxa de evasão semestral por curso | Sterman (estoque-fluxo) | $dS/dt = \phi_{in} - \phi_{out}$ |
+| Tempo médio até integralização | Markov (tempo de mistura) | $t_{mix}(\varepsilon)$ |
+| Distribuição de notas em Cálculo I | Strogatz/PDI (Otsu) | bifurcação no histograma |
+| Cadeia de tópicos visitados na biblioteca digital | Markov | matriz $P$, $\pi P = \pi$ |
+| Polos UAB ativos vs. inativos | Strogatz (pontos fixos) | $f'(x^*)<0$ |
+| Taxa de aprovação EaD vs. presencial | Sterman (validação) | testes comportamentais |
+| Sensibilidade da taxa de conclusão a perturbações iniciais | Strogatz (caos) | expoente de Lyapunov sobre coorte |
+| Carga de trabalho docente como sistema dinâmico em 2D | Strogatz (fluxos 2D) | retrato de fase |
+
+## Convenção operacional
+
+- O slot **"Para o projeto"** que fecha cada `carta-luiz-eduardo.qmd` deve referenciar **um destes indicadores ou outro coerente com a pesquisa de Joana**, conectando o conceito do capítulo ao caso UNITINS, UNIFAL ou à comparação entre os dois.
+- O slot **"Pergunta de pesquisa para o projeto"** que fecha cada `memorando-juliana.qmd` faz o mesmo, mas pelo lado da governança institucional.
+- Quem lê este curso pode, a qualquer momento, **substituir Joana pela própria persona** — o aparato funciona idêntico. A persona-andaime serve apenas para que nenhum capítulo fique sem caso.
+
+::: {.callout-tip}
+Joana é ficção. Juliana Mariano Alves (UNITINS) e Luiz Eduardo da Silva (UNIFAL-MG) são reais e suas obras são citáveis. A linha narrativa une as duas figuras reais em um terceiro personagem fictício que torna pedagogicamente viável estudá-las em paralelo.
+:::

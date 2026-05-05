@@ -1,0 +1,11 @@
+---
+title: "Memorando Juliana — Bifurcações em 2D"
+---
+
+**Referência.** ALVES, J. M. (Tese UFT 2022); apresentação no ASC 2024 (60th Anniversary, Washington DC, jun/2024): *The Water-Energy-Food Nexus*.
+
+**Conceito técnico do capítulo.** Bifurcação de Hopf, sela-nó em 2D, bifurcações globais.
+
+**Onde aparece em Alves.** A apresentação ASC 2024 articula o nexo água-energia-alimento como sistema acoplado em três variáveis cuja coexistência operacional depende de uma bifurcação cuidadosamente parametrizada. Quando a oferta hídrica decai abaixo de um limiar, o sistema passa de regime negociado (ponto fixo estável compartilhado) para regime conflitivo (ciclo-limite). Esta é leitura cibernética do que se chama, em política pública, de "colapso da governança".
+
+**Pergunta de pesquisa para o projeto.** A coexistência entre presencial UNIFAL e EaD UNITINS no orçamento federal vive sob bifurcação semelhante: corte orçamentário abaixo de patamar pode levar de regime cooperativo (S2 entre modalidades) a regime competitivo entre as duas redes.

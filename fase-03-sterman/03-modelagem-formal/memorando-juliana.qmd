@@ -1,0 +1,11 @@
+---
+title: "Memorando Juliana — Modelagem formal"
+---
+
+**Referência.** ALVES, J. M.; SCHWANINGER, M. (Environmental Management 2025).
+
+**Conceito técnico do capítulo.** Modelagem formal de sistemas dinâmicos: ODEs, integração numérica, função de transferência.
+
+**Onde aparece em Alves.** O artigo de 2025 formaliza o controle de alocação hídrica como modelo cibernético explícito, com testes de validação contra dados da BHRF. A inovação é tratar o modelo como **órgão regulador adicional**, não como descrição passiva — programa Conant-Ashby aplicado.
+
+**Pergunta de pesquisa para o projeto.** A modelagem espectral do calendário acadêmico (picos semestrais) revela função de transferência $H(s)$ que conecta esses modos aos KPIs de S3 da pró-reitoria.

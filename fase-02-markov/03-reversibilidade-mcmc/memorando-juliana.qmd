@@ -1,0 +1,11 @@
+---
+title: "Memorando Juliana — Reversibilidade e MCMC"
+---
+
+**Referência.** ALVES, J. M.; SCHWANINGER, M. (2025); *Metaphorum 2025*, palestra de Alves no UK.
+
+**Conceito técnico do capítulo.** Balanço detalhado $\pi_i P_{ij} = \pi_j P_{ji}$; Metropolis-Hastings; Gibbs sampler.
+
+**Onde aparece em Alves.** A noção de reversibilidade markoviana — toda transição ter sua transição-inversa probabilisticamente equilibrada — é, em linguagem do model-based governance, o requisito de **transparência decisória**: cada decisão deve poder ser rastreada de volta ao seu fundamento, com a mesma probabilidade que foi tomada. Juliana defende isso explicitamente em fóruns Metaphorum.
+
+**Pergunta de pesquisa para o projeto.** Quanto custa, em UNITINS-EaD vs. UNIFAL-presencial, retornar ao curso depois de jubilado? A reversibilidade institucional é métrica de qualidade do sistema.

@@ -1,0 +1,25 @@
+---
+title: "Bifurcações em 2D"
+subtitle: "Fase 1 — Capítulo 5 (Strogatz cap. 8)"
+bibliography: ../../bibliografia.bib
+format: html
+---
+
+::: {.callout-warning}
+Capítulo em estado de gabarito (semana 5). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
+:::
+
+## A pergunta operacional
+[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
+
+## Formalização
+[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+
+## Exemplos canônicos
+[Mínimo três: pelo menos um físico/biológico e um institucional.]
+
+## Conexão com Ashby/Beer
+[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+## Pergunta de verificação
+[Questão única que o aluno responderá antes de avançar.]

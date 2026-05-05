@@ -1,0 +1,11 @@
+---
+title: "Memorando Juliana — Fluxos em 2D"
+---
+
+**Referência.** ALVES, J. M.; SCHWANINGER, M. *Model-based Governance: A Cybernetic Approach to Water Allocation Control*. Environmental Management 75:3344–3363, 2025. DOI: 10.1007/s00267-025-02262-7.
+
+**Conceito técnico do capítulo.** Sistemas planares $\dot{\mathbf{x}} = \mathbf{F}(\mathbf{x})$, nulóclinas, classificação via traço-determinante.
+
+**Onde aparece em Alves.** O artigo com Schwaninger formaliza a alocação hídrica da BHRF como sistema acoplado entre oferta e demanda, com função-objetivo institucional explícita. Em retrato de fase 2D, as nulóclinas correspondem aos limites de outorga negociados pelo GAN; a interseção dessas curvas define o ponto de equilíbrio operacional.
+
+**Pergunta de pesquisa para o projeto.** Aplicado à gestão de uma coordenação UNIFAL-MG, o equivalente é o plano (carga docente, demanda discente) em que cada departamento opera; coordenadoria sem S2 ativo deixa esse plano oscilar livremente.

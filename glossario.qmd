@@ -1,0 +1,58 @@
+---
+title: "Glossário PT-BR consagrado"
+---
+
+| Inglês | Português | Notas |
+|--------|-----------|-------|
+| phase portrait | retrato de fase | preferir "retrato" a "diagrama" |
+| fixed point | ponto fixo | $f(x^*)=0$ |
+| limit cycle | ciclo-limite | hífen obrigatório |
+| bifurcation | bifurcação | |
+| saddle-node bifurcation | bifurcação sela-nó | |
+| pitchfork bifurcation | bifurcação tridente | aceitável "pitchfork" |
+| transcritical bifurcation | bifurcação transcrítica | |
+| Hopf bifurcation | bifurcação de Hopf | |
+| strange attractor | atrator estranho | |
+| basin of attraction | bacia de atração | |
+| nullcline | nulóclina | |
+| separatrix | separatriz | |
+| linearization | linearização | |
+| Jacobian | jacobiana (matriz) | |
+| eigenvalue | autovalor | |
+| state space | espaço de estados | |
+| trajectory | trajetória | |
+| flow | fluxo | em SD, "fluxo" é taxa de variação de estoque |
+| stock | estoque | |
+| stock and flow diagram | diagrama de estoque e fluxo | |
+| reinforcing loop | laço reforçador | sigla R |
+| balancing loop | laço balanceador | sigla B |
+| causal loop diagram | diagrama causal | sigla CLD |
+| feedback | feedback | manter em inglês |
+| time delay | atraso (de tempo) | |
+| Markov chain | cadeia de Markov | |
+| transition matrix | matriz de transição | |
+| stationary distribution | distribuição estacionária | |
+| irreducible | irredutível | |
+| aperiodic | aperiódica | |
+| recurrent state | estado recorrente | |
+| transient state | estado transiente | |
+| mixing time | tempo de mistura | |
+| detailed balance | balanço detalhado | |
+| reversible chain | cadeia reversível | |
+| Metropolis-Hastings | Metropolis-Hastings | manter |
+| MCMC | MCMC | manter sigla |
+| birth-death process | processo de nascimento-morte | |
+| generator matrix | matriz geradora | $Q$ |
+| viable system | sistema viável | |
+| viable system model | modelo do sistema viável | sigla VSM |
+| requisite variety | variedade requisita | Lei de Ashby |
+| variety attenuator | atenuador de variedade | |
+| variety amplifier | amplificador de variedade | |
+| algedonic signal | sinal algedônico | do grego *algos*/*hedos* |
+| recursion (cybernetic) | recursão cibernética | |
+| black box | caixa preta | |
+| homeostasis | homeostase | |
+| autopoiesis | autopoiese | Maturana/Varela |
+| second-order cybernetics | cibernética de segunda ordem | sigla ASC |
+| social learning | aprendizagem social | |
+| model-based governance | governança baseada em modelos | |

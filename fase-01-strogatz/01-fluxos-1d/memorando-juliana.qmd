@@ -1,0 +1,11 @@
+---
+title: "Memorando Juliana #1 — Caixa preta como ponto de partida"
+---
+
+**Referência.** ALVES, J. M.; RODRIGUES, W.; VERGARA, F. E.; SOUZA, F. N.; TERRA, L. A. A. From the black box to the fish farming development policy project: A diagnosis from the viable system model. *Systems Research and Behavioral Science*, 2020. DOI: 10.1002/sres.2675.
+
+**Conceito técnico do capítulo.** Estabilidade linear de um ponto fixo: $f'(x^*)<0 \Rightarrow$ atrator local; o sistema "absorve" pequenas perturbações na taxa $|f'(x^*)|$.
+
+**Onde aparece em Alves et al. (2020).** O artigo abre adotando explicitamente a heurística ashbyana de **caixa preta**: a política de piscicultura tocantinense é tratada inicialmente como sistema com entradas (crédito, licenciamento, extensão) e saídas (volume produzido, conflitos), sem hipótese sobre estrutura interna. O comportamento observado é o de um sistema *aparentemente* estável — o setor não colapsava — mas com derivada efetiva próxima de zero: as entradas cresciam e as saídas estagnavam. Em linguagem do nosso capítulo, é o caso degenerado $f'(x^*)\approx 0$: o sistema não está fortemente atraído nem fortemente repelido, e portanto a análise linear não basta. As autoras procedem então à abertura da caixa via VSM, e descobrem que a estagnação é estrutural (ausência de S2 e S4), não dinâmica.
+
+**Pergunta de pesquisa para o projeto.** [Conexão concreta ao projeto de Joana Beraldo (vide `personagem-narrativo.qmd`): UNITINS, UNIFAL-MG, ou a rede educacional pública como sistema viável.]

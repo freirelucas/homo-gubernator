@@ -1,0 +1,21 @@
+/*-- scss:defaults --*/
+$primary: #D45A1A;
+$secondary: #3F6B85;
+$body-bg: #F5EFE1;
+$body-color: #1F3A4D;
+$link-color: #D45A1A;
+$headings-color: #1F3A4D;
+$headings-font-family: "Space Grotesk", sans-serif;
+$font-family-sans-serif: "Inter", system-ui, sans-serif;
+$font-family-monospace: "JuliaMono", "Fira Code", monospace;
+
+/*-- scss:rules --*/
+.callout-note   { border-left-color: #3F6B85 !important; }
+.callout-tip    { border-left-color: #E8A33D !important; }
+.callout-warning{ border-left-color: #D45A1A !important; }
+.callout-important { border-left-color: #1F3A4D !important; }
+blockquote { border-left: 3px solid #D45A1A; padding-left: 1em; color: #1F3A4D; }
+code { color: #1F3A4D; background: #F5EFE1; }
+pre  { background: #FAF8F2; border-left: 3px solid #E8A33D; }
+h1, h2 { letter-spacing: -0.01em; }
+.MathJax { font-family: "STIX-Web", serif; }

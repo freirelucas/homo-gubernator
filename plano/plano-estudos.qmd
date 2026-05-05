@@ -1,0 +1,34 @@
+---
+title: "Plano de estudos — 24 semanas"
+---
+
+Cada capítulo do curso tem **duas trilhas paralelas** de aplicação:
+
+- **Memorando Juliana** — ancora o conceito na governança hídrica brasileira (obra de Juliana Mariano Alves, UNITINS/UFT).
+- **Carta Luiz Eduardo** — ancora o conceito no processamento digital de imagens [@silvasilveira2026].
+
+Ambas devem ser produzidas no mesmo capítulo. A intenção pedagógica é forçar o aluno a traduzir o mesmo formalismo para dois vocabulários técnicos distintos.
+
+| Sem | Fase | Capítulo | Entregável principal | Trilha Juliana | Trilha Luiz Eduardo |
+|----|------|----------|----------------------|----------------|---------------------|
+| 1  | 1 | 01-fluxos-1d | exercícios + memorando + carta | Memorando #1 (caixa preta, BHRF) | Carta #1 (transformações de intensidade) |
+| 2  | 1 | 02-bifurcacoes-1d | exercícios | Memorando #2 (Variety Engineering) | Carta #2 (Otsu) |
+| 3  | 1 | 03-fluxos-2d | notebook | Memorando #3 (BHRF 2D) | Carta #3 (Fourier) |
+| 4  | 1 | 04-ciclos-limite | memorando + carta | Memorando #4 (oscilações em S2) | Carta #4 (morfologia idempotente) |
+| 5  | 1 | 05-bifurcacoes-2d | exercícios | Memorando #5 (transição de regime hídrico) | Carta #5 (watershed) |
+| 6  | 1 | 06-caos-lorenz | memorando + carta | Memorando #6 (BHRF/caos) | Carta #6 (descritores robustos) |
+| 7  | 2 | 01-cadeias-finitas | memorando + carta | Memorando #7 | Carta #7 (quantização) |
+| 8  | 2 | 02-distribuicoes-estacionarias | notebook MCMC | Memorando #8 | Carta #8 (equalização) |
+| 9  | 2 | 03-reversibilidade-mcmc | exercícios + carta | (revisão) | Carta #9 (segmentação probabilística [especulativa]) |
+| 10 | 2 | 04-tempo-continuo | memorando + carta | Memorando #9 (BHRF tempo contínuo) | Carta #10 (filtros gaussianos = equação do calor) |
+| 11 | 2 | 05-aplicacoes-algoritmicas | memorando + carta | Memorando #10 | Carta #11 (Huffman/Shannon) |
+| 12 | — | revisão integrada | auto-avaliação | — | — |
+| 13 | 3 | 01-fundamentos-sd | memorando + carta | Memorando #11 (BHRF/SD) | Carta #12 (pipeline PDI) |
+| 14 | 3 | 02-feedback-loops | memorando + carta | Memorando #12 (Land Use 2022) | Carta #13 (sharpening como laço R) |
+| 15 | 3 | 03-modelagem-formal | notebook PySD + carta | (revisão) | Carta #14 (modelagem espectral) |
+| 16 | 3 | 04-validacao | memorando + carta | Memorando #13 (Schwaninger 2025) | Carta #15 (PSNR/MSE) |
+| 17 | — | revisão | auto-avaliação | — | — |
+| 18 | 4 | 01-vsm-ashby-beer | capítulo-âncora | (síntese) | Carta #16 (níveis baixo/médio/alto) |
+| 19 | 4 | 02-bacia-formoso-caso | memorando + carta | Memorando #14 (peça central) | Carta #17 (OpenCV aplicado) |
+| 20 | 4 | 03-aplicacao-propria | diagnóstico + carta | (síntese) | Carta #18 (sensoriamento remoto, se aplicável) |
+| 21–24 | — | redação do diagnóstico próprio + comunicação ao colegiado | documento final | — | — |

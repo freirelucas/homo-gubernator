@@ -1,0 +1,11 @@
+---
+title: "Memorando Juliana — Tempo contínuo"
+---
+
+**Referência.** ALVES, J. M. *Cibernética organizacional...* (Tese UFT, 2022).
+
+**Conceito técnico do capítulo.** Processos markovianos em tempo contínuo, matriz geradora $Q$, equações de Kolmogorov.
+
+**Onde aparece em Alves.** A tese modela o balanço hídrico da BHRF em tempo contínuo, com taxa de variação dependente do regime de chuvas, da demanda agropecuária e da política de outorgas. Em linguagem markoviana, é processo de Markov em tempo contínuo cuja matriz $Q$ tem entradas que dependem do parâmetro institucional ativo.
+
+**Pergunta de pesquisa para o projeto.** A difusão do conhecimento em sala virtual da UAB-UNITINS é processo análogo: cada interação no fórum redefine probabilidades de respostas; o tempo característico de mistura é o que separa sala viva de sala morta.

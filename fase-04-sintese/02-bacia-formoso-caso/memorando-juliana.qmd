@@ -1,0 +1,11 @@
+---
+title: "Memorando Juliana — Bacia do Formoso: caso BHRF"
+---
+
+**Referência.** ALVES, J. M. *Cibernética organizacional...* (Tese UFT 2022) — peça central do curso. Complementada por @alves2020srbs, @alves2022landuse, @alvesschwaninger2025, @alves2025variety.
+
+**Conceito técnico do capítulo.** Estudo de caso BHRF como sistema viável aplicado, núcleo da Fase 4.
+
+**Onde aparece em Alves.** A tese é o documento integrador: contém em recursão tripla o diagnóstico VSM da governança da Bacia do Formoso, com identificação explícita das funções S2 e S4 ausentes, propondo redesenho institucional. É o trabalho que sustenta, retrospectivamente, a indicação de Juliana ao Member-at-Large da ASC e ao Diretório do Metaphorum.
+
+**Pergunta de pesquisa para o projeto.** Joana usa o caso BHRF como referencial teórico-comparativo: a coordenação de curso UNITINS-EaD que ela diagnostica é estruturalmente análoga à governança hídrica em recursão tripla (UAB nacional / UNITINS estadual / polo municipal), com as mesmas ausências sistemáticas previstas pelo modelo de Alves.

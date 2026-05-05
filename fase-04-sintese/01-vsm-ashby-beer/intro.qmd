@@ -1,0 +1,86 @@
+---
+title: "VSM como linguagem integradora"
+subtitle: "Fase 4 — Capítulo-âncora (Ashby, Beer, Juliana)"
+bibliography: ../../bibliografia.bib
+format: html
+---
+
+## A pergunta operacional
+
+Por que três fases técnicas — Strogatz, Markov, Sterman — convergem para o **Modelo do Sistema Viável** (VSM) de @beer1979 e não para qualquer outra ontologia organizacional? A resposta curta: porque o VSM é a única arquitetura que torna *operável* a Lei da Variedade Requisita de @ashby1956. Operável no sentido literal: oferece cinco posições de observação (S1–S5) e seis canais de informação que, em conjunto, permitem ao analista responder à pergunta diagnóstica fundamental — *este sistema absorve a variedade que precisa absorver para permanecer viável?* — com algo mais consistente do que a intuição.
+
+Este capítulo articula três pontos: (i) o que cada fase técnica anterior contribui para a linguagem do VSM; (ii) como a obra de Juliana Mariano Alves traduz essa linguagem para a governança hídrica brasileira (BHRF — Bacia Hidrográfica do Rio Formoso, Tocantins); (iii) o que isso implica para a **pesquisa-cenário do curso** — a comparação ficcional, conduzida por Joana Beraldo, entre a UNITINS (Palmas-TO, EaD via UAB) e a UNIFAL-MG (Alfenas, presencial) como dois sistemas viáveis com a mesma função-fim e arquiteturas opostas (vide `personagem-narrativo.qmd`).
+
+## A Lei da Variedade Requisita, formalizada
+
+@ashby1956 (cap. 11) apresenta a Lei em duas formas equivalentes. Na forma **multiplicativa**, em termos de cardinalidades dos conjuntos de estados:
+
+$$
+V_R \cdot V_O \;\geq\; V_D,
+$$ {#eq-ashby-mult}
+
+ou, tomando logaritmos (i.e., trabalhando com **entropia de Shannon** das distribuições correspondentes), na forma **aditiva**:
+
+$$
+H(O) \;\geq\; H(D) - H(R),
+$$ {#eq-ashby-log}
+
+onde $H(D)$ é a entropia do conjunto de distúrbios, $H(R)$ a entropia do regulador, e $H(O)$ a entropia residual do resultado. Em palavras: para manter o estado essencial dentro de uma faixa $H(O)$ aceitável diante de distúrbios de entropia $H(D)$, o regulador precisa exibir entropia $H(R)$ ao menos igual ao excesso $H(D) - H(O)$. No restante do capítulo, "variedade" sem qualificação refere-se à forma logarítmica (entropia), seguindo a convenção da literatura cibernética contemporânea.
+
+A leitura cibernética importante é que **a variedade não é um mau a combater; é o orçamento de complexidade que precisa fluir**. O regulador pode (a) ampliar sua própria variedade $H(R)$, (b) atenuar a variedade do distúrbio $H(D)$, ou (c) alargar a faixa do resultado tolerável $H(O)$. Toda intervenção institucional é uma combinação desses três movimentos. Uma agência reguladora que cria zoneamento (atenua $H(D)$), contrata fiscais especializados (amplia $H(R)$) e aceita uma faixa maior de variação no indicador (alarga $H(O)$) está, simultaneamente, exercendo as três alavancas.
+
+## Os cinco subsistemas e os canais
+
+O VSM opera com cinco subsistemas funcionais e seis canais. Não são "níveis hierárquicos" — são **funções recursivas que coexistem em qualquer sistema viável**:
+
+- **S1 — Operação.** Cada divisão autônoma que produz a saída-fim do sistema. Em uma bacia hidrográfica, cada outorga ativa é um S1; em um Estado, cada política finalística é um S1.
+- **S2 — Antioscilação.** Coordenação lateral que impede S1s de oscilarem entre si por uso conflitante de recursos compartilhados. É a função de *clearing house*.
+- **S3 — Otimização aqui-agora.** Aloca recursos entre S1s, monitora desempenho, intervém. **S3\*** (auditoria) é o canal esporádico de verificação direta usado quando o canal regular S3↔S1 falha.
+- **S4 — Fora-e-depois.** Inteligência: monitora o ambiente externo e o futuro, prepara adaptações.
+- **S5 — Política/identidade.** Define o que o sistema *é* e o que se recusa a ser. Resolve dilemas que S3 e S4 não resolvem.
+
+O **sinal algedônico** (do grego *algos*, dor; *hedos*, prazer) é o canal vertical de baixíssima banda que conecta diretamente S1 a S5 em emergência, contornando S2/S3/S4. É a função do "alarme" — em organizações, tipicamente o telefone direto do operador para o gabinete da presidência.
+
+Crucialmente, cada S1 é, ele próprio, um sistema viável completo em **recursão menor**: o sistema $\mathcal{S}_{n+1}$ está estruturalmente contido no $\mathcal{S}_n$ que o opera, com seus próprios cinco subsistemas internos. Esta é a propriedade que falta a quase toda outra ontologia organizacional, e é o que permite ao VSM aplicar-se igualmente à União, ao Estado, ao município, à associação de usuários e ao indivíduo.
+
+## O que cada fase técnica oferece ao VSM
+
+| Fase | Conceito-chave | Função no VSM |
+|------|----------------|----------------|
+| Strogatz | ponto fixo, bacia de atração, ciclo-limite, atrator | a homeostase de S1 e a dinâmica de S2 |
+| Markov | distribuição estacionária, tempo de mistura, reversibilidade | medida formal de $H(D)$ e do tempo de absorção |
+| Sterman | estoque, fluxo, laço de feedback, modos canônicos | linguagem de S3 — alocação, atrasos, *bullwhip* institucional |
+
+A Fase 1 dá a geometria; a Fase 2 dá a métrica; a Fase 3 dá a álgebra das interações. O VSM é o que organiza as três numa única linguagem diagnóstica.
+
+## A obra de Juliana Mariano Alves: por que ancora este curso
+
+A escolha de @alves2022 como referência-âncora não é arbitrária. Três motivos:
+
+1. **Trata-se da aplicação brasileira mais sofisticada do VSM disponível em literatura revisada por pares**. A tese de 2022 (UFT, orientada por Vergara, coorientada por Schwaninger) faz diagnóstico VSM da governança da BHRF em recursão tripla (federal/estadual/usuários).
+2. **Conecta o VSM ao programa Conant-Ashby** [@conantashby1970] de "todo bom regulador é um modelo do sistema regulado", via @alvesschwaninger2025 (*Environmental Management*, "Model-based Governance"), oferecendo ao aluno o caminho técnico de **modelagem como regulação**, não modelagem como descrição.
+3. **Traduz "variety engineering"** [@alves2025variety] em vocabulário operacional para gestores brasileiros, sem perder o rigor de @beer1979 nem o de @espinosa2017. Isso é exatamente o que falta na literatura nacional de administração pública.
+
+A peça central dos memorandos é o caso BHRF: outorga de água em um sistema sob estresse hídrico crescente, com o Ministério Público estadual em ação civil pública desde 2016, criação do Grupo de Acompanhamento e Negociação (GAN), e a tese diagnosticando S2/S3/S4 ausentes e propondo redesenho.
+
+## Aplicação à pesquisa-cenário (UNITINS ↔ UNIFAL-MG)
+
+A pesquisa de Joana Beraldo (vide `personagem-narrativo.qmd`) toma duas universidades públicas brasileiras como sistemas viáveis comparáveis — domínio em que o VSM é particularmente útil porque cada universidade é, ela própria, um sistema viável recursivo (curso ⊂ instituto ⊂ universidade ⊂ rede federal/estadual). Três caminhos imediatos:
+
+1. **Diagnóstico de uma coordenação de curso** como um S1 dentro de um instituto (S2/S3/S4 do instituto, S5 da reitoria). A pergunta diagnóstica é: *quais funções estão presentes e quais estão ausentes?* No caso UNITINS-EaD, a hipótese de Joana é que S2 (antioscilação entre polos UAB) e S4 (inteligência sobre evasão regional) são as ausências sistemáticas; no caso UNIFAL-presencial, a hipótese-espelho é que S4 está consolidado mas S2 entre departamentos pode falhar em momentos de pressão (Cálculo I como gargalo recorrente).
+2. **Análise de variedade** sobre indicadores acadêmicos. O formalismo de @ashby1956 pode ser instanciado quantitativamente: $H(D)$ é a entropia da distribuição de perfis discentes (origem geográfica, escolaridade prévia, modalidade de ingresso); $H(R)$ é a entropia do conjunto de respostas pedagógicas observadas (monitorias, plantões, atendimento por polo). A diferença é a "lacuna de variedade" do sistema-curso.
+3. **Modelagem-como-governança** [@alvesschwaninger2025]: construir um modelo formal (cadeia de Markov sobre estados de matrícula, ou modelo SD da coorte) cujo *propósito* não é prever a evasão, mas funcionar como **órgão regulador adicional** da coordenação — ampliando $H(R)$ via o canal Conant-Ashby.
+
+::: {.callout-important}
+A diferença prática entre "modelagem como descrição" e "modelagem como regulação" é o que separa pesquisa-relatório de pesquisa-instrumento. Esta segunda postura é o que @alvesschwaninger2025 chama de *model-based governance* e é, na leitura deste curso, o ponto de partida natural para qualquer pesquisa em educação superior pública.
+:::
+
+## Pergunta de verificação
+
+Identifique, na sua experiência educacional concreta (curso em que estuda, coordenação que conhece, polo UAB que frequenta) ou no caso-andaime de Joana (UNITINS ou UNIFAL-MG), **um sistema concreto** (um curso, uma disciplina-marco, um indicador acadêmico) que você queira diagnosticar. Em um parágrafo: (a) descreva-o como um sistema viável de uma recursão escolhida (qual é o S1?); (b) liste quais dos cinco subsistemas estão claramente presentes e quais estão visivelmente ausentes; (c) estime, qualitativamente, $H(D)$, $H(R)$ e $H(O)$, e diga onde está a lacuna de variedade dominante; (d) proponha uma intervenção do tipo "atenuar $H(D)$", "ampliar $H(R)$" ou "alargar $H(O)$" e justifique.
+
+Esta pergunta volta na semana 20 (capítulo F4-03), onde será a base do diagnóstico próprio que fecha o curso.
+
+::: {.callout-note}
+Este capítulo é o farol pedagógico do curso. Releia-o ao iniciar cada nova fase técnica — os conceitos das fases farão sentido em camadas diferentes a cada releitura.
+:::

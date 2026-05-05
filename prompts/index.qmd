@@ -1,0 +1,4 @@
+---
+title: "Biblioteca de prompts"
+---
+Cada arquivo `.md` desta pasta é um prompt-mestre para um modo de operação. Copie-cole no Claude para ativar o modo correspondente.

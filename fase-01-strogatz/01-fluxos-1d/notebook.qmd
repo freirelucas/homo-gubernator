@@ -1,0 +1,13 @@
+---
+title: "Notebook — Fluxos em uma dimensão"
+jupyter: python3
+---
+
+```python
+# placeholder: ativar via subagent notebook-builder
+# 1. carregar matplotlibrc
+# 2. integrar dN/dt = r N (1 - N/K) via solve_ivp
+# 3. plotar 5 trajetórias com condições iniciais distintas
+# 4. plotar retrato de fase 1D (eixo x, vetor f(x))
+# 5. interpretar
+```

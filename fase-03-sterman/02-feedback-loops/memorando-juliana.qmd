@@ -1,0 +1,11 @@
+---
+title: "Memorando Juliana — Laços de feedback"
+---
+
+**Referência.** ALVES, J. M. et al. *From the black box...* (SRBS 2020).
+
+**Conceito técnico do capítulo.** Laços R/B; polaridade; quatro modos canônicos de SD.
+
+**Onde aparece em Alves.** O artigo SRBS de 2020 diagnostica que a piscicultura tocantinense estagnou porque os laços de feedback estruturais estavam ausentes — não havia S2 entre piscicultores nem S4 monitorando mercado. A insensibilidade observada (entradas crescem, saídas estagnam) é assinatura comportamental de sistema sem laços.
+
+**Pergunta de pesquisa para o projeto.** Numa coordenação UNIFAL-MG, identificar o laço R "pesquisa atrai bons alunos → publicação cresce → reputação atrai mais" e o laço B "erosão por evasão" é o primeiro passo para diagnóstico SD do sistema-curso.

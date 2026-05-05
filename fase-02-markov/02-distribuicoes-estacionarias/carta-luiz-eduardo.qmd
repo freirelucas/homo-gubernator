@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Distribuições estacionárias [ponte metafórica]"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **3. Equalização de histograma**.
+
+**Conceito técnico do capítulo do curso.** $\pi P = \pi$, unicidade em cadeias irredutíveis aperiódicas.
+
+**Onde aparece em Silva & Silveira (2026).** A equalização redistribui as intensidades de modo a aproximar o histograma da uniforme via a transformação $s = T(r) = (L-1)\int_0^r p_R(w)\,dw$. Estritamente, **é uma operação one-shot, não uma iteração markoviana**: aplicar $T$ leva ao histograma alvo em uma única passada (a menos de quantização discreta). A analogia com $\pi P = \pi$ é metafórica — a uniforme é o "alvo invariante" pela construção de $T$, mas não há cadeia de transição no sentido próprio. A ponte rigorosa exige reformular a equalização como Metropolis-Hastings com proposta uniforme, o que o livro não faz.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para o projeto.** A política de cotas e bonificações da UNITINS deveria, no longo prazo, levar a uma distribuição estacionária $\pi$ específica do alunado por origem socioeconômica; Joana confronta $\pi$ teórico (objetivo da política) com o histórico observado (estimador empírico) — e o desvio é diagnóstico de S2 e S3 da pró-reitoria.

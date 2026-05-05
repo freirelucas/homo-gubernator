@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Reversibilidade e MCMC [ponte especulativa]"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **8. Segmentação probabilística (ausente no livro)**.
+
+**Conceito técnico do capítulo do curso.** Balanço detalhado $\pi_i P_{ij} = \pi_j P_{ji}$; Metropolis-Hastings; Gibbs sampler.
+
+**Onde aparece em Silva & Silveira (2026).** [ponte especulativa] O livro cobre segmentação determinística (thresholding, watershed, k-means) mas não chega a Markov Random Fields nem ao Gibbs sampler. A inserção natural seria reformular segmentação como inferência MAP em um MRF, exatamente o que @geman1984 propôs há quarenta anos.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para o projeto.** A *acessibilidade reversa* — quanto custa, depois de jubilado, retornar ao curso — é a métrica de reversibilidade da cadeia. Joana testa se a UNITINS-EaD é mais reversível do que a UNIFAL-presencial e se o GAN de Alves (BHRF) tem análogo institucional num *grupo de acompanhamento* da coordenação acadêmica.

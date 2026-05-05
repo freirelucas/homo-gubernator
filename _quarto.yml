@@ -1,0 +1,86 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+website:
+  title: "Homo Gubernator — Cibernética Aplicada"
+  description: "Curso de auto-estudo de 24 semanas em sistemas dinâmicos, Markov, Business Dynamics e VSM."
+  navbar:
+    background: "#1F3A4D"
+    foreground: "#FAF8F2"
+    left:
+      - href: index.qmd
+        text: Início
+      - href: personagem-narrativo.qmd
+        text: Personagem
+      - href: plano/plano-estudos.qmd
+        text: Plano
+      - href: fase-01-strogatz/index.qmd
+        text: Fase 1
+      - href: fase-02-markov/index.qmd
+        text: Fase 2
+      - href: fase-03-sterman/index.qmd
+        text: Fase 3
+      - href: fase-04-sintese/index.qmd
+        text: Fase 4
+      - href: glossario.qmd
+        text: Glossário
+      - href: revisao/index.qmd
+        text: Revisão
+  sidebar:
+    - title: "Fase 1"
+      style: docked
+      contents:
+        - fase-01-strogatz/index.qmd
+        - fase-01-strogatz/01-fluxos-1d/intro.qmd
+        - fase-01-strogatz/02-bifurcacoes-1d/intro.qmd
+        - fase-01-strogatz/03-fluxos-2d/intro.qmd
+        - fase-01-strogatz/04-ciclos-limite/intro.qmd
+        - fase-01-strogatz/05-bifurcacoes-2d/intro.qmd
+        - fase-01-strogatz/06-caos-lorenz/intro.qmd
+    - title: "Fase 2"
+      style: docked
+      contents:
+        - fase-02-markov/index.qmd
+        - fase-02-markov/01-cadeias-finitas/intro.qmd
+        - fase-02-markov/02-distribuicoes-estacionarias/intro.qmd
+        - fase-02-markov/03-reversibilidade-mcmc/intro.qmd
+        - fase-02-markov/04-tempo-continuo/intro.qmd
+        - fase-02-markov/05-aplicacoes-algoritmicas/intro.qmd
+    - title: "Fase 3"
+      style: docked
+      contents:
+        - fase-03-sterman/index.qmd
+        - fase-03-sterman/01-fundamentos-sd/intro.qmd
+        - fase-03-sterman/02-feedback-loops/intro.qmd
+        - fase-03-sterman/03-modelagem-formal/intro.qmd
+        - fase-03-sterman/04-validacao/intro.qmd
+    - title: "Fase 4"
+      style: docked
+      contents:
+        - fase-04-sintese/index.qmd
+        - fase-04-sintese/01-vsm-ashby-beer/intro.qmd
+        - fase-04-sintese/02-bacia-formoso-caso/intro.qmd
+        - fase-04-sintese/03-aplicacao-propria/intro.qmd
+format:
+  html:
+    theme:
+      - cosmo
+      - styles/custom.scss
+    css: assets/styles.css
+    toc: true
+    toc-depth: 3
+    code-fold: false
+    mainfont: "Inter"
+    monofont: "JuliaMono"
+    fontsize: 1.05em
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    html-math-method:
+      method: mathjax
+      url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+bibliography: bibliografia.bib
+csl: https://www.zotero.org/styles/associacao-brasileira-de-normas-tecnicas
+lang: pt-BR

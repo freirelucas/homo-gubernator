@@ -1,0 +1,11 @@
+---
+title: "Memorando Juliana — Distribuições estacionárias"
+---
+
+**Referência.** ALVES, J. M. *Harnessing variety engineering for management of non-trivial systems*. Constructivist Foundations 20(2):124–127, 2025.
+
+**Conceito técnico do capítulo.** $\pi P = \pi$, unicidade em cadeias irredutíveis aperiódicas.
+
+**Onde aparece em Alves.** O artigo de 2025 propõe que a engenharia da variedade busca, no longo prazo, uma distribuição operacional estacionária do regulador — não um estado-objetivo único, mas uma distribuição de respostas que cobre a distribuição de distúrbios. $\pi$ é a meta de design, não $x^*$.
+
+**Pergunta de pesquisa para o projeto.** A política de cotas e bonificações da UNITINS deveria, no longo prazo, levar a distribuição estacionária $\pi$ de alunado por origem socioeconômica; o desvio entre $\pi$ teórico e estimador empírico é diagnóstico das funções S2 e S3 da pró-reitoria.

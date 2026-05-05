@@ -1,0 +1,21 @@
+---
+title: "Fase 4 — Síntese (VSM, Ashby, Beer, Juliana)"
+---
+
+Três capítulos articulando as três fases técnicas anteriores no Modelo do Sistema Viável de @beer1979, com a obra brasileira de @alves2022 como ponte aplicada e a pesquisa-cenário UNITINS↔UNIFAL-MG (vide `personagem-narrativo.qmd`) como destino prático.
+
+A Fase 4 não introduz novos formalismos. Reorganiza o que veio antes em uma única **linguagem diagnóstica** capaz de responder à pergunta-fim do curso: *este sistema absorve a variedade que precisa absorver para permanecer viável?*
+
+## Capítulos
+
+- [01 — VSM como linguagem integradora](01-vsm-ashby-beer/intro.qmd) (semana 18) — capítulo-âncora
+- [02 — Bacia do Formoso: caso BHRF](02-bacia-formoso-caso/intro.qmd) (semana 19)
+- [03 — Aplicação própria: diagnóstico de coordenação de curso](03-aplicacao-propria/intro.qmd) (semanas 20–24)
+
+## Entregáveis
+
+Memorando Juliana #10 (peça central, sobre BHRF) + diagnóstico VSM de uma coordenação de curso + comunicação ao colegiado interinstitucional.
+
+::: {.callout-tip}
+Releia o capítulo F4-01 ao iniciar cada nova fase técnica. Os conceitos das fases farão sentido em camadas diferentes a cada releitura.
+:::
