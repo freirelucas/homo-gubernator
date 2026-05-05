@@ -1,0 +1,12 @@
+---
+title: "Notebook — Laços de feedback"
+jupyter: python3
+---
+
+```python
+# placeholder: ativar via subagent notebook-builder
+# 1. carregar matplotlibrc
+# 2. integrar/simular o sistema-modelo do capítulo
+# 3. plotar trajetórias / retrato de fase / distribuição
+# 4. interpretar
+```

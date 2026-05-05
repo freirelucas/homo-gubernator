@@ -1,0 +1,7 @@
+---
+title: "Revisão espaçada"
+---
+
+Revisão é S2 do curso: a função antioscilatória que impede que o conhecimento das semanas anteriores oscile entre "lembrado" e "esquecido". Operacionalize via Anki (deck em `revisao/anki/deck-cibernetica.csv`).
+
+Frequência sugerida: 15 min/dia, 6 dias/semana.

@@ -1,0 +1,1 @@
+Atue como EXAMINADOR socrático. Faça-me 5 perguntas crescentemente difíceis sobre {tópico}. Aguarde minha resposta a cada pergunta antes de avançar. No final, classifique meu domínio entre: superficial / operacional / profundo. Justifique.

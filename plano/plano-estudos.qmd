@@ -1,0 +1,27 @@
+---
+title: "Plano de estudos — 24 semanas"
+---
+
+| Sem | Fase | Capítulos | Entregável |
+|----|------|----------|------------|
+| 1  | 1 | 01-fluxos-1d | Memorando Juliana #1 |
+| 2  | 1 | 02-bifurcacoes-1d | Exercícios resolvidos |
+| 3  | 1 | 03-fluxos-2d | Notebook |
+| 4  | 1 | 04-ciclos-limite | Memorando Juliana #2 (Variety Engineering) |
+| 5  | 1 | 05-bifurcacoes-2d | Exercícios |
+| 6  | 1 | 06-caos-lorenz | Memorando Juliana #3 (BHRF/caos) |
+| 7  | 2 | 01-cadeias-finitas | Memorando Juliana #4 |
+| 8  | 2 | 02-distribuicoes-estacionarias | Notebook MCMC simples |
+| 9  | 2 | 03-reversibilidade-mcmc | Exercícios |
+| 10 | 2 | 04-tempo-continuo | Memorando Juliana #5 (BHRF tempo contínuo) |
+| 11 | 2 | 05-aplicacoes-algoritmicas | Memorando Juliana #6 |
+| 12 | — | revisão integrada | Auto-avaliação |
+| 13 | 3 | 01-fundamentos-sd | Memorando Juliana #7 (BHRF/SD) |
+| 14 | 3 | 02-feedback-loops | Memorando Juliana #8 (Land Use 2022) |
+| 15 | 3 | 03-modelagem-formal | Notebook PySD |
+| 16 | 3 | 04-validacao | Memorando Juliana #9 (Schwaninger 2025/validação) |
+| 17 | — | revisão | Auto-avaliação |
+| 18 | 4 | 01-vsm-ashby-beer | Capítulo-âncora completo |
+| 19 | 4 | 02-bacia-formoso-caso | Memorando Juliana #10 (peça central) |
+| 20 | 4 | 03-aplicacao-propria | Diagnóstico VSM da DIEST |
+| 21–24 | — | redação do diagnóstico próprio + apresentação interna IPEA | Documento final |

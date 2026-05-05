@@ -1,0 +1,18 @@
+---
+title: "Fase 1 — Sistemas dinâmicos (Strogatz)"
+---
+
+Seis capítulos cobrindo @strogatz2018 (caps. 1–10 selecionados). A Fase 1 estabelece o vocabulário geométrico — pontos fixos, ciclos-limite, bifurcações, atratores — que será reutilizado em todas as fases seguintes.
+
+## Capítulos
+
+- [01 — Fluxos em uma dimensão](01-fluxos-1d/intro.qmd) (semana 1)
+- [02 — Bifurcações em 1D](02-bifurcacoes-1d/intro.qmd) (semana 2)
+- [03 — Fluxos em 2D](03-fluxos-2d/intro.qmd) (semana 3)
+- [04 — Ciclos-limite](04-ciclos-limite/intro.qmd) (semana 4)
+- [05 — Bifurcações em 2D](05-bifurcacoes-2d/intro.qmd) (semana 5)
+- [06 — Caos e atrator de Lorenz](06-caos-lorenz/intro.qmd) (semana 6)
+
+## Entregáveis
+
+Memorandos Juliana #1–#3 + exercícios resolvidos + um *notebook*. Auto-avaliação contínua em `PROGRESSO.md`.

@@ -1,0 +1,12 @@
+---
+title: "Exercícios — Caos e atrator de Lorenz"
+---
+
+**1.** [Enunciado.]
+**2.** [Enunciado.]
+**3.** [Enunciado.]
+**4.** [Enunciado.]
+**5.** [Enunciado.]
+**6.** [Enunciado.]
+**7.** [Conexão Ashby/Beer.]
+**8.** (Aberto.) [Aplicação ao próprio trabalho na DIEST.]

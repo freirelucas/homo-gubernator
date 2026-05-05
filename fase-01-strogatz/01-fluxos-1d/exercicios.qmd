@@ -1,0 +1,19 @@
+---
+title: "Exercícios — Fluxos em uma dimensão"
+---
+
+**1.** Para $\dot{x}=\sin x$ no intervalo $[-2\pi, 2\pi]$, encontre todos os pontos fixos e classifique-os via critério linear. Esboce o retrato de fase. *Solução: a registrar.*
+
+**2.** Mostre que para $\dot{x}=f(x)$ na reta, com $f\in C^1$, não pode haver soluções periódicas não-constantes. (Sugestão: monotonicidade.)
+
+**3.** Considere $\dot{x}=rx-\ln(1+x)$ para $x>-1$. Para quais valores de $r$ existe um ponto fixo estável diferente de zero?
+
+**4.** Reescreva o modelo logístico via mudança de variável adimensional $u=N/K$, $\tau=rt$. Mostre que a forma normalizada é $du/d\tau = u(1-u)$.
+
+**5.** Para o RC charging com $V_0$ função do tempo, $V_0(t)=V_0+A\sin(\omega t)$, encontre a solução estacionária e analise o ganho e o atraso de fase. Comente o caso $\omega \tau \gg 1$ vs $\omega \tau \ll 1$.
+
+**6.** Usando o potencial $V(x)$, reescreva e classifique os equilíbrios de $\dot{x}=x-x^3$ e $\dot{x}=-x+x^3$. Qual é a diferença qualitativa?
+
+**7.** Conecte: na linguagem de Ashby, qual é a relação formal entre o módulo $|f'(x^*)|$ e a "taxa de absorção de variedade" do sistema? Esboce um argumento.
+
+**8.** (Aberto.) Identifique no seu trabalho um indicador institucional que se comporte aproximadamente como sistema 1D autônomo (após média móvel, por exemplo). Estime visualmente seus pontos fixos e classifique-os.

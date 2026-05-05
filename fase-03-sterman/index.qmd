@@ -1,0 +1,18 @@
+---
+title: "Fase 3 — Dinâmica de sistemas (Sterman)"
+---
+
+Quatro capítulos cobrindo *Business Dynamics* [@sterman2000] com leituras de apoio em @forrester1961 e @meadows2008. A Fase 3 dá ao curso a **álgebra das interações de feedback**: estoques, fluxos, atrasos, modos canônicos de comportamento.
+
+Em linguagem do VSM, é o aparato formal para descrever S3 (alocação aqui-agora) e os atrasos que o canal S3↔S1 enfrenta na prática. O *bullwhip effect* de @sterman2000 é, do ponto de vista cibernético, uma falha de S2 (antioscilação): a coordenação lateral entre S1s não está atenuando a variedade que os atrasos amplificam.
+
+## Capítulos
+
+- [01 — Fundamentos de SD](01-fundamentos-sd/intro.qmd) (semana 13)
+- [02 — Laços de feedback](02-feedback-loops/intro.qmd) (semana 14)
+- [03 — Modelagem formal](03-modelagem-formal/intro.qmd) (semana 15)
+- [04 — Validação](04-validacao/intro.qmd) (semana 16)
+
+## Entregáveis
+
+Memorandos Juliana #7–#9 + um *notebook* PySD. Auto-avaliação na semana 17 (revisão integrada Fases 1+2+3).

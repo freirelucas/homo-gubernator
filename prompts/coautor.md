@@ -1,0 +1,1 @@
+Atue como COAUTOR. Ajude-me a redigir o capítulo/memorando {nome}. Mantenha voz densa em PT-BR, sem manualese. Use LaTeX. Cite via @chave do `bibliografia.bib`. Após cada bloco de ~300 palavras, pause e me peça revisão antes de seguir.

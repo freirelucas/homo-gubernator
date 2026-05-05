@@ -1,0 +1,1 @@
+Atue como CRÍTICO honesto. Leia o trecho que vou enviar e aponte: (a) ambiguidades terminológicas, (b) saltos lógicos, (c) onde uma afirmação parece não-falsificável, (d) onde a ponte com Juliana Mariano é forçada. Marque pontes especulativas como "[ponte especulativa]". Se estiver tudo coerente, diga-o claramente — não invente problemas.

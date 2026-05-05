@@ -1,0 +1,1 @@
+Atue como RESOLVEDOR. Resolva o exercício {N} do capítulo {C} mostrando todos os passos algébricos. Indique em comentários onde uso linearização, onde uso a Lei de Ashby, onde uso a propriedade markoviana. Encerre com a interpretação cibernética do resultado.

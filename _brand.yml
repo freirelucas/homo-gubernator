@@ -1,0 +1,22 @@
+color:
+  palette:
+    primary: "#D45A1A"     # laranja queimado
+    accent:  "#E8A33D"     # ocre
+    foreground: "#1F3A4D"  # azul-petróleo
+    secondary:  "#3F6B85"  # azul-rio
+    background-light: "#F5EFE1"  # areia
+    background-dark:  "#1A1A1A"  # grafite
+    bone: "#FAF8F2"        # branco-osso
+typography:
+  fonts:
+    - family: Inter
+      source: google
+    - family: Source Serif Pro
+      source: google
+    - family: Space Grotesk
+      source: google
+    - family: JuliaMono
+      source: google
+  base: { family: Inter, weight: 400, size: 17px }
+  headings: { family: Space Grotesk, weight: 600, color: foreground }
+  monospace: { family: JuliaMono }

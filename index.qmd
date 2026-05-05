@@ -1,0 +1,12 @@
+---
+title: "Homo Gubernator — Curso"
+subtitle: "Cibernética aplicada à governança pública"
+---
+
+Este sítio organiza o curso de auto-estudo de 24 semanas. Quatro fases técnicas — Strogatz, Markov, Sterman, Síntese — articuladas pela linguagem do Modelo do Sistema Viável (Beer) e ancoradas na obra brasileira de **Juliana Mariano Alves** (UNITINS/UFT).
+
+## Como navegar
+Linha do tempo: comece pelo `plano/plano-estudos.qmd`. Em cada capítulo, leia primeiro `intro.qmd`, depois trabalhe `exercicios.qmd`, depois leia `memorando-juliana.qmd` para fixar a ponte com a aplicação brasileira.
+
+## Sobre Juliana Mariano Alves
+Professora da Universidade Estadual do Tocantins (UNITINS), Member-at-Large da American Society for Cybernetics pelo Sul Global (mandato desde 2024), conselheira do Metaphorum (UK), organizadora da ASC Brazil 2026 (centenário de Stafford Beer), parceira do ITA (Carmen Belderrain). Apresentou no IPEA/DIEST em junho de 2025. Trabalhos âncora deste curso: tese UFT 2022 (BHRF/VSM); Alves et al. (2020) *SRBS*; Alves et al. (2022) *J. Land Use Sci.*; Alves & Schwaninger (2025) *Environmental Management*; Alves (2025) *Constructivist Foundations*.

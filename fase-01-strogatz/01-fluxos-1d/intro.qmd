@@ -1,0 +1,53 @@
+---
+title: "Fluxos em uma dimensão"
+subtitle: "Fase 1 — Capítulo 1 (Strogatz, caps. 1–2)"
+author: "Lucas Freire"
+bibliography: ../../bibliografia.bib
+format: html
+---
+
+## A pergunta operacional
+
+A pergunta central da Fase 1 é geometricamente simples: dado um sistema autônomo de primeira ordem na reta, $\dot{x} = f(x)$, com $f$ suficientemente regular, o que é possível dizer sobre o comportamento de longo prazo de qualquer trajetória, sabendo apenas onde $f$ se anula e qual é o sinal de $f$ entre seus zeros? A resposta de @strogatz2018 é desproporcional à modéstia da pergunta: para a dinâmica unidimensional autônoma, *tudo o que importa* está nos zeros de $f$ (os pontos fixos) e na monotonicidade local de $f$ em torno deles.
+
+A razão é topológica. Em um espaço de estados unidimensional, uma trajetória é uma curva monótona até atingir um ponto fixo ou divergir; não há laços fechados, não há oscilações sustentadas, não há caos. Esse fato — que parece pobre — funda toda a Fase 1: *é por ser pobre que é tratável*, e tratabilidade é a condição para que possamos depois reintroduzir, ordenadamente, complexidade (acoplamento em §2.3, dois estados em §3.1, três estados e caos em §6).
+
+## Pontos fixos e estabilidade linear
+
+Um **ponto fixo** $x^*$ de $\dot{x}=f(x)$ é um zero de $f$, isto é, $f(x^*)=0$. Iniciado em $x^*$, o sistema permanece em $x^*$ para todo $t \geq 0$. A questão delicada é: iniciado *próximo* a $x^*$, o sistema retorna ou se afasta?
+
+A resposta é dada pela **análise de estabilidade linear**. Expandindo $f$ em série de Taylor em torno de $x^*$,
+$$
+\dot{x} \;=\; f(x^*) + f'(x^*)(x-x^*) + O\big((x-x^*)^2\big) \;=\; f'(x^*)\,\eta + O(\eta^2),
+$$
+com $\eta := x - x^*$, e desprezando os termos de ordem superior, obtém-se a equação linear $\dot{\eta} = f'(x^*)\,\eta$, cuja solução é exponencial: $\eta(t) = \eta(0)\,e^{f'(x^*)t}$. Daí o critério:
+
+$$
+\boxed{\;f'(x^*) < 0 \;\Rightarrow\; x^*\text{ estável};\qquad f'(x^*) > 0 \;\Rightarrow\; x^*\text{ instável}.\;}
+$$ {#eq-estab-linear}
+
+O caso $f'(x^*)=0$ é degenerado e exige análise não-linear (próximos termos da série, ou potencial $V(x)=-\int f$).
+
+[O texto continua até atingir 2.500–3.000 palavras, com as seções abaixo já estruturadas. Para a versão integral, ative o subagent `strogatz-chapter` sobre este capítulo.]
+
+## O potencial $V(x)$ e a interpretação energética
+[A função $V(x)=-\int f(x)\,dx$ define um potencial fictício; trajetórias descem o gradiente de $V$. Pontos fixos estáveis = mínimos locais de $V$; instáveis = máximos. Conexão visual fundamental para a intuição cibernética: a "bacia de atração" de Ashby é literalmente uma bacia de potencial.]
+
+## Exemplo 1: modelo logístico (Verhulst)
+$\dot{N} = rN(1-N/K)$. Pontos fixos $N=0$ ($f'=r>0$, instável) e $N=K$ ($f'=-r<0$, estável). Bacia de atração de $K$: $(0, \infty)$.
+
+## Exemplo 2: RC charging
+$\dot{V} = (V_0 - V)/\tau$, com $\tau=RC$. Único ponto fixo $V^*=V_0$, $f'(V^*)=-1/\tau<0$, globalmente estável. Tempo característico de relaxação $\tau$.
+
+## Exemplo 3: bead on rotating hoop (introdução à bifurcação)
+[Apresentação qualitativa da equação adimensional $\dot{\phi}=\sin\phi(\gamma\cos\phi - 1)$; a velocidade angular $\gamma$ atua como parâmetro de bifurcação tridente. Ponte direta para o capítulo 2.]
+
+## Conexão com Ashby/Beer
+Em linguagem cibernética, um ponto fixo estável é a definição rigorosa de **homeostase**: estado para o qual o sistema retorna após perturbações pequenas. A bacia de atração delimita o conjunto de distúrbios $V_d$ que o sistema absorve sem mudar de regime. O critério $f'(x^*)<0$ é a forma mais elementar da Lei da Variedade Requisita: o sistema "consome" perturbações na taxa $|f'(x^*)|$ — quanto mais negativa a derivada, maior $V_r$ e maior a faixa de $V_d$ tolerada.
+
+## Pergunta de verificação
+Para o sistema $\dot{x}=x-x^3$: encontre os pontos fixos, classifique-os, esboce o retrato de fase e identifique a bacia de atração de cada ponto fixo estável. Em seguida, descreva-o em linguagem cibernética: qual o "regulador implícito" e qual sua "variedade"?
+
+::: {.callout-note}
+A versão integral deste capítulo (≈3.000 palavras) deve incluir um quarto exemplo com aplicação institucional explícita (ex.: dinâmica de um indicador orçamentário) e uma seção curta sobre existência e unicidade (Picard).
+:::

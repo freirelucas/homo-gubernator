@@ -1,0 +1,19 @@
+---
+title: "Fase 2 — Cadeias de Markov (Häggström / Norris)"
+---
+
+Cinco capítulos cobrindo cadeias de Markov finitas e em tempo contínuo, com aplicações algorítmicas (MCMC). Bibliografia-base: @haggstrom2002 e @norris1997.
+
+A Fase 2 dá ao curso a **métrica da variedade**: distribuição estacionária, tempo de mistura, reversibilidade. Em linguagem do VSM, é o aparato formal para medir $V_d$ e $V_r$ de @ashby1956 e para responder a perguntas como *quanto tempo um regulador precisa para absorver um distúrbio?*.
+
+## Capítulos
+
+- [01 — Cadeias finitas](01-cadeias-finitas/intro.qmd) (semana 7)
+- [02 — Distribuições estacionárias](02-distribuicoes-estacionarias/intro.qmd) (semana 8)
+- [03 — Reversibilidade e MCMC](03-reversibilidade-mcmc/intro.qmd) (semana 9)
+- [04 — Tempo contínuo](04-tempo-continuo/intro.qmd) (semana 10)
+- [05 — Aplicações algorítmicas](05-aplicacoes-algoritmicas/intro.qmd) (semana 11)
+
+## Entregáveis
+
+Memorandos Juliana #4–#6 + um *notebook* MCMC. Auto-avaliação na semana 12 (revisão integrada Fases 1+2).
