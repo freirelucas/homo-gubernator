@@ -2,10 +2,10 @@
 title: "Memorando Juliana — Aplicações algorítmicas"
 ---
 
-**Referência.** [A preencher com a citação completa do trabalho de Juliana onde o conceito aparece.]
+**Referência.** ALVES, J. M.; SOUZA, F. N.; SIEBER, S.; VERGARA, F. E.; BONATTI, M. *Assessment of land use relations and the sustainability of agricultural systems*. Journal of Land Use Science 17(1):368–385, 2022.
 
-**Conceito técnico do capítulo.** [Em uma frase.]
+**Conceito técnico do capítulo.** Aplicações algorítmicas de Markov: MCMC, simulated annealing.
 
-**Onde aparece em Alves.** [Identificar a passagem específica e descrevê-la.]
+**Onde aparece em Alves.** O artigo de 2022 (*Land Use Science*) usa métodos quantitativos para avaliar relações de uso da terra e sustentabilidade agrícola. Não usa MCMC explicitamente, mas o framework de "foster social learning" via different views é, no fundo, um esquema de amostragem multimodal sobre o espaço de visões possíveis — precursor conceitual do que o curso formaliza como MCMC.
 
-**Pergunta de pesquisa para o projeto.** [Conexão concreta ao projeto de Joana Beraldo (vide `personagem-narrativo.qmd`): UNITINS, UNIFAL-MG, ou a rede educacional pública como sistema viável.]
+**Pergunta de pesquisa para o projeto.** Para classificar o risco-de-evasão por perfil de estudante, Joana usa MCMC posterior; o paralelo com o método de Alves et al. 2022 é o uso da diversidade de fontes como amplificador da variedade do regulador ($H(R)$).

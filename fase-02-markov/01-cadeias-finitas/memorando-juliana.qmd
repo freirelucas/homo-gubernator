@@ -2,10 +2,10 @@
 title: "Memorando Juliana — Cadeias finitas"
 ---
 
-**Referência.** [A preencher com a citação completa do trabalho de Juliana onde o conceito aparece.]
+**Referência.** ALVES, J. M.; RODRIGUES, W.; VERGARA, F. E.; SOUZA, F. N.; TERRA, L. A. A. *From the black box to the fish farming development policy project: A diagnosis from the viable system model*. SRBS 2020. DOI: 10.1002/sres.2675.
 
-**Conceito técnico do capítulo.** [Em uma frase.]
+**Conceito técnico do capítulo.** Cadeias finitas, matriz de transição estocástica, propriedade markoviana.
 
-**Onde aparece em Alves.** [Identificar a passagem específica e descrevê-la.]
+**Onde aparece em Alves.** O artigo de 2020 no *SRBS* — primeiro grande trabalho coletivo do grupo — modela os estados da política de piscicultura tocantinense como um conjunto finito (proposição → licenciamento → produção → comercialização → reinvestimento). A propriedade markoviana é hipótese implícita do diagnóstico VSM: a posição atual no ciclo determina a probabilidade de transições futuras.
 
-**Pergunta de pesquisa para o projeto.** [Conexão concreta ao projeto de Joana Beraldo (vide `personagem-narrativo.qmd`): UNITINS, UNIFAL-MG, ou a rede educacional pública como sistema viável.]
+**Pergunta de pesquisa para o projeto.** Os estados de matrícula em curso UAB-UNITINS (matriculado, trancado, jubilado, reativado, integralizado) formam cadeia finita análoga; a matriz $P$ pode ser estimada com dados da plataforma.

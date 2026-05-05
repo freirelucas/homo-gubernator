@@ -17,7 +17,7 @@ Documento de fechamento da fase de bootstrap. Resume tudo que foi feito até `c0
 - **F1-01 (Fluxos em 1D)**: ~700 palavras + esqueleto de 4 seções. Parcial; precisa expansão via subagent `strogatz-chapter`.
 - **Personagem narrativo (Joana Beraldo)**: ~600 palavras, com pesquisa documental UNIFAL-MG e UNITINS, três escalas de pesquisa, tabela de oito indicadores fictícios concretos. Pronto.
 - **18 cartas a Luiz Eduardo**: cada uma com referência ao livro PDI, conceito do capítulo, passagem específica do livro (cinco fortes, três marcadas `[ponte metafórica]`, uma `[ponte especulativa]`), ponte conceitual em aberto, pergunta-convite, e **"Para o projeto."** preenchido com indicador concreto da pesquisa de Joana (UNITINS, UNIFAL ou comparação).
-- **Memorando Juliana #1** (cap. F1-01): redigido completo. **Memorandos #2–#10**: stubs com referência aberta.
+- **18 memorandos Juliana**: F1-01 mantém o memorando original do bundle (caixa preta, Alves et al. 2020); 16 secundários (F1-02 a F4-03 exceto F4-01 que é o âncora) foram preenchidos nesta rodada com pontes concretas a obras específicas de Juliana, contextualizando com a inserção internacional dela (ASC Member-at-Large, Metaphorum, ASC 2024 Washington DC).
 - **17 capítulos secundários**: stubs com 5 seções padronizadas, exercícios numerados, notebook placeholder. Faltam: prosa redigida (entregável do aluno).
 
 ### 1.3 Aparato pedagógico (estado: pronto)
@@ -46,7 +46,7 @@ Cinco rodadas de pesquisa documental, todas refletidas no repositório:
 2. **VSM / "ViableOS"** — confirmado que não existe projeto formalmente nomeado "ViableOS"; o projeto open-source mais próximo é `viable-systems/vsm-docs` (implementação em Elixir). "ViableOS" no curso permanece como neologismo do autor para a auto-aplicação do VSM ao currículo. Recomendação: produzir metatexto explícito após MVP.
 3. **Canal IMPA no YouTube** — playlist de Tópicos de Sistemas Dinâmicos (Marcelo Viana) confirmada para Fase 1; lacunas reais para Fases 2 (Markov), 3 (Sterman/SD) e 4 (cibernética). Recomendações documentadas mas ainda não incorporadas a `recursos/`.
 4. **UNIFAL-MG e UNITINS** — pesquisa documental refletida em `personagem-narrativo.qmd` e nas duas entradas bibliográficas `@unitins_portal` e `@unifal_portal`.
-5. **Atuação de Luiz Eduardo da Silva como coordenador EaD** — pesquisa desta rodada, desfazendo uma hipótese:
+5. **Atuação de Luiz Eduardo da Silva como coordenador EaD** — pesquisa de rodada anterior, desfazendo uma hipótese:
 
 ### 2.1 Achado — Luiz Eduardo NÃO é coordenador formal de EaD da UNIFAL
 
@@ -59,6 +59,18 @@ A hipótese implícita ("atuação de Luiz Eduardo como coordenador de EAD") **n
 - **Formação**: PhD Engenharia Elétrica UNIFEI (2012), MSc Ciência da Computação UNICAMP (1999). Áreas: Inteligência Artificial, Processamento de Imagens, Compiladores.
 
 **Implicação para a linha narrativa de Joana**: a representação UniRede é o ponto de contato real entre Luiz Eduardo e o ecossistema EaD brasileiro — exatamente o lugar onde a tese de Joana (sobre viabilidade de programas EaD) encontra interlocutor natural. **Recomendação:** atualizar `personagem-narrativo.qmd` para mencionar essa representação UniRede e o ESUD como evento de interesse para a pesquisa, em vez de presumir coordenação formal de EaD.
+
+6. **Atuação universitária e na ASC de Juliana Mariano Alves** — pesquisa desta rodada, validando e ampliando hipóteses prévias:
+
+### 2.2 Achado — Juliana é nó ativo da rede internacional de cibernética com base em Palmas-TO
+
+- **Filiação atual**: Professora doutora de **Engenharia Agronômica** na UNITINS-Palmas; doutorado em Desenvolvimento Regional pela UFT (2022, orientação Vergara, coorientação Schwaninger UNISG).
+- **American Society for Cybernetics**: eleita **Member-at-Large pelo Sul Global** após avaliação por 200+ membros; mandato iniciado **janeiro de 2024**. Compartilha Executive Committee com Paul Pangaro (Carnegie Mellon, presidente do congresso 2024), Claudia Westermann (vice-presidente, Xi'an Jiaotong-Liverpool), Cliff Joslyn.
+- **Apresentação ASC 2024 (60th Anniversary)**: Washington DC, 15–19 jun 2024, Friends Meeting House e DC Arts Center. Palestra **"The Water-Energy-Food Nexus: an integrative lens on a fragmented landscape"**. Recebeu ASC Travel Scholarship. Edição em que Raul Espejo (desenvolvedor do VSM) recebeu a Norbert Wiener Medal.
+- **Metaphorum**: eleita ao **Diretório** em 2023; palestrou no **Metaphorum 2025 (UK)**.
+- **Publicação recente**: *Constructivist Foundations* 20(2):124–127, 2025 — "Harnessing variety engineering for management of non-trivial systems" — primeiro artigo de seu mandato Member-at-Large.
+
+**Integração ao curso desta rodada**: scripts/fill-memorandos-juliana.sh substituiu placeholders dos 16 memorandos secundários (F1-01 ficou intacto pois já era específico do bundle original) por pontes concretas a artigos específicos de Alves, com contexto da posição internacional dela. Cada memorando agora cita: (i) a obra exata; (ii) o conceito do capítulo; (iii) a passagem onde aparece em Alves; (iv) a pergunta-pesquisa para o projeto de Joana. Atualizou também `personagem-narrativo.qmd` e `index.qmd` com biografia ampliada.
 
 ## 3. Histórico de commits desta sessão
 

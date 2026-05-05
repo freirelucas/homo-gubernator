@@ -2,10 +2,10 @@
 title: "Memorando Juliana — Bifurcações em 1D"
 ---
 
-**Referência.** [A preencher com a citação completa do trabalho de Juliana onde o conceito aparece.]
+**Referência.** ALVES, J. M. *Harnessing variety engineering for management of non-trivial systems*. Constructivist Foundations 20(2):124–127, 2025.
 
-**Conceito técnico do capítulo.** [Em uma frase.]
+**Conceito técnico do capítulo.** Bifurcações canônicas de 1D: sela-nó, transcrítica, tridente.
 
-**Onde aparece em Alves.** [Identificar a passagem específica e descrevê-la.]
+**Onde aparece em Alves.** O artigo de 2025 na *Constructivist Foundations* (publicado já no mandato Member-at-Large da ASC) apresenta engenharia da variedade como manobra deliberada de transição entre regimes de gestão. Em linguagem de Strogatz, cada transição entre regime é uma bifurcação: o parâmetro que muda é a variedade requerida $H(R)$ pelo regulador, e o salto qualitativo é a substituição de um ponto fixo de operação por outro.
 
-**Pergunta de pesquisa para o projeto.** [Conexão concreta ao projeto de Joana Beraldo (vide `personagem-narrativo.qmd`): UNITINS, UNIFAL-MG, ou a rede educacional pública como sistema viável.]
+**Pergunta de pesquisa para o projeto.** Em uma coordenação de curso UAB-UNITINS, a transição de oferta semestral para anual altera a topologia do grafo de fluxos discentes. Joana pode mapear isso como bifurcação parametrizada e identificar o limiar crítico de carga matriculada onde o regime se inverte.

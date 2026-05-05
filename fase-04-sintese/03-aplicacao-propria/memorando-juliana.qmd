@@ -2,10 +2,10 @@
 title: "Memorando Juliana — Aplicação própria: diagnóstico de coordenação de curso"
 ---
 
-**Referência.** [A preencher com a citação completa do trabalho de Juliana onde o conceito aparece.]
+**Referência.** ALVES, J. M. — corpus completo (tese 2022; SRBS 2020; Land Use 2022; Environ Manage 2025; CF 2025); inserção internacional (ASC Member-at-Large 2024-; Metaphorum Directorate 2023-).
 
-**Conceito técnico do capítulo.** [Em uma frase.]
+**Conceito técnico do capítulo.** Síntese final: diagnóstico VSM próprio com vocabulário cibernético consolidado.
 
-**Onde aparece em Alves.** [Identificar a passagem específica e descrevê-la.]
+**Onde aparece em Alves.** A obra de Juliana não fornece a Joana um método pronto, mas o **standard de qualidade** que o diagnóstico próprio precisa atingir: inserção em literatura internacional revisada por pares, recursão explícita, identificação nominal das funções ausentes, proposta de redesenho. A trajetória pessoal dela (de pesquisadora de Tocantins a representante do Sul Global na ASC) demonstra que o aparato é defensável internacionalmente quando bem aplicado.
 
-**Pergunta de pesquisa para o projeto.** [Conexão concreta ao projeto de Joana Beraldo (vide `personagem-narrativo.qmd`): UNITINS, UNIFAL-MG, ou a rede educacional pública como sistema viável.]
+**Pergunta de pesquisa para o projeto.** A pergunta-fim de Joana — diagnóstico VSM de uma coordenação de curso UAB-UNITINS ou Computação UNIFAL-MG — usa Alves como standard duplo: standard de qualidade técnica (rigor VSM) e standard institucional (publicar, apresentar, dialogar com a comunidade ASC/Metaphorum).

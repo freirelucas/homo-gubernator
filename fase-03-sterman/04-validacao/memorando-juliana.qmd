@@ -2,10 +2,10 @@
 title: "Memorando Juliana — Validação"
 ---
 
-**Referência.** [A preencher com a citação completa do trabalho de Juliana onde o conceito aparece.]
+**Referência.** ALVES, J. M.; SCHWANINGER, M. (2025); apresentação no ASC 2024 (Washington DC).
 
-**Conceito técnico do capítulo.** [Em uma frase.]
+**Conceito técnico do capítulo.** Testes estruturais e comportamentais de Sterman (cap. 21).
 
-**Onde aparece em Alves.** [Identificar a passagem específica e descrevê-la.]
+**Onde aparece em Alves.** A apresentação ASC 2024 enfatiza que a validação de modelos para governança não é validação preditiva — é validação de **suficiência regulatória**: o modelo é bom se ampliou $H(R)$ do tomador de decisão, não se previu o futuro. Esta é leitura distinta da tradição Sterman e foi destacada por Espejo na mesa-redonda subsequente.
 
-**Pergunta de pesquisa para o projeto.** [Conexão concreta ao projeto de Joana Beraldo (vide `personagem-narrativo.qmd`): UNITINS, UNIFAL-MG, ou a rede educacional pública como sistema viável.]
+**Pergunta de pesquisa para o projeto.** Validar o modelo SD da coordenação de curso é estruturalmente análogo a validar JPEG por PSNR (vide carta-luiz-eduardo deste capítulo). Joana usa as duas métricas em paralelo no capítulo metodológico.

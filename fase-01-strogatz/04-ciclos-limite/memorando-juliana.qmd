@@ -2,10 +2,10 @@
 title: "Memorando Juliana — Ciclos-limite"
 ---
 
-**Referência.** [A preencher com a citação completa do trabalho de Juliana onde o conceito aparece.]
+**Referência.** ALVES, J. M. *Cibernética organizacional para o diagnóstico e o design da governança multinível dos recursos hídricos*. Tese de doutorado, UFT, 2022. Orientador: Vergara; coorientador: Schwaninger.
 
-**Conceito técnico do capítulo.** [Em uma frase.]
+**Conceito técnico do capítulo.** Ciclos-limite como conjuntos invariantes isolados (Poincaré-Bendixson).
 
-**Onde aparece em Alves.** [Identificar a passagem específica e descrevê-la.]
+**Onde aparece em Alves.** A tese diagnostica o ciclo recorrente de outorga–crise–negociação–nova outorga na BHRF como ciclo-limite institucional: o sistema retorna ao mesmo padrão depois de cada perturbação porque os subsistemas S2 e S4 estão ausentes. Sem antioscilação e sem inteligência de futuro, o ciclo é o atrator natural.
 
-**Pergunta de pesquisa para o projeto.** [Conexão concreta ao projeto de Joana Beraldo (vide `personagem-narrativo.qmd`): UNITINS, UNIFAL-MG, ou a rede educacional pública como sistema viável.]
+**Pergunta de pesquisa para o projeto.** O calendário ano-letivo brasileiro é também um ciclo-limite institucional. Joana pode caracterizar quais perturbações (greve, pandemia, mudança de gestão) deslocam transientemente o sistema-curso e quais o realimentam de volta ao ciclo.

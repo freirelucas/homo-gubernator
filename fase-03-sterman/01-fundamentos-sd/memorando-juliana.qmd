@@ -2,10 +2,10 @@
 title: "Memorando Juliana — Fundamentos de SD"
 ---
 
-**Referência.** [A preencher com a citação completa do trabalho de Juliana onde o conceito aparece.]
+**Referência.** ALVES, J. M. *Cibernética organizacional...* (Tese UFT, 2022).
 
-**Conceito técnico do capítulo.** [Em uma frase.]
+**Conceito técnico do capítulo.** Estoque $S$ vs. fluxo $\phi$; $dS/dt = \phi_{in} - \phi_{out}$.
 
-**Onde aparece em Alves.** [Identificar a passagem específica e descrevê-la.]
+**Onde aparece em Alves.** A tese constrói o balanço hídrico da BHRF como sistema de estoques (água armazenada em reservatórios, água demandada, água efetivamente outorgada) com fluxos parametrizados pela política. A linguagem SD aparece de forma implícita; o desafio explicitado pela autora é traduzir o vocabulário VSM para o vocabulário SD sem perder a recursividade.
 
-**Pergunta de pesquisa para o projeto.** [Conexão concreta ao projeto de Joana Beraldo (vide `personagem-narrativo.qmd`): UNITINS, UNIFAL-MG, ou a rede educacional pública como sistema viável.]
+**Pergunta de pesquisa para o projeto.** O pipeline matrícula → integralização → diplomação UNIFAL-MG é literal cadeia de estoques-fluxos; comparar com UAB-UNITINS revela atrasos sistematicamente maiores.

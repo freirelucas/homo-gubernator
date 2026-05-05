@@ -2,10 +2,10 @@
 title: "Memorando Juliana — Caos e atrator de Lorenz"
 ---
 
-**Referência.** [A preencher com a citação completa do trabalho de Juliana onde o conceito aparece.]
+**Referência.** ALVES, J. M. apresentação no ASC 2024 (Washington DC), com bolsa Travel Scholarship; tese UFT 2022; eleição ao Diretório do Metaphorum (2023); palestra no Metaphorum 2025 (UK).
 
-**Conceito técnico do capítulo.** [Em uma frase.]
+**Conceito técnico do capítulo.** Sensibilidade às condições iniciais; expoentes de Lyapunov; estrutura fractal.
 
-**Onde aparece em Alves.** [Identificar a passagem específica e descrevê-la.]
+**Onde aparece em Alves.** [ponte especulativa] A tese de 2022 não trata explicitamente de caos no sentido Lorenz, mas o nexo Água-Energia-Alimento da palestra ASC 2024 é, formalmente, sistema dissipativo de três variáveis acopladas — exatamente o tipo de sistema onde caos pode emergir. A insensibilidade de policymakers a pequenas variações iniciais, frequentemente diagnosticada por Juliana, é o sintoma comportamental do regime caótico.
 
-**Pergunta de pesquisa para o projeto.** [Conexão concreta ao projeto de Joana Beraldo (vide `personagem-narrativo.qmd`): UNITINS, UNIFAL-MG, ou a rede educacional pública como sistema viável.]
+**Pergunta de pesquisa para o projeto.** Nas séries históricas de evasão por polo UAB-UNITINS, Joana pode estimar expoente de Lyapunov empírico e testar se a sensibilidade às condições iniciais (perfil socioeconômico inicial da coorte) é maior do que a tradição da pesquisa em educação supõe.
