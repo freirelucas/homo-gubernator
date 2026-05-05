@@ -77,4 +77,22 @@ title: "Memorando Juliana — $TITULO"
 
 **Pergunta de pesquisa para a DIEST.** [Conexão concreta ao trabalho do aluno.]
 EOF
+
+cat > "$DIR/carta-luiz-eduardo.qmd" <<EOF
+---
+title: "Carta a Luiz Eduardo — $TITULO"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. UNIFAL-MG, 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>.
+
+**Conceito técnico do capítulo do curso.** [Em uma frase.]
+
+**Onde aparece em Silva & Silveira (2026).** [Identificar capítulo, seção e fórmula correspondente do livro PDI.]
+
+**Ponte conceitual.** [Como o aparato deste capítulo ilumina ou reforma a apresentação do livro.]
+
+**Pergunta-convite a Luiz Eduardo.** [Pergunta retórica sobre o que mudaria na pedagogia do livro.]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura habilita no trabalho próprio do aluno.]
+EOF
 echo "ok: $DIR"

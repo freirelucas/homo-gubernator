@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Aplicação própria: diagnóstico DIEST"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **9. Representação / 10. Reconhecimento**.
+
+**Conceito técnico do capítulo do curso.** Síntese final: diagnóstico próprio + apresentação interna IPEA.
+
+**Onde aparece em Silva & Silveira (2026).** Se o trabalho próprio na DIEST envolver evidência baseada em imagens — sensoriamento remoto para política territorial, OCR de documentos para análise de texto, fotos satelitais para auditoria de execução orçamentária — então o livro de Luiz Eduardo deixa de ser metáfora e vira ferramenta operacional, complementando a linguagem VSM com pipelines técnicos concretos.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]

@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Aplicações algorítmicas"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **6. Compressão de imagens**.
+
+**Conceito técnico do capítulo do curso.** Aplicações algorítmicas de cadeias de Markov: MCMC, simulated annealing.
+
+**Onde aparece em Silva & Silveira (2026).** Huffman e LZW são, no fundo, exploração de redundância estatística — a mesma quantidade que MCMC explora ao amostrar de uma distribuição-alvo. O Huffman ótimo aproxima o limite de Shannon $H(X) = -\sum p_i \log p_i$, que é a métrica de variedade que o curso usa para Ashby.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]

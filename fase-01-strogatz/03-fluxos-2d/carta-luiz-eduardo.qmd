@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Fluxos em 2D"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **4. Transformada de Fourier**.
+
+**Conceito técnico do capítulo do curso.** Sistemas planares $\dot{\mathbf{x}} = \mathbf{F}(\mathbf{x})$, nulóclinas, classificação de pontos fixos via traço-determinante da jacobiana.
+
+**Onde aparece em Silva & Silveira (2026).** O domínio da frequência $F(u,v)$ é um espaço bidimensional onde uma imagem é representada como soma de senoides. A trajetória de um filtro passa-baixa parametrizado por raio de corte é um caminho no plano $(u,v)$ — análogo ao retrato de fase 2D.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]

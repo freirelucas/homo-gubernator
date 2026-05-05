@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Bacia do Formoso: caso BHRF"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **11. Introdução ao OpenCV**.
+
+**Conceito técnico do capítulo do curso.** Diagnóstico VSM aplicado; estudo de caso BHRF (Alves 2022).
+
+**Onde aparece em Silva & Silveira (2026).** Fechamento da trilha paralela. Como Juliana usa governança hídrica como sistema viável aplicado, o capítulo de OpenCV é o sistema viável aplicado da visão computacional: pipelines reais, decisões reais, restrições reais. O paralelismo deixa de ser metáfora e vira **dois domínios concretos** onde o aluno exercita o mesmo formalismo.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]

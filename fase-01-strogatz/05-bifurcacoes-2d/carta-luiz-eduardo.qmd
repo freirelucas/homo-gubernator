@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Bifurcações em 2D"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **8. Segmentação por *watershed***.
+
+**Conceito técnico do capítulo do curso.** Bifurcação de Hopf, sela-nó em 2D, bifurcações globais.
+
+**Onde aparece em Silva & Silveira (2026).** O *watershed* interpreta a imagem como superfície topográfica e "inunda" a partir dos mínimos. Conforme o nível d'água sobe, bacias adjacentes coalescem em pontos de sela — exatamente o tipo de bifurcação topológica estudada em 2D.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]

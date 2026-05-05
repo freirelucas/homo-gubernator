@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Modelagem formal"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **4. Transformada de Fourier**.
+
+**Conceito técnico do capítulo do curso.** Modelagem formal de sistemas dinâmicos: ODEs, integração numérica, função de transferência.
+
+**Onde aparece em Silva & Silveira (2026).** Modelagem espectral é a forma SD canônica de um sistema linear invariante no tempo: a função de transferência $H(s)$ é o equivalente da decomposição em laços lineares. O domínio da frequência do PDI é, formalmente, o mesmo espaço onde Sterman analisa modos próprios.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]

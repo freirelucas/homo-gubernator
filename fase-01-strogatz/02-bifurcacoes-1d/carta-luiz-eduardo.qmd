@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Bifurcações em 1D"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **8. Segmentação (método de Otsu)**.
+
+**Conceito técnico do capítulo do curso.** Bifurcações canônicas de 1D: sela-nó $\dot{x}=r+x^2$, transcrítica, tridente.
+
+**Onde aparece em Silva & Silveira (2026).** O método de Otsu escolhe o limiar $t^*$ que maximiza a variância entre classes. Variando o histograma da imagem (ou um parâmetro de iluminação), $t^*$ pode saltar descontinuamente — uma bifurcação no espaço de partições.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]

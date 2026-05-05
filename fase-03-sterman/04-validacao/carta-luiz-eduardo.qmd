@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Validação"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **6. Compressão (PSNR, MSE)**.
+
+**Conceito técnico do capítulo do curso.** Testes estruturais e comportamentais de Sterman (cap. 21).
+
+**Onde aparece em Silva & Silveira (2026).** PSNR $= 10 \log_{10}(\text{MAX}^2 / \text{MSE})$ é uma métrica de fidelidade comportamental — exatamente o tipo de teste que Sterman classifica em "replicação" (cap. 21). Validar JPEG por PSNR e validar um modelo SD por replicação histórica são instâncias da mesma família epistemológica.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]

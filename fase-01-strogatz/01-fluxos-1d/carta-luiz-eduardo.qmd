@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Fluxos em uma dimensão"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **3. Melhoramento (transformações de intensidade)**.
+
+**Conceito técnico do capítulo do curso.** Estabilidade linear de pontos fixos em $\dot{x}=f(x)$: $f'(x^*)<0 \Rightarrow$ atrator local.
+
+**Onde aparece em Silva & Silveira (2026).** O capítulo 3 introduz as transformações de intensidade — linear, logarítmica, gama, equalização — como funções $T: [0,L-1] \to [0,L-1]$ aplicadas pixel a pixel. A iteração discreta $g_{n+1}(x,y) = T(g_n(x,y))$ é, formalmente, um fluxo unidimensional autônomo no espaço de cinza.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]

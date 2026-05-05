@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Tempo contínuo"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **3. Filtros de suavização gaussiana**.
+
+**Conceito técnico do capítulo do curso.** Processos markovianos em tempo contínuo, matriz geradora $Q$, equações de Kolmogorov.
+
+**Onde aparece em Silva & Silveira (2026).** A convolução iterada com kernel gaussiano de variância $\sigma^2$ é equivalente a integrar a equação do calor $\partial_t u = \nabla^2 u$ até $t=\sigma^2/2$. O "escala" do filtro é, literalmente, tempo contínuo de um processo de difusão — uma cadeia markoviana em tempo contínuo no espaço de pixels.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]

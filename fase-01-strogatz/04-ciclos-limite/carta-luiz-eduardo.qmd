@@ -1,0 +1,15 @@
+---
+title: "Carta a Luiz Eduardo — Ciclos-limite"
+---
+
+**Referência.** SILVA, Luiz Eduardo da; SILVEIRA, Tiago. *Processamento Digital de Imagens*. Universidade Federal de Alfenas (UNIFAL-MG), 2026. Disponível em: <https://luizedsilva.github.io/livro-pdi/>. Capítulo de referência: **7. Morfologia matemática**.
+
+**Conceito técnico do capítulo do curso.** Ciclos-limite como conjuntos invariantes isolados; teorema de Poincaré-Bendixson.
+
+**Onde aparece em Silva & Silveira (2026).** Abertura $A \circ B = (A \ominus B) \oplus B$ e fechamento $A \bullet B = (A \oplus B) \ominus B$ são operadores **idempotentes**: $(A \circ B) \circ B = A \circ B$. Iterar a operação não muda o resultado — o sistema atinge um conjunto invariante estrutural análogo a um ciclo-limite.
+
+**Ponte conceitual.** [Em um parágrafo: como o aparato do capítulo deste curso ilumina ou reforma a apresentação que o livro de PDI faz do mesmo problema. Atenção à diferença de vocabulário — o que o livro chama de X, o curso chama de Y — e o que se ganha tratando ambos sob a mesma linguagem.]
+
+**Pergunta-convite a Luiz Eduardo.** [Se o conceito do curso fosse incorporado à pedagogia do livro, qual capítulo do livro mudaria mais? Por quê?]
+
+**Para a DIEST.** [Em uma frase: o que esta dupla leitura — governança (Juliana) + sinal/imagem (Luiz Eduardo) — habilita no trabalho próprio do aluno.]
