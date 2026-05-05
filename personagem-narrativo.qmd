@@ -23,6 +23,8 @@ Universidade federal mineira, fundada em 1914 como Escola de Farmácia e Odontol
 
 **Variedade dominante**: a $H(R)$ — alta capacidade técnica concentrada em um campus físico compacto, infraestrutura laboratorial estável, tradição cinquentenária consolidada. O contraste com UNITINS é deliberado: dois sistemas viáveis com a **mesma função-fim** (formar profissionais públicos competentes) e **arquiteturas opostas** (rede dispersa de baixa-banda em larga geografia vs. campus compacto de alta-banda em geografia restrita).
 
+**Ponto de contato real entre Luiz Eduardo e o ecossistema EaD brasileiro:** Luiz Eduardo atua como **representante substituto da UNIFAL-MG na UniRede** (Associação Universidade em Rede), o consórcio fundado em 1999 que organiza o **ESUD — Congresso Brasileiro de Ensino Superior a Distância** (e desde 2015 o CIESUD internacional). Foi o **primeiro docente do curso de Ciência da Computação** da UNIFAL-MG e palestrante de abertura da 5ª SACIC (2016, 10 anos do BCC). É via essa representação UniRede, e não via coordenação formal de EaD (atualmente do Prof. Gabriel Hornink no CEAD-UNIFAL), que a pesquisa de Joana encontra interlocutor natural com Luiz Eduardo no ecossistema institucional EaD.
+
 ## A pergunta-fim
 
 Joana pergunta: a **rede educacional pública brasileira** — composta pelas universidades estaduais, federais, IFs, UAB e MEC — pode ser modelada como **sistema viável de recursão maior**, em que cada universidade é um S1, a UAB e o MEC operam como S2/S3, e a Rede Federal de Educação Profissional como S4? Onde estão os atrasos, as oscilações e os atratores estranhos da evasão?
