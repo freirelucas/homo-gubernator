@@ -5,21 +5,34 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 11). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+A teoria de cadeias de Markov não é só descritiva — é **algorítmica**. Problemas computacionais podem ser reformulados como amostragem de distribuições específicas, e cadeias de Markov ad-hoc são construídas para resolvê-los. Este capítulo cobre os principais.
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Simulated annealing
+
+Para minimizar função-objetivo $E(\mathbf{x})$ em espaço discreto grande, define-se $\pi_T(\mathbf{x}) \propto e^{-E(\mathbf{x})/T}$. Para $T \to 0$, $\pi_T$ concentra no mínimo global. Algoritmo: rodar Metropolis com $\pi_T$, baixando $T$ gradualmente. Convergência ao mínimo global garantida sob *cooling schedule* logarítmico — lentos, mas teoricamente impecáveis.
+
+## Hard-core model e o problema de empacotamento
+
+Distribuição uniforme sobre configurações independent-set de um grafo. MCMC dá amostragem aproximada; tempo de mistura controla quão rápido. Aplicações: alocação de recursos, scheduling.
+
+## PageRank
+
+A matriz de transição do navegador aleatório na web tem estacionária $\pi$ que é, por definição, o PageRank. @brin1998 não está na bibliografia mas o capítulo explica a redução do problema de ranking ao problema markoviano canônico.
+
+## Particle filters / SMC
+
+Generalização sequencial de MCMC para inferência online em modelos de espaço de estados. Aplicações: tracking, robótica, filtragem em séries temporais.
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Algorítmica markoviana é, em linguagem ashbyana, **amplificação operacional da variedade $H(R)$**: o regulador computacional pode tratar problemas cuja variedade combinatória excederia a capacidade analítica humana. @alves2022landuse usa, no fundo, esquemas multi-vista que prefiguram amostragem multimodal — precursor conceitual do que MCMC formaliza.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Implemente simulated annealing para o Traveling Salesman em 20 cidades. Compare resultado a heurística greedy. Em linguagem cibernética: como o aparato MCMC amplifica $H(R)$ em problema de otimização institucional?
+
+::: {.callout-tip}
+Para Joana: classificar risco-de-evasão por perfil de estudante via posterior MCMC. O paralelo com @alves2022landuse é o uso da diversidade de fontes como amplificador da variedade do regulador.
+:::

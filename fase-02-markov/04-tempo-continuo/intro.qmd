@@ -1,25 +1,44 @@
 ---
 title: "Tempo contínuo"
-subtitle: "Fase 2 — Capítulo 4 (Norris cap. 2–3)"
+subtitle: "Fase 2 — Capítulo 4 (Norris caps. 2–3)"
 bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 10). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Em tempo discreto, transições ocorrem a passos inteiros. Em tempo contínuo, ocorrem em instantes aleatórios — o estado salta a um ritmo governado por **taxas**. A pergunta operacional muda de "qual a próxima transição?" para "quando e para onde a próxima transição?".
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Matriz geradora $Q$
+
+Para cadeia em tempo contínuo, $Q_{ij}$ ($i \neq j$) é a taxa de transição $i \to j$, e $Q_{ii} = -\sum_{j \neq i} Q_{ij}$. As probabilidades de transição em tempo $t$ são
+
+$$
+P(t) = e^{Qt}.
+$$
+
+Equação de Kolmogorov forward: $\frac{dP(t)}{dt} = P(t)\,Q$.
+
+## Tempo de espera
+
+Em cada estado $i$, o tempo até o próximo salto é exponencial com parâmetro $|Q_{ii}|$. Memorylessness: a propriedade markoviana em tempo contínuo decorre da memorylessness exponencial.
+
+## Processos de nascimento-morte
+
+Casos canônicos: filas M/M/1, processos populacionais, modelos químicos. Forma geral $Q$: tridiagonal com taxas $\lambda_n$ (nascimento) e $\mu_n$ (morte). Distribuição estacionária via balanço detalhado: $\pi_n = \pi_0 \prod_{k=1}^n \lambda_{k-1}/\mu_k$.
+
+## Conexão com filtros gaussianos
+
+A cadeia mais simples em tempo contínuo é o **movimento browniano** (limite de cadeia de passeio aleatório com passos pequenos), cuja densidade evolui pela equação do calor $\partial_t u = \nabla^2 u$. Convolução com gaussiana de variância $\sigma^2$ é equivalente a integrar a equação do calor até $t = \sigma^2/2$ — exatamente o filtro suavizador de @silvasilveira2026 (cap. 3 do livro PDI; vide carta-luiz-eduardo).
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Tempo contínuo é a forma natural para sistemas onde transições não estão sincronizadas — o que é regra, não exceção, em sistemas institucionais. A tese de @alves2022 modela o balanço hídrico da BHRF em tempo contínuo, com taxas dependentes de regime de chuvas e política de outorgas. Generaliza para qualquer fluxo institucional contínuo.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Para fila M/M/1 com $\lambda < \mu$: encontre $\pi_n$ analiticamente. Calcule tempo médio no sistema e tamanho médio da fila. Em linguagem cibernética: o que é S3 em uma fila? E $H(R)$?
+
+::: {.callout-tip}
+Para Joana: a difusão do conhecimento em sala virtual UAB-UNITINS é processo markoviano em tempo contínuo. Estime $|Q_{ii}|$ por participante a partir de logs de fórum.
+:::

@@ -5,21 +5,40 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 7). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Saímos do mundo determinístico. Em uma cadeia de Markov finita, o estado seguinte é amostrado de uma distribuição que depende **apenas do estado atual** (propriedade markoviana). A pergunta operacional: dado o conjunto finito de estados $S = \{1,\ldots,N\}$ e a matriz de transição $P$, o que se pode dizer sobre o comportamento de longo prazo da sequência $(X_n)_{n\geq 0}$?
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Matriz de transição
+
+$P_{ij} = \mathbb{P}(X_{n+1}=j \mid X_n=i)$. Linhas não-negativas que somam 1 (matriz **estocástica**). Probabilidade $n$-passos: $(P^n)_{ij}$. Distribuição em tempo $n$: $\mu_n = \mu_0 P^n$ (vetor-linha).
+
+## Classes de comunicação
+
+$i \to j$ se existe $n$ com $(P^n)_{ij}>0$; $i \leftrightarrow j$ se ambos os sentidos. A relação $\leftrightarrow$ é de equivalência; particiona os estados em **classes de comunicação**. Uma cadeia é **irredutível** se há uma única classe — todos os estados se alcançam mutuamente.
+
+## Recorrência, transitoriedade, periodicidade
+
+- **Recorrente**: o estado é visitado infinitamente often com probabilidade 1.
+- **Transiente**: visitado finitamente often.
+- **Período** $d(i)$: $\gcd\{n \geq 1 : (P^n)_{ii} > 0\}$. Cadeia **aperiódica** se $d(i)=1$ para algum (e portanto todo, em irredutível) estado.
+
+Em cadeia finita irredutível, todos os estados são recorrentes (não há "fuga ao infinito" em conjunto finito).
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+A matriz $P$ é a forma probabilística da **caixa preta** de @ashby1956: dado o estado atual, a distribuição de próximas transições é a "função de transferência" do sistema. Se classe de comunicação $\neq$ todo o conjunto, há regiões do espaço de estados inacessíveis a partir de outras — o sistema viola conectividade, sintoma típico de S2 ausente em VSM. A irredutibilidade é, em linguagem institucional, a conectividade da rede de comunicação.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Considere a cadeia com estados $\{$matriculado, trancado, jubilado$\}$ e matriz
+
+$$
+P = \begin{pmatrix} 0.85 & 0.10 & 0.05 \\ 0.30 & 0.65 & 0.05 \\ 0 & 0 & 1 \end{pmatrix}.
+$$
+
+Identifique classes de comunicação, recorrência/transitoriedade de cada estado, periodicidade. É irredutível? Em linguagem cibernética: que função VSM falha quando "jubilado" é estado absorvente?
+
+::: {.callout-tip}
+Para Joana: estime a matriz $P$ para coorte UAB-UNITINS com dados anuais de matrícula 2015–2024. Compare com hipotética coorte UNIFAL-MG presencial. Qual diferença estrutural emerge?
+:::

@@ -5,21 +5,42 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 19). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Aplicar o aparato cibernético da Fase 4 a um caso real é o que separa pedagogia de retórica. O caso da **Bacia Hidrográfica do Rio Formoso (BHRF)**, no Tocantins, foi diagnosticado por @alves2022 em sua tese de doutorado com diagnóstico VSM em recursão tripla: federal, estadual, usuários. Este capítulo reconstrói o caso e extrai as lições.
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## O sistema-objeto
 
-## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+A BHRF abrange municípios de Lagoa da Confusão e Formoso do Araguaia, com agricultura irrigada de larga escala (rizicultura) e estresse hídrico crescente desde 2010. Em 2016, o Ministério Público Estadual moveu Ação Civil Pública por uso conflitante. Foi criado o **Grupo de Acompanhamento e Negociação (GAN)** como resposta institucional.
+
+## Diagnóstico VSM
+
+@alves2022 identifica:
+
+- **S1**: cada outorga ativa (irrigação, abastecimento, dessedentação animal).
+- **S2 ausente**: não havia coordenação lateral entre outorgantes — cada um operava como se os outros não existissem.
+- **S3 fraco**: a Naturatins (agência estadual) operava como S3 nominal, mas sem instrumentos de monitoramento em tempo real nem capacidade de resposta rápida.
+- **S4 inexistente**: nenhuma instância monitorava cenário futuro de demanda hídrica vs. oferta climática.
+- **S5**: política federal (ANA) e estadual conflitantes — o "sistema" tinha duas identidades.
+
+A criação do GAN supre parcialmente S2; ainda assim, S4 permanece lacuna central até hoje.
+
+## Modelagem-como-governança
+
+@alvesschwaninger2025 retoma o caso e propõe uma camada adicional: modelagem dinâmica do balanço hídrico como **órgão regulador adicional** — não para prever, mas para ampliar $H(R)$ dos atores. O modelo passa a ser instrumento de variedade requisita.
+
+## Lições para análogos institucionais
+
+A estrutura do caso BHRF é genérica: sistema com múltiplos S1 autônomos, S2/S4 ausentes, conflito que escala até envolver Ministério Público, criação reativa de instância de coordenação. Essa estrutura aparece em rede educacional pública (UAB-UNITINS, redes federais), saúde (SUS), saneamento, e várias políticas finalísticas brasileiras. **O valor pedagógico do caso é a sua transferibilidade**.
+
+## Conexão com a pesquisa-cenário (Joana)
+
+A coordenação de curso UAB-UNITINS que Joana analisa é estruturalmente análoga à governança hídrica da BHRF em recursão tripla (UAB nacional / UNITINS estadual / polo municipal), com as mesmas ausências sistemáticas previstas pelo modelo de Alves. Seria possível um GAN educacional? Seria útil?
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Para a BHRF descrita acima: identifique a função VSM dominante em cada conflito específico (uso humano vs. agrícola, uso agrícola montante vs. jusante, uso atual vs. futuro). Em cada caso, qual intervenção de variedade — atenuar $H(D)$, ampliar $H(R)$, alargar $H(O)$ — seria mais barata?
+
+::: {.callout-tip}
+Para Joana: aplique a estrutura BHRF a um curso UAB-UNITINS específico. Quais S1, S2, S3, S4, S5? Onde estão as ausências?
+:::

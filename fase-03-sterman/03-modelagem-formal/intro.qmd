@@ -5,21 +5,34 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 15). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+A passagem do diagrama causal (CLD) à equação diferencial executável é onde o método SD ganha rigor. Esta é a transição do modelo conceitual ao modelo computacional. As perguntas operacionais: como escolher unidades, como parametrizar relações não-lineares, como integrar numericamente sem artefato, como documentar as escolhas?
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Convenções de unidade
+
+Toda variável tem unidade explícita. Verificação dimensional é primeira linha de defesa contra erro: $[\dot{S}] = [\text{estoque}/\text{tempo}]$, e compor expressões respeitando unidades elimina classes inteiras de bug.
+
+## Funções não-lineares e tabelas
+
+Relações empíricas vão à equação como **funções tabuladas** (look-up tables): efeito de utilização sobre produtividade, efeito de pressão sobre erros, etc. Convenção: domínio normalizado a $[0, 1]$ ou $[0, \infty)$, com ponto de referência explícito.
+
+## Integração numérica
+
+Métodos canônicos: Euler explícito (simples, $O(\Delta t)$ global); RK4 (alta ordem, $O(\Delta t^4)$ global); métodos adaptativos via SciPy `solve_ivp`. Critério de escolha: rigidez do sistema. Modelos institucionais tipicamente são *não-rígidos* — Euler com $\Delta t$ pequeno funciona.
+
+## Função de transferência
+
+Para sistemas lineares, $H(s) = Y(s)/U(s)$ caracteriza o sistema completamente. Modelagem espectral via Laplace é a forma SD canônica de um sistema linear; conecta-se diretamente com Fourier (cap. F1-03 e PDI cap. 4).
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Modelagem formal é onde a "modelagem-como-governança" de @alvesschwaninger2025 ganha tração. O modelo é construído não para *prever*, mas para funcionar como **órgão regulador adicional** — programa Conant-Ashby aplicado. A diferença prática entre modelo descritivo e modelo regulador está no critério de validação (cap. F3-04).
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Modele o ciclo logístico ($\dot{N} = rN(1-N/K)$) em PySD. Compare três métodos de integração com $\Delta t$ variando. Em linguagem cibernética: qual o erro tolerável para que o modelo funcione como regulador?
+
+::: {.callout-tip}
+Para Joana: modelagem espectral do calendário acadêmico (picos semestrais) revela função de transferência do sistema-curso. Que KPIs de S3 da pró-reitoria respondem a esses modos?
+:::

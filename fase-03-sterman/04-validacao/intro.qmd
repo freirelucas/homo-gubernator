@@ -5,21 +5,40 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 16). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Quando um modelo SD é "bom o suficiente"? @sterman2000 (cap. 21) responde com taxonomia em duas frentes: testes **estruturais** (independem do comportamento simulado) e testes **comportamentais** (comparam saída a dados).
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Testes estruturais
+
+- **Verificação de limites**: o modelo se comporta razoavelmente em condições extremas (estoque nulo, fluxo infinito)?
+- **Verificação dimensional**: unidades são consistentes em toda equação?
+- **Robustez a parâmetros**: pequenas variações causam grandes saltos?
+- **Adequação às fronteiras**: variáveis críticas são endógenas, não exógenas?
+
+## Testes comportamentais
+
+- **Replicação histórica**: modelo reproduz dados passados?
+- **Robustez a perturbações**: padrões qualitativos sobrevivem a ruído nos parâmetros?
+- **Sensibilidade**: que parâmetros mais afetam saídas relevantes?
+- **Família de modos**: o modelo gera os quatro modos canônicos do sistema observado?
+
+## Crítica à tradição preditiva
+
+@alvesschwaninger2025 e a apresentação ASC 2024 de Juliana enfatizam: validação para governança não é validação preditiva. **O modelo é bom se ampliou $H(R)$ do tomador de decisão**, não se previu o futuro. Esta é leitura distinta da tradição Sterman — destacada por Espejo na mesa-redonda subsequente — e abre espaço para validação por critérios cibernéticos: o modelo aumenta variedade requisita do regulador? aumenta horizonte de S4? expõe lacunas em S2 antes invisíveis?
+
+## Métricas quantitativas
+
+Quando comparação numérica é apropriada: MSE, RMSE, MAPE, Theil's $U$. Para sistemas onde "padrão" importa mais que valor exato: comparação de modos via análise espectral.
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Validação em VSM tem dupla camada: (i) o modelo é internamente consistente (testes Sterman); (ii) o modelo amplia variedade do regulador real (testes Conant-Ashby). Ambas as camadas são necessárias — a primeira garante que o modelo não é absurdo; a segunda garante que ele é útil.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Para um modelo SD próprio (escolha um da literatura ou construa simples): aplique três testes estruturais e dois comportamentais. Em linguagem cibernética: o modelo amplia $H(R)$? De quem?
+
+::: {.callout-tip}
+Para Joana: validar modelo SD da coordenação de curso (replicação histórica de matrícula 2010–2024) é estruturalmente análogo a validar JPEG por PSNR. Use as duas métricas em paralelo.
+:::

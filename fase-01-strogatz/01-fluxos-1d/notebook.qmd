@@ -5,11 +5,104 @@ execute:
   eval: false
 ---
 
-```python
-# placeholder: ativar via subagent notebook-builder
-# 1. carregar matplotlibrc
-# 2. integrar dN/dt = r N (1 - N/K) via solve_ivp
-# 3. plotar 5 trajetórias com condições iniciais distintas
-# 4. plotar retrato de fase 1D (eixo x, vetor f(x))
-# 5. interpretar
+::: {.callout-note}
+Notebook executável após registro do kernel localmente: `pip install -r requirements.txt && python -m ipykernel install --user --name python3`. Para ativar a execução também na CI, remova `eval: false` do header.
+:::
+
+## Setup
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+# Paleta Cybersyn-Cerrado (definida em styles/matplotlibrc)
+laranja_queimado = "#D45A1A"
+azul_rio        = "#3F6B85"
+ocre            = "#E8A33D"
+azul_petroleo   = "#1F3A4D"
+grafite         = "#1A1A1A"
 ```
+
+## Modelo logístico (Verhulst)
+
+$\dot{N} = rN(1 - N/K)$, com pontos fixos $N=0$ (instável) e $N=K$ (estável).
+
+```{python}
+def logistico(t, N, r=0.5, K=100.0):
+    return r * N * (1 - N / K)
+
+r, K = 0.5, 100.0
+t_span = (0, 30)
+t_eval = np.linspace(*t_span, 400)
+condicoes_iniciais = [1, 5, 20, 80, 150]
+cores = [laranja_queimado, ocre, azul_rio, azul_petroleo, grafite]
+
+fig, ax = plt.subplots(figsize=(8, 5))
+for N0, c in zip(condicoes_iniciais, cores):
+    sol = solve_ivp(logistico, t_span, [N0], t_eval=t_eval,
+                    args=(r, K), rtol=1e-8)
+    ax.plot(sol.t, sol.y[0], color=c, lw=2, label=f"$N(0)={N0}$")
+
+ax.axhline(K, color=grafite, ls="--", alpha=0.5, label=f"$N^*=K={K:.0f}$")
+ax.axhline(0, color=grafite, ls=":", alpha=0.5, label="$N^*=0$")
+ax.set_xlabel("$t$")
+ax.set_ylabel("$N(t)$")
+ax.set_title("Logístico — convergência para $N=K$ a partir de $(0,\\infty)$")
+ax.legend(loc="lower right", frameon=False)
+fig.tight_layout()
+plt.show()
+```
+
+## Retrato de fase 1D
+
+```{python}
+N_grid = np.linspace(-5, 130, 25)
+f_vals = logistico(0, N_grid, r, K)
+
+fig, ax = plt.subplots(figsize=(8, 2.5))
+ax.axhline(0, color=grafite, lw=0.5)
+
+for N, fv in zip(N_grid, f_vals):
+    if abs(fv) < 1e-3:
+        continue
+    sgn = np.sign(fv)
+    ax.annotate("", xy=(N + sgn * 4, 0), xytext=(N, 0),
+                arrowprops=dict(arrowstyle="->",
+                                color=laranja_queimado if sgn > 0 else azul_rio,
+                                lw=1.5))
+
+ax.plot(0, 0, "o", color="white", mec=grafite, ms=10, zorder=5,
+        label="$N^*=0$ (instável)")
+ax.plot(K, 0, "o", color=azul_petroleo, ms=10, zorder=5,
+        label=f"$N^*=K$ (estável)")
+ax.set_xlim(-10, 130); ax.set_ylim(-0.5, 0.5); ax.set_yticks([])
+ax.set_xlabel("$N$")
+ax.set_title("Retrato de fase 1D — setas seguem o sinal de $f(N)$")
+ax.legend(loc="upper right", frameon=False, fontsize=9)
+fig.tight_layout()
+plt.show()
+```
+
+## Potencial $V(N)$
+
+```{python}
+def V(N, r=0.5, K=100.0):
+    return -r * N**2 / 2 + r * N**3 / (3 * K)
+
+N_v = np.linspace(-10, 130, 400)
+fig, ax = plt.subplots(figsize=(8, 4))
+ax.plot(N_v, V(N_v, r, K), color=azul_petroleo, lw=2)
+ax.axvline(0, color=grafite, ls=":",  alpha=0.5)
+ax.axvline(K, color=grafite, ls="--", alpha=0.5)
+ax.scatter([0, K], [V(0, r, K), V(K, r, K)],
+           color=[laranja_queimado, ocre], s=80, zorder=5)
+ax.set_xlabel("$N$"); ax.set_ylabel("$V(N)$")
+ax.set_title("Potencial — bola desliza descendo o gradiente até $N=K$")
+fig.tight_layout()
+plt.show()
+```
+
+## Interpretação cibernética
+
+A trajetória $N(t)$ para qualquer $N(0) \in (0, \infty)$ converge a $N^*=K$ com tempo característico $\tau=1/r$. **Regulador implícito**: o termo $-N/K$, proporcional ao excesso sobre a capacidade. **Variedade requisita** $H(R)$: cobre a semi-reta positiva inteira. Em VSM, $N=K$ é homeostase de S1; a bacia $(0,\infty)$ é a região operacional tolerada.

@@ -5,21 +5,41 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 3). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Saímos da reta. Em duas dimensões, $\dot{\mathbf{x}}=\mathbf{F}(\mathbf{x})$ com $\mathbf{x}=(x,y)$, abre-se a possibilidade de **trajetórias fechadas** — oscilações sustentadas. A monotonicidade que protegia a Fase 1 evapora. O retrato de fase passa a ser um plano com setas: o problema é classificar, qualitativamente, o que acontece próximo aos pontos fixos e entre eles.
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Linearização e jacobiana
+
+Próximo a um ponto fixo $\mathbf{x}^*$, a dinâmica é dominada pela **matriz jacobiana**
+
+$$
+J = \begin{pmatrix} \partial_x F_1 & \partial_y F_1 \\ \partial_x F_2 & \partial_y F_2 \end{pmatrix}\bigg|_{\mathbf{x}^*}.
+$$
+
+A análise de estabilidade reduz-se ao espectro de $J$: dois autovalores $\lambda_1, \lambda_2$ classificam o ponto fixo via traço $T = \lambda_1+\lambda_2$ e determinante $D = \lambda_1\lambda_2$. Diagrama $T$-$D$ canônico:
+
+- $D<0$: **sela** (autovalores reais de sinais opostos; instável).
+- $D>0$, $T<0$: estável; nó se $T^2 > 4D$, foco se $T^2 < 4D$.
+- $D>0$, $T>0$: instável; nó ou foco conforme idem.
+- $T=0$, $D>0$: centro (caso conservativo, persiste só sob estrutura especial).
+
+## Nulóclinas
+
+Curvas $\dot{x}=0$ e $\dot{y}=0$. Suas interseções são os pontos fixos; entre elas, o sinal das componentes do campo vetor é constante, o que permite esboçar o retrato à mão sem integrar. Nulóclinas são o instrumento canônico de modelos ecológicos (Lotka-Volterra) e farmacológicos.
+
+## Sistemas conservativos vs. dissipativos
+
+Um sistema é **conservativo** quando existe função $H(\mathbf{x})$ constante ao longo das trajetórias ($\dot{H}=0$). Centros aparecem genericamente em conservativos. Sistemas **dissipativos** ($\nabla\cdot\mathbf{F} < 0$ em média) têm contração de áreas no espaço de fase — atratores aparecem genericamente. A distinção é cibernética: sistema conservativo não tem regulador embutido (variedade não é absorvida); dissipativo absorve.
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Em VSM, S2 (antioscilação) é a função que aparece exatamente quando o espaço de estados ganha dimensão suficiente para oscilar. A passagem de F1-01 para F1-03 espelha a passagem de S1 isolado para S1 acoplado: cada operação isolada é monótona; o conjunto delas, sem S2, oscila.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Para o sistema $\dot{x} = -x + y$, $\dot{y} = x - y - y^3$: localize pontos fixos, calcule a jacobiana em cada um, classifique, esboce nulóclinas e retrato de fase. Em linguagem cibernética: o sistema é conservativo ou dissipativo? Que função VSM ele exemplifica?
+
+::: {.callout-tip}
+Para Joana: modele em 2D a dinâmica conjunta de *engajamento* (acessos à plataforma) e *desempenho* (nota corrente) de coorte UAB-UNITINS. As nulóclinas correspondem a quais políticas de monitoria?
+:::

@@ -5,21 +5,34 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 8). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Dada uma cadeia $(P, S)$, existe distribuição $\pi$ sobre $S$ que é **invariante** sob $P$? Se sim, é única? E a distribuição inicial $\mu_0$ converge a $\pi$ em $n \to \infty$? Estas três perguntas — existência, unicidade, convergência — definem o programa do capítulo. Resposta de @haggstrom2002: para cadeias finitas irredutíveis e aperiódicas, sim, sim e sim.
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Distribuição estacionária
+
+$\pi$ é estacionária se $\pi P = \pi$ e $\sum_i \pi_i = 1$. Em palavras: aplicar mais uma transição não muda a distribuição. Computacionalmente, $\pi$ é o autovetor à esquerda de $P$ com autovalor 1, normalizado.
+
+## Teorema de convergência
+
+**Teorema** (@haggstrom2002 cap. 5). Se $P$ é irredutível e aperiódica em conjunto finito, então existe única $\pi$ estacionária e, para qualquer $\mu_0$, $\mu_n \to \pi$ em variação total à medida que $n \to \infty$. A convergência é geométrica: $\|\mu_n - \pi\|_{\text{TV}} \leq C \rho^n$ para algum $\rho < 1$.
+
+## Tempo de mistura
+
+$$
+t_{\text{mix}}(\varepsilon) := \min\{n \geq 0 : \max_i \|P^n(i,\cdot) - \pi\|_{\text{TV}} \leq \varepsilon\}.
+$$
+
+É a métrica operacional do "quanto tempo o sistema leva para esquecer a condição inicial". Em VSM, $t_{\text{mix}}$ é o tempo característico de S2 — a função antioscilatória só pode operar em escala $\geq t_{\text{mix}}$.
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+A distribuição estacionária $\pi$ é, em linguagem ashbyana, a **distribuição operacional do regulador**: o conjunto de respostas que o sistema fornece quando deixado em equilíbrio. @alves2025variety propõe que a engenharia da variedade busca, no longo prazo, $\pi$ alvo — não estado-objetivo único, mas distribuição que cobre a variedade dos distúrbios. $\pi$ é meta de design, não $x^*$.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Para $P = \begin{pmatrix} 0.7 & 0.3 \\ 0.4 & 0.6 \end{pmatrix}$: encontre $\pi$ analiticamente. Estime $t_{\text{mix}}(0.01)$ por simulação. Em linguagem cibernética: $\pi$ é configuração desejável ou apenas equilíbrio efetivo?
+
+::: {.callout-tip}
+Para Joana: a política de cotas UNITINS deveria, no longo prazo, levar a $\pi$ específica de alunado por origem socioeconômica. O desvio entre $\pi$ teórico (objetivo) e estimador empírico (histórico) é diagnóstico de quê?
+:::

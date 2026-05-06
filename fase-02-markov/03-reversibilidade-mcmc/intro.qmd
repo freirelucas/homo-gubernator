@@ -5,21 +5,42 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 9). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Dada distribuição-alvo $\pi$ que se quer amostrar, mas que é difícil de tratar analiticamente — como construir uma cadeia de Markov cuja estacionária seja exatamente $\pi$? A resposta é a tradição **MCMC** (Markov Chain Monte Carlo), que data dos trabalhos de @metropolis1953 e @hastings1970, e ganha formulação geral em @geman1984.
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Balanço detalhado
+
+Uma cadeia satisfaz **balanço detalhado** com respeito a $\pi$ se
+
+$$
+\pi_i P_{ij} = \pi_j P_{ji}, \qquad \forall i,j.
+$$
+
+Condição **suficiente** para $\pi$ ser estacionária: somando em $i$ ambos os lados, recupera-se $\pi P = \pi$. Cadeias que satisfazem balanço detalhado são chamadas **reversíveis**.
+
+## Algoritmo de Metropolis-Hastings
+
+Dada distribuição-alvo $\pi$ (até constante de normalização) e distribuição de proposta $q(\cdot \mid i)$:
+
+1. No estado $i$, propor $j \sim q(\cdot \mid i)$.
+2. Aceitar com probabilidade $\alpha = \min\!\left(1, \frac{\pi_j q(i \mid j)}{\pi_i q(j \mid i)}\right)$.
+3. Caso contrário, ficar em $i$.
+
+Construção garante balanço detalhado. Particularmente útil quando $\pi$ é conhecida só até constante (caso típico em estatística bayesiana).
+
+## Gibbs sampler (@geman1984)
+
+Em distribuições multivariadas $\pi(\mathbf{x})$, atualiza-se uma coordenada de cada vez amostrando da condicional $\pi(x_k \mid x_{-k})$. É caso especial de Metropolis-Hastings com aceitação 1. Aplicação canônica: restauração bayesiana de imagens — um dos primeiros casos de uso de larga escala, e a ponte direta com PDI (`carta-luiz-eduardo.qmd` deste capítulo).
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Reversibilidade é, em linguagem institucional, **transparência decisória**: cada decisão pode ser rastreada de volta ao seu fundamento, com a mesma probabilidade que foi tomada. Juliana defende isso explicitamente em fóruns Metaphorum. MCMC é, em linguagem ashbyana, **amplificação computacional de variedade do regulador** — onde antes o regulador limitava-se à variedade analítica que conseguia tratar, MCMC permite-lhe alcançar variedade arbitrária da $\pi$ alvo.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Implemente Metropolis-Hastings para amostrar $\pi(x) \propto e^{-x^2/2}\cdot(1 + 0.5\cos(3x))$ em $x \in \mathbb{R}$ (não-normalizada). Compare histograma com $\pi$ via numerical integration. Estime taxa de aceitação. Em linguagem cibernética: que função VSM o algoritmo executa?
+
+::: {.callout-tip}
+Para Joana: usar MCMC para estimar distribuição posterior de risco-de-evasão condicional a polo, modalidade e perfil — paralelo direto com Geman & Geman 1984.
+:::

@@ -5,21 +5,32 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 14). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Em F3-01 vimos que estoques e fluxos podem formar laços. Aqui o foco é: como a topologia dos laços (R vs B, com ou sem atraso) determina o comportamento dinâmico? E como diagnosticar a estrutura de laços a partir do comportamento observado?
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Laços R e B isolados
+
+R isolado: crescimento exponencial puro, $\dot{S} = aS$, $a>0$. B isolado: decaimento, $\dot{S} = -aS$. Realidade: sistemas têm múltiplos laços coexistindo, R e B se alternam em dominância conforme regime.
+
+## Atraso e bullwhip
+
+Sterman dedica cap. 16 ao **bullwhip effect**: amplificação progressiva da variabilidade dos pedidos a montante na cadeia de suprimentos, originada de atrasos e correções de estoque. Modelagem mínima: $\dot{S} = a(S^* - S)$ vs. $\dot{S} = a(S^*(t-\tau) - S(t-\tau))$ — atraso $\tau$ destabiliza laço B.
+
+Em sistemas institucionais, bullwhip aparece como amplificação de pequenas perturbações na demanda original (matrículas) em grandes oscilações orçamentárias três-quatro semestres adiante.
+
+## Diagnóstico de loops ausentes
+
+Diagnóstico canônico SD: comportamento observado **inconsistente** com qualquer combinação dos quatro modos sugere laço ausente. @alves2020srbs aplica a heurística no caso piscicultura tocantinense — a estagnação observada (entradas crescem, saídas estagnam) é assinatura comportamental de sistema *sem* laço B funcionando, ou de S2 ausente em VSM.
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Laço de feedback é a forma matemática elementar do canal de comunicação que liga subsistemas em VSM. Identificar quais laços existem e quais estão ausentes é o primeiro passo de diagnóstico cibernético. Sterman fornece o instrumental quantitativo; Beer fornece a taxonomia funcional.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Para o sistema de produção-estoque com atraso $\tau$: simule resposta a degrau na demanda. Identifique bullwhip. Como $\tau$ afeta amplitude da oscilação? Em linguagem cibernética: que função VSM precisaria amplificar-se para atenuar bullwhip?
+
+::: {.callout-tip}
+Para Joana: identificar laço R "pesquisa atrai bons alunos → publicação cresce → reputação atrai mais" e laço B "erosão por evasão" é primeiro passo de diagnóstico SD do sistema-curso UNIFAL ou UNITINS.
+:::

@@ -5,21 +5,34 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 6). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Saímos para 3D. Aqui aparece o último fenômeno qualitativo da Fase 1: **caos determinístico** — sensibilidade exponencial às condições iniciais com trajetórias confinadas a um conjunto invariante de medida zero, o **atrator estranho**. O sistema é determinístico (não há aleatoriedade nas equações), mas previsibilidade prática se perde em escala de tempo $\sim 1/\lambda$, onde $\lambda$ é o expoente de Lyapunov dominante.
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Sistema de Lorenz
+
+$$
+\dot{x} = \sigma(y-x), \quad \dot{y} = x(\rho-z) - y, \quad \dot{z} = xy - \beta z.
+$$
+
+Parâmetros canônicos: $\sigma=10$, $\beta=8/3$, $\rho=28$. Origem: modelo simplificado de convecção atmosférica (@strogatz2018 cap. 9). Para $\rho < 1$: origem estável globalmente. Para $1 < \rho < \rho_c \approx 24.74$: dois pontos fixos não-triviais estáveis. Para $\rho > \rho_c$: caos — atrator estranho com a célebre forma de borboleta.
+
+## Sensibilidade e expoentes de Lyapunov
+
+Duas trajetórias com condições iniciais separadas por $\delta_0$ divergem como $\delta(t) \sim \delta_0 e^{\lambda t}$ no tempo curto. $\lambda > 0$ é a definição operacional de caos. Para Lorenz canônico, $\lambda \approx 0.9$. Tempo de previsibilidade prática: $\sim 1/\lambda \approx 1$ unidade de tempo.
+
+## Estrutura fractal
+
+O atrator de Lorenz tem dimensão de Hausdorff não-inteira ($\approx 2.06$): nem superfície (2D) nem volume (3D). Estrutura auto-similar em escala. **Conjunto de medida zero no espaço de fase, mas com volume de bacia positivo** — é onde quase todas as trajetórias acabam, sem ocupar espaço.
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Caos é o regime onde a Lei de Ashby falha de modo curioso: a variedade $H(D)$ instantânea pode ser pequena, mas a variedade *integrada no tempo* explode exponencialmente. Reguladores que operam em banda passante limitada são derrotados por sensibilidade às condições iniciais. A apresentação ASC 2024 de @alves2022 sobre o nexo Água-Energia-Alimento é, formalmente, uma fala sobre exatamente esse tipo de regime — sistemas dissipativos de três variáveis acopladas onde caos é genérico.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Para o sistema de Lorenz com parâmetros canônicos: simule duas trajetórias com condições iniciais $\mathbf{x}_0$ e $\mathbf{x}_0 + (10^{-6}, 0, 0)$. Plote $\|\mathbf{x}_1(t) - \mathbf{x}_2(t)\|$ em escala log-linear. Estime $\lambda$. Em linguagem cibernética: que tipo de regulador funcionaria, em princípio, neste sistema?
+
+::: {.callout-tip}
+Para Joana: nas séries históricas de evasão por polo UAB-UNITINS, estime expoente de Lyapunov empírico. A sensibilidade ao perfil socioeconômico inicial da coorte é maior do que a tradição da pesquisa em educação supõe?
+:::

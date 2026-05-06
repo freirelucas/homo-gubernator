@@ -5,21 +5,49 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 13). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Dinâmica de sistemas (SD), tradição inaugurada por @forrester1961 e consolidada por @sterman2000, oferece linguagem operacional para modelar sistemas com **estoques**, **fluxos** e **laços de feedback**. A pergunta operacional: dado um sistema com múltiplas variáveis acumulando ao longo do tempo, sob laços de causalidade circular, quais são os modos de comportamento possíveis?
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Estoques e fluxos
+
+Variável de **estoque** $S$: nível com unidade [unidades]. Variável de **fluxo** $\phi$: taxa, [unidades/tempo]. A relação fundamental:
+
+$$
+\frac{dS}{dt} = \phi_{\text{in}} - \phi_{\text{out}}.
+$$
+
+Estoques têm memória; fluxos não. Em integração numérica via Euler explícito,
+
+$$
+S(t+\Delta t) = S(t) + \Delta t \cdot [\phi_{\text{in}}(t) - \phi_{\text{out}}(t)],
+$$
+
+com erro local $O(\Delta t^2)$.
+
+## Quatro modos canônicos
+
+@sterman2000 identifica quatro padrões qualitativos:
+
+1. **Crescimento exponencial** (laço R isolado).
+2. **Decaimento exponencial** (laço B isolado).
+3. **Crescimento sigmóide** (R domina cedo, B domina tarde).
+4. **Oscilação** (B com atraso).
+
+Combinações desses quatro modos cobrem o repertório fenomenológico observado em sistemas reais.
+
+## Diagrama causal (CLD)
+
+Grafo dirigido com polaridades + e − e identificação de laços R (reforçador) e B (balanceador). Polaridade negativa: causa e efeito variam em sentidos opostos. Laço R: número par de polaridades negativas (zero conta). Laço B: ímpar.
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Em VSM, F3 fornece a **álgebra de S3**: alocação aqui-agora envolve fluxos entre estoques (recursos, atenção, prazo), com atrasos que geram bullwhip institucional (cap. F3-02). A tese de @alves2022 constrói o balanço hídrico da BHRF como sistema de estoques (água armazenada, demanda, outorgas) com fluxos parametrizados pela política — apresentação canônica SD da governança.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Modele dN/dt = bN(1 − N/K) − dN como sistema de estoque-fluxo. Identifique laços R e B. Esboce CLD. Em linguagem cibernética: qual estoque é S1, qual fluxo é controlado por S3?
+
+::: {.callout-tip}
+Para Joana: o pipeline UNIFAL vestibular → matrícula → integralização → diplomação é cadeia de estoques-fluxos. Compare com UAB-UNITINS — quais atrasos são sistematicamente maiores?
+:::

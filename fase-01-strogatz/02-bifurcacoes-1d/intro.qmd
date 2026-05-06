@@ -5,21 +5,34 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 2). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Em F1-01 fixamos a função $f$ e perguntamos pelo comportamento de longo prazo. Agora introduzimos um **parâmetro** $r$ e perguntamos o que acontece à estrutura qualitativa de $\dot{x}=f(x,r)$ quando $r$ varia. A resposta de @strogatz2018 (cap. 3) é: na maior parte do tempo, nada qualitativo muda. Mas em **valores críticos** $r_c$ a estrutura colapsa — pontos fixos colidem, criam-se pares novos, ou trocam estabilidade. Esses são os fenômenos de **bifurcação**.
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+A taxonomia de Strogatz para 1D é exígua e exaustiva: três formas canônicas (sela-nó, transcrítica, tridente, esta com variantes super- e subcrítica) cobrem todos os comportamentos genéricos. Toda bifurcação 1D é equivalente, perto do ponto crítico, a uma dessas formas após mudança de coordenadas.
+
+## Sela-nó
+
+Forma canônica $\dot{x} = r + x^2$. Para $r<0$: dois pontos fixos $x^* = \pm\sqrt{-r}$, um estável e um instável. Em $r=0$: colidem em zero. Para $r>0$: nenhum ponto fixo real, sistema diverge. **A sela-nó é a forma matemática mais simples do conceito de "ruptura institucional"**: pequena variação no parâmetro destrói a estabilidade que existia. Em VSM (F4-01), é o cenário típico de S1 sem S3 adequado — opera estável até o orçamento descer ao limiar, então perde o ponto fixo e precisa reconfigurar-se.
+
+## Transcrítica
+
+$\dot{x} = rx - x^2$. Pontos fixos $x^*=0$ e $x^*=r$, que **trocam estabilidade** ao passar por $r=0$. Em ecologia, modela invasão: a espécie residente cede lugar à invasora à medida que a adaptabilidade ultrapassa o limiar. Em educação superior, modela transição entre regimes de financiamento: o ponto fixo "operação subsidiada" troca estabilidade com "autossustentada via mensalidade" quando a proporção de bolsas cai abaixo do crítico.
+
+## Tridente (pitchfork)
+
+Supercrítica: $\dot{x} = rx - x^3$. Para $r \leq 0$: único ponto fixo estável em zero. Para $r>0$: zero torna-se instável e nascem dois ramos simétricos estáveis $x^*=\pm\sqrt{r}$. **A simetria $x\to-x$ é preservada pela equação mas quebrada pela trajetória escolhida** — o sistema "decide" um lado. É a quebra espontânea de simetria, central em física estatística.
+
+Subcrítica: $\dot{x} = rx + x^3$ — ramos novos instáveis; aparece histerese se houver termo de quinta ordem estabilizador.
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Em VSM, S5 (política/identidade) é, no fundo, a função que **escolhe o ponto fixo** entre alternativas equivalentes. Em uma tridente supercrítica, S5 decide qual dos dois ramos simétricos o sistema seguirá depois de cruzar $r=0$. A decisão não é forçada pela dinâmica — é, literalmente, política. @alves2025variety chama isso de engenharia da variedade ativa: configurar o sistema para que, ao cruzar a bifurcação, o ramo desejado seja o atrator natural. Não é controle; é desenho de bacias.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Para $\dot{x} = rx - x^3$: identifique pontos fixos em $r<0$, $r=0$, $r>0$; classifique; esboce o diagrama de bifurcação $(r, x^*)$; calcule $V(x)$ para três valores de $r$. Em linguagem cibernética: que configuração institucional sofre tridente supercrítica quando o parâmetro de controle cresce?
+
+::: {.callout-tip}
+Para Joana (`personagem-narrativo.qmd`): a transição "presencial → híbrido → EaD" em uma coordenação de curso pode ser modelada como sequência de bifurcações? Se sim, quais e em que parâmetros?
+:::

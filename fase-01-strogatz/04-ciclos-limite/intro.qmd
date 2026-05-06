@@ -5,21 +5,34 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 4). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Em sistemas planares dissipativos, oscilações sustentadas só persistem como **ciclos-limite**: trajetórias fechadas isoladas (não há outras curvas fechadas em uma vizinhança). O ciclo-limite é a forma matemática rigorosa do "regime estacionário oscilatório" — coração batendo, oscilador eletrônico, ciclo predador-presa estabilizado.
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Existência: Poincaré-Bendixson
+
+O **Teorema de Poincaré-Bendixson** garante: se uma trajetória de um sistema planar fica confinada a uma região compacta sem pontos fixos, então ela tende a um ciclo-limite. É o instrumento principal para *demonstrar* que oscilação existe, sem precisar resolver as equações. Em prática, constrói-se uma "região de aprisionamento" — anular, com campo apontando para dentro em ambas as bordas — e a conclusão é automática.
+
+## Modelo canônico: Van der Pol
+
+$$
+\ddot{x} - \mu(1-x^2)\dot{x} + x = 0, \qquad \mu > 0.
+$$
+
+Para $\mu$ pequeno: ciclo-limite quase sinusoidal (sistema linearmente amortecido com perturbação). Para $\mu$ grande: ciclo de relaxação (acumular-disparar). Modelo canônico de oscilador eletrônico, batimento cardíaco, e — em regime social — ciclos de protesto-repressão.
+
+## Modelo predador-presa
+
+Lotka-Volterra clássico tem centros, não ciclos-limite (é conservativo). Variantes com saturação (Holling tipo II) e auto-limitação geram ciclos-limite genuínos. Distinção importante: oscilação como artefato do modelo conservativo vs. oscilação como atrator robusto.
 
 ## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+
+Ciclo-limite é a forma matemática do **ciclo institucional**: orçamento aprovado → execução → relatório → novo orçamento; ou matrícula → curso → trancamento → reativação. A tese de @alves2022 diagnostica o ciclo recorrente outorga-crise-negociação-nova-outorga na BHRF como ciclo-limite institucional: o sistema retorna ao mesmo padrão depois de cada perturbação porque S2 e S4 estão ausentes. Sem antioscilação e sem inteligência de futuro, o ciclo é o atrator natural.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Para Van der Pol com $\mu=1$: prove existência de ciclo-limite via Poincaré-Bendixson construindo uma região anular de aprisionamento. Esboce o ciclo. Em linguagem cibernética: qual a "função" do ciclo (S2 efetivo, S4 ausente, ou outra coisa)?
+
+::: {.callout-tip}
+Para Joana: o calendário ano-letivo brasileiro é candidato a ciclo-limite institucional. Quais perturbações (greve, pandemia, mudança de gestão) deslocam transientemente o sistema-curso e quais o realimentam de volta ao ciclo?
+:::

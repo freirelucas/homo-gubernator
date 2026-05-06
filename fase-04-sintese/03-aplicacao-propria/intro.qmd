@@ -5,21 +5,40 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-::: {.callout-warning}
-Capítulo em estado de gabarito (semana 20). Estrutura de seções abaixo. Para expandir até ~2.500–3.000 palavras, ative o subagent `.claude/agents/strogatz-chapter.md` (ou variante por fase).
-:::
-
 ## A pergunta operacional
-[Em um parágrafo: a pergunta que o capítulo responde, na voz densa, sem manualese.]
 
-## Formalização
-[Definições centrais com LaTeX. Equações importantes numeradas via `{#eq-rotulo}`.]
+Capítulo final. Tudo se converge aqui: as três fases técnicas (Strogatz, Markov, Sterman) viram instrumental para diagnóstico VSM concreto de uma coordenação de curso de graduação à escolha do(a) leitor(a). A persona-andaime Joana usa coordenação de Sistemas de Informação UNITINS-Palmas ou Computação UNIFAL-MG; quem lê pode usar a própria experiência institucional, ou seguir Joana como caso.
 
-## Exemplos canônicos
-[Mínimo três: pelo menos um físico/biológico e um institucional.]
+## Roteiro
 
-## Conexão com Ashby/Beer
-[Identificar o análogo cibernético do conceito do capítulo dentro do VSM.]
+1. **Definir o sistema** (recursão escolhida, fronteiras, função-fim).
+2. **Identificar os cinco subsistemas** S1–S5 em recursão única.
+3. **Aplicar fase técnica relevante** a cada subsistema:
+   - S1: Strogatz (ponto fixo de operação, bacia, estabilidade).
+   - S2: Markov (cadeia de estados de coordenação, distribuição estacionária).
+   - S3: Sterman (estoques, fluxos, atrasos, bullwhip).
+   - S4: análise prospectiva (Lyapunov, Fourier, modelagem espectral).
+   - S5: identidade institucional (regimentos, missão, identidade declarada vs. observada).
+4. **Calcular variedades** $H(D)$, $H(R)$, $H(O)$ qualitativamente.
+5. **Identificar ausências sistemáticas** (tipicamente S2 e S4).
+6. **Propor intervenção** do tipo atenuação/ampliação/alargamento.
+
+## Critérios de qualidade
+
+@alves2022 oferece o standard duplo: rigor VSM (recursão explícita, identificação nominal das funções, proposta de redesenho); inserção dialógica em literatura internacional revisada por pares (ASC, Metaphorum, *Constructivist Foundations*). O diagnóstico bom é o que pode ser submetido a essa comunidade.
+
+## Comunicação ao colegiado
+
+Saída final do projeto: documento de diagnóstico (~5.000 palavras) + apresentação ao colegiado interinstitucional (UNIFAL ou UNITINS). Estrutura sugerida: contexto → recursão escolhida → diagnóstico VSM → variedades → intervenção → roadmap. Tom: rigoroso mas acessível ao leitor não-cibernético.
+
+## Conexão com a pesquisa-cenário
+
+Joana entrega a comunicação como capítulo da tese. Quem segue o curso entrega a comunicação como produto final do projeto pessoal. O standard duplo é o mesmo.
 
 ## Pergunta de verificação
-[Questão única que o aluno responderá antes de avançar.]
+
+Escolha um sistema concreto (curso, coordenação, instituição) e responda em um parágrafo: (i) recursão; (ii) S1-S5 presentes/ausentes; (iii) variedades qualitativas; (iv) intervenção proposta; (v) por que esta intervenção é Conant-Ashby (modelo-como-regulador) e não apenas modelo-descrição.
+
+::: {.callout-important}
+Este capítulo não tem solução pronta. É o lugar onde o curso entrega o aparato e o(a) aluno(a) entrega a aplicação própria.
+:::
