@@ -1,7 +1,7 @@
 ---
 title: "ViableOS — o curso como sistema viável"
 subtitle: "Metatexto: a auto-aplicação do VSM ao próprio currículo"
-bibliography: bibliografia.bib
+bibliography: ../bibliografia.bib
 format: html
 ---
 
