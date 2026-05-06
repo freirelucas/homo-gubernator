@@ -4,22 +4,6 @@ project:
 website:
   title: "Homo Gubernator"
   description: "Curso de auto-estudo de 24 semanas em cibernética organizacional aplicada."
-  site-url: "https://freirelucas.github.io/homo-gubernator/"
-  repo-url: "https://github.com/freirelucas/homo-gubernator"
-  open-graph: true
-  twitter-card: true
-  page-navigation: true
-  back-to-top-navigation: true
-  reader-mode: true
-  page-footer:
-    background: "#1F3A4D"
-    border: false
-    left: |
-      **Homo Gubernator** — Cibernética aplicada à educação pública. Construído com [Quarto](https://quarto.org/) e [Claude Code](https://claude.com/claude-code).
-    center: |
-      [Como estudar](como-estudar.qmd) · [ViableOS](metatexto/viable-os.qmd) · [Plano](plano/plano-estudos.qmd) · [Personagem](personagem-narrativo.qmd) · [Recursos](recursos/index.qmd)
-    right: |
-      [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · [GitHub](https://github.com/freirelucas/homo-gubernator)
   navbar:
     background: "#1F3A4D"
     foreground: "#FAF8F2"

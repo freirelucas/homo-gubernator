@@ -1,664 +1,234 @@
 /*-- scss:defaults --*/
 
-// =============================================================================
-// PALETA — Cybersyn-Cerrado
-// =============================================================================
+// Paleta Cybersyn-Cerrado
 $laranja-queimado: #D45A1A;
 $ocre:             #E8A33D;
 $azul-rio:         #3F6B85;
 $azul-petroleo:    #1F3A4D;
 $grafite:          #1A1A1A;
 $bone:             #FAF8F2;
-$areia:            #F5EFE1;
 $papel:            #FBF6E9;
 
-// =============================================================================
-// MAPEAMENTO BOOTSTRAP
-// =============================================================================
 $primary:          $laranja-queimado;
 $secondary:        $azul-rio;
-$success:          $azul-petroleo;
-$warning:          $ocre;
-$danger:           #B43E0F;
-$info:             $azul-rio;
-
 $body-bg:          $bone;
 $body-color:       $grafite;
 $link-color:       $laranja-queimado;
 $link-hover-color: $azul-petroleo;
 
-// =============================================================================
-// TIPOGRAFIA — sistema editorial para leitura longa
-// =============================================================================
-// Body em SERIF (Source Serif Pro) para fluência em prosa densa
-$font-family-serif:      "Source Serif Pro", "Source Serif 4", Georgia, serif;
-// Sans-serif para UI, navbar, sidebar, captions
 $font-family-sans-serif: "Inter", system-ui, -apple-system, sans-serif;
-// Display sans para headings com personalidade
-$font-family-display:    "Space Grotesk", "Inter", system-ui, sans-serif;
-// Monoespaçada para código e LaTeX inline
-$font-family-monospace:  "JuliaMono", "Fira Code", "JetBrains Mono", monospace;
+$font-family-monospace:  "JuliaMono", "Fira Code", monospace;
+$font-family-base:       "Source Serif Pro", Georgia, serif;
 
-// Body usa SERIF
-$font-family-base:       $font-family-serif;
-
-$font-size-base:         1.0625rem;   // 17px
-$line-height-base:       1.7;         // generoso para leitura longa
-$paragraph-margin-bottom: 1.1em;
-
-// Headings em DISPLAY
-$headings-font-family:   $font-family-display;
-$headings-font-weight:   600;
-$headings-line-height:   1.25;
+$headings-font-family:   "Space Grotesk", "Inter", sans-serif;
 $headings-color:         $azul-petroleo;
-$headings-margin-bottom: 0.6em;
-
-$h1-font-size:           2.4rem;
-$h2-font-size:           1.7rem;
-$h3-font-size:           1.3rem;
-$h4-font-size:           1.1rem;
-
-// =============================================================================
-// COMPONENTES
-// =============================================================================
-$navbar-bg:              $azul-petroleo;
-$navbar-fg:              $bone;
-
-$sidebar-bg:             $papel;
-$sidebar-fg:             $grafite;
-
-$code-color:             $azul-petroleo;
-$code-bg:                rgba($ocre, 0.10);
-
-$pre-bg:                 #FFFCF0;
-$pre-color:              $grafite;
-
-$border-radius:          6px;
-$border-radius-lg:       10px;
-
-// =============================================================================
-// RESPONSIVO
-// =============================================================================
-$content-padding-top:    1.5rem;
-$max-width-content:      720px;  // limite de largura de leitura
-
+$headings-font-weight:   600;
 
 /*-- scss:rules --*/
 
-// =============================================================================
-// CORPO E LEITURA
-// =============================================================================
 body {
-  font-feature-settings: "kern" 1, "liga" 1, "onum" 1;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
+  font-size: 17px;
 }
 
-main.content {
-  max-width: $max-width-content;
-  margin: 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-}
-
-// Parágrafos com espaçamento generoso
-p {
-  margin-bottom: 1.2em;
-}
-
-// Tipografia de listas mais respirável
-ul, ol {
-  margin-bottom: 1.4em;
-  li {
-    margin-bottom: 0.4em;
-    line-height: 1.65;
-  }
-}
-
-// Headings: respiração antes
+h1, h2, h3, h4 { letter-spacing: -0.01em; }
 h2 {
   margin-top: 2.5rem;
-  border-bottom: 1px solid rgba($azul-petroleo, 0.12);
+  border-bottom: 1px solid rgba(31, 58, 77, 0.12);
   padding-bottom: 0.4em;
 }
-h3 {
-  margin-top: 1.8rem;
-  color: $azul-rio;
-}
+h3 { color: $azul-rio; margin-top: 1.8rem; }
 
-// Strong em laranja-queimado (não preto pesado)
-strong, b {
-  color: $azul-petroleo;
-  font-weight: 600;
-}
+strong, b { color: $azul-petroleo; font-weight: 600; }
 
-// Itálico em corDoBody, não preto puro
-em, i {
-  color: $grafite;
-}
-
-// =============================================================================
-// LINKS
-// =============================================================================
+// Links
 a {
-  text-decoration: none;
   border-bottom: 1px solid rgba($laranja-queimado, 0.4);
-  transition: color 0.15s, border-color 0.15s;
-
-  &:hover {
-    border-bottom-color: $azul-petroleo;
-  }
+  text-decoration: none;
 }
+a:hover { border-bottom-color: $azul-petroleo; }
 
-// Links internos sem underline
-a.anchorjs-link, a.headerlink {
-  border-bottom: none;
-}
-
-// =============================================================================
-// NAVBAR
-// =============================================================================
+// Navbar
 .navbar {
   background-color: $azul-petroleo !important;
   border-bottom: 3px solid $laranja-queimado;
-  font-family: $font-family-sans-serif;
-
-  .navbar-brand {
-    font-family: $font-family-display;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    color: $bone !important;
-  }
-
-  .nav-link {
-    color: rgba($bone, 0.85) !important;
-    font-weight: 500;
-    font-size: 0.95rem;
-    border-bottom: none;
-    transition: color 0.15s;
-
-    &:hover, &.active {
-      color: $ocre !important;
-    }
-  }
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: $bone !important;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: $ocre !important;
 }
 
-// =============================================================================
-// SIDEBAR — semanas e estrutura do curso
-// =============================================================================
+// Sidebar
 .sidebar {
   background-color: $papel !important;
-  border-right: 1px solid rgba($azul-petroleo, 0.1);
-
-  .sidebar-title {
-    font-family: $font-family-display;
-    font-weight: 600;
-    color: $azul-petroleo;
-    letter-spacing: -0.01em;
-    border-bottom: 2px solid $laranja-queimado;
-    padding-bottom: 0.4em;
-  }
-
-  .sidebar-section .sidebar-section-item > .sidebar-link {
-    font-family: $font-family-sans-serif;
-    font-weight: 600;
-    color: $azul-petroleo;
-    text-transform: none;
-    font-size: 0.85rem;
-    letter-spacing: 0.01em;
-    border-bottom: none;
-  }
-
-  .sidebar-item {
-    .sidebar-link {
-      font-family: $font-family-sans-serif;
-      font-size: 0.92rem;
-      color: $grafite;
-      border-bottom: none;
-      padding: 0.35rem 0.6rem;
-      border-radius: 4px;
-      transition: background 0.12s, color 0.12s;
-
-      &:hover {
-        background: rgba($ocre, 0.18);
-        color: $azul-petroleo;
-      }
-
-      &.active {
-        background: $laranja-queimado;
-        color: $bone !important;
-        font-weight: 600;
-      }
-    }
-  }
 }
 
-// =============================================================================
-// CALLOUTS — cada um com personalidade visual distinta
-// =============================================================================
-.callout {
-  border-radius: $border-radius-lg;
-  border-left-width: 4px;
-  margin: 1.6em 0;
-  font-family: $font-family-sans-serif;
-  font-size: 0.96rem;
+// Callouts
+.callout-note    { border-left-color: $azul-rio !important; background: rgba(63, 107, 133, 0.06); }
+.callout-tip     { border-left-color: $ocre !important;     background: rgba(232, 163, 61, 0.10); }
+.callout-warning { border-left-color: $laranja-queimado !important; background: rgba(212, 90, 26, 0.07); }
+.callout-important { border-left-color: $azul-petroleo !important; background: rgba(31, 58, 77, 0.05); }
 
-  .callout-header {
-    font-family: $font-family-display;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-  }
-
-  .callout-body {
-    line-height: 1.6;
-    p { margin-bottom: 0.7em; }
-  }
-}
-
-.callout-note {
-  border-left-color: $azul-rio !important;
-  background: rgba($azul-rio, 0.06);
-  .callout-header { color: $azul-rio; }
-}
-
-.callout-tip {
-  border-left-color: $ocre !important;
-  background: rgba($ocre, 0.10);
-  .callout-header { color: darken($ocre, 18%); }
-}
-
-.callout-warning {
-  border-left-color: $laranja-queimado !important;
-  background: rgba($laranja-queimado, 0.07);
-  .callout-header { color: $laranja-queimado; }
-}
-
-.callout-important {
-  border-left-color: $azul-petroleo !important;
-  background: rgba($azul-petroleo, 0.05);
-  .callout-header { color: $azul-petroleo; }
-}
-
-.callout-caution {
-  border-left-color: #B43E0F !important;
-  background: rgba(#B43E0F, 0.07);
-}
-
-// =============================================================================
-// BLOCKQUOTE
-// =============================================================================
+// Blockquote
 blockquote {
   border-left: 4px solid $laranja-queimado;
   padding: 0.4em 1.2em;
-  margin: 1.4em 0;
-  background: rgba($ocre, 0.05);
+  background: rgba(232, 163, 61, 0.05);
   font-style: italic;
   color: $azul-petroleo;
-  font-size: 1.02em;
 }
 
-// =============================================================================
-// CÓDIGO
-// =============================================================================
+// Código
 code {
   color: $azul-petroleo;
-  background: rgba($ocre, 0.12);
+  background: rgba(232, 163, 61, 0.12);
   padding: 0.1em 0.4em;
   border-radius: 4px;
-  font-size: 0.92em;
-  font-family: $font-family-monospace;
 }
-
 pre {
   background: #FFFCF0;
-  border: 1px solid rgba($azul-petroleo, 0.12);
-  border-left: 4px solid $ocre;
-  border-radius: $border-radius;
+  border-left: 3px solid $ocre;
   padding: 1em 1.2em;
-  font-size: 0.9em;
-  line-height: 1.55;
-  overflow-x: auto;
-
-  code {
-    background: transparent;
-    padding: 0;
-    color: $grafite;
-  }
 }
 
-// =============================================================================
-// MATEMÁTICA — MathJax
-// =============================================================================
-.MathJax {
-  font-size: 1.02em !important;
+// Tabelas
+table { border-collapse: collapse; width: 100%; }
+table thead th {
+  background: $azul-petroleo;
+  color: $bone;
+  padding: 0.7em 1em;
 }
+table tbody tr { border-bottom: 1px solid rgba(31, 58, 77, 0.08); }
+table tbody tr:nth-child(even) { background: rgba(232, 163, 61, 0.04); }
+table td { padding: 0.6em 1em; }
 
-mjx-container[display="true"] {
-  margin: 1.2em 0 !important;
-  padding: 0.4em 0;
-}
-
-// =============================================================================
-// FIGURAS
-// =============================================================================
-figure, .figure {
-  margin: 2em 0;
-
-  img, svg {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: $border-radius;
-  }
-}
-
+// Figuras
 figcaption, .figure-caption {
-  font-family: $font-family-sans-serif;
-  font-size: 0.88em;
+  font-size: 0.9em;
   color: $azul-rio;
   font-style: italic;
-  text-align: center;
-  margin-top: 0.8em;
-  line-height: 1.5;
 }
 
-// =============================================================================
-// TABELAS
-// =============================================================================
-table {
-  font-family: $font-family-sans-serif;
-  font-size: 0.94em;
-  border-collapse: collapse;
-  width: 100%;
-  margin: 1.5em 0;
-
-  thead th {
-    background: $azul-petroleo;
-    color: $bone;
-    padding: 0.7em 1em;
-    text-align: left;
-    font-weight: 600;
-    border: none;
-  }
-
-  tbody {
-    tr {
-      border-bottom: 1px solid rgba($azul-petroleo, 0.08);
-      &:nth-child(even) { background: rgba($ocre, 0.04); }
-    }
-    td {
-      padding: 0.6em 1em;
-      vertical-align: top;
-    }
-  }
-}
-
-// =============================================================================
-// HR — separadores discretos
-// =============================================================================
-hr {
-  border: none;
-  border-top: 1px solid rgba($azul-petroleo, 0.15);
-  margin: 2.5em 0;
-}
-
-// Hr decorativo (com pontos)
-hr.dotted, hr[role="doc-pagebreak"] {
-  border-top: 2px dotted $ocre;
-}
-
-// =============================================================================
-// HEADER DE CAPÍTULO — bloco "Você está aqui"
-// =============================================================================
-.chapter-header-card {
-  font-family: $font-family-sans-serif;
-  background: linear-gradient(135deg, rgba($azul-petroleo, 0.04), rgba($ocre, 0.06));
-  border-left: 4px solid $azul-petroleo;
-  border-radius: $border-radius;
-  padding: 1.2em 1.5em;
-  margin: 0.5em 0 2em 0;
-  font-size: 0.94rem;
-
-  .chapter-week {
-    color: $laranja-queimado;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    font-size: 0.78rem;
-  }
-
-  .chapter-meta {
-    color: $azul-rio;
-    font-style: italic;
-    font-size: 0.88rem;
-    margin-top: 0.4em;
-  }
-}
-
-// =============================================================================
-// TÍTULO PRINCIPAL DA PÁGINA
-// =============================================================================
-.title-block-header, header.quarto-title-block {
-  margin-bottom: 2.2rem;
-  padding-bottom: 1.2rem;
-  border-bottom: 2px solid $laranja-queimado;
-}
-
-h1.title {
-  font-family: $font-family-display;
-  font-weight: 700;
-  font-size: 2.6rem;
-  color: $azul-petroleo;
-  letter-spacing: -0.02em;
-  line-height: 1.15;
-}
-
-p.subtitle {
-  font-family: $font-family-display;
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: $azul-rio;
-  font-style: italic;
-  margin-top: 0.5em;
-}
-
-// =============================================================================
-// LANDING / HERO BLOCKS
-// =============================================================================
+// Hero block (landing)
 .hero-block {
-  background: linear-gradient(140deg, $papel 0%, rgba($ocre, 0.15) 100%);
-  border-radius: $border-radius-lg;
+  background: linear-gradient(140deg, $papel 0%, rgba(232, 163, 61, 0.15) 100%);
+  border-radius: 10px;
   padding: 2.5em 2em;
   margin: 1.5em 0 2.5em 0;
   text-align: center;
-  border: 1px solid rgba($azul-petroleo, 0.08);
-
-  h1, h2 {
-    border-bottom: none;
-    margin-top: 0;
-  }
-
-  .hero-cta {
-    display: inline-block;
-    margin-top: 1.5em;
-    padding: 0.8em 2em;
-    background: $laranja-queimado;
-    color: $bone !important;
-    font-family: $font-family-sans-serif;
-    font-weight: 600;
-    font-size: 1.05em;
-    border-radius: $border-radius;
-    border-bottom: none;
-    transition: background 0.15s, transform 0.1s;
-
-    &:hover {
-      background: $azul-petroleo;
-      transform: translateY(-1px);
-    }
-  }
 }
+.hero-block h1, .hero-block h2 {
+  border-bottom: none;
+  margin-top: 0;
+}
+.hero-cta {
+  display: inline-block;
+  margin-top: 1.5em;
+  padding: 0.8em 2em;
+  background: $laranja-queimado;
+  color: $bone !important;
+  font-weight: 600;
+  border-radius: 6px;
+  border-bottom: none;
+}
+.hero-cta:hover { background: $azul-petroleo; }
 
-// Cards de entrada (4 caminhos)
+// Entry-cards
 .entry-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.2em;
   margin: 2em 0;
-
-  .entry-card {
-    background: $bone;
-    border: 1px solid rgba($azul-petroleo, 0.1);
-    border-left: 4px solid $laranja-queimado;
-    border-radius: $border-radius;
-    padding: 1.3em 1.5em;
-    transition: transform 0.12s, box-shadow 0.12s, border-color 0.12s;
-    text-decoration: none;
-    color: $grafite;
-    display: block;
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 14px rgba($azul-petroleo, 0.08);
-      border-left-color: $azul-petroleo;
-    }
-
-    .entry-num {
-      font-family: $font-family-display;
-      font-weight: 700;
-      color: $laranja-queimado;
-      font-size: 1.6em;
-      line-height: 1;
-    }
-
-    .entry-title {
-      font-family: $font-family-display;
-      font-weight: 600;
-      color: $azul-petroleo;
-      font-size: 1.08em;
-      margin: 0.4em 0 0.3em 0;
-      letter-spacing: -0.01em;
-    }
-
-    .entry-desc {
-      font-family: $font-family-sans-serif;
-      color: $grafite;
-      font-size: 0.9em;
-      line-height: 1.5;
-    }
-  }
+}
+.entry-card {
+  background: $bone;
+  border: 1px solid rgba(31, 58, 77, 0.1);
+  border-left: 4px solid $laranja-queimado;
+  border-radius: 6px;
+  padding: 1.3em 1.5em;
+  text-decoration: none !important;
+  color: $grafite !important;
+  display: block;
+  border-bottom: 1px solid rgba(31, 58, 77, 0.1);
+}
+.entry-card:hover {
+  border-left-color: $azul-petroleo;
+  background: $papel;
+}
+.entry-num {
+  font-weight: 700;
+  color: $laranja-queimado;
+  font-size: 1.6em;
+  font-family: "Space Grotesk", sans-serif;
+}
+.entry-title {
+  font-weight: 600;
+  color: $azul-petroleo;
+  font-size: 1.08em;
+  margin: 0.4em 0 0.3em 0;
+}
+.entry-desc {
+  font-size: 0.9em;
+  line-height: 1.5;
 }
 
-// Mapa do curso visual — fases x semanas
+// Course-map
 .course-map {
   background: $papel;
-  border-radius: $border-radius-lg;
+  border-radius: 10px;
   padding: 1.5em;
   margin: 2em 0;
-
-  .phase-row {
-    display: flex;
-    align-items: center;
-    margin: 0.7em 0;
-    font-family: $font-family-sans-serif;
-    font-size: 0.92em;
-
-    .phase-label {
-      flex: 0 0 130px;
-      font-weight: 600;
-      color: $azul-petroleo;
-    }
-
-    .phase-weeks {
-      flex: 1;
-      display: flex;
-      gap: 3px;
-
-      .week-dot {
-        flex: 1;
-        height: 22px;
-        border-radius: 3px;
-        background: rgba($azul-petroleo, 0.2);
-        position: relative;
-
-        &.f1 { background: $laranja-queimado; }
-        &.f2 { background: $ocre; }
-        &.f3 { background: $azul-rio; }
-        &.f4 { background: $azul-petroleo; }
-        &.review { background: rgba($azul-petroleo, 0.3); }
-        &.write { background: rgba($laranja-queimado, 0.4); border: 1px dashed $laranja-queimado; }
-
-        &:hover::after {
-          content: attr(data-label);
-          position: absolute;
-          bottom: 100%;
-          left: 50%;
-          transform: translateX(-50%);
-          background: $azul-petroleo;
-          color: $bone;
-          padding: 0.3em 0.6em;
-          border-radius: 4px;
-          font-size: 0.78em;
-          white-space: nowrap;
-          z-index: 10;
-        }
-      }
-    }
-  }
 }
-
-// =============================================================================
-// FOOTER
-// =============================================================================
-footer.footer, .nav-footer {
-  background: $azul-petroleo;
-  color: $bone;
-  padding: 2em 0;
-  margin-top: 4em;
-  font-family: $font-family-sans-serif;
-  font-size: 0.88em;
-
-  a {
-    color: $ocre;
-    border-bottom-color: rgba($ocre, 0.4);
-    &:hover {
-      color: $bone;
-      border-bottom-color: $bone;
-    }
-  }
+.phase-row {
+  display: flex;
+  align-items: center;
+  margin: 0.7em 0;
+  font-size: 0.92em;
 }
-
-// =============================================================================
-// MOBILE
-// =============================================================================
-@media (max-width: 768px) {
-  main.content {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-  }
-
-  h1.title {
-    font-size: 1.9rem;
-  }
-
-  .hero-block {
-    padding: 1.5em 1.2em;
-  }
-
-  .entry-cards {
-    grid-template-columns: 1fr;
-  }
-
-  .chapter-header-card {
-    padding: 1em;
-  }
+.phase-label {
+  flex: 0 0 130px;
+  font-weight: 600;
+  color: $azul-petroleo;
 }
+.phase-weeks {
+  flex: 1;
+  display: flex;
+  gap: 3px;
+}
+.week-dot {
+  flex: 1;
+  height: 22px;
+  border-radius: 3px;
+  background: rgba(31, 58, 77, 0.2);
+}
+.week-dot.f1 { background: $laranja-queimado; }
+.week-dot.f2 { background: $ocre; }
+.week-dot.f3 { background: $azul-rio; }
+.week-dot.f4 { background: $azul-petroleo; }
+.week-dot.review { background: rgba(31, 58, 77, 0.3); }
+.week-dot.write  { background: rgba(212, 90, 26, 0.4); }
 
-// =============================================================================
-// PRINT
-// =============================================================================
-@media print {
-  .navbar, .sidebar, .nav-footer, footer.footer { display: none !important; }
-  body { background: white; color: black; }
-  main.content { max-width: 100%; }
+// Chapter header card
+.chapter-header-card {
+  background: linear-gradient(135deg, rgba(31, 58, 77, 0.04), rgba(232, 163, 61, 0.06));
+  border-left: 4px solid $azul-petroleo;
+  border-radius: 6px;
+  padding: 1.2em 1.5em;
+  margin: 0.5em 0 2em 0;
+  font-size: 0.94rem;
+}
+.chapter-week {
+  color: $laranja-queimado;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+}
+.chapter-meta {
+  color: $azul-rio;
+  font-style: italic;
+  font-size: 0.88rem;
 }
