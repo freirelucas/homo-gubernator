@@ -14,12 +14,21 @@ jobs:
           fetch-depth: 0
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
-          version: '1.4.553'
+          version: 'release'
+      - run: quarto --version
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - run: pip install -r requirements.txt
-      - uses: quarto-dev/quarto-actions/render@v2
+      - name: Render Quarto (with logs)
+        id: render
+        continue-on-error: true
+        run: |
+          mkdir -p _site
+          quarto render 2>&1 | tee _site/render.log
+          echo "EXIT: $?" >> _site/render.log
+      - name: Show render log
+        run: cat _site/render.log || true
       - run: touch _site/.nojekyll
       - uses: peaceiris/actions-gh-pages@v3
         with:
