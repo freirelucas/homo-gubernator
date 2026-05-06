@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Fluxos em uma dimensão – Homo Gubernator</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 1em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-99e1711cb54d39348b782c66493300ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-45817443034a1f72db394466b0e144de.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-99e1711cb54d39348b782c66493300ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-55dfdc8d6e85bdfeed83aed323226780.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-55dfdc8d6e85bdfeed83aed323226780.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-55dfdc8d6e85bdfeed83aed323226780.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../assets/styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Homo Gubernator</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Procurar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Alternar de navegação" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Início</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../como-estudar.html"> 
+<span class="menu-text">Como estudar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../metatexto/viable-os.html"> 
+<span class="menu-text">ViableOS</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../personagem-narrativo.html"> 
+<span class="menu-text">Personagem</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../plano/plano-estudos.html" aria-current="page"> 
+<span class="menu-text">Plano</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../fase-01-strogatz/index.html"> 
+<span class="menu-text">Fase 1</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../fase-02-markov/index.html"> 
+<span class="menu-text">Fase 2</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../fase-03-sterman/index.html"> 
+<span class="menu-text">Fase 3</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../fase-04-sintese/index.html"> 
+<span class="menu-text">Fase 4</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../glossario.html"> 
+<span class="menu-text">Glossário</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../revisao/index.html"> 
+<span class="menu-text">Revisão</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../recursos/index.html"> 
+<span class="menu-text">Recursos</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../fase-01-strogatz/01-fluxos-1d/intro.html">Fase 1 — Strogatz</a></li><li class="breadcrumb-item"><a href="../../fase-01-strogatz/01-fluxos-1d/intro.html">Sem 1 · Fluxos 1D</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../plano/plano-estudos.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plano completo</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fase 1 — Strogatz</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-01-strogatz/01-fluxos-1d/intro.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Sem 1 · Fluxos 1D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-01-strogatz/02-bifurcacoes-1d/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 2 · Bifurcações 1D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-01-strogatz/03-fluxos-2d/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 3 · Fluxos 2D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-01-strogatz/04-ciclos-limite/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 4 · Ciclos-limite</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-01-strogatz/05-bifurcacoes-2d/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 5 · Bifurcações 2D</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-01-strogatz/06-caos-lorenz/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 6 · Caos / Lorenz</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fase 2 — Markov</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-02-markov/01-cadeias-finitas/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 7 · Cadeias finitas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-02-markov/02-distribuicoes-estacionarias/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 8 · Estacionárias</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-02-markov/03-reversibilidade-mcmc/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 9 · Reversibilidade / MCMC</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-02-markov/04-tempo-continuo/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 10 · Tempo contínuo</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-02-markov/05-aplicacoes-algoritmicas/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 11 · Aplicações algorítmicas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../revisao/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 12 · Revisão integrada</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fase 3 — Sterman</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-03-sterman/01-fundamentos-sd/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 13 · Fundamentos SD</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-03-sterman/02-feedback-loops/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 14 · Laços de feedback</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-03-sterman/03-modelagem-formal/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 15 · Modelagem formal</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-03-sterman/04-validacao/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 16 · Validação</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../revisao/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 17 · Revisão integrada</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Fase 4 — Síntese VSM</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Alternar seção">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-04-sintese/01-vsm-ashby-beer/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 18 · VSM como linguagem</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-04-sintese/02-bacia-formoso-caso/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 19 · Bacia do Formoso</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-04-sintese/03-aplicacao-propria/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 20 · Aplicação própria</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../fase-04-sintese/03-aplicacao-propria/intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sem 21–24 · Diagnóstico final</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Nesta página</h2>
+   
+  <ul>
+  <li><a href="#a-pergunta-operacional" id="toc-a-pergunta-operacional" class="nav-link active" data-scroll-target="#a-pergunta-operacional">A pergunta operacional</a></li>
+  <li><a href="#pontos-fixos-e-estabilidade-linear" id="toc-pontos-fixos-e-estabilidade-linear" class="nav-link" data-scroll-target="#pontos-fixos-e-estabilidade-linear">Pontos fixos e estabilidade linear</a></li>
+  <li><a href="#existência-e-unicidade-picard" id="toc-existência-e-unicidade-picard" class="nav-link" data-scroll-target="#existência-e-unicidade-picard">Existência e unicidade (Picard)</a></li>
+  <li><a href="#o-potencial-vx-e-a-interpretação-energética" id="toc-o-potencial-vx-e-a-interpretação-energética" class="nav-link" data-scroll-target="#o-potencial-vx-e-a-interpretação-energética">O potencial <span class="math inline">\(V(x)\)</span> e a interpretação energética</a></li>
+  <li><a href="#exemplo-1-modelo-logístico-verhulst" id="toc-exemplo-1-modelo-logístico-verhulst" class="nav-link" data-scroll-target="#exemplo-1-modelo-logístico-verhulst">Exemplo 1: modelo logístico (Verhulst)</a></li>
+  <li><a href="#exemplo-2-carregamento-rc" id="toc-exemplo-2-carregamento-rc" class="nav-link" data-scroll-target="#exemplo-2-carregamento-rc">Exemplo 2: carregamento RC</a></li>
+  <li><a href="#exemplo-3-conta-de-polo-uab-unitins-aplicação-institucional" id="toc-exemplo-3-conta-de-polo-uab-unitins-aplicação-institucional" class="nav-link" data-scroll-target="#exemplo-3-conta-de-polo-uab-unitins-aplicação-institucional">Exemplo 3: conta de polo UAB-UNITINS (aplicação institucional)</a></li>
+  <li><a href="#conexão-com-ashbybeer" id="toc-conexão-com-ashbybeer" class="nav-link" data-scroll-target="#conexão-com-ashbybeer">Conexão com Ashby/Beer</a></li>
+  <li><a href="#pergunta-de-verificação" id="toc-pergunta-de-verificação" class="nav-link" data-scroll-target="#pergunta-de-verificação">Pergunta de verificação</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../fase-01-strogatz/01-fluxos-1d/intro.html">Fase 1 — Strogatz</a></li><li class="breadcrumb-item"><a href="../../fase-01-strogatz/01-fluxos-1d/intro.html">Sem 1 · Fluxos 1D</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Fluxos em uma dimensão</h1>
+<p class="subtitle lead">Fase 1 — Capítulo 1 (Strogatz, caps. 1–2)</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="a-pergunta-operacional" class="level2">
+<h2 class="anchored" data-anchor-id="a-pergunta-operacional">A pergunta operacional</h2>
+<p>A pergunta central da Fase 1 é geometricamente simples: dado um sistema autônomo de primeira ordem na reta, <span class="math inline">\(\dot{x} = f(x)\)</span>, com <span class="math inline">\(f\)</span> suficientemente regular, o que é possível dizer sobre o comportamento de longo prazo de qualquer trajetória, sabendo apenas onde <span class="math inline">\(f\)</span> se anula e qual é o sinal de <span class="math inline">\(f\)</span> entre seus zeros? A resposta de <span class="citation" data-cites="strogatz2018">Strogatz (<a href="#ref-strogatz2018" role="doc-biblioref">2015</a>)</span> é desproporcional à modéstia da pergunta: para a dinâmica unidimensional autônoma, <em>tudo o que importa</em> está nos zeros de <span class="math inline">\(f\)</span> (os pontos fixos) e na monotonicidade local de <span class="math inline">\(f\)</span> em torno deles.</p>
+<p>A razão é topológica. Em um espaço de estados unidimensional, uma trajetória é uma curva monótona até atingir um ponto fixo ou divergir; não há laços fechados, não há oscilações sustentadas, não há caos. Esse fato — que parece pobre — funda toda a Fase 1: <em>é por ser pobre que é tratável</em>, e tratabilidade é a condição para que possamos depois reintroduzir, ordenadamente, complexidade (acoplamento no capítulo 2, dois estados em F1-03, três estados e caos em F1-06).</p>
+</section>
+<section id="pontos-fixos-e-estabilidade-linear" class="level2">
+<h2 class="anchored" data-anchor-id="pontos-fixos-e-estabilidade-linear">Pontos fixos e estabilidade linear</h2>
+<p>Um <strong>ponto fixo</strong> <span class="math inline">\(x^*\)</span> de <span class="math inline">\(\dot{x}=f(x)\)</span> é um zero de <span class="math inline">\(f\)</span>, isto é, <span class="math inline">\(f(x^*)=0\)</span>. Iniciado em <span class="math inline">\(x^*\)</span>, o sistema permanece em <span class="math inline">\(x^*\)</span> para todo <span class="math inline">\(t \geq 0\)</span>. A questão delicada é: iniciado <em>próximo</em> a <span class="math inline">\(x^*\)</span>, o sistema retorna ou se afasta?</p>
+<p>A resposta é dada pela <strong>análise de estabilidade linear</strong>. Expandindo <span class="math inline">\(f\)</span> em série de Taylor em torno de <span class="math inline">\(x^*\)</span>,</p>
+<p><span class="math display">\[
+\dot{x} \;=\; f(x^*) + f'(x^*)(x-x^*) + O\big((x-x^*)^2\big) \;=\; f'(x^*)\,\eta + O(\eta^2),
+\]</span></p>
+<p>com <span class="math inline">\(\eta := x - x^*\)</span>, e desprezando os termos de ordem superior, obtém-se a equação linear <span class="math inline">\(\dot{\eta} = f'(x^*)\,\eta\)</span>, cuja solução é exponencial: <span class="math inline">\(\eta(t) = \eta(0)\,e^{f'(x^*)t}\)</span>. Daí o critério:</p>
+<p><span id="eq-estab-linear"><span class="math display">\[
+\boxed{\;f'(x^*) &lt; 0 \;\Rightarrow\; x^*\text{ estável};\qquad f'(x^*) &gt; 0 \;\Rightarrow\; x^*\text{ instável}.\;}
+\tag{1}\]</span></span></p>
+<p>O caso <span class="math inline">\(f'(x^*)=0\)</span> é degenerado e exige análise não-linear: examinar termos seguintes da série de Taylor, ou usar o potencial <span class="math inline">\(V(x)\)</span> apresentado abaixo. Geometricamente, o critério (<a href="#eq-estab-linear" class="quarto-xref">Equação&nbsp;1</a>) traduz uma intuição imediata sobre o gráfico de <span class="math inline">\(f\)</span>: se <span class="math inline">\(f\)</span> cruza o eixo <span class="math inline">\(x\)</span> descendo no zero <span class="math inline">\(x^*\)</span>, então <span class="math inline">\(f\)</span> é positiva à esquerda (sistema vai para a direita) e negativa à direita (sistema vai para a esquerda) — atrai. Se <span class="math inline">\(f\)</span> cruza subindo, repele. Toda a estabilidade local de sistemas 1D autônomos cabe nessa observação visual.</p>
+</section>
+<section id="existência-e-unicidade-picard" class="level2">
+<h2 class="anchored" data-anchor-id="existência-e-unicidade-picard">Existência e unicidade (Picard)</h2>
+<p>Antes de tratar comportamento de longo prazo, é prudente garantir que as soluções existem e são únicas. O <strong>teorema de Picard-Lindelöf</strong> estabelece que, se <span class="math inline">\(f\)</span> é Lipschitz contínua em uma vizinhança de <span class="math inline">\(x_0\)</span>, o problema de Cauchy</p>
+<p><span class="math display">\[
+\dot{x} = f(x), \qquad x(t_0) = x_0,
+\]</span></p>
+<p>admite solução única em algum intervalo de tempo aberto contendo <span class="math inline">\(t_0\)</span>. Lipschitz continuidade vale, em particular, sempre que <span class="math inline">\(f\)</span> é continuamente diferenciável (<span class="math inline">\(C^1\)</span>) — condição satisfeita pelos exemplos do curso. A consequência operacional é forte: <strong>trajetórias não se cruzam</strong>. Em 1D, isso já força o comportamento monótono mencionado acima — duas trajetórias que se cruzassem violariam a unicidade de Picard. É deste fato topológico, não de algum cálculo explícito, que decorre a impossibilidade de oscilação em sistemas 1D autônomos.</p>
+</section>
+<section id="o-potencial-vx-e-a-interpretação-energética" class="level2">
+<h2 class="anchored" data-anchor-id="o-potencial-vx-e-a-interpretação-energética">O potencial <span class="math inline">\(V(x)\)</span> e a interpretação energética</h2>
+<p>A função</p>
+<p><span class="math display">\[
+V(x) := -\int^x f(s)\,ds
+\]</span></p>
+<p>define um <strong>potencial fictício</strong> sobre o espaço de estados. Pela definição, <span class="math inline">\(\dot{x} = f(x) = -V'(x)\)</span>, ou seja, o sistema desce o gradiente de <span class="math inline">\(V\)</span>. Ao longo de uma trajetória,</p>
+<p><span class="math display">\[
+\frac{dV}{dt} = V'(x)\dot{x} = -[f(x)]^2 \leq 0,
+\]</span></p>
+<p>igual a zero apenas nos pontos fixos. Conclusão: <strong><span class="math inline">\(V\)</span> é monotonamente não-crescente ao longo de qualquer trajetória</strong>, e o sistema converge para um mínimo local de <span class="math inline">\(V\)</span>. Pontos fixos estáveis correspondem a mínimos locais; instáveis, a máximos; degenerados, a pontos de inflexão. A “bacia de atração” do dinamicismo é literalmente uma bacia do potencial — etimologia que Ashby explora sem cerimônia em <span class="citation" data-cites="ashby1956">Ashby (<a href="#ref-ashby1956" role="doc-biblioref">1956</a>)</span>.</p>
+<div id="fig-bacia-potencial" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Gráfico do potencial V(N) para o modelo logístico com bola simbólica em quatro posições sucessivas, descendo até o mínimo local em N igual a K">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-bacia-potencial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../assets/figs/fig-bacia-potencial.svg" class="img-fluid figure-img" alt="Gráfico do potencial V(N) para o modelo logístico com bola simbólica em quatro posições sucessivas, descendo até o mínimo local em N igual a K">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bacia-potencial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1: Bola descendo o gradiente de <span class="math inline">\(V(N)\)</span> até o mínimo local em <span class="math inline">\(N=K\)</span>. A trajetória é monótona; o ponto fixo estável é literalmente o fundo da bacia.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="exemplo-1-modelo-logístico-verhulst" class="level2">
+<h2 class="anchored" data-anchor-id="exemplo-1-modelo-logístico-verhulst">Exemplo 1: modelo logístico (Verhulst)</h2>
+<p><span class="math display">\[
+\dot{N} = r\,N\!\left(1 - \frac{N}{K}\right), \qquad r,K &gt; 0.
+\]</span></p>
+<p>Pontos fixos: <span class="math inline">\(N^* = 0\)</span> e <span class="math inline">\(N^* = K\)</span>. Avaliando <span class="math inline">\(f'(N) = r - 2rN/K\)</span>: em <span class="math inline">\(N=0\)</span>, <span class="math inline">\(f'(0) = r &gt; 0\)</span> (instável); em <span class="math inline">\(N = K\)</span>, <span class="math inline">\(f'(K) = -r &lt; 0\)</span> (estável). A bacia de atração de <span class="math inline">\(K\)</span> é <span class="math inline">\((0, \infty)\)</span>. Para <span class="math inline">\(N(0) &gt; 0\)</span>, o tempo característico de aproximação a <span class="math inline">\(K\)</span> é <span class="math inline">\(\sim 1/r\)</span>. O modelo, originalmente proposto por Verhulst (1838) para população humana e usado canonicamente em ecologia, é a face matemática mínima do conceito de <strong>capacidade de carga</strong>: o sistema cresce exponencialmente quando longe do limite, e satura assintoticamente quando se aproxima.</p>
+</section>
+<section id="exemplo-2-carregamento-rc" class="level2">
+<h2 class="anchored" data-anchor-id="exemplo-2-carregamento-rc">Exemplo 2: carregamento RC</h2>
+<p><span class="math display">\[
+\dot{V} = \frac{V_0 - V}{\tau}, \qquad \tau = RC.
+\]</span></p>
+<p>Único ponto fixo <span class="math inline">\(V^* = V_0\)</span>, com <span class="math inline">\(f'(V^*) = -1/\tau &lt; 0\)</span> (globalmente estável). Solução explícita: <span class="math inline">\(V(t) = V_0 + (V(0) - V_0)\,e^{-t/\tau}\)</span>. O tempo característico <span class="math inline">\(\tau\)</span> é, simultaneamente, o inverso da derivada — coincidência não-acidental: <span class="math inline">\(|f'(x^*)|^{-1}\)</span> é o <strong>tempo de meia-vida</strong> local da perturbação, em qualquer sistema 1D autônomo, no regime linear.</p>
+<div id="fig-rc-charging" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Curva exponencial crescente saturando em V0, com marcação de tempo característico tau no eixo horizontal e valor 0.632 V0 no eixo vertical">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rc-charging-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../assets/figs/fig-rc-charging.svg" class="img-fluid figure-img" alt="Curva exponencial crescente saturando em V0, com marcação de tempo característico tau no eixo horizontal e valor 0.632 V0 no eixo vertical">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rc-charging-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2: Carregamento RC: <span class="math inline">\(V(t)\)</span> aproxima-se exponencialmente de <span class="math inline">\(V_0\)</span> com tempo característico <span class="math inline">\(\tau = RC\)</span>. Em <span class="math inline">\(t = \tau\)</span>, o sistema cobriu 63% do caminho.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="exemplo-3-conta-de-polo-uab-unitins-aplicação-institucional" class="level2">
+<h2 class="anchored" data-anchor-id="exemplo-3-conta-de-polo-uab-unitins-aplicação-institucional">Exemplo 3: conta de polo UAB-UNITINS (aplicação institucional)</h2>
+<p>Considere o estado <span class="math inline">\(S(t)\)</span> = número de estudantes ativos em um polo da UAB-UNITINS num dado instante. Em modelagem agregada de Sterman (capítulo F3-01), o balanço aproxima-se por</p>
+<p><span class="math display">\[
+\dot{S} = i(t) - \frac{S}{\tau_{\text{permanência}}},
+\]</span></p>
+<p>onde <span class="math inline">\(i(t)\)</span> é o fluxo de novas matrículas e <span class="math inline">\(\tau_{\text{permanência}}\)</span> é o tempo médio que um estudante permanece ativo (até concluir, evadir ou jubilar-se). Em regime estacionário com <span class="math inline">\(i\)</span> constante, há ponto fixo <span class="math inline">\(S^* = i\,\tau_{\text{permanência}}\)</span>, estável com tempo característico <span class="math inline">\(\tau_{\text{permanência}}\)</span>. Esta é a forma RC aplicada à demografia institucional. O ganho da abordagem cibernética: <span class="math inline">\(S^*\)</span> é insensível à amplitude de variações de curto prazo em <span class="math inline">\(i\)</span> — o sistema <strong>filtra distúrbios</strong> com banda passante <span class="math inline">\(1/\tau\)</span>. Para Joana (vide <a href="../../personagem-narrativo.html">Personagem</a>), comparar polos UAB-UNITINS de Augustinópolis e Dianópolis pelo <span class="math inline">\(\tau\)</span> estimado é primeiro passo de diagnóstico: polos com <span class="math inline">\(\tau\)</span> pequeno (alta evasão) e polos com <span class="math inline">\(\tau\)</span> grande (baixa rotatividade) operam em regimes dinâmicos qualitativamente diferentes.</p>
+</section>
+<section id="conexão-com-ashbybeer" class="level2">
+<h2 class="anchored" data-anchor-id="conexão-com-ashbybeer">Conexão com Ashby/Beer</h2>
+<p>Em linguagem cibernética, um ponto fixo estável é a definição rigorosa de <strong>homeostase</strong>: estado para o qual o sistema retorna após perturbações pequenas. A bacia de atração delimita o conjunto de distúrbios que o sistema absorve sem mudar de regime — uma instância concreta da entropia <span class="math inline">\(H(D)\)</span> que aparecerá em F4-01. O critério <span class="math inline">\(|f'(x^*)|\)</span> mede a <em>taxa</em> de absorção; a recíproca, <span class="math inline">\(1/|f'(x^*)|\)</span>, mede o <em>tempo</em> de absorção. Em VSM (capítulo F4-01), esse tempo característico é o que limita a banda passante de S2 (antioscilação) e S3 (alocação aqui-agora): se um distúrbio chega mais rápido do que <span class="math inline">\(\tau = 1/|f'|\)</span>, o regulador simplesmente não tem tempo de responder. A Lei da Variedade Requisita (<strong>?@eq-ashby-mult</strong>) tem aqui sua versão dinâmica: variedade não basta — é preciso variedade <em>no tempo certo</em>.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Importante
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A diferença entre “regulador com variedade requisita” e “regulador rápido o suficiente” é o que separa o desenho institucional bom no papel do desenho institucional que funciona na prática. F2 (Markov) dá o aparato formal para essa segunda exigência via <em>tempo de mistura</em>.</p>
+</div>
+</div>
+</section>
+<section id="pergunta-de-verificação" class="level2">
+<h2 class="anchored" data-anchor-id="pergunta-de-verificação">Pergunta de verificação</h2>
+<div id="fig-retrato-fase-1d" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Eixo horizontal com três pontos fixos marcados: x igual a menos um, zero e mais um, com setas convergindo aos extremos e divergindo do central">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-retrato-fase-1d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../../assets/figs/fig-retrato-fase-1d.svg" class="img-fluid figure-img" alt="Eixo horizontal com três pontos fixos marcados: x igual a menos um, zero e mais um, com setas convergindo aos extremos e divergindo do central">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-retrato-fase-1d-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Retrato de fase de <span class="math inline">\(\dot{x} = x - x^3\)</span>. Pontos fixos estáveis em <span class="math inline">\(x = \pm 1\)</span> (círculos cheios), instável em <span class="math inline">\(x = 0\)</span> (círculo vazio). As setas seguem o sinal de <span class="math inline">\(f\)</span> e convergem aos estáveis; cada um tem sua bacia de atração separada por <span class="math inline">\(x = 0\)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Para o sistema <span class="math inline">\(\dot{x} = x - x^3\)</span>:</p>
+<ol type="1">
+<li>Encontre todos os pontos fixos. (Três; <a href="#fig-retrato-fase-1d" class="quarto-xref">Figura&nbsp;3</a> antecipa.)</li>
+<li>Classifique cada um via <a href="#eq-estab-linear" class="quarto-xref">Equação&nbsp;1</a>.</li>
+<li>Verifique o retrato de fase contra <a href="#fig-retrato-fase-1d" class="quarto-xref">Figura&nbsp;3</a>.</li>
+<li>Identifique a bacia de atração de cada ponto fixo estável.</li>
+<li>Calcule o potencial <span class="math inline">\(V(x)\)</span> e confirme que pontos fixos estáveis são mínimos locais; descreva a forma do gráfico de <span class="math inline">\(V\)</span>.</li>
+<li>Em linguagem cibernética: qual o “regulador implícito” e qual sua “variedade requisita”?</li>
+</ol>
+<p>Para fixar: quando terminar, importe o deck Anki (vide <a href="../../revisao/index.html">revisão</a>) — os cartões <code>strogatz fase1</code> cobrem precisamente os conceitos deste capítulo.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Dica
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Se você está estudando Joana como caso (<a href="../../personagem-narrativo.html">Personagem</a>): proponha um indicador acadêmico real de polo UAB-UNITINS ou disciplina UNIFAL-MG cujo comportamento agregado se aproxime de um sistema 1D autônomo. Estime visualmente os pontos fixos a partir de séries históricas e classifique-os.</p>
+</div>
+</div>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referências</h2><div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list">
+<div id="ref-ashby1956" class="csl-entry" role="listitem">
+ASHBY, W. Ross. <strong>An Introduction to Cybernetics</strong>. London: Chapman &amp; Hall, 1956.
+</div>
+<div id="ref-strogatz2018" class="csl-entry" role="listitem">
+STROGATZ, Steven H. <strong>Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering</strong>. 2. ed. <em>[S.l.]</em>: Westview Press, 2015.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiada");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiada");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

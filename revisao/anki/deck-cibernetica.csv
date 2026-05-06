@@ -1,0 +1,37 @@
+Front,Back,Tags
+"Defina ponto fixo de \dot{x}=f(x).","Um ponto x* tal que f(x*)=0; o sistema permanece em x* indefinidamente se iniciado lá.",strogatz fase1
+"Critério de estabilidade linear (1D)","f'(x*)<0 estável; f'(x*)>0 instável; f'(x*)=0 caso degenerado, exige análise não-linear.",strogatz fase1
+"Modelo logístico: pontos fixos e estabilidade","Pontos fixos N=0 (instável para r>0) e N=K (estável). Bacia de atração de N=K é (0,∞).",strogatz fase1
+"Bifurcação sela-nó","Dois pontos fixos colidem e desaparecem ao variar o parâmetro; canônico: \dot{x}=r+x².",strogatz fase1
+"Bifurcação tridente supercrítica","Ponto fixo simétrico perde estabilidade dando origem a dois pontos estáveis simétricos; canônico: \dot{x}=rx-x³.",strogatz fase1
+"Bifurcação transcrítica","Dois pontos fixos trocam estabilidade ao se cruzarem; canônico: \dot{x}=rx-x².",strogatz fase1
+"O que impossibilita oscilações em \dot{x}=f(x) (1D)?","Inexistência de loops fechados na reta; a monotonicidade entre fixos impede retorno.",strogatz fase1
+"Defina retrato de fase","Representação geométrica do espaço de estados com trajetórias e pontos fixos marcados.",strogatz fase1
+"Ciclo-limite","Trajetória fechada isolada no espaço de estados, atraente ou repulsora; aparece a partir de 2D.",strogatz fase1
+"Bifurcação de Hopf","Par de autovalores complexos conjugados cruza o eixo imaginário; nasce um ciclo-limite.",strogatz fase1
+"Atrator estranho","Conjunto invariante de medida zero, com sensibilidade às condições iniciais e estrutura fractal; ex.: Lorenz.",strogatz fase1
+"Bacia de atração","Conjunto de condições iniciais cujas trajetórias convergem para um atrator dado.",strogatz fase1
+"Propriedade markoviana","P(X_{n+1}=j | X_n=i, X_{n-1},...) = P(X_{n+1}=j | X_n=i): o futuro depende do passado só pelo presente.",markov fase2
+"Matriz de transição P","P_{ij}=P(X_{n+1}=j|X_n=i); linhas não-negativas que somam 1 (matriz estocástica).",markov fase2
+"Distribuição estacionária","π tal que πP=π e Σπ_i=1.",markov fase2
+"Cadeia irredutível","Quaisquer dois estados se comunicam: ∀i,j ∃n com (P^n)_{ij}>0.",markov fase2
+"Cadeia aperiódica","mdc{n≥1: (P^n)_{ii}>0}=1 para todo i.",markov fase2
+"Teorema de convergência (Häggström cap. 5)","Em cadeia finita irredutível e aperiódica, μ_n → π independentemente de μ_0; π é única.",markov fase2
+"Balanço detalhado (reversibilidade)","π_i P_{ij}=π_j P_{ji} para todos i,j; condição suficiente para π ser estacionária.",markov fase2
+"Metropolis-Hastings: ideia","Construir cadeia cuja estacionária é o alvo π via aceitar/rejeitar com prob α=min(1, [π_j q_{ji}]/[π_i q_{ij}]).",markov fase2
+"Tempo de mistura","t_mix(ε)=min{t: max_i ‖P^t(i,·)−π‖_TV ≤ ε}.",markov fase2
+"Cadeia de Ehrenfest","Modelo difusional de N bolas entre duas urnas; reversível, estacionária binomial.",markov fase2
+"Estoque vs fluxo","Estoque: variável de nível, com unidade [unidades]. Fluxo: taxa, [unidades/tempo]. dS/dt = φ_in - φ_out.",sterman fase3
+"Integração de Euler explícita","S(t+Δt)=S(t)+Δt·[φ_in(t)−φ_out(t)]; erro local O(Δt²).",sterman fase3
+"Diagrama causal (CLD)","Grafo dirigido com polaridades + e − e identificação de laços R (reforçador) e B (balanceador).",sterman fase3
+"Polaridade negativa","Causa e efeito variam em sentidos opostos.",sterman fase3
+"Quatro modos canônicos do SD","Crescimento exponencial, decaimento, oscilação, crescimento sigmóide.",sterman fase3
+"Newton's cooling","dT/dt = -k(T-T_amb); T(t)=T_amb+(T_0-T_amb)e^{-kt}.",sterman fase3
+"Verhulst-Pearl (logística)","dN/dt=rN(1-N/K); ponto de inflexão em N=K/2.",sterman fase3
+"Validação de modelo SD (Sterman cap. 21)","Testes estruturais (limites, dimensões, condições extremas) e comportamentais (replicação, robustez).",sterman fase3
+"Bullwhip effect","Amplificação progressiva da variabilidade dos pedidos a montante na cadeia, originada de atrasos e correções.",sterman fase3
+"Lei da Variedade Requisita","V_o ≥ V_d − V_r: a variedade do regulador deve cobrir a do distúrbio menos a do resultado tolerado.",ashby cibernetica
+"Os 5 sistemas do VSM","S1 operação; S2 antioscilação; S3 otimização aqui-agora (3* auditoria); S4 fora-e-depois; S5 política/identidade.",beer cibernetica
+"Sinal algedônico","Canal vertical de baixa banda que conecta diretamente S1 a S5 em emergência, contornando S2/S3/S4.",beer cibernetica
+"Recursão cibernética","Cada S1 é, ele próprio, um sistema viável completo em recursão menor; V_{n+1}⊆V_n.",beer cibernetica
+"Caixa preta de Ashby","Heurística diagnóstica baseada em pares entrada-saída, sem hipótese sobre estrutura interna.",ashby cibernetica
