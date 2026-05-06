@@ -86,12 +86,6 @@ $max-width-content:      720px;  // limite de largura de leitura
 /*-- scss:rules --*/
 
 // =============================================================================
-// IMPORTAÇÃO DE FONTES (Google Fonts) — fallback caso _brand.yml não baixe
-// =============================================================================
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap");
-
-// =============================================================================
 // CORPO E LEITURA
 // =============================================================================
 body {
