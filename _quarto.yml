@@ -1,8 +1,6 @@
 project:
   type: website
   output-dir: _site
-  render:
-    - "*.qmd"
 website:
   title: "Homo Gubernator"
   description: "Curso de auto-estudo de 24 semanas em cibernética organizacional aplicada."
