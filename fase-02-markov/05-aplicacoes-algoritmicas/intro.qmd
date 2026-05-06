@@ -19,7 +19,7 @@ Distribuição uniforme sobre configurações independent-set de um grafo. MCMC 
 
 ## PageRank
 
-A matriz de transição do navegador aleatório na web tem estacionária $\pi$ que é, por definição, o PageRank. @brin1998 não está na bibliografia mas o capítulo explica a redução do problema de ranking ao problema markoviano canônico.
+A matriz de transição do navegador aleatório na web tem estacionária $\pi$ que é, por definição, o PageRank [@brin1998]. O algoritmo reduz o problema de ranking ao problema markoviano canônico: existe distribuição estacionária na cadeia construída sobre o grafo da web, e ela ordena as páginas pela probabilidade limite de visita. O fator de teleporte $d \in (0,1)$ garante irredutibilidade e aperiodicidade.
 
 ## Particle filters / SMC
 

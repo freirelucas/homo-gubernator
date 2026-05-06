@@ -31,6 +31,8 @@ A leitura cibernética importante é que **a variedade não é um mau a combater
 
 ## Os cinco subsistemas e os canais
 
+![Os cinco subsistemas do VSM e os canais que os conectam. S1 são unidades operacionais autônomas; S2 (lateral, ocre) coordena entre S1s; S3 aloca aqui-agora, com S3* esporadicamente auditando; S4 monitora fora-e-depois; S5 política/identidade. O canal algedônico (vermelho) liga S1 diretamente a S5 em emergência.](../../assets/figs/canonicas/fig-vsm-5-sistemas.svg){#fig-vsm-5-sistemas fig-alt="Diagrama do VSM com três círculos S1 à esquerda, S2 lateral entre eles em ocre, S3 e S4 e S5 empilhados à direita, S3 estrela auditoria, e seta vermelha algedônica do S1 superior ao S5"}
+
 O VSM opera com cinco subsistemas funcionais e seis canais. Não são "níveis hierárquicos" — são **funções recursivas que coexistem em qualquer sistema viável**:
 
 - **S1 — Operação.** Cada divisão autônoma que produz a saída-fim do sistema. Em uma bacia hidrográfica, cada outorga ativa é um S1; em um Estado, cada política finalística é um S1.
@@ -85,7 +87,11 @@ O **teorema de Conant-Ashby** [@conantashby1970] tem enunciado modesto e implica
 
 A versão informal é o que se cita; a versão formal merece atenção. Sejam $D$ a fonte de distúrbios, $S$ o sistema regulado, $R$ o regulador, e $E$ o resultado essencial-a-preservar. O teorema demonstra que se $R$ minimiza a entropia residual $H(E)$ — isto é, regula bem — então a aplicação $f: D \to R$ que define a estratégia do regulador é **homomórfica** à aplicação $g: D \to E$ que descreve a influência dos distúrbios sobre o essencial. Em palavras: a estrutura informacional do regulador eficaz **espelha** a estrutura informacional do sistema regulado.
 
-Não é "o regulador precisa entender o sistema". É afirmação técnica: existe homomorfismo entre as duas estruturas, e qualquer regulador ótimo *é* esse homomorfismo. Implicações:
+Não é "o regulador precisa entender o sistema". É afirmação técnica: existe homomorfismo entre as duas estruturas, e qualquer regulador ótimo *é* esse homomorfismo.
+
+![Diagrama de Conant-Ashby. Distúrbios $D$ atingem o sistema $S$ via $g$ e o regulador $R$ via $f$; $R$ atua sobre $S$; o resultado essencial $E$ depende de ambos. O teorema afirma que $f$ é homomorfa a $g$ quando $R$ minimiza a entropia residual em $E$.](../../assets/figs/canonicas/fig-conant-ashby.svg){#fig-conant-ashby fig-alt="Quatro elipses representando Distúrbios D, Sistema S, Regulador R e Essencial E, com setas g de D para S, f de D para R, e setas de R para S e de S e R para E"}
+
+Implicações:
 
 - **Reguladores que não modelam o sistema falham necessariamente.** Não é questão de competência — é teorema. Política pública sem modelo do problema regulado é, formalmente, sub-ótima.
 - **Modelos sem propósito regulador são modelos descritivos, não cibernéticos.** A distinção operacional vem na próxima seção.

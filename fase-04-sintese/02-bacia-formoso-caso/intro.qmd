@@ -35,6 +35,8 @@ A composição multi-stakeholder do GAN foi novidade no contexto institucional t
 
 ## Diagnóstico VSM em recursão tripla
 
+![Diagnóstico VSM da BHRF em três recursões aninhadas. Recursão 1 (interna, vermelha): outorgas individuais como S1; GAN como S2 inter-outorgantes; Naturatins como S3; S4 ausente. Recursão 2 (azul): bacia inteira no estado. Recursão 3 (externa, tracejada): sistema federal com S5 conflitante.](../../assets/figs/canonicas/fig-bhrf-recursao-tripla.svg){#fig-bhrf-recursao-tripla fig-alt="Três caixas aninhadas: federal, estadual com bacia, e interna com outorgas. GAN como S2 lateral conectando os S1s. S4 marcado como ausente. MPTO destacado fora do centro como ator de pressão."}
+
 @alves2022 estrutura o diagnóstico em três níveis de recursão simultâneos.
 
 **Recursão 1 — usuários (cada outorga é um S1):**

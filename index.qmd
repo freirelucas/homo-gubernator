@@ -14,6 +14,12 @@ Este sítio organiza o curso de auto-estudo de 24 semanas. Quatro fases técnica
 
 Em cada capítulo, leia primeiro `intro.qmd`, depois trabalhe `exercicios.qmd`, depois leia em sequência `memorando-juliana.qmd` (trilha governança) e `carta-luiz-eduardo.qmd` (trilha técnica).
 
+::: {.callout-tip}
+## Pronto para começar?
+
+Vá direto à **[Semana 1 — Fluxos em uma dimensão](fase-01-strogatz/01-fluxos-1d/intro.qmd)**. A sidebar à esquerda lista todas as 24 semanas em ordem.
+:::
+
 ## Sobre Juliana Mariano Alves
 Professora doutora de Engenharia Agronômica na Universidade Estadual do Tocantins (UNITINS, Palmas), com doutorado em Desenvolvimento Regional pela UFT (2022). **Member-at-Large da American Society for Cybernetics (ASC)** pelo Sul Global, com mandato iniciado em janeiro de 2024 após avaliação por 200+ membros da sociedade. Apresentou no **ASC 2024 (60th Anniversary, Washington DC)** a palestra "The Water-Energy-Food Nexus" com bolsa Travel Scholarship. Eleita ao **Diretório do Metaphorum (UK)** em 2023; palestrou no Metaphorum 2025. Trabalhos âncora deste curso: tese UFT 2022 (BHRF/VSM); Alves et al. (2020) *SRBS*; Alves et al. (2022) *J. Land Use Sci.*; Alves & Schwaninger (2025) *Environmental Management*; Alves (2025) *Constructivist Foundations*.
 

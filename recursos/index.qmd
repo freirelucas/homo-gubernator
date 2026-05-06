@@ -10,7 +10,7 @@ Esta página lista material externo que **complementa** os 18 capítulos. Cada r
 
 ## IMPA YouTube — Fase 1 (Strogatz) e parcial Fase 2 (Markov)
 
-O canal oficial [@impabr](https://www.youtube.com/@impabr) (Instituto de Matemática Pura e Aplicada) tem cobertura sólida de sistemas dinâmicos e teoria ergódica em português, ministrada por pesquisadores do próprio IMPA.
+O canal oficial [\@impabr](https://www.youtube.com/@impabr) (Instituto de Matemática Pura e Aplicada) tem cobertura sólida de sistemas dinâmicos e teoria ergódica em português, ministrada por pesquisadores do próprio IMPA.
 
 | Recurso | Encaixe | Comentário |
 |---|---|---|

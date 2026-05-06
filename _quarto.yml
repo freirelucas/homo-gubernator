@@ -35,40 +35,61 @@ website:
       - href: recursos/index.qmd
         text: Recursos
   sidebar:
-    - title: "Fase 1"
+    - title: "Semanas 1–24"
       style: docked
       contents:
-        - fase-01-strogatz/index.qmd
-        - fase-01-strogatz/01-fluxos-1d/intro.qmd
-        - fase-01-strogatz/02-bifurcacoes-1d/intro.qmd
-        - fase-01-strogatz/03-fluxos-2d/intro.qmd
-        - fase-01-strogatz/04-ciclos-limite/intro.qmd
-        - fase-01-strogatz/05-bifurcacoes-2d/intro.qmd
-        - fase-01-strogatz/06-caos-lorenz/intro.qmd
-    - title: "Fase 2"
-      style: docked
-      contents:
-        - fase-02-markov/index.qmd
-        - fase-02-markov/01-cadeias-finitas/intro.qmd
-        - fase-02-markov/02-distribuicoes-estacionarias/intro.qmd
-        - fase-02-markov/03-reversibilidade-mcmc/intro.qmd
-        - fase-02-markov/04-tempo-continuo/intro.qmd
-        - fase-02-markov/05-aplicacoes-algoritmicas/intro.qmd
-    - title: "Fase 3"
-      style: docked
-      contents:
-        - fase-03-sterman/index.qmd
-        - fase-03-sterman/01-fundamentos-sd/intro.qmd
-        - fase-03-sterman/02-feedback-loops/intro.qmd
-        - fase-03-sterman/03-modelagem-formal/intro.qmd
-        - fase-03-sterman/04-validacao/intro.qmd
-    - title: "Fase 4"
-      style: docked
-      contents:
-        - fase-04-sintese/index.qmd
-        - fase-04-sintese/01-vsm-ashby-beer/intro.qmd
-        - fase-04-sintese/02-bacia-formoso-caso/intro.qmd
-        - fase-04-sintese/03-aplicacao-propria/intro.qmd
+        - text: "Plano completo"
+          href: plano/plano-estudos.qmd
+        - section: "Fase 1 — Strogatz"
+          contents:
+            - text: "Sem 1 · Fluxos 1D"
+              href: fase-01-strogatz/01-fluxos-1d/intro.qmd
+            - text: "Sem 2 · Bifurcações 1D"
+              href: fase-01-strogatz/02-bifurcacoes-1d/intro.qmd
+            - text: "Sem 3 · Fluxos 2D"
+              href: fase-01-strogatz/03-fluxos-2d/intro.qmd
+            - text: "Sem 4 · Ciclos-limite"
+              href: fase-01-strogatz/04-ciclos-limite/intro.qmd
+            - text: "Sem 5 · Bifurcações 2D"
+              href: fase-01-strogatz/05-bifurcacoes-2d/intro.qmd
+            - text: "Sem 6 · Caos / Lorenz"
+              href: fase-01-strogatz/06-caos-lorenz/intro.qmd
+        - section: "Fase 2 — Markov"
+          contents:
+            - text: "Sem 7 · Cadeias finitas"
+              href: fase-02-markov/01-cadeias-finitas/intro.qmd
+            - text: "Sem 8 · Estacionárias"
+              href: fase-02-markov/02-distribuicoes-estacionarias/intro.qmd
+            - text: "Sem 9 · Reversibilidade / MCMC"
+              href: fase-02-markov/03-reversibilidade-mcmc/intro.qmd
+            - text: "Sem 10 · Tempo contínuo"
+              href: fase-02-markov/04-tempo-continuo/intro.qmd
+            - text: "Sem 11 · Aplicações algorítmicas"
+              href: fase-02-markov/05-aplicacoes-algoritmicas/intro.qmd
+            - text: "Sem 12 · Revisão integrada"
+              href: revisao/index.qmd
+        - section: "Fase 3 — Sterman"
+          contents:
+            - text: "Sem 13 · Fundamentos SD"
+              href: fase-03-sterman/01-fundamentos-sd/intro.qmd
+            - text: "Sem 14 · Laços de feedback"
+              href: fase-03-sterman/02-feedback-loops/intro.qmd
+            - text: "Sem 15 · Modelagem formal"
+              href: fase-03-sterman/03-modelagem-formal/intro.qmd
+            - text: "Sem 16 · Validação"
+              href: fase-03-sterman/04-validacao/intro.qmd
+            - text: "Sem 17 · Revisão integrada"
+              href: revisao/index.qmd
+        - section: "Fase 4 — Síntese VSM"
+          contents:
+            - text: "Sem 18 · VSM como linguagem"
+              href: fase-04-sintese/01-vsm-ashby-beer/intro.qmd
+            - text: "Sem 19 · Bacia do Formoso"
+              href: fase-04-sintese/02-bacia-formoso-caso/intro.qmd
+            - text: "Sem 20 · Aplicação própria"
+              href: fase-04-sintese/03-aplicacao-propria/intro.qmd
+            - text: "Sem 21–24 · Diagnóstico final"
+              href: fase-04-sintese/03-aplicacao-propria/intro.qmd
 format:
   html:
     theme:
