@@ -1,0 +1,92 @@
+---
+title: "Recursos externos curados"
+subtitle: "Saídas honestas para profundidade adicional"
+format: html
+---
+
+::: {.callout-note}
+Esta página lista material externo que **complementa** os 18 capítulos. Cada recurso indica em qual fase ou capítulo ele se encaixa, e por quê. Lacunas honestas estão marcadas — para System Dynamics e VSM, por exemplo, não há equivalente IMPA em PT-BR; é necessário recorrer ao MIT e à literatura primária diretamente.
+:::
+
+## IMPA YouTube — Fase 1 (Strogatz) e parcial Fase 2 (Markov)
+
+O canal oficial [@impabr](https://www.youtube.com/@impabr) (Instituto de Matemática Pura e Aplicada) tem cobertura sólida de sistemas dinâmicos e teoria ergódica em português, ministrada por pesquisadores do próprio IMPA.
+
+| Recurso | Encaixe | Comentário |
+|---|---|---|
+| [Tópicos de Sistemas Dinâmicos — Marcelo Viana (Doutorado 2014)](https://www.youtube.com/playlist?list=PLo4jXE-LdDTR7vKcf2MZTKBW5Ba9JmCWB) | Fase 1, especialmente F1-04, F1-05, F1-06 | Marcelo Viana é diretor-geral do IMPA. Curso de doutorado vai além de Strogatz, mas as primeiras aulas são acessíveis com Strogatz cap. 1–6 lido. |
+| ["Conhecendo as áreas — Sistemas Dinâmicos com Marcelo Viana"](https://www.youtube.com/watch?v=8hBSKu_vt4E) | Semana 1, ambientação | Vídeo curto de divulgação. Boa primeira leitura para entender por que sistemas dinâmicos importam. |
+| Colóquios Brasileiros de Matemática — playlists [28º](https://www.youtube.com/playlist?list=PLo4jXE-LdDTR2_WI1-6bma-H8gR3IuJNM), [33º](https://www.youtube.com/channel/UCcIW6cFd830I7yiNvMLAG_g), [34º](https://www.youtube.com/playlist?list=PLo4jXE-LdDTSw96Z6TGXqMv4D_UIi0xsF) | Fases 1, 2, 3 | Mini-cursos avançados. Garimpe por edição — cada CBM tem 2-3 mini-cursos relevantes ao curso. |
+| [Iniciação Científica em Economia Matemática 2022](https://www.youtube.com/playlist?list=PLo4jXE-LdDTTjttEZI1t-7aVeFuMYkZuI) | Fase 4 (aplicação) | Útil para quem aplica o aparato cibernético em contextos econômicos. Aloisio Araujo é referência IMPA. |
+
+**Lacuna**: o IMPA não cobre cadeias de Markov com profundidade pedagógica — apenas tangencialmente via teoria ergódica. Para Fase 2, complementar com material abaixo.
+
+## Probabilidade e cadeias de Markov — Fase 2
+
+| Recurso | Encaixe | Comentário |
+|---|---|---|
+| [Prof. Francisco Rodrigues — canal pessoal](https://www.youtube.com/franciscorodrigues) | Fase 2 inteira | Probabilidade, estatística, Markov, MCMC, redes complexas, simulações. PT-BR. Substituto natural à lacuna IMPA em Markov. |
+| [MIT 6.041 *Probabilistic Systems Analysis* — Tsitsiklis](https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/) | F2-01, F2-02, F2-04 | Em inglês. Capítulos 6–7 cobrem cadeias finitas e tempo contínuo no nível pedagógico do curso. |
+| [Aprendizado de máquina: uma abordagem estatística — Izbicki & Mendonça](https://www.youtube.com/playlist?list=PLMZwWwAgHhmAB8-qg5HWkdB5VDr8ROeyj) | F2-05 | Não é IMPA mas é PT-BR. Inferência bayesiana e MCMC contextualizados em ML. |
+| Pedro Fernandez — *Introdução aos Processos Estocásticos* (livro IMPA) | Toda Fase 2 | Texto canônico em PT-BR. Não tem vídeo, mas é referência para quem quer rigor matemático completo. |
+
+## System Dynamics e Sterman — Fase 3
+
+**Lacuna estrutural**: SD/Sterman é tradição de engenharia industrial e management, não de matemática pura. Por isso fora do escopo do canal IMPA. Substitutos canônicos:
+
+| Recurso | Encaixe | Comentário |
+|---|---|---|
+| [MIT 15.871 *Introduction to System Dynamics* — Sterman](https://www.youtube.com/watch?v=AnTwZVviXyY) | Toda Fase 3 | O próprio autor do livro-base. Em inglês. Acessível com Sterman cap. 1–6 lido. |
+| [PySD documentation](https://pysd.readthedocs.io/) | F3-03 | Biblioteca Python para SD. Útil para o notebook do capítulo de modelagem formal. |
+| [System Dynamics Society resources](https://systemdynamics.org/) | Fase 3 inteira | Conferências anuais, papers, boletins. Comunidade ativa. |
+
+## Cibernética organizacional e VSM — Fase 4
+
+**Lacuna estrutural**: VSM não tem curso aberto online no nível pedagógico do curso. Recorrer à literatura primária e à comunidade.
+
+| Recurso | Encaixe | Comentário |
+|---|---|---|
+| [Metaphorum (UK)](https://metaphorum.org/) | Fase 4 inteira | Comunidade de prática focada na obra de Stafford Beer. Juliana Mariano Alves é membro do Diretório desde 2023. Conferências anuais com apresentações abertas. |
+| [American Society for Cybernetics — ASC](https://asc-cybernetics.org/) | Fase 4 inteira | Sociedade fundada 1964. Juliana é Member-at-Large pelo Sul Global desde jan/2024. ASC 2024 (60th Anniversary) program: <https://events.asc-cybernetics.org/2024/program/>. |
+| [Constructivist Foundations Vol. 20 (2025)](https://constructivist.info/20) | F4-01, F4-02 | Inclui @alves2025variety — *Harnessing variety engineering for management of non-trivial systems*. |
+| Espinosa, A. & Walker, J. (2017). *A Complexity Approach to Sustainability* (2ª ed., World Scientific) | F4-01 | Aplicação de VSM a universidades e sustentabilidade. Disponível em bibliotecas universitárias. |
+| Espejo, R. & Reyes, A. (2011). *Organizational Systems* (Springer) | F4-01 | Texto-padrão para VSM aplicado em PT-BR não traduzido — mas legível com inglês intermediário. |
+| Beer, S. — quintessência: *Brain of the Firm* (1972), *The Heart of Enterprise* (1979), *Diagnosing the System for Organizations* (1985) | Fase 4 inteira | Para mergulho na obra primária. *Diagnosing* é o mais operacional. |
+
+## Educação a Distância e UniRede — contexto Joana
+
+A pesquisa-cenário do curso (vide [Personagem](../personagem-narrativo.qmd)) pressupõe leitura sobre EaD na rede pública brasileira.
+
+| Recurso | Encaixe | Comentário |
+|---|---|---|
+| [UniRede — Associação Universidade em Rede](https://www.aunirede.org.br/) | F4-03 (aplicação própria), Joana | Consórcio fundado 1999 que organiza o ESUD. Luiz Eduardo da Silva é representante substituto da UNIFAL-MG. |
+| [Anais ESUD — Congresso Brasileiro de Ensino Superior a Distância](https://www.aunirede.org.br/portal/anais-esud/) | F4-03, Joana | Edições anuais desde 2004. Para Joana, fonte primária de literatura sobre viabilidade de programas EaD. |
+| [Livro PDI — Silva & Silveira (2026)](https://luizedsilva.github.io/livro-pdi/) | Trilha técnica (cartas Luiz Eduardo) | Texto interativo com P5.js e GeoGebra. Referência da trilha paralela do curso. |
+| [UNITINS — portal](https://www.unitins.br/) | F4-02, F4-03, Joana | Universidade Estadual do Tocantins. Sede da Profa. Juliana Mariano Alves. |
+| [UNIFAL-MG — portal](https://www.unifal-mg.edu.br/) | Joana | Universidade Federal de Alfenas. Sede do Prof. Luiz Eduardo da Silva. |
+
+## Anki, revisão espaçada, ferramentas
+
+| Recurso | Encaixe | Comentário |
+|---|---|---|
+| [Anki Desktop](https://apps.ankiweb.net/) | Toda semana, sextas | Software gratuito. Algoritmo SM-2 de repetição espaçada. Importação do deck do curso descrita em [BOOTSTRAP.md](../BOOTSTRAP.md). |
+| [Quarto](https://quarto.org/) | Quem quer adaptar o curso | Sistema de publicação técnica. Usado para gerar este site. |
+| [Excalidraw](https://excalidraw.com/) | Quem quer fazer figuras próprias | Editor SVG estilo whiteboard. Leve, no navegador, exportação fácil. |
+
+## Comunidade e fóruns
+
+- [System Dynamics Society — fóruns](https://systemdynamics.org/community/) — discussões sobre modelagem SD aplicada.
+- [Cybernetics Mailing List (Metaphorum)](https://metaphorum.org/contact) — lista ativa, baixa frequência, alta qualidade. Inscreva-se para acompanhar o que a comunidade está discutindo.
+- [Twitter/Bluesky #cybernetics, #VSM, #systemdynamics](#) — qualidade variável; útil para descobrir trabalhos e pessoas.
+
+## Lacunas honestas que este curso não cobre
+
+Reconhecer o que o curso *não* cobre é parte do aparato cibernético — é S4 sobre o próprio currículo. Lacunas conscientes:
+
+- **Game theory** — relevante para VSM aplicado a múltiplos atores, não tratado.
+- **Network science** — redes complexas, comunidades, centralidades. Há sobreposição parcial com Markov, mas tratamento próprio fica fora.
+- **Agent-based modeling** — alternativa ou complemento ao SD. Furtado (2018) tem boa introdução em PT-BR.
+- **Cibernética de segunda ordem profunda** — Pask, von Foerster, Maturana&Varela são citados de passagem, não tratados como unidade.
+- **Sistemas adaptativos complexos** (Santa Fe tradition) — Holland, Kauffman. Diferente em método mas adjacente em interesse.
+
+Para qualquer dessas, a recomendação é: termine o curso primeiro e depois aborde a área lateral com o aparato matemático-cibernético já consolidado.

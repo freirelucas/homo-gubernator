@@ -1,0 +1,58 @@
+---
+title: "ViableOS — o curso como sistema viável"
+subtitle: "Metatexto: a auto-aplicação do VSM ao próprio currículo"
+bibliography: bibliografia.bib
+format: html
+---
+
+::: {.callout-tip}
+Este capítulo deve ser lido **antes da Semana 1** para entender a tese pedagógica do curso, e **revisitado nas Semanas 12 e 20** durante as revisões integradas. É o argumento que distingue este curso de qualquer outro de cibernética: o currículo é, ele próprio, um sistema viável.
+:::
+
+## A pergunta operacional
+
+A literatura de cibernética organizacional ensina o **Modelo do Sistema Viável** (VSM) como ferramenta para diagnosticar organizações. Este curso vai um passo além: aplica o VSM **ao próprio currículo** — o conjunto de capítulos, fases, exercícios, memorandos, cartas, prompts, subagents, deck Anki e plano de 24 semanas é tratado como sistema viável recursivo. A tese pedagógica é que **a forma encarna o conteúdo**: o(a) leitor(a) aprende cibernética operando dentro de um curso que é, ele próprio, exemplar do aparato.
+
+Isso não é metáfora preciosa. É uma escolha de design com consequências operacionais: cada componente do curso ocupa uma posição funcional (S1, S2, S3, S4, S5) na arquitetura de Beer; cada falha pedagógica é diagnosticável como ausência de função; cada melhora é, formalmente, uma intervenção de variedade requisita sobre a própria estrutura.
+
+## A recursão tripla do curso
+
+Recursões em VSM são níveis de abstração onde a mesma estrutura S1–S5 reaparece. O curso opera em três recursões simultâneas:
+
+| Recursão | S1 (operação) | S2 (antioscilação) | S3 (alocação aqui-agora) | S4 (fora-e-depois) | S5 (política/identidade) |
+|---|---|---|---|---|---|
+| **Curso completo (24 semanas)** | as 4 fases técnicas | revisões integradas (sem 12, 17) | `plano/plano-estudos.qmd` | leituras paralelas Juliana + Luiz Eduardo | identidade declarada em `index.qmd` e `personagem-narrativo.qmd` |
+| **Cada fase (~6 capítulos)** | os capítulos | cards Anki nas sextas | semana de revisão entre fases | memorando-juliana de cada capítulo | escolha da bibliografia-base ($\textit{Strogatz}$, $\textit{Häggström}$, $\textit{Sterman}$, $\textit{Beer}$) |
+| **Cada capítulo (1 semana)** | as 4 partes (intro / exercícios / notebook / cartas-memorandos) | TOC do capítulo + sidebar Quarto | tempo dedicado pelo leitor | seção "Conexão com Ashby/Beer" | título + recorte declarado no YAML |
+
+A leitura horizontal da tabela é o argumento: cada coluna mantém sua função em qualquer recursão. **S2, por exemplo, é sempre antioscilação** — o que muda é o que oscila e o que coordena. No nível do curso completo, o que oscila são as quatro fases (Strogatz pode "tomar conta" e enfraquecer as outras se o leitor se perder); o coordenador é o calendário de 24 semanas. No nível da fase, o que oscila são os capítulos; o coordenador é o ritmo Anki-semanal. No nível do capítulo, o que oscila são as quatro partes; o coordenador é o sumário Quarto.
+
+## Quatro afirmações operacionais
+
+1. **A variedade $H(D)$ que o currículo precisa absorver é o cardápio das 4 fases.** Strogatz cobre dinâmica determinística, Markov cobre estocástica, Sterman cobre feedback, VSM cobre arquitetura institucional. A escolha das quatro famílias de modelos não é exaustiva, mas é deliberadamente larga o suficiente para que o(a) pesquisador(a) em educação superior pública encontre um destes modelos ajustável a qualquer fenômeno que pretenda diagnosticar. Atenuar $H(D)$ aqui significaria cortar uma fase — perda real de cobertura.
+
+2. **O canal algedônico do curso é a coluna "compreensão" do `PROGRESSO.md`.** Em VSM, o sinal algedônico é o canal vertical de baixíssima banda que conecta diretamente S1 a S5 em emergência, contornando S2/S3/S4. No curso, a coluna "compreensão (1-5)" do `PROGRESSO.md` é exatamente isso: nota ≤ 2/5 por duas semanas seguidas é gatilho para suspender o ritmo padrão e voltar ao capítulo anterior — sem passar por revisão integrada nem por nota média da fase. A regra é deliberadamente agressiva, pois algedônicos *bons* são sempre agressivos.
+
+3. **S3 do curso é o calendário de 24 semanas; S4 é a leitura paralela Juliana + Luiz Eduardo; S5 é a meta institucional do(a) leitor(a).** S3 é onde se aloca o aqui-agora — qual capítulo nesta semana, quanto tempo. S4 é onde se monitora o "fora-e-depois" — o que está acontecendo em pesquisa cibernética agora? Os memorandos Juliana (governança hídrica brasileira) e cartas Luiz Eduardo (PDI UNIFAL) são essa janela. S5 é onde se decide o que o curso *é* e o que se recusa a ser — para o leitor que segue Joana, é a pesquisa-cenário UNITINS↔UNIFAL; para outro leitor, é a aplicação própria que ele mesmo definiu antes de começar.
+
+4. **A trilha paralela (Juliana, Luiz Eduardo) é o canal Conant-Ashby do curso.** O teorema de @conantashby1970 — *todo bom regulador deve ser um modelo do sistema regulado* — implica que o regulador efetivo amplia $H(R)$ ao incorporar dois modelos do mesmo objeto. As duas trilhas paralelas fazem exatamente isso: cada conceito é apresentado em vocabulário institucional (Juliana, governança) **e** em vocabulário técnico-algorítmico (Luiz Eduardo, sinal/imagem). O leitor que faz ambas as leituras tem regulador interno mais variado do que o que faz só uma.
+
+## O que ViableOS *não* é
+
+Não é metáfora poética para "o curso é organizado". A organização explícita é trabalho operacional: o leitor deve conseguir, ao perceber falha pedagógica, **diagnosticar qual função VSM falhou**. Se a Semana 7 não funciona, a pergunta correta não é "o capítulo de Markov é difícil?" — é "S2 falhou (oscilação não-coordenada entre Fases 1 e 2)?", "S3 falhou (calendário inadequado)?", "S4 falhou (memorando Juliana não conectou)?", ou "S5 falhou (a meta institucional do leitor não casa com a fase em curso)?".
+
+Não é exigência de auto-referência infinita. Após esta leitura, o leitor não precisa pensar em ViableOS a cada parágrafo. A tese opera de fundo, como gramática — e é revisitada apenas três vezes em 24 semanas (Semana 0, Semana 12, Semana 20).
+
+Não é cibernética de segunda ordem genérica. É instância concreta: este curso, este `_quarto.yml`, este deck Anki, estes 18 capítulos. A generalização para outros currículos é trabalho separado — e seria bem-vinda mas não é o ponto.
+
+## Conexão com a literatura
+
+O movimento de aplicar VSM à academia tem precedente. @espinosa2017 trata universidades inteiras como sistemas viáveis em sua framework de complexidade-sustentabilidade; @schwaninger2009 generaliza para "Intelligent Organizations". A inovação modesta deste curso é descer a recursão um nível: aplicar VSM **ao currículo de auto-estudo de uma única pessoa**, não à instituição que o oferece. A pesquisa-cenário UNITINS↔UNIFAL-MG (vide `personagem-narrativo.qmd`) opera *também* na recursão institucional — o que demonstra que ambas as recursões coexistem no mesmo aparato, sem conflito.
+
+## Pergunta de verificação
+
+Releia este capítulo em três momentos: (i) agora, antes da Semana 1; (ii) após a Semana 12 (revisão integrada Fases 1+2); (iii) após a Semana 20 (revisão integrada antes do diagnóstico próprio). Em cada releitura, anote em uma frase o que mudou na sua leitura — qual recursão ficou mais nítida, qual afirmação operacional ganhou tração, qual ainda parece especulativa. As três frases, lidas em sequência, são um diagnóstico do seu próprio percurso através do ViableOS.
+
+::: {.callout-note}
+Se em qualquer das três releituras a coluna "compreensão" no `PROGRESSO.md` para o capítulo da semana corrente estiver ≤ 2/5: **acionar canal algedônico**. Volte ao último capítulo onde a compreensão estava ≥ 4/5 e refaça a sequência. A regra é deliberadamente agressiva.
+:::

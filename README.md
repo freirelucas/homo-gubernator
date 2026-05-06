@@ -8,7 +8,9 @@ Curso de auto-estudo de 24 semanas em quatro fases — sistemas dinâmicos (Stro
 
 ## Arquitetura ViableOS
 
-O curso é organizado como um sistema viável em quatro recursões: cada fase é um S1 com seus próprios S2–S5 internos; o repositório como um todo é S5 (identidade) + S4 (modelo do trabalho) + S3 (alocação semanal) sobre um S1 distribuído por capítulos.
+O curso é organizado como um sistema viável em três recursões simultâneas (curso completo / fase / capítulo), cada uma com S1–S5 explicitamente identificados. **A forma encarna o conteúdo**: o(a) leitor(a) aprende cibernética operando dentro de um currículo que é, ele próprio, exemplar do aparato.
+
+O argumento completo está no metatexto: [ViableOS — o curso como sistema viável](https://freirelucas.github.io/homo-gubernator/metatexto/viable-os.html).
 
 ## Como começar
 Veja `BOOTSTRAP.md`. Para acompanhar o progresso, edite `PROGRESSO.md`.

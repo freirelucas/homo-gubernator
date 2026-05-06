@@ -12,6 +12,10 @@ website:
     left:
       - href: index.qmd
         text: Início
+      - href: como-estudar.qmd
+        text: Como estudar
+      - href: metatexto/viable-os.qmd
+        text: ViableOS
       - href: personagem-narrativo.qmd
         text: Personagem
       - href: plano/plano-estudos.qmd
@@ -28,6 +32,8 @@ website:
         text: Glossário
       - href: revisao/index.qmd
         text: Revisão
+      - href: recursos/index.qmd
+        text: Recursos
   sidebar:
     - title: "Fase 1"
       style: docked

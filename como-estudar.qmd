@@ -1,0 +1,97 @@
+---
+title: "Como estudar este curso"
+subtitle: "Camada operacional do estudo autônomo"
+format: html
+---
+
+::: {.callout-tip}
+Esta página é a **primeira leitura obrigatória** depois do [`index.qmd`](index.qmd) e do [metatexto ViableOS](metatexto/viable-os.qmd). Se você acabou de chegar e quer saber o que fazer concretamente, está no lugar certo.
+:::
+
+## Pré-requisitos mínimos
+
+- **Matemática**: cálculo de uma variável (derivada, integral) e álgebra linear básica (autovalores). Estatística introdutória ajuda mas não é exigida.
+- **Programação**: Python básico para os notebooks. Se você só lê os notebooks sem rodar, ainda assim aproveita.
+- **Tempo**: **5 a 8 horas por semana** durante 24 semanas. Não é um curso para fazer em fim de semana.
+- **Ferramenta**: editor de texto + Claude Code (para os modos de operação) + Anki Desktop (para revisão espaçada). Tudo gratuito.
+
+## O fluxo padrão de uma semana
+
+A unidade pedagógica é a **semana**, não o capítulo. Cada semana tem um capítulo da fase em curso, conforme [`plano/plano-estudos.qmd`](plano/plano-estudos.qmd). Distribuição típica:
+
+| Dia | Tarefa | Tempo | Saída |
+|---|---|---|---|
+| **Segunda** | Ler `intro.qmd` do capítulo da semana | 60–90 min | Dúvidas anotadas em `caderno/duvidas-em-aberto.md` |
+| **Terça** | Esclarecer dúvidas com Claude (modo `tutor`) | 45 min | Notas marginais no próprio `intro.qmd` (próprio fork) |
+| **Quarta** | Resolver `exercicios.qmd` (5 a 8 exercícios) | 90–120 min | Soluções em caderno físico ou `.qmd` próprio |
+| **Quinta** | Ler `memorando-juliana.qmd` + `carta-luiz-eduardo.qmd` | 30 min | Anotação sobre conexão à pesquisa-cenário |
+| **Sexta** | Anki: 10–15 cards novos da semana + revisão | 20 min | Cartões respondidos |
+| **Sábado** | (Opcional) Notebook do capítulo | 60 min | Notebook executado, gráficos interpretados |
+| **Domingo** | Atualizar `PROGRESSO.md` com auto-avaliação | 15 min | Linha da semana preenchida |
+
+Total: **5h30 a 8h por semana**. Adaptável: quem tem mais tempo aprofunda; quem tem menos pula o notebook (os capítulos não dependem dele para fazer sentido).
+
+## Os seis modos de Claude Code
+
+Esta é a parte que faz o estudo **autônomo, não solitário**. O repositório vem com seis prompts em `prompts/` que ativam modos de operação distintos. Use cada um como descrito.
+
+### `tutor` — explicar até saturação
+
+Cole o prompt em `prompts/tutor.md` no Claude. O conceito vem em três níveis (intuição → formalização → exemplo aplicado). Termina com pergunta de verificação. **Use quando**: você leu `intro.qmd` e algo não fechou; ou quando quer aprofundar um exemplo específico do capítulo.
+
+Sintaxe sugerida: cole o prompt, substitua `{X}` pelo conceito, anexe o trecho do `intro.qmd` que cita o conceito.
+
+### `examinador` — perguntas socráticas
+
+`prompts/examinador.md`. Cinco perguntas crescentemente difíceis. Aguarda sua resposta antes de avançar. No final classifica seu domínio como superficial / operacional / profundo. **Use quando**: você terminou os exercícios e quer um teste mais duro; ou na sexta antes do Anki.
+
+### `resolvedor` — solução passo a passo
+
+`prompts/resolvedor.md`. Resolve exercício específico mostrando todos os passos algébricos, com comentários sobre onde se usa linearização, Lei de Ashby, propriedade markoviana. **Use somente como conferência**, depois de tentar sozinho. Resolver primeiro com o `resolvedor` é receita para ilusão de competência.
+
+### `conector {trilha}` — ligar à literatura aplicada
+
+`prompts/conector.md`. Aceita parâmetro `{trilha}` com dois valores:
+
+- `juliana`: identifica passagem específica de Alves (tese 2022, SRBS 2020, Land Use 2022, Environmental Management 2025, Constructivist Foundations 2025) onde o conceito aparece, e propõe pergunta de pesquisa para o projeto de Joana.
+- `luiz-eduardo`: identifica capítulo do livro de PDI [@silvasilveira2026] onde o conceito se manifesta, marcando ponte como `[especulativa]` se o livro não cobrir explicitamente.
+
+**Use quando**: você quer aprofundar a aplicação de um conceito sem perder pé na governança hídrica ou no PDI.
+
+### `crítico` — apontar lacunas
+
+`prompts/critico.md`. Lê seu trecho redigido e aponta: ambiguidades terminológicas, saltos lógicos, afirmações não-falsificáveis, pontes forçadas com Juliana. Marca pontes especulativas como `[ponte especulativa]`. **Não inventa problemas** se o texto está coerente. **Use quando**: você redigiu memorando, carta ou seção de diagnóstico próprio e quer revisão pré-publicação.
+
+### `coautor` — ajudar a redigir
+
+`prompts/coautor.md`. Ajuda a redigir o capítulo/memorando/carta. Voz densa em PT-BR, sem manualese, com LaTeX. Pausa a cada ~300 palavras para você revisar. **Use quando**: a tarefa é gerar prosa formal — o diagnóstico final, um memorando longo, uma seção de tese.
+
+## Critérios de auto-avaliação
+
+A cada domingo, atualize a linha da semana em [`PROGRESSO.md`](PROGRESSO.md). Três colunas, cada uma de 1 a 5:
+
+- **Compreensão**: você entendeu o aparato matemático? consegue acompanhar uma derivação? Sabe o que cada símbolo significa?
+- **Intuição**: o conceito tem forma geométrica/operacional na sua cabeça? você "vê" um ponto fixo, um ciclo-limite, um S2 ausente?
+- **Capacidade de explicar**: se um colega não-técnico perguntasse, você explicaria sem manualese? Sem se enrolar?
+
+## Disparadores algedônicos
+
+O **canal algedônico** do curso (vide [ViableOS](metatexto/viable-os.qmd)) é deliberadamente agressivo. Acione quando:
+
+1. **Compreensão ≤ 2/5 por duas semanas seguidas**: pare. Volte ao último capítulo onde compreensão ≥ 4/5 e refaça a sequência. Não use o `resolvedor`. Use `tutor` extensivamente. Aceite que perdeu uma ou duas semanas — é mais barato do que entrar nas próximas com base frágil.
+2. **Intuição < Compreensão por mais de três semanas**: você está aprendendo a manipular símbolos sem ver o que eles significam. Saia do `intro.qmd` e vá para o `notebook.qmd` correspondente. Plote, varie parâmetros, observe.
+3. **Capacidade de explicar ≤ 2 quando os outros estão ≥ 4**: você sabe o conceito mas não verbaliza. Use `examinador` semanalmente; redija uma carta a Luiz Eduardo de seu próprio caso (não a do curso) tentando explicar.
+
+Disparadores algedônicos são *bons* quando agressivos. Hesitar é caro.
+
+## Anki: a função S2 do curso
+
+O deck em [`revisao/anki/deck-cibernetica.csv`](revisao/anki/deck-cibernetica.csv) tem 35 cartões cobrindo as quatro fases. Importação no Anki Desktop: `Arquivo > Importar`, separador vírgula, mapear campo 1 → Front, 2 → Back, 3 → Tags.
+
+Frequência: 15 minutos por dia, 6 dias por semana. Sextas: cards novos da semana + revisão. **Não pule revisão Anki**: é a função antioscilatória que impede o conhecimento das semanas anteriores oscilar entre "lembrado" e "esquecido". O algoritmo SM-2 do Anki garante economia ótima — você gasta menos tempo do que sem revisão espaçada.
+
+## Quando você termina o curso
+
+Após a Semana 24, você terá produzido um **diagnóstico VSM próprio** (capítulo F4-03) sobre um sistema concreto da sua escolha — coordenação de curso, política finalística, programa institucional. O documento final é seu produto autoral, não do curso.
+
+Nesse momento: revisite o [metatexto ViableOS](metatexto/viable-os.qmd) uma terceira vez. Anote a frase que mudou desde a primeira leitura. Considere submeter o diagnóstico a um fórum cibernético — Metaphorum, ASC, CBM, ESUD — pelos canais Conant-Ashby internos da literatura. Esse é, formalmente, o **fechamento da recursão**: você passou de leitor para participante da comunidade.
