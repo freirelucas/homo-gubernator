@@ -5,14 +5,6 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-:::: {.chapter-header-card}
-[Semana 2 · Fase 1 — Strogatz]{.chapter-week}
-
-Tempo estimado de leitura: **60–90 min**.
-
-[Dependências: Sem 1]{.chapter-meta}
-::::
-
 ## A pergunta operacional
 
 Em F1-01 fixamos a função $f$ e perguntamos pelo comportamento de longo prazo. Agora introduzimos um **parâmetro** $r$ e perguntamos o que acontece à estrutura qualitativa de $\dot{x}=f(x,r)$ quando $r$ varia. A resposta de @strogatz2018 (cap. 3) é: na maior parte do tempo, nada qualitativo muda. Mas em **valores críticos** $r_c$ a estrutura colapsa — pontos fixos colidem, criam-se pares novos, ou trocam estabilidade. Esses são os fenômenos de **bifurcação**.

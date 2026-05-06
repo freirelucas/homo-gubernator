@@ -5,14 +5,6 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-:::: {.chapter-header-card}
-[Semana 1 · Fase 1 — Strogatz]{.chapter-week}
-
-Tempo estimado de leitura: **60–90 min**.
-
-[Dependências: nenhuma]{.chapter-meta}
-::::
-
 ## A pergunta operacional
 
 A pergunta central da Fase 1 é geometricamente simples: dado um sistema autônomo de primeira ordem na reta, $\dot{x} = f(x)$, com $f$ suficientemente regular, o que é possível dizer sobre o comportamento de longo prazo de qualquer trajetória, sabendo apenas onde $f$ se anula e qual é o sinal de $f$ entre seus zeros? A resposta de @strogatz2018 é desproporcional à modéstia da pergunta: para a dinâmica unidimensional autônoma, *tudo o que importa* está nos zeros de $f$ (os pontos fixos) e na monotonicidade local de $f$ em torno deles.

@@ -5,14 +5,6 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-:::: {.chapter-header-card}
-[Semana 10 · Fase 2 — Markov]{.chapter-week}
-
-Tempo estimado de leitura: **60–90 min**.
-
-[Dependências: Sem 7, 8]{.chapter-meta}
-::::
-
 ## A pergunta operacional
 
 Em tempo discreto, transições ocorrem a passos inteiros. Em tempo contínuo, ocorrem em instantes aleatórios — o estado salta a um ritmo governado por **taxas**. A pergunta operacional muda de "qual a próxima transição?" para "quando e para onde a próxima transição?".

@@ -1,117 +1,25 @@
 ---
 title: "Homo Gubernator"
 subtitle: "Cibernética aplicada à educação pública"
-format:
-  html:
-    page-layout: full
-    toc: false
 ---
-
-::: {.hero-block}
-
-# Aprenda cibernética operando dentro de um curso que é, ele próprio, um sistema viável.
 
 Curso de auto-estudo de **24 semanas** em quatro fases técnicas — sistemas dinâmicos, cadeias de Markov, dinâmica de sistemas, síntese VSM — articuladas pela linguagem de Beer e Ashby, ancoradas em duas trilhas brasileiras: governança hídrica (Juliana Mariano Alves, UNITINS) e processamento digital de imagens (Luiz Eduardo da Silva, UNIFAL-MG).
 
-[Comece pela Semana 1 →](fase-01-strogatz/01-fluxos-1d/intro.qmd){.hero-cta}
-
-:::
+[**Comece pela Semana 1 →**](fase-01-strogatz/01-fluxos-1d/intro.qmd)
 
 ## Quatro entradas, em ordem
 
-```{=html}
-<div class="entry-cards">
-  <a href="como-estudar.html" class="entry-card">
-    <div class="entry-num">01</div>
-    <div class="entry-title">Como estudar</div>
-    <div class="entry-desc">Fluxo padrão semanal de 5h30 a 8h, seis modos de Claude Code, critérios de auto-avaliação. <strong>Leitura obrigatória</strong> antes da Semana 1.</div>
-  </a>
-  <a href="metatexto/viable-os.html" class="entry-card">
-    <div class="entry-num">02</div>
-    <div class="entry-title">ViableOS</div>
-    <div class="entry-desc">O argumento que distingue este curso. Tabela tripla de recursões e quatro afirmações operacionais que organizam retroativamente os 18 capítulos.</div>
-  </a>
-  <a href="plano/plano-estudos.html" class="entry-card">
-    <div class="entry-num">03</div>
-    <div class="entry-title">Plano de 24 semanas</div>
-    <div class="entry-desc">Calendário com entregáveis das duas trilhas paralelas. Cada semana tem capítulo, exercícios, memorando e carta.</div>
-  </a>
-  <a href="personagem-narrativo.html" class="entry-card">
-    <div class="entry-num">04</div>
-    <div class="entry-title">Personagem</div>
-    <div class="entry-desc">Joana Beraldo — doutoranda em cotutela UNITINS-UNIFAL — costura todos os capítulos com a pesquisa-cenário ficcional.</div>
-  </a>
-</div>
-```
-
-## A trajetória das 24 semanas
-
-```{=html}
-<div class="course-map">
-
-  <div class="phase-row">
-    <div class="phase-label">Fase 1 · Strogatz</div>
-    <div class="phase-weeks">
-      <div class="week-dot f1" data-label="Sem 1 — Fluxos 1D"></div>
-      <div class="week-dot f1" data-label="Sem 2 — Bifurcações 1D"></div>
-      <div class="week-dot f1" data-label="Sem 3 — Fluxos 2D"></div>
-      <div class="week-dot f1" data-label="Sem 4 — Ciclos-limite"></div>
-      <div class="week-dot f1" data-label="Sem 5 — Bifurcações 2D"></div>
-      <div class="week-dot f1" data-label="Sem 6 — Caos / Lorenz"></div>
-    </div>
-  </div>
-
-  <div class="phase-row">
-    <div class="phase-label">Fase 2 · Markov</div>
-    <div class="phase-weeks">
-      <div class="week-dot f2" data-label="Sem 7 — Cadeias finitas"></div>
-      <div class="week-dot f2" data-label="Sem 8 — Estacionárias"></div>
-      <div class="week-dot f2" data-label="Sem 9 — MCMC"></div>
-      <div class="week-dot f2" data-label="Sem 10 — Tempo contínuo"></div>
-      <div class="week-dot f2" data-label="Sem 11 — Algorítmicas"></div>
-      <div class="week-dot review" data-label="Sem 12 — Revisão integrada"></div>
-    </div>
-  </div>
-
-  <div class="phase-row">
-    <div class="phase-label">Fase 3 · Sterman</div>
-    <div class="phase-weeks">
-      <div class="week-dot f3" data-label="Sem 13 — Fundamentos SD"></div>
-      <div class="week-dot f3" data-label="Sem 14 — Feedback loops"></div>
-      <div class="week-dot f3" data-label="Sem 15 — Modelagem formal"></div>
-      <div class="week-dot f3" data-label="Sem 16 — Validação"></div>
-      <div class="week-dot review" data-label="Sem 17 — Revisão integrada"></div>
-    </div>
-  </div>
-
-  <div class="phase-row">
-    <div class="phase-label">Fase 4 · Síntese</div>
-    <div class="phase-weeks">
-      <div class="week-dot f4" data-label="Sem 18 — VSM como linguagem"></div>
-      <div class="week-dot f4" data-label="Sem 19 — Bacia do Formoso"></div>
-      <div class="week-dot f4" data-label="Sem 20 — Aplicação própria"></div>
-      <div class="week-dot write" data-label="Sem 21 — Redação"></div>
-      <div class="week-dot write" data-label="Sem 22 — Redação"></div>
-      <div class="week-dot write" data-label="Sem 23 — Redação"></div>
-      <div class="week-dot write" data-label="Sem 24 — Comunicação ao colegiado"></div>
-    </div>
-  </div>
-
-</div>
-```
+1. **[Como estudar este curso](como-estudar.qmd)** — fluxo padrão semanal, seis modos de Claude Code, critérios de auto-avaliação. Leitura obrigatória antes da Semana 1.
+2. **[Metatexto ViableOS](metatexto/viable-os.qmd)** — argumento que organiza retroativamente os 18 capítulos como sistema viável aplicado ao próprio currículo.
+3. **[Plano de 24 semanas](plano/plano-estudos.qmd)** — calendário com entregáveis das duas trilhas paralelas.
+4. **[Personagem](personagem-narrativo.qmd)** — Joana Beraldo, doutoranda em cotutela UNITINS-UNIFAL.
 
 ## Os referenciais reais
 
 **Profa. Dra. Juliana Mariano Alves** — Engenharia Agronômica, [UNITINS](https://www.unitins.br/) (Palmas-TO). Member-at-Large da [American Society for Cybernetics](https://asc-cybernetics.org/) pelo Sul Global desde janeiro de 2024. Eleita ao Diretório do [Metaphorum](https://metaphorum.org/) (UK) em 2023. Apresentou no ASC 2024 (60th Anniversary, Washington DC) com bolsa Travel Scholarship. Doutorado pela UFT (2022) com diagnóstico VSM da Bacia Hidrográfica do Rio Formoso — caso pedagogicamente central da Fase 4.
 
-**Prof. Luiz Eduardo da Silva** — Ciência da Computação, [UNIFAL-MG](https://www.unifal-mg.edu.br/) (Alfenas). Co-autor de *[Processamento Digital de Imagens](https://luizedsilva.github.io/livro-pdi/)* (Silva & Silveira, 2026). Primeiro docente do curso de Ciência da Computação da UNIFAL-MG; representante substituto da UNIFAL na UniRede. Cada capítulo do curso tem uma "carta a Luiz Eduardo" conectando o conceito matemático ao livro PDI.
-
-## A persona-andaime
-
-A pesquisa-cenário ficcional que costura os capítulos é conduzida por **[Joana Beraldo](personagem-narrativo.qmd)**, doutoranda em Educação em cotutela UNITINS-UNIFAL, comparando duas universidades públicas brasileiras como sistemas viáveis com a mesma função-fim e arquiteturas opostas. Quem segue o curso pode (i) seguir Joana como caso, (ii) substituir por seu próprio caso, ou (iii) usar Joana como contraprova-andaime quando o próprio caso ainda não está claro.
+**Prof. Luiz Eduardo da Silva** — Ciência da Computação, [UNIFAL-MG](https://www.unifal-mg.edu.br/) (Alfenas). Co-autor de *[Processamento Digital de Imagens](https://luizedsilva.github.io/livro-pdi/)* (Silva & Silveira, 2026). Primeiro docente do curso de Ciência da Computação da UNIFAL-MG; representante substituto da UNIFAL na UniRede.
 
 ::: {.callout-tip}
-## Pronto para começar?
-
 A sidebar à esquerda lista as 24 semanas em ordem. A primeira é **[Fluxos em uma dimensão](fase-01-strogatz/01-fluxos-1d/intro.qmd)** — leitura de 60–90 minutos.
 :::

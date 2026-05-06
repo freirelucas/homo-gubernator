@@ -5,14 +5,6 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-:::: {.chapter-header-card}
-[Semana 19 · Fase 4 — Síntese]{.chapter-week}
-
-Tempo estimado de leitura: **75–105 min**.
-
-[Dependências: Sem 18]{.chapter-meta}
-::::
-
 ## A pergunta operacional
 
 Aplicar o aparato cibernético da Fase 4 a um caso real é o que separa pedagogia de retórica. O caso da **Bacia Hidrográfica do Rio Formoso (BHRF)**, no sudoeste do Tocantins, foi diagnosticado por @alves2022 em sua tese de doutorado com diagnóstico VSM em recursão tripla — federal, estadual, usuários. Este capítulo reconstrói o caso com detalhe documental e extrai as lições transferíveis para análogos institucionais, incluindo a pesquisa-cenário UNITINS↔UNIFAL-MG conduzida por Joana Beraldo.

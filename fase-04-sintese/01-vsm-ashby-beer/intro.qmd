@@ -5,14 +5,6 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-:::: {.chapter-header-card}
-[Semana 18 · Fase 4 — Síntese]{.chapter-week}
-
-Tempo estimado de leitura: **90–120 min**.
-
-[Dependências: todo o curso anterior; capítulo-âncora]{.chapter-meta}
-::::
-
 ## A pergunta operacional
 
 Por que três fases técnicas — Strogatz, Markov, Sterman — convergem para o **Modelo do Sistema Viável** (VSM) de @beer1979 e não para qualquer outra ontologia organizacional? A resposta curta: porque o VSM é a única arquitetura que torna *operável* a Lei da Variedade Requisita de @ashby1956. Operável no sentido literal: oferece cinco posições de observação (S1–S5) e seis canais de informação que, em conjunto, permitem ao analista responder à pergunta diagnóstica fundamental — *este sistema absorve a variedade que precisa absorver para permanecer viável?* — com algo mais consistente do que a intuição.

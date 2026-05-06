@@ -5,14 +5,6 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-:::: {.chapter-header-card}
-[Semana 6 · Fase 1 — Strogatz]{.chapter-week}
-
-Tempo estimado de leitura: **60–90 min**.
-
-[Dependências: Sem 3, 5]{.chapter-meta}
-::::
-
 ## A pergunta operacional
 
 Saímos para 3D. Aqui aparece o último fenômeno qualitativo da Fase 1: **caos determinístico** — sensibilidade exponencial às condições iniciais com trajetórias confinadas a um conjunto invariante de medida zero, o **atrator estranho**. O sistema é determinístico (não há aleatoriedade nas equações), mas previsibilidade prática se perde em escala de tempo $\sim 1/\lambda$, onde $\lambda$ é o expoente de Lyapunov dominante.

@@ -5,14 +5,6 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-:::: {.chapter-header-card}
-[Semana 16 · Fase 3 — Sterman]{.chapter-week}
-
-Tempo estimado de leitura: **60–90 min**.
-
-[Dependências: Sem 15]{.chapter-meta}
-::::
-
 ## A pergunta operacional
 
 Quando um modelo SD é "bom o suficiente"? @sterman2000 (cap. 21) responde com taxonomia em duas frentes: testes **estruturais** (independem do comportamento simulado) e testes **comportamentais** (comparam saída a dados).

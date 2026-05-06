@@ -5,14 +5,6 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-:::: {.chapter-header-card}
-[Semana 5 · Fase 1 — Strogatz]{.chapter-week}
-
-Tempo estimado de leitura: **60–90 min**.
-
-[Dependências: Sem 2, 4]{.chapter-meta}
-::::
-
 ## A pergunta operacional
 
 Em F1-02 vimos bifurcações 1D — colisão, troca, quebra de simetria de pontos fixos. Em 2D abre-se um repertório maior: além das três 1D (que persistem), aparecem **bifurcações de Hopf** (nascimento de ciclos-limite a partir de pontos fixos) e bifurcações **globais** (reorganização do retrato de fase em escala não-local). É aqui que o vocabulário de Strogatz torna-se rico o suficiente para descrever transições de regime de sistemas reais complexos.

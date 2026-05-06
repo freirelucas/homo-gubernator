@@ -5,14 +5,6 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
-:::: {.chapter-header-card}
-[Semana 3 · Fase 1 — Strogatz]{.chapter-week}
-
-Tempo estimado de leitura: **60–90 min**.
-
-[Dependências: Sem 1, 2]{.chapter-meta}
-::::
-
 ## A pergunta operacional
 
 Saímos da reta. Em duas dimensões, $\dot{\mathbf{x}}=\mathbf{F}(\mathbf{x})$ com $\mathbf{x}=(x,y)$, abre-se a possibilidade de **trajetórias fechadas** — oscilações sustentadas. A monotonicidade que protegia a Fase 1 evapora. O retrato de fase passa a ser um plano com setas: o problema é classificar, qualitativamente, o que acontece próximo aos pontos fixos e entre eles.
