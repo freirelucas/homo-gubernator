@@ -21,7 +21,7 @@ Recursões em VSM são níveis de abstração onde a mesma estrutura S1–S5 rea
 
 | Recursão | S1 (operação) | S2 (antioscilação) | S3 (alocação aqui-agora) | S4 (fora-e-depois) | S5 (política/identidade) |
 |---|---|---|---|---|---|
-| **Curso completo (24 semanas)** | as 4 fases técnicas | revisões integradas (sem 12, 17) | `plano/plano-estudos.qmd` | leituras paralelas Juliana + Luiz Eduardo | identidade declarada em `index.qmd` e `personagem-narrativo.qmd` |
+| **Curso completo (24 semanas)** | as 4 fases técnicas | revisões integradas (sem 12, 17) | [plano de estudos](../plano/plano-estudos.qmd) | leituras paralelas Juliana + Luiz Eduardo | identidade declarada em [início](../index.qmd) e [Personagem](../personagem-narrativo.qmd) |
 | **Cada fase (~6 capítulos)** | os capítulos | cards Anki nas sextas | semana de revisão entre fases | memorando-juliana de cada capítulo | escolha da bibliografia-base ($\textit{Strogatz}$, $\textit{Häggström}$, $\textit{Sterman}$, $\textit{Beer}$) |
 | **Cada capítulo (1 semana)** | as 4 partes (intro / exercícios / notebook / cartas-memorandos) | TOC do capítulo + sidebar Quarto | tempo dedicado pelo leitor | seção "Conexão com Ashby/Beer" | título + recorte declarado no YAML |
 
@@ -47,7 +47,7 @@ Não é cibernética de segunda ordem genérica. É instância concreta: este cu
 
 ## Conexão com a literatura
 
-O movimento de aplicar VSM à academia tem precedente. @espinosa2017 trata universidades inteiras como sistemas viáveis em sua framework de complexidade-sustentabilidade; @schwaninger2009 generaliza para "Intelligent Organizations". A inovação modesta deste curso é descer a recursão um nível: aplicar VSM **ao currículo de auto-estudo de uma única pessoa**, não à instituição que o oferece. A pesquisa-cenário UNITINS↔UNIFAL-MG (vide `personagem-narrativo.qmd`) opera *também* na recursão institucional — o que demonstra que ambas as recursões coexistem no mesmo aparato, sem conflito.
+O movimento de aplicar VSM à academia tem precedente. @espinosa2017 trata universidades inteiras como sistemas viáveis em sua framework de complexidade-sustentabilidade; @schwaninger2009 generaliza para "Intelligent Organizations". A inovação modesta deste curso é descer a recursão um nível: aplicar VSM **ao currículo de auto-estudo de uma única pessoa**, não à instituição que o oferece. A pesquisa-cenário UNITINS↔UNIFAL-MG (vide [Personagem](../personagem-narrativo.qmd)) opera *também* na recursão institucional — o que demonstra que ambas as recursões coexistem no mesmo aparato, sem conflito.
 
 ## Pergunta de verificação
 

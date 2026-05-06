@@ -5,6 +5,14 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+:::: {.chapter-header-card}
+[Semana 20 · Fase 4 — Síntese]{.chapter-week}
+
+Tempo estimado de leitura: **abre as semanas 21–24**.
+
+[Dependências: todo o curso]{.chapter-meta}
+::::
+
 ## A pergunta operacional
 
 Capítulo final. Tudo se converge aqui: as três fases técnicas (Strogatz, Markov, Sterman) viram instrumental para diagnóstico VSM concreto de uma coordenação de curso de graduação à escolha do(a) leitor(a). A persona-andaime Joana usa coordenação de Sistemas de Informação UNITINS-Palmas ou Computação UNIFAL-MG; quem lê pode usar a própria experiência institucional, ou seguir Joana como caso.

@@ -5,6 +5,14 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+:::: {.chapter-header-card}
+[Semana 4 · Fase 1 — Strogatz]{.chapter-week}
+
+Tempo estimado de leitura: **60–90 min**.
+
+[Dependências: Sem 3]{.chapter-meta}
+::::
+
 ## A pergunta operacional
 
 Em sistemas planares dissipativos, oscilações sustentadas só persistem como **ciclos-limite**: trajetórias fechadas isoladas (não há outras curvas fechadas em uma vizinhança). O ciclo-limite é a forma matemática rigorosa do "regime estacionário oscilatório" — coração batendo, oscilador eletrônico, ciclo predador-presa estabilizado.

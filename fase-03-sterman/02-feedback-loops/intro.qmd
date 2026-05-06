@@ -5,6 +5,14 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+:::: {.chapter-header-card}
+[Semana 14 · Fase 3 — Sterman]{.chapter-week}
+
+Tempo estimado de leitura: **60–90 min**.
+
+[Dependências: Sem 13]{.chapter-meta}
+::::
+
 ## A pergunta operacional
 
 Em F3-01 vimos que estoques e fluxos podem formar laços. Aqui o foco é: como a topologia dos laços (R vs B, com ou sem atraso) determina o comportamento dinâmico? E como diagnosticar a estrutura de laços a partir do comportamento observado?

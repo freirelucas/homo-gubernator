@@ -5,6 +5,14 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+:::: {.chapter-header-card}
+[Semana 15 · Fase 3 — Sterman]{.chapter-week}
+
+Tempo estimado de leitura: **75–105 min**.
+
+[Dependências: Sem 14]{.chapter-meta}
+::::
+
 ## A pergunta operacional
 
 A passagem do diagrama causal (CLD) à equação diferencial executável é onde o método SD ganha rigor. Esta é a transição do modelo conceitual ao modelo computacional. As perguntas operacionais: como escolher unidades, como parametrizar relações não-lineares, como integrar numericamente sem artefato, como documentar as escolhas?

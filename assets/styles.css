@@ -1,6 +1,144 @@
-/* small overrides on top of the SCSS theme */
-body { line-height: 1.55; }
-.figure-caption, figcaption { font-size: 0.92em; color: #3F6B85; }
-.sidebar { background: #FAF8F2; }
-table { border-collapse: collapse; }
-table thead th { background: #1F3A4D; color: #FAF8F2; }
+/* Detalhes finos não cobertos pelo SCSS principal */
+
+/* Spacing extra para cabeçalhos de seção em capítulos longos */
+.content h2 + p,
+.content h3 + p {
+  margin-top: 0.4em;
+}
+
+/* Primeiro parágrafo após heading com leve drop-cap optical */
+.content h2 + p::first-letter {
+  font-size: 1.05em;
+  font-weight: 500;
+}
+
+/* Notas marginais minimalistas */
+.content aside {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.85em;
+  color: #3F6B85;
+  border-left: 2px solid #E8A33D;
+  padding: 0.4em 0.9em;
+  margin: 1em 0;
+  font-style: italic;
+}
+
+/* TOC mais respirável */
+.toc-actions { display: none; }
+nav#TOC {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.86em;
+
+  > ul { padding-left: 0; }
+  ul { list-style: none; }
+  li { margin: 0.3em 0; }
+  a {
+    border-bottom: none;
+    color: #3F6B85;
+    transition: color 0.12s;
+    padding-left: 0.6em;
+    border-left: 2px solid transparent;
+    &:hover, &.active {
+      color: #D45A1A;
+      border-left-color: #D45A1A;
+    }
+  }
+}
+
+/* Body em serif para elementos que não pegaram via SCSS */
+.content { font-family: "Source Serif Pro", Georgia, serif; }
+.content table, .content code, .content pre, .callout-body, .navbar, .sidebar, footer {
+  font-family: "Inter", system-ui, sans-serif;
+}
+.content code, .content pre code {
+  font-family: "JuliaMono", "JetBrains Mono", monospace;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5 {
+  font-family: "Space Grotesk", "Inter", system-ui, sans-serif;
+}
+
+/* Equações em bloco com fundo discreto */
+mjx-container[display="true"] {
+  background: rgba(232, 163, 61, 0.04);
+  padding: 0.6em 0.8em;
+  border-radius: 6px;
+  border-left: 2px solid rgba(31, 58, 77, 0.2);
+}
+
+/* Eqs numeradas alinhadas à direita */
+mjx-container[display="true"] mjx-mtable[align="bottom"] {
+  text-align: right;
+}
+
+/* Próximo / anterior do Quarto */
+.page-navigation {
+  font-family: "Inter", system-ui, sans-serif;
+  border-top: 1px solid rgba(31, 58, 77, 0.12);
+  margin-top: 3em;
+  padding-top: 1.5em;
+
+  .nav-page-previous a,
+  .nav-page-next a {
+    border-bottom: none;
+    color: #3F6B85;
+    &:hover { color: #D45A1A; }
+  }
+}
+
+/* Listas de definição */
+dl {
+  font-family: "Inter", system-ui, sans-serif;
+  margin: 1.4em 0;
+}
+dt {
+  font-weight: 600;
+  color: #1F3A4D;
+  margin-top: 0.7em;
+}
+dd {
+  margin-left: 1.2em;
+  color: #1A1A1A;
+}
+
+/* Quote estilizado */
+.quote-author {
+  text-align: right;
+  font-style: normal;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.88em;
+  color: #3F6B85;
+  margin-top: 0.5em;
+  &::before { content: "— "; }
+}
+
+/* Highlight em conceitos centrais */
+mark, .highlight {
+  background: linear-gradient(180deg, transparent 60%, rgba(232, 163, 61, 0.4) 60%);
+  padding: 0 0.1em;
+  color: #1F3A4D;
+}
+
+/* Botão de "voltar ao topo" estilizado se Quarto adicionar */
+.back-to-top {
+  background: #D45A1A !important;
+  color: #FAF8F2 !important;
+}
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+body { scroll-padding-top: 80px; }
+
+/* Ajustes finos em listas dentro de callouts */
+.callout-body ul, .callout-body ol {
+  margin-bottom: 0.5em;
+  padding-left: 1.4em;
+}
+
+/* Bibliografia no fim da página */
+#refs, .references {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.92em;
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 2px solid rgba(31, 58, 77, 0.15);
+}

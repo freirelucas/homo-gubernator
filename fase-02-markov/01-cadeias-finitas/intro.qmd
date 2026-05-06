@@ -5,6 +5,14 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+:::: {.chapter-header-card}
+[Semana 7 · Fase 2 — Markov]{.chapter-week}
+
+Tempo estimado de leitura: **60–90 min**.
+
+[Dependências: Fase 1 (cap. 1, 4)]{.chapter-meta}
+::::
+
 ## A pergunta operacional
 
 Saímos do mundo determinístico. Em uma cadeia de Markov finita, o estado seguinte é amostrado de uma distribuição que depende **apenas do estado atual** (propriedade markoviana). A pergunta operacional: dado o conjunto finito de estados $S = \{1,\ldots,N\}$ e a matriz de transição $P$, o que se pode dizer sobre o comportamento de longo prazo da sequência $(X_n)_{n\geq 0}$?

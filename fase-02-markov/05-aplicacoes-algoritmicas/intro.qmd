@@ -5,6 +5,14 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+:::: {.chapter-header-card}
+[Semana 11 · Fase 2 — Markov]{.chapter-week}
+
+Tempo estimado de leitura: **60–90 min**.
+
+[Dependências: Sem 9, 10]{.chapter-meta}
+::::
+
 ## A pergunta operacional
 
 A teoria de cadeias de Markov não é só descritiva — é **algorítmica**. Problemas computacionais podem ser reformulados como amostragem de distribuições específicas, e cadeias de Markov ad-hoc são construídas para resolvê-los. Este capítulo cobre os principais.

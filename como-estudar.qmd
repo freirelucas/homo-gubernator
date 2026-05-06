@@ -68,7 +68,7 @@ Sintaxe sugerida: cole o prompt, substitua `{X}` pelo conceito, anexe o trecho d
 
 ## Critérios de auto-avaliação
 
-A cada domingo, atualize a linha da semana em [`PROGRESSO.md`](PROGRESSO.md). Três colunas, cada uma de 1 a 5:
+A cada domingo, atualize a linha da semana em `PROGRESSO.md`. Três colunas, cada uma de 1 a 5:
 
 - **Compreensão**: você entendeu o aparato matemático? consegue acompanhar uma derivação? Sabe o que cada símbolo significa?
 - **Intuição**: o conceito tem forma geométrica/operacional na sua cabeça? você "vê" um ponto fixo, um ciclo-limite, um S2 ausente?

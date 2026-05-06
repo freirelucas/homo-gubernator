@@ -4,8 +4,34 @@ project:
   render:
     - "*.qmd"
 website:
-  title: "Homo Gubernator — Cibernética Aplicada"
-  description: "Curso de auto-estudo de 24 semanas em sistemas dinâmicos, Markov, Business Dynamics e VSM."
+  title: "Homo Gubernator"
+  description: "Curso de auto-estudo de 24 semanas em cibernética organizacional aplicada."
+  site-url: "https://freirelucas.github.io/homo-gubernator/"
+  repo-url: "https://github.com/freirelucas/homo-gubernator"
+  favicon: assets/figs/canonicas/fig-vsm-5-sistemas.svg
+  open-graph: true
+  twitter-card: true
+  page-navigation: true
+  back-to-top-navigation: true
+  reader-mode: true
+  page-footer:
+    background: "#1F3A4D"
+    border: false
+    left: |
+      **Homo Gubernator** — Cibernética aplicada à educação pública. Construído com [Quarto](https://quarto.org/) e [Claude Code](https://claude.com/claude-code).
+    center:
+      - text: "Como estudar"
+        href: como-estudar.qmd
+      - text: "ViableOS"
+        href: metatexto/viable-os.qmd
+      - text: "Plano"
+        href: plano/plano-estudos.qmd
+      - text: "Personagem"
+        href: personagem-narrativo.qmd
+      - text: "Recursos"
+        href: recursos/index.qmd
+    right: |
+      [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · [GitHub](https://github.com/freirelucas/homo-gubernator)
   navbar:
     background: "#1F3A4D"
     foreground: "#FAF8F2"

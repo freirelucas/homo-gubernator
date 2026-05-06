@@ -5,11 +5,19 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+:::: {.chapter-header-card}
+[Semana 18 · Fase 4 — Síntese]{.chapter-week}
+
+Tempo estimado de leitura: **90–120 min**.
+
+[Dependências: todo o curso anterior; capítulo-âncora]{.chapter-meta}
+::::
+
 ## A pergunta operacional
 
 Por que três fases técnicas — Strogatz, Markov, Sterman — convergem para o **Modelo do Sistema Viável** (VSM) de @beer1979 e não para qualquer outra ontologia organizacional? A resposta curta: porque o VSM é a única arquitetura que torna *operável* a Lei da Variedade Requisita de @ashby1956. Operável no sentido literal: oferece cinco posições de observação (S1–S5) e seis canais de informação que, em conjunto, permitem ao analista responder à pergunta diagnóstica fundamental — *este sistema absorve a variedade que precisa absorver para permanecer viável?* — com algo mais consistente do que a intuição.
 
-Este capítulo articula três pontos: (i) o que cada fase técnica anterior contribui para a linguagem do VSM; (ii) como a obra de Juliana Mariano Alves traduz essa linguagem para a governança hídrica brasileira (BHRF — Bacia Hidrográfica do Rio Formoso, Tocantins); (iii) o que isso implica para a **pesquisa-cenário do curso** — a comparação ficcional, conduzida por Joana Beraldo, entre a UNITINS (Palmas-TO, EaD via UAB) e a UNIFAL-MG (Alfenas, presencial) como dois sistemas viáveis com a mesma função-fim e arquiteturas opostas (vide `personagem-narrativo.qmd`).
+Este capítulo articula três pontos: (i) o que cada fase técnica anterior contribui para a linguagem do VSM; (ii) como a obra de Juliana Mariano Alves traduz essa linguagem para a governança hídrica brasileira (BHRF — Bacia Hidrográfica do Rio Formoso, Tocantins); (iii) o que isso implica para a **pesquisa-cenário do curso** — a comparação ficcional, conduzida por Joana Beraldo, entre a UNITINS (Palmas-TO, EaD via UAB) e a UNIFAL-MG (Alfenas, presencial) como dois sistemas viáveis com a mesma função-fim e arquiteturas opostas (vide [Personagem](../../personagem-narrativo.qmd)).
 
 ## A Lei da Variedade Requisita, formalizada
 
@@ -57,7 +65,7 @@ A Fase 1 dá a geometria; a Fase 2 dá a métrica; a Fase 3 dá a álgebra das i
 
 ## Aplicação à pesquisa-cenário (UNITINS ↔ UNIFAL-MG)
 
-A pesquisa de Joana Beraldo (vide `personagem-narrativo.qmd`) toma duas universidades públicas brasileiras como sistemas viáveis comparáveis — domínio em que o VSM é particularmente útil porque cada universidade é, ela própria, um sistema viável recursivo (curso ⊂ instituto ⊂ universidade ⊂ rede federal/estadual). Três caminhos imediatos:
+A pesquisa de Joana Beraldo (vide [Personagem](../../personagem-narrativo.qmd)) toma duas universidades públicas brasileiras como sistemas viáveis comparáveis — domínio em que o VSM é particularmente útil porque cada universidade é, ela própria, um sistema viável recursivo (curso ⊂ instituto ⊂ universidade ⊂ rede federal/estadual). Três caminhos imediatos:
 
 1. **Diagnóstico de uma coordenação de curso** como um S1 dentro de um instituto (S2/S3/S4 do instituto, S5 da reitoria). A pergunta diagnóstica é: *quais funções estão presentes e quais estão ausentes?* No caso UNITINS-EaD, a hipótese de Joana é que S2 (antioscilação entre polos UAB) e S4 (inteligência sobre evasão regional) são as ausências sistemáticas; no caso UNIFAL-presencial, a hipótese-espelho é que S4 está consolidado mas S2 entre departamentos pode falhar em momentos de pressão (Cálculo I como gargalo recorrente).
 2. **Análise de variedade** sobre indicadores acadêmicos. O formalismo de @ashby1956 pode ser instanciado quantitativamente: $H(D)$ é a entropia da distribuição de perfis discentes (origem geográfica, escolaridade prévia, modalidade de ingresso); $H(R)$ é a entropia do conjunto de respostas pedagógicas observadas (monitorias, plantões, atendimento por polo). A diferença é a "lacuna de variedade" do sistema-curso.

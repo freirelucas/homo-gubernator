@@ -5,6 +5,14 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+:::: {.chapter-header-card}
+[Semana 9 · Fase 2 — Markov]{.chapter-week}
+
+Tempo estimado de leitura: **75–105 min**.
+
+[Dependências: Sem 8]{.chapter-meta}
+::::
+
 ## A pergunta operacional
 
 Dada distribuição-alvo $\pi$ que se quer amostrar, mas que é difícil de tratar analiticamente — como construir uma cadeia de Markov cuja estacionária seja exatamente $\pi$? A resposta é a tradição **MCMC** (Markov Chain Monte Carlo), que data dos trabalhos de @metropolis1953 e @hastings1970, e ganha formulação geral em @geman1984.

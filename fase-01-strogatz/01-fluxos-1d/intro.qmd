@@ -5,6 +5,14 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+:::: {.chapter-header-card}
+[Semana 1 · Fase 1 — Strogatz]{.chapter-week}
+
+Tempo estimado de leitura: **60–90 min**.
+
+[Dependências: nenhuma]{.chapter-meta}
+::::
+
 ## A pergunta operacional
 
 A pergunta central da Fase 1 é geometricamente simples: dado um sistema autônomo de primeira ordem na reta, $\dot{x} = f(x)$, com $f$ suficientemente regular, o que é possível dizer sobre o comportamento de longo prazo de qualquer trajetória, sabendo apenas onde $f$ se anula e qual é o sinal de $f$ entre seus zeros? A resposta de @strogatz2018 é desproporcional à modéstia da pergunta: para a dinâmica unidimensional autônoma, *tudo o que importa* está nos zeros de $f$ (os pontos fixos) e na monotonicidade local de $f$ em torno deles.
@@ -83,7 +91,7 @@ $$
 \dot{S} = i(t) - \frac{S}{\tau_{\text{permanência}}},
 $$
 
-onde $i(t)$ é o fluxo de novas matrículas e $\tau_{\text{permanência}}$ é o tempo médio que um estudante permanece ativo (até concluir, evadir ou jubilar-se). Em regime estacionário com $i$ constante, há ponto fixo $S^* = i\,\tau_{\text{permanência}}$, estável com tempo característico $\tau_{\text{permanência}}$. Esta é a forma RC aplicada à demografia institucional. O ganho da abordagem cibernética: $S^*$ é insensível à amplitude de variações de curto prazo em $i$ — o sistema **filtra distúrbios** com banda passante $1/\tau$. Para Joana (vide `personagem-narrativo.qmd`), comparar polos UAB-UNITINS de Augustinópolis e Dianópolis pelo $\tau$ estimado é primeiro passo de diagnóstico: polos com $\tau$ pequeno (alta evasão) e polos com $\tau$ grande (baixa rotatividade) operam em regimes dinâmicos qualitativamente diferentes.
+onde $i(t)$ é o fluxo de novas matrículas e $\tau_{\text{permanência}}$ é o tempo médio que um estudante permanece ativo (até concluir, evadir ou jubilar-se). Em regime estacionário com $i$ constante, há ponto fixo $S^* = i\,\tau_{\text{permanência}}$, estável com tempo característico $\tau_{\text{permanência}}$. Esta é a forma RC aplicada à demografia institucional. O ganho da abordagem cibernética: $S^*$ é insensível à amplitude de variações de curto prazo em $i$ — o sistema **filtra distúrbios** com banda passante $1/\tau$. Para Joana (vide [Personagem](../../personagem-narrativo.qmd)), comparar polos UAB-UNITINS de Augustinópolis e Dianópolis pelo $\tau$ estimado é primeiro passo de diagnóstico: polos com $\tau$ pequeno (alta evasão) e polos com $\tau$ grande (baixa rotatividade) operam em regimes dinâmicos qualitativamente diferentes.
 
 ## Conexão com Ashby/Beer
 
@@ -109,5 +117,5 @@ Para o sistema $\dot{x} = x - x^3$:
 Para fixar: quando terminar, importe o deck Anki (vide [revisão](../../revisao/index.qmd)) — os cartões `strogatz fase1` cobrem precisamente os conceitos deste capítulo.
 
 ::: {.callout-tip}
-Se você está estudando Joana como caso (`personagem-narrativo.qmd`): proponha um indicador acadêmico real de polo UAB-UNITINS ou disciplina UNIFAL-MG cujo comportamento agregado se aproxime de um sistema 1D autônomo. Estime visualmente os pontos fixos a partir de séries históricas e classifique-os.
+Se você está estudando Joana como caso ([Personagem](../../personagem-narrativo.qmd)): proponha um indicador acadêmico real de polo UAB-UNITINS ou disciplina UNIFAL-MG cujo comportamento agregado se aproxime de um sistema 1D autônomo. Estime visualmente os pontos fixos a partir de séries históricas e classifique-os.
 :::
