@@ -53,16 +53,6 @@ Crucialmente, cada S1 é, ele próprio, um sistema viável completo em **recurs�
 
 A Fase 1 dá a geometria; a Fase 2 dá a métrica; a Fase 3 dá a álgebra das interações. O VSM é o que organiza as três numa única linguagem diagnóstica.
 
-## A obra de Juliana Mariano Alves: por que ancora este curso
-
-A escolha de @alves2022 como referência-âncora não é arbitrária. Três motivos:
-
-1. **Trata-se da aplicação brasileira mais sofisticada do VSM disponível em literatura revisada por pares**. A tese de 2022 (UFT, orientada por Vergara, coorientada por Schwaninger) faz diagnóstico VSM da governança da BHRF em recursão tripla (federal/estadual/usuários).
-2. **Conecta o VSM ao programa Conant-Ashby** [@conantashby1970] de "todo bom regulador é um modelo do sistema regulado", via @alvesschwaninger2025 (*Environmental Management*, "Model-based Governance"), oferecendo ao aluno o caminho técnico de **modelagem como regulação**, não modelagem como descrição.
-3. **Traduz "variety engineering"** [@alves2025variety] em vocabulário operacional para gestores brasileiros, sem perder o rigor de @beer1979 nem o de @espinosa2017. Isso é exatamente o que falta na literatura nacional de administração pública.
-
-A peça central dos memorandos é o caso BHRF: outorga de água em um sistema sob estresse hídrico crescente, com o Ministério Público estadual em ação civil pública desde 2016, criação do Grupo de Acompanhamento e Negociação (GAN), e a tese diagnosticando S2/S3/S4 ausentes e propondo redesenho.
-
 ## Aplicação à pesquisa-cenário (UNITINS ↔ UNIFAL-MG)
 
 A pesquisa de Joana Beraldo (vide `personagem-narrativo.qmd`) toma duas universidades públicas brasileiras como sistemas viáveis comparáveis — domínio em que o VSM é particularmente útil porque cada universidade é, ela própria, um sistema viável recursivo (curso ⊂ instituto ⊂ universidade ⊂ rede federal/estadual). Três caminhos imediatos:
@@ -73,6 +63,64 @@ A pesquisa de Joana Beraldo (vide `personagem-narrativo.qmd`) toma duas universi
 
 ::: {.callout-important}
 A diferença prática entre "modelagem como descrição" e "modelagem como regulação" é o que separa pesquisa-relatório de pesquisa-instrumento. Esta segunda postura é o que @alvesschwaninger2025 chama de *model-based governance* e é, na leitura deste curso, o ponto de partida natural para qualquer pesquisa em educação superior pública.
+:::
+
+## Variantes contemporâneas do VSM
+
+A formulação original de @beer1979 sofreu desdobramentos pela escola contemporânea de cibernética organizacional. Três variantes importam para este curso:
+
+**Espinosa-Walker — abordagem pela complexidade-sustentabilidade.** @espinosa2017 reformula VSM para análise de organizações complexas operando em ambientes de alta entropia ambiental, com ênfase explícita em sustentabilidade e adaptação ecológica. A contribuição central é tratar S4 não como módulo singular mas como **conjunto de processos de aprendizagem** distribuídos pelos níveis de recursão. Em termos práticos: S4 da BHRF (cap. F4-02) não é uma sala única no edifício da Naturatins, mas a soma dos processos de monitoramento de tendências hídricas, sociais e climáticas que cruzam os três níveis de recursão da governança.
+
+**Espejo-Reyes — managing complexity.** @espejoreyes2011 sistematiza ferramentas operacionais de VSM-aplicado: questionários estruturais, diagramas de variedade, mapeamentos de canal. Texto de referência para diagnósticos institucionais em PT-BR não-traduzido (mas com leitura intermediária acessível). Contribuição metodológica: o **modelo de transformação** — cada S1 caracterizado por entrada-transformação-saída-recursos com unidade explícita.
+
+**Schwaninger — modelagem multinível.** @schwaninger2009 desenvolve "Intelligent Organizations" articulando VSM com cibernética de segunda ordem e teoria dos sistemas inteligentes. Em parceria com Alves (@alvesschwaninger2025), opera o argumento de **model-based governance** (próxima seção): VSM como linguagem operacional para construção de modelos formais que ampliam $H(R)$ explicitamente.
+
+A escolha do curso é mantê-las como variantes irmãs, não rivais. Quem domina Beer 1972/1979/1985 lê Espinosa-Walker e Espejo-Reyes sem reaprendizagem; cada autor adiciona ângulo, não rivaliza.
+
+## O programa Conant-Ashby formalizado
+
+O **teorema de Conant-Ashby** [@conantashby1970] tem enunciado modesto e implicação radical:
+
+> *Todo bom regulador de um sistema deve ser um modelo desse sistema.*
+
+A versão informal é o que se cita; a versão formal merece atenção. Sejam $D$ a fonte de distúrbios, $S$ o sistema regulado, $R$ o regulador, e $E$ o resultado essencial-a-preservar. O teorema demonstra que se $R$ minimiza a entropia residual $H(E)$ — isto é, regula bem — então a aplicação $f: D \to R$ que define a estratégia do regulador é **homomórfica** à aplicação $g: D \to E$ que descreve a influência dos distúrbios sobre o essencial. Em palavras: a estrutura informacional do regulador eficaz **espelha** a estrutura informacional do sistema regulado.
+
+Não é "o regulador precisa entender o sistema". É afirmação técnica: existe homomorfismo entre as duas estruturas, e qualquer regulador ótimo *é* esse homomorfismo. Implicações:
+
+- **Reguladores que não modelam o sistema falham necessariamente.** Não é questão de competência — é teorema. Política pública sem modelo do problema regulado é, formalmente, sub-ótima.
+- **Modelos sem propósito regulador são modelos descritivos, não cibernéticos.** A distinção operacional vem na próxima seção.
+- **A modelagem é a regulação.** Não há etapa intermediária — construir o modelo correto *é* configurar o regulador. É o que @alvesschwaninger2025 explora explicitamente ao caso BHRF.
+
+## Modelagem como descrição vs como regulação
+
+A taxonomia útil em três colunas:
+
+| | Descrição clássica | Descrição cibernética | Regulação Conant-Ashby |
+|---|---|---|---|
+| **Propósito** | Representar o sistema fielmente | Identificar regularidades operacionais | Funcionar como órgão regulador adicional |
+| **Métrica de sucesso** | Acurácia preditiva | Capacidade explicativa | Ampliação de $H(R)$ do tomador de decisão |
+| **Validação** | Comparação com dados | Coerência interna + parsimônia | Redução observada de $H(O)$ no sistema regulado |
+| **Falha característica** | Modelo se distancia dos dados | Modelo é coerente mas estéril | Modelo é correto mas o regulador não o usa |
+| **Exemplo no curso** | Modelo logístico (F1-01) descrevendo crescimento populacional | CLD de Sterman (F3-02) diagnosticando bullwhip | Modelo SD de coordenação UAB-UNITINS para reduzir evasão |
+
+A diferença prática entre coluna 1 e coluna 3 é o que separa **pesquisa-relatório** de **pesquisa-instrumento**. A pesquisa-cenário do curso (Joana, UNITINS↔UNIFAL) trabalha deliberadamente na coluna 3: o diagnóstico VSM da coordenação não pretende ser apenas correto — pretende, ao ser assimilado pela coordenação, mudar a operação dela. Esse é o ponto de partida natural para qualquer pesquisa em educação superior pública que queira ser tomada a sério pelo gestor do sistema estudado.
+
+## A obra de Juliana Mariano Alves: por que ancora este curso
+
+A escolha de @alves2022 como referência-âncora não é arbitrária. Três motivos:
+
+1. **Trata-se da aplicação brasileira mais sofisticada do VSM disponível em literatura revisada por pares**. A tese de 2022 (UFT, orientada por Vergara, coorientada por Schwaninger) faz diagnóstico VSM da governança da BHRF em recursão tripla (federal/estadual/usuários), com identificação nominal de funções ausentes (S2 inter-outorgantes, S4 inteligência climática), e propõe redesenho institucional.
+2. **Conecta o VSM ao programa Conant-Ashby** via @alvesschwaninger2025, oferecendo ao aluno o caminho técnico de **modelagem como regulação**, não modelagem como descrição. Esta é leitura que parte da literatura SD americana ainda não fez explicitamente — Sterman trata validação como acurácia preditiva, e a inflexão Conant-Ashby ainda é minoritária mesmo na escola que ele fundou.
+3. **Traduz "variety engineering"** [@alves2025variety] em vocabulário operacional para gestores brasileiros, sem perder o rigor de @beer1979 nem o de @espinosa2017. Isso é exatamente o que falta na literatura nacional de administração pública: ponte entre teoria cibernética rigorosa e aplicação a sistemas governamentais reais.
+
+Inserção internacional da autora reforça a escolha: Member-at-Large da American Society for Cybernetics pelo Sul Global (mandato desde jan/2024), Diretório do Metaphorum (UK, 2023), apresentação no ASC 2024 (60th Anniversary, Washington DC) — vide [Personagem](../../personagem-narrativo.qmd).
+
+## O caso BHRF em parágrafo
+
+A peça central dos memorandos é o caso BHRF: bacia hidrográfica do Rio Formoso (Tocantins) sob estresse hídrico crescente desde 2010, com o Ministério Público estadual em ação civil pública desde 2016 por uso conflitante, criação do Grupo de Acompanhamento e Negociação (GAN), e a tese de Alves diagnosticando S2/S3/S4 ausentes e propondo redesenho. O capítulo seguinte ([F4-02](../02-bacia-formoso-caso/intro.qmd)) reconstrói o caso com detalhe documental e extrai as lições transferíveis para análogos institucionais — incluindo a coordenação de curso UAB-UNITINS que Joana analisa.
+
+::: {.callout-note}
+**Figuras canônicas referenciadas:** `#fig-vsm-recursão` (cinco subsistemas em recursão $\mathcal{S}_n \supset \mathcal{S}_{n+1}$) e `#fig-conant-ashby` (homomorfismo regulador-sistema). Pendentes em SVG; vide [Recursos > Excalidraw](../../recursos/index.qmd).
 :::
 
 ## Pergunta de verificação
