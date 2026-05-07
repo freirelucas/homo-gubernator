@@ -19,6 +19,8 @@ website:
         text: ViableOS
       - href: metatexto/sistema-narrativo.qmd
         text: Narrativa
+      - href: metatexto/sintegracao.qmd
+        text: Sintegração
       - href: personagem-narrativo.qmd
         text: Personagem
       - href: plano/plano-estudos.qmd

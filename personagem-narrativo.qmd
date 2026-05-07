@@ -52,6 +52,43 @@ São os exemplos canônicos que substituem, ao longo das cartas e memorandos, o 
 | Sensibilidade da taxa de conclusão a perturbações iniciais | Strogatz (caos) | expoente de Lyapunov sobre coorte |
 | Carga de trabalho docente como sistema dinâmico em 2D | Strogatz (fluxos 2D) | retrato de fase |
 
+## O arco da pesquisa: observação → diagnóstico → intervenção
+
+A tese de Joana **não termina no diagnóstico VSM**. A trajetória das 24 semanas é desenhada para que ela passe por três posições sucessivas:
+
+1. **Observadora** (Semanas 1–11): aplica o aparato matemático aos dados das duas universidades. Identifica padrões, pontos fixos, ciclos institucionais, regimes de oscilação. Não intervém — observa.
+2. **Diagnóstica** (Semanas 12–19): aplica VSM em recursão tripla à coordenação de curso UAB-UNITINS. Identifica nominalmente quais funções (S2, S4) estão ausentes. Posiciona-se como crítica institucional informada.
+3. **Interventora** (Semanas 20–24): propõe e justifica um **protocolo de intervenção concreta**. O modelo de referência aqui é o **ESyN2030** [@esyn2030] — adaptação online do protocolo de **Team Syntegrity** de @beer1994.
+
+A intervenção que Joana propõe na sua tese é uma **sintegração-piloto** sobre a coordenação UAB-UNITINS. Trinta participantes (cinco coordenadores de polo, seis tutores experientes, oito alunos representantes, três da gestão UAB nacional, dois da pró-reitoria UNITINS, dois da Naturatins se aplicável, dois pesquisadores externos, dois facilitadores), distribuídos em doze times de cinco segundo o icosaedro de Beer. Cinco dias. Pergunta-âncora: *"Como construir um S2 institucional inter-polos para a UAB-UNITINS antes que o S5 do MEC chegue como cautelar?"*
+
+Juliana, no Diretório do Metaphorum desde 2023 e participante de sintegrações, é interlocutora natural para co-facilitar.
+
+A tese deixa, portanto, de ser "diagnóstico VSM" e vira **diagnóstico cibernético + protocolo de intervenção testado**. É a postura **modelagem-como-regulação** de @alvesschwaninger2025 levada à última consequência: não basta o modelo correto, precisa do dispositivo institucional que o opera.
+
+Detalhes do protocolo, do ESyN2030 como modelo, e dos passos práticos para a réplica pedagógica estão em [Sintegração como dispositivo de intervenção](metatexto/sintegracao.qmd).
+
+## O destino externo da pesquisa: ASC 2026, Ouro Preto
+
+A trajetória de Joana tem um marco externo definido: a **ASC 2026 — *Confluências Conversacionais***, conferência da American Society for Cybernetics em **Ouro Preto-MG, 3 a 7 de agosto de 2026** [@asc2026]. É a primeira ASC realizada no Brasil. Juliana, como Member-at-Large pelo Sul Global desde janeiro de 2024, está no comitê.
+
+Joana pretende submeter trabalho à sessão **"Confluências Viáveis: Stafford Beer e América Latina"**, organizada pelo Metaphorum, que **inclui demonstração de Syntegration**. A submissão tem dois tempos:
+
+1. **Paper longo** com o diagnóstico VSM completo da coordenação UAB-UNITINS em recursão tripla, comparado ao caso BHRF de @alves2022, posicionando a sintegração-piloto como dispositivo de intervenção testado.
+2. **Pôster colaborativo** redigido com Juliana, registrando os 12 statements of importance produzidos pela sintegração-piloto da UNITINS (caso a sintegração ocorra antes de agosto/2026) ou o protocolo de execução (caso ainda esteja em fase de planejamento).
+
+Outras sessões da ASC 2026 que dialogam com a tese:
+
+- **Cartografias em Disputa** — mapeamento como prática recursiva. Joana pode contribuir com os mapas geobr/aopdata da UAB-UNITINS como cartografia institucional reflexiva.
+- **Confluência Conversacional** — epistemologias operativas e segunda ordem. A sintegração-piloto é, formalmente, uma operação de cibernética de segunda ordem sobre a coordenação.
+- **Confluências Emaranhadas** — sabedoria indígena, teoria quântica, IA reflexiva. Diálogo possível: a UAB-UNITINS atende municípios com presença indígena significativa (Lagoa da Confusão, Tocantínia); a $H(D)$ acessada via censobr/aopdata cobre essa pluralidade.
+
+A ASC 2026 funciona como **prazo externo durante toda a Semana 24**: a tese de Joana se beneficia de ter um destino concreto, com referees competentes na própria área cibernética, em data fixa. Para o(a) leitor(a) que segue Joana como caso, a ASC 2026 é também alvo possível para versão própria da pesquisa.
+
+::: {.callout-tip}
+A inscrição e o call for papers da ASC 2026 estão abertos via <https://events.asc-cybernetics.org/2026/>. A sessão "Confluências Viáveis" da Metaphorum é a porta de entrada natural para trabalhos de cibernética organizacional aplicada à América Latina.
+:::
+
 ## O ferramental empírico de Joana
 
 Joana não trabalha apenas com teoria. Cada conceito do curso pode ser testado contra dados reais via os pacotes do **[IPEA-GIT](https://github.com/ipeaGIT)** (R e Python, gratuitos):

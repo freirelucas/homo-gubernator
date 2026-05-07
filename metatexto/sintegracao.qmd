@@ -1,0 +1,208 @@
+---
+title: "Sintegração como dispositivo de intervenção"
+subtitle: "Team Syntegrity, ESyN2030, e a tese de Joana"
+bibliography: ../bibliografia.bib
+format: html
+---
+
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao"><span class="label">Trilha</span><span class="valor">Intervenção</span></div>
+  <div class="botao"><span class="label">Modelo</span><span class="valor">Beer 1994 · ESyN2030</span></div>
+  <div class="botao"><span class="label">Quando</span><span class="valor">Semanas 20–24</span></div>
+</div>
+```
+
+::: {.cena}
+[<img src="../assets/figs/personas/juliana.svg" class="persona-icone"/>]{.persona-tag .juliana}**Juliana, ESyN2030, janeiro de 2021, Zoom + Miro.**
+
+Era a oitava manhã consecutiva de Zoom. Na tela: trinta participantes em pequenos quadrados, distribuídos por seis fusos horários. No Miro, doze quadros gigantes — um por *vértice* do icosaedro. Cada participante tinha cor própria, era membro de dois quadros, crítica de dois outros, observadora dos restantes oito.
+
+Allenna Leonard moderava a sexta sessão de "outcome resolve". Angela Espinosa anotava no chat. David Beatty e Stephan Verveen acompanhavam o tempo. Jon Walker e Peter Tuddenham, por trás, ajustavam o protocolo conforme a sintegração reverberava.
+
+Pergunta-âncora original: *"Como o Metaphorum pode capturar o aprendizado da crise para contribuir com as mudanças radicais que a sociedade precisa fazer rapidamente?"*
+
+Juliana, na sua segunda sintegração, percebeu naquele momento que o que Beer tinha desenhado em 1994 [@beer1994] **continuava sendo um dispositivo cibernético em si** — não um workshop, não uma reunião. Era ferramenta operacional para construir S2 e S4 onde nenhum existia, em cinco dias, com trinta pessoas. *Joana precisa fazer isto na tese.*
+:::
+
+::: {.simples}
+Imagine que você quer organizar uma reunião grande sobre um problema difícil. Trinta pessoas. Se você sentar todo mundo numa sala única, três pessoas falam, vinte e sete dormem.
+
+Stafford Beer descobriu, nos anos 1990, uma forma matemática de organizar essa reunião que **força** as trinta pessoas a participarem ativamente sem caos. Ele usa a forma geométrica do **icosaedro** — um sólido com 12 cantos e 30 arestas. Cada uma das 30 pessoas é uma aresta. Cada um dos 12 cantos é um time de 5. Cada pessoa fica em **dois** times (porque cada aresta toca dois cantos), critica **dois** outros e observa o resto.
+
+A geometria força conversa cruzada estruturada: os times de hoje têm composição diferente dos times de amanhã, então as ideias circulam por todos. **Em cinco dias, o grupo produz doze "afirmações de importância" que são consenso emergente, não imposição de líderes.**
+
+É como se você pegasse uma assembleia que normalmente daria em barulho e a transformasse em um cristal — mantendo a complexidade mas ganhando ordem espontânea.
+:::
+
+## O protocolo Team Syntegrity
+
+@beer1994 desenhou o protocolo Team Syntegrity em *Beyond Dispute: The Invention of Team Syntegrity* (Wiley) explicitamente para resolver um problema que ele identificara em décadas de consultoria com governos e grandes corporações: **agendas tradicionais matam a inteligência coletiva**. Em uma reunião agendada, o que importa é o que está no papel; o que está nas margens — e quase sempre o decisivo está nas margens — é descartado por economia de tempo.
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>Icosaedro</h4>
+    <p>Sólido convexo com <span class="formula">12 vértices, 30 arestas, 20 faces</span>. Cada vértice está conectado a 5 outros via arestas. Estrutura matemática-base do protocolo.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>30 participantes = 30 arestas</h4>
+    <p>Cada pessoa é uma aresta. Como toda aresta toca <strong>2 vértices</strong>, cada pessoa pertence a 2 times. Conexão simétrica garantida.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>12 times = 12 vértices</h4>
+    <p>Cada vértice agrupa 5 pessoas. Total <span class="formula">12×5=60</span> participações de pessoas em times — cada uma das 30 conta duas vezes.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Roles complementares</h4>
+    <p>Cada participante é <strong>membro</strong> de 2 times, <strong>crítico</strong> de 2 outros, <strong>observador</strong> dos 8 restantes.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Reverberation effect</h4>
+    <p>Composição variável dos grupos faz ideias circularem por toda a rede em ondas. Coesão emerge sem imposição.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Saída</h4>
+    <p>12 <em>statements of importance</em> ao final dos 5 dias. Consenso emergente, não votação.</p>
+  </div>
+</div>
+```
+
+## Fluxo de cinco dias
+
+Resumo operacional do protocolo Beer 1994 (detalhes técnicos em @trussleonard):
+
+| Dia | Atividade | Saída |
+|---|---|---|
+| 1 (manhã) | Apresentações + statements of importance individuais | ~150 ideias |
+| 1 (tarde) | Topic auction — agrupamento e refinamento | 12 tópicos finais |
+| 2 | Times formados pelo icosaedro. Primeira rodada de discussão. | Drafts de cada vértice |
+| 3 | Reverberação: cada pessoa muda de papel (membro→crítico→observador) | Reverberation effect |
+| 4 | Outcome resolve: refinamento dos 12 tópicos | 12 statements quase-finais |
+| 5 | Plenária + statements of importance finais + planos de ação | Documento de consenso |
+
+Há variantes acopladas (Team Syntegration® comercial, conduzida por Team Syntegrity International) e variantes abertas (a versão Metaphorum, gratuita e pública).
+
+## ESyN2030 — adaptação online
+
+Em janeiro de 2021, durante a pandemia, o Metaphorum conduziu o **ESyN2030** [@esyn2030] — adaptação do protocolo presencial de cinco dias para formato totalmente online. Facilitadores: **Allenna Leonard, David Beatty, Stephan Verveen, Jon Walker, Peter Tuddenham, Angela Espinosa**. Plataformas: **Zoom** (sessões síncronas) + **Miro** (whiteboard colaborativo).
+
+Pergunta-âncora: *"Como o Metaphorum pode capturar o aprendizado da crise para contribuir com as mudanças radicais que a sociedade precisa fazer rapidamente?"*
+
+Inovações em relação ao formato presencial:
+
+1. **Geografia anulada**: 30 participantes de seis fusos horários. Reduz custo de viagem, amplia diversidade.
+2. **Asincronia parcial**: nem todas as discussões em tempo real. Times trabalham nos quadros Miro entre as sessões síncronas.
+3. **Documentação contínua**: tudo registrado nos quadros. Reverberação ganha *audit trail*.
+4. **Reduce no fadiga social**: sessões mais curtas com pausas, formato mais sustentável que cinco dias presenciais corridos.
+
+Trade-offs reconhecidos: **menos coesão informal** (jantares e cafés que produzem cerca de 30% das ideias importantes em sintegrações presenciais), **mais difícil sincronizar** seis fusos, **fadiga de Zoom** após o terceiro dia.
+
+## Por que o protocolo é cibernético em si
+
+Sintegração não é "ferramenta de facilitação". É **dispositivo cibernético operacional**:
+
+- **Constrói S2** durante os cinco dias: as composições variáveis dos times forçam coordenação lateral inter-grupos. Em uma organização sem S2 estrutural, a sintegração age como S2 temporário.
+- **Constrói S4** durante o protocolo: a reverberação inclui necessariamente o "fora-e-depois" via o ângulo de visão dos participantes externos ao núcleo operacional do problema.
+- **Quebra hierarquia momentaneamente**: durante os cinco dias, o CEO e o estagiário ocupam estruturalmente o mesmo papel. Isso libera variedade que estava reprimida pela cadeia de comando.
+- **Produz S5 emergente**: os 12 statements finais são, formalmente, declaração de identidade coletiva sobre o problema — função S5 construída por reverberação, não por imposição.
+
+Beer escreveu sobre isso explicitamente: a sintegração é uma **maquina de variedade requisita**. Em cinco dias, o grupo gera $H(R)$ proporcional ao número de combinações de pessoas e tópicos — combinatorialmente vasta — para enfrentar uma $H(D)$ que nenhum subgrupo individual conseguiria cobrir.
+
+## Sintegração na ASC 2026 — Ouro Preto, agosto/2026
+
+A próxima oportunidade pública de presenciar uma sintegração no Brasil — e provavelmente a primeira em solo brasileiro com escala internacional — é na **ASC 2026, Ouro Preto, 3 a 7 de agosto de 2026** [@asc2026]. A sessão **"Confluências Viáveis: Stafford Beer e América Latina"**, organizada pelo Metaphorum, inclui **demonstração de Syntegration** como parte das atividades.
+
+Para Joana, a ASC 2026 é simultaneamente:
+
+1. **Destino de submissão** — paper longo sobre o diagnóstico UAB-UNITINS, pôster colaborativo com Juliana sobre a sintegração-piloto.
+2. **Oportunidade de aprendizado in vivo** — observar a demonstração do Metaphorum permite calibrar o protocolo da própria sintegração antes de tentar conduzi-la.
+3. **Rede de co-facilitação** — o time do ESyN2030 (Allenna Leonard, Angela Espinosa, Stephan Verveen, Jon Walker) está presente. Convidar para co-facilitação na UNITINS torna-se conversa concreta.
+
+A coincidência de calendário é favorável: agosto/2026 fica entre as Semanas 21 e 24 do plano de 24 semanas. Quem segue o curso pelo calendário canônico chega à ASC com o diagnóstico já feito e a sintegração-piloto idealmente já conduzida — ou em fase imediata de planejamento.
+
+## Aplicação à tese de Joana
+
+A tese de Joana propõe uma **sintegração-piloto** sobre a coordenação UAB-UNITINS. Detalhes operacionais:
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>Pergunta-âncora</h4>
+    <p><em>"Como construir um S2 institucional inter-polos para a UAB-UNITINS antes que o S5 do MEC chegue como cautelar?"</em></p>
+  </div>
+  <div class="card-conceito">
+    <h4>30 participantes</h4>
+    <p>5 coordenadores de polo, 6 tutores experientes, 8 alunos representantes, 3 gestão UAB nacional, 2 pró-reitoria UNITINS, 4 pesquisadores externos, 2 facilitadores.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Modelo</h4>
+    <p>ESyN2030 (online com Zoom+Miro). Cinco dias. Distribuição em fusos compatíveis com TO+MG.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Co-facilitação</h4>
+    <p>Joana + Juliana (Diretório Metaphorum). Convidar Angela Espinosa para sessão de abertura, dado vínculo @espinosa2017 + ESyN2030.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Saída teórica</h4>
+    <p>12 statements of importance sobre coordenação inter-polos UAB. Insumo para nota técnica oficial à pró-reitoria.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Saída pedagógica</h4>
+    <p>Capítulo final da tese. Modelo replicável para outras IFEs e universidades estaduais EaD.</p>
+  </div>
+</div>
+```
+
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">A sintegração é o que faltou no GAN da BHRF até 2023. O grupo se reunia, mas em formato hierárquico tradicional — apenas três vozes dominavam. Beer descobriu que <strong>variedade interna do grupo precisa de protocolo geométrico para emergir</strong>. Sem isso, a função S2 que o grupo deveria executar fica capturada pelos atores que já dominavam antes.</div>
+  </div>
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">Para a UAB-UNITINS, fazer uma sintegração-piloto custa baixo (custo zero se for online), tem efeito mensurável (12 statements documentados) e produz tese ao mesmo tempo que produz intervenção. Não conheço outro instrumento de pesquisa-ação com essa relação custo-resultado.</div>
+  </div>
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">Em PDI, a estrutura icosaédrica de Beer corresponderia a um esquema de transferência cíclica entre filtros — cada filtro processa o sinal duas vezes em ciclos diferentes, com perspectivas distintas. Curiosamente, esse padrão também é o do <em>multi-scale processing</em>. Outra confirmação de que arquitetura matemática boa reaparece em domínios distantes.</div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
+
+## Para o leitor que segue Joana ou tem caso próprio
+
+Considere a sintegração como **forma de produzir dado primário** sobre o seu sistema-objeto. Mesmo que você não consiga reunir 30 participantes formalmente:
+
+1. **Versão reduzida (12 participantes, 4 times)**: viola a geometria icosaédrica mas preserva o princípio de composição variável. Funciona para casos menores.
+2. **Versão mini (1 dia, 8 pessoas)**: workshop intensivo com rotação de papéis. Não é sintegração formal, mas extrai o essencial pedagógico.
+3. **Versão observacional**: assista o vídeo de uma sintegração documentada antes de fazer a sua. Protocolos abertos do Metaphorum estão acessíveis.
+
+Para casos governamentais ou educacionais com ≥ 30 pessoas e tema difícil, **considere fazer a sintegração formal**. O custo de aprender o protocolo (uma leitura cuidadosa de @beer1994 + @trussleonard) é baixo comparado à variedade que se libera.
+
+## Limitações honestas
+
+- A sintegração não é mágica. **Trabalha com a variedade que está no grupo**. Se o grupo é homogêneo, o resultado também é.
+- O protocolo **assume boa fé** dos participantes. Em ambientes onde há sabotagem deliberada, a estrutura icosaédrica pode amplificar o problema em vez de absorvê-lo.
+- A sintegração documenta consenso, mas **não garante implementação**. O resultado precisa ser canalizado para órgãos com capacidade decisória — o que requer S3 e S5 institucional já presentes.
+- Há **fadiga real** em cinco dias intensos. Protocolos abreviados perdem o reverberation effect — não use os 30% por 30% do esforço.
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>Recursos curados</strong><br>
+  <span style="opacity:0.8">Beyond Dispute (Beer 1994), ESyN2030 do Metaphorum, GRADO Academy, vídeos de sintegração documentada.</span><br>
+  <a href="../recursos/index.html">Continuar →</a>
+</div>
+```

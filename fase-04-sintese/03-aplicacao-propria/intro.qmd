@@ -5,40 +5,135 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao ativo"><span class="label">Semana</span><span class="valor">20–24 de 24</span></div>
+  <div class="botao"><span class="label">Fase</span><span class="valor">Síntese · aplicação</span></div>
+  <div class="botao"><span class="label">Tempo</span><span class="valor">5 semanas de redação</span></div>
+</div>
+```
+
+::: {.cena}
+[<img src="../../assets/figs/personas/joana.svg" class="persona-icone"/>]{.persona-tag .joana}**Joana, abril de 2026, planejando o último trimestre da tese.**
+
+Joana abriu a planilha com três datas: **junho/2026** — sintegração-piloto na UNITINS, formato online estilo ESyN2030, 30 participantes (cinco coordenadores de polo, seis tutores, oito alunos, três UAB nacional, dois pró-reitoria, quatro externos, dois facilitadores: ela e Juliana). **Julho/2026** — análise dos 12 statements of importance e redação do capítulo metodológico. **Agosto/2026** — apresentação na **ASC 2026 em Ouro Preto**, sessão "Confluências Viáveis" do Metaphorum.
+
+A tese, antes vista como diagnóstico VSM acadêmico, virou outra coisa. Ela faria a sintegração — não como observadora, como facilitadora. Os 12 statements seriam **dados primários** produzidos pela própria intervenção. O capítulo final não relataria o problema; reportaria uma tentativa de solução, com resultado mensurável.
+
+Em três datas, três identidades de pesquisadora: facilitadora (junho), analista (julho), comunicadora à comunidade ASC (agosto). *A tese era, agora, ato.*
+:::
+
+::: {.simples}
+Um diagnóstico médico bom é aquele que diz o que o paciente tem. Um diagnóstico **excelente** é aquele que vem com um plano de ação testado em outros pacientes parecidos.
+
+Este capítulo final é onde sua tese (ou seu trabalho de aplicação) sai do "descrever um problema" e chega no "propor uma intervenção concreta com método replicável". A diferença é grande: a primeira vai pra gaveta, a segunda vai pra reunião do colegiado e pode mudar instituição.
+
+A ferramenta-chave que o curso recomenda é a **Sintegração** de Stafford Beer — uma forma de organizar uma reunião grande de 30 pessoas que **funciona como dispositivo cibernético**, não como reunião comum. **Cinco dias, formato icosaédrico, sem hierarquia. Saída: 12 declarações de consenso emergente.** Detalhes em [Sintegração](../../metatexto/sintegracao.qmd).
+:::
+
 ## A pergunta operacional
 
 Capítulo final. Tudo se converge aqui: as três fases técnicas (Strogatz, Markov, Sterman) viram instrumental para diagnóstico VSM concreto de uma coordenação de curso de graduação à escolha do(a) leitor(a). A persona-andaime Joana usa coordenação de Sistemas de Informação UNITINS-Palmas ou Computação UNIFAL-MG; quem lê pode usar a própria experiência institucional, ou seguir Joana como caso.
 
-## Roteiro
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>Diagnóstico</h4>
+    <p>Aplicar VSM em recursão escolhida. Identificar S1–S5 nominalmente. Calcular <span class="formula">H(D), H(R), H(O)</span> qualitativamente.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Intervenção</h4>
+    <p>Propor sintegração-piloto formato ESyN2030. 30 participantes, 5 dias, online. Pergunta-âncora institucional.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Saída teórica</h4>
+    <p>12 statements of importance produzidos pelo grupo. Insumo para nota técnica oficial. Documento autoral.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Destino externo</h4>
+    <p><strong>ASC 2026 Ouro Preto</strong>, ago/2026. Sessão "Confluências Viáveis" do Metaphorum. Paper longo + pôster colaborativo.</p>
+  </div>
+</div>
+```
 
-1. **Definir o sistema** (recursão escolhida, fronteiras, função-fim).
-2. **Identificar os cinco subsistemas** S1–S5 em recursão única.
-3. **Aplicar fase técnica relevante** a cada subsistema:
-   - S1: Strogatz (ponto fixo de operação, bacia, estabilidade).
-   - S2: Markov (cadeia de estados de coordenação, distribuição estacionária).
-   - S3: Sterman (estoques, fluxos, atrasos, bullwhip).
-   - S4: análise prospectiva (Lyapunov, Fourier, modelagem espectral).
-   - S5: identidade institucional (regimentos, missão, identidade declarada vs. observada).
-4. **Calcular variedades** $H(D)$, $H(R)$, $H(O)$ qualitativamente.
-5. **Identificar ausências sistemáticas** (tipicamente S2 e S4).
-6. **Propor intervenção** do tipo atenuação/ampliação/alargamento.
+## Roteiro de cinco semanas (20–24)
+
+| Semana | Atividade | Entregável |
+|---|---|---|
+| **20** | Definição do sistema-objeto + recursão escolhida + planejamento da sintegração | Um parágrafo de escopo + lista preliminar de 30 participantes |
+| **21** | Diagnóstico VSM em recursão tripla (S1–S5 nominalmente identificados) | Tabela diagnóstica com ausências sistemáticas |
+| **22** | Cálculo qualitativo de variedades $H(D), H(R), H(O)$ + sintegração-piloto | 12 statements of importance |
+| **23** | Análise dos statements + redação do diagnóstico final | ~5.000 palavras |
+| **24** | Comunicação ao colegiado interinstitucional + submissão ASC 2026 | Apresentação + paper para sessão "Confluências Viáveis" |
 
 ## Critérios de qualidade
 
-@alves2022 oferece o standard duplo: rigor VSM (recursão explícita, identificação nominal das funções, proposta de redesenho); inserção dialógica em literatura internacional revisada por pares (ASC, Metaphorum, *Constructivist Foundations*). O diagnóstico bom é o que pode ser submetido a essa comunidade.
+@alves2022 oferece o standard duplo: **rigor VSM** (recursão explícita, identificação nominal das funções, proposta de redesenho); **inserção dialógica em literatura internacional** revisada por pares (ASC, Metaphorum, *Constructivist Foundations*). O diagnóstico bom é o que pode ser submetido a essa comunidade.
+
+A **ASC 2026 em Ouro Preto** [@asc2026] é destino concreto. Sessão "Confluências Viáveis" do Metaphorum (Stafford Beer e América Latina) inclui demonstração de Syntegration. Joana submete paper longo + pôster colaborativo com Juliana sobre os 12 statements da sintegração-piloto.
+
+## A sintegração como intervenção
+
+A novidade deste capítulo em relação ao roteiro original é a inclusão da **sintegração-piloto** como instrumento de intervenção, não apenas diagnóstico. Detalhes operacionais em [Sintegração como dispositivo de intervenção](../../metatexto/sintegracao.qmd):
+
+- Formato online ESyN2030 [@esyn2030]: Zoom + Miro
+- 30 participantes em estrutura icosaédrica (12 times de 5)
+- 5 dias com reverberação
+- Saída: 12 statements of importance
+- Co-facilitação com Juliana (Diretório Metaphorum)
+
+O custo é baixo (online, gratuito), o resultado é mensurável (12 statements documentados), e produz tese e intervenção simultaneamente. A combinação é rara em pesquisa-ação institucional.
 
 ## Comunicação ao colegiado
 
-Saída final do projeto: documento de diagnóstico (~5.000 palavras) + apresentação ao colegiado interinstitucional (UNIFAL ou UNITINS). Estrutura sugerida: contexto → recursão escolhida → diagnóstico VSM → variedades → intervenção → roadmap. Tom: rigoroso mas acessível ao leitor não-cibernético.
+Saída final do projeto, antes da ASC: **documento de diagnóstico (~5.000 palavras) + apresentação ao colegiado interinstitucional (UNIFAL ou UNITINS) + os 12 statements da sintegração**. Estrutura sugerida: contexto → recursão escolhida → diagnóstico VSM → variedades → sintegração realizada → 12 statements → roadmap. Tom: rigoroso mas acessível ao leitor não-cibernético.
 
 ## Conexão com a pesquisa-cenário
 
-Joana entrega a comunicação como capítulo da tese. Quem segue o curso entrega a comunicação como produto final do projeto pessoal. O standard duplo é o mesmo.
+Joana entrega a comunicação como capítulo da tese. Quem segue o curso entrega a comunicação como produto final do projeto pessoal. O standard duplo é o mesmo: rigor + inserção dialógica.
+
+A diferença em 2026 é que **há um destino concreto compartilhado**: a ASC 2026 em Ouro Preto. Quem chegar até a Semana 24 com diagnóstico + sintegração-piloto realizada pode submeter à conferência junto, registrando a primeira onda brasileira de VSM aplicado documentado em comunidade internacional revisada por pares.
+
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">Antes de conhecer Sintegração eu pensava que minha tese terminaria na nota técnica. Agora entendo que o capítulo final tem que <em>mostrar</em> a intervenção acontecendo. A sintegração-piloto é o que separa "tese sobre coordenação" de "tese que produz coordenação".</div>
+  </div>
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">Co-facilitar com a Joana a sintegração da UNITINS é, para mim, replicar o que aprendi com a Espinosa no ESyN2030. Em cibernética, transmissão acontece pela facilitação compartilhada. A ASC 2026 em Ouro Preto é o lugar onde apresentamos o resultado para a comunidade que sustenta o aparato.</div>
+  </div>
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">Em PDI, a fase final não é "modelo treinado", é "pipeline em produção com métrica de monitoramento contínuo". Mesma lógica: o capítulo da Joana só fecha quando a intervenção está rodando e mensurada. Submeter à ASC com resultado é a "métrica de validação" da pesquisa-ação.</div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
 
 ## Pergunta de verificação
 
-Escolha um sistema concreto (curso, coordenação, instituição) e responda em um parágrafo: (i) recursão; (ii) S1-S5 presentes/ausentes; (iii) variedades qualitativas; (iv) intervenção proposta; (v) por que esta intervenção é Conant-Ashby (modelo-como-regulador) e não apenas modelo-descrição.
+Escolha um sistema concreto (curso, coordenação, instituição) e responda em um parágrafo: (i) recursão; (ii) S1-S5 presentes/ausentes; (iii) variedades qualitativas; (iv) intervenção proposta — e se for sintegração, qual a pergunta-âncora e quem seriam os 30 participantes; (v) por que esta intervenção é Conant-Ashby (modelo-como-regulador) e não apenas modelo-descrição.
 
 ::: {.callout-important}
-Este capítulo não tem solução pronta. É o lugar onde o curso entrega o aparato e o(a) aluno(a) entrega a aplicação própria.
+Este capítulo não tem solução pronta. É o lugar onde o curso entrega o aparato e o(a) aluno(a) entrega a aplicação própria. **Em 2026, o aparato inclui a sintegração-piloto e o destino ASC Ouro Preto.**
 :::
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>ASC 2026 — Ouro Preto, 3–7 de agosto</strong><br>
+  <span style="opacity:0.8">Sessão "Confluências Viáveis" do Metaphorum, com demonstração de Syntegration. Submeta seu trabalho.</span><br>
+  <a href="https://events.asc-cybernetics.org/2026/" target="_blank">Continuar →</a>
+</div>
+```
