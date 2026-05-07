@@ -8,6 +8,10 @@ format: html
 Esta página lista material externo que **complementa** os 18 capítulos. Cada recurso indica em qual fase ou capítulo ele se encaixa, e por quê. Lacunas honestas estão marcadas — para System Dynamics e VSM, por exemplo, não há equivalente IMPA em PT-BR; é necessário recorrer ao MIT e à literatura primária diretamente.
 :::
 
+::: {.callout-tip}
+Para a **trilha empírica** (dados oficiais brasileiros que alimentam a pesquisa-cenário de Joana via pacotes do IPEA-GIT), vá direto para [Dados reais para a pesquisa de Joana](dados-reais.qmd) — `geobr`, `censobr`, `aopdata`, `accessibility`, `r5r`.
+:::
+
 ## IMPA YouTube — Fase 1 (Strogatz) e parcial Fase 2 (Markov)
 
 O canal oficial [\@impabr](https://www.youtube.com/@impabr) (Instituto de Matemática Pura e Aplicada) tem cobertura sólida de sistemas dinâmicos e teoria ergódica em português, ministrada por pesquisadores do próprio IMPA.

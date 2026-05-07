@@ -1,0 +1,155 @@
+---
+title: "Dados reais para a pesquisa de Joana"
+subtitle: "Pacotes do IPEA-GIT e fontes públicas brasileiras"
+bibliography: ../bibliografia.bib
+format: html
+---
+
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao"><span class="label">Trilha</span><span class="valor">Empírica</span></div>
+  <div class="botao"><span class="label">Linguagem</span><span class="valor">R · Python</span></div>
+  <div class="botao"><span class="label">Custo</span><span class="valor">zero</span></div>
+</div>
+```
+
+::: {.cena}
+[<img src="../assets/figs/personas/joana.svg" class="persona-icone"/>]{.persona-tag .joana}**Joana, terça-feira, 14h.**
+
+Joana fechou o caderno físico depois do almoço e abriu o RStudio na biblioteca da UNITINS. Em três linhas de R, baixou o shape do Tocantins inteiro pelo `geobr`, sobrepôs os 139 municípios e marcou os cinco câmpus da UNITINS em laranja. Em mais cinco linhas, com `censobr`, puxou o perfil etário e a renda média de Augustinópolis pelo Censo 2022.
+
+Antes de chegar no calendário acadêmico, antes de abrir uma única planilha de matrícula, ela já tinha o **território** em frente — pixel por pixel — dos sistemas que ia diagnosticar. *Diagnóstico cibernético sem mapa é diagnóstico no escuro.*
+:::
+
+::: {.simples}
+Pesquisar política pública no Brasil sem dados oficiais geolocalizados é pesquisar com olhos fechados. O **IPEA-GIT** — grupo de pesquisa em Geo-tecnologias do IPEA — mantém pacotes gratuitos em R e Python que tiram dados do IBGE, do MEC, do DataSUS e do projeto Acesso a Oportunidades direto do servidor para o seu notebook, em uma linha de código.
+
+Joana usa esses pacotes para responder perguntas concretas: *quanto tempo um aluno de Augustinópolis leva para chegar ao polo UAB mais próximo? Quantos alunos potenciais existem dentro de um raio de 30 minutos? Como esse perfil muda em Alfenas?*
+
+Você pode usar igual.
+:::
+
+## Os pacotes do IPEA-GIT relevantes ao curso
+
+O [IPEA-GIT](https://github.com/ipeaGIT) tem 60+ repositórios. Os seis abaixo são os que mais diretamente alimentam a pesquisa-cenário do curso:
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>geobr</h4>
+    <p>Limites espaciais oficiais do Brasil: estados, municípios, setores censitários, áreas indígenas, biomas. <strong>Para Joana:</strong> mapas de TO, MG, polos UAB.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>censobr</h4>
+    <p>Microdados do Censo IBGE em Parquet. População, renda, educação, saneamento, raça-cor por setor censitário. <strong>Para Joana:</strong> perfilar Augustinópolis vs Alfenas.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>aopdata</h4>
+    <p>Projeto Acesso a Oportunidades. Tempo de viagem de cada hexágono H3 às oportunidades urbanas (empregos, saúde, educação). <strong>Para Joana:</strong> quantos minutos da casa ao polo UAB.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>accessibility</h4>
+    <p>Métricas formais de acessibilidade — cumulativa, gravitacional, por competição. <strong>Para Joana:</strong> calcular <span class="formula">A(i)</span> de educação acessível em cada município tocantinense.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>r5r</h4>
+    <p>Engine R5 para roteamento multimodal (caminhada, ônibus, carro). Calcula matrizes de tempo de viagem em escala municipal. <strong>Para Joana:</strong> traçar isócronas em torno dos polos UAB-UNITINS.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>geocodebr</h4>
+    <p>Geocoding de endereços brasileiros via CNEFE. Transforma "Av. NS-15, Palmas-TO" em coordenadas. <strong>Para Joana:</strong> localizar cada câmpus, polo, escola que entra na análise.</p>
+  </div>
+</div>
+```
+
+## Como esses pacotes se encaixam na pesquisa-cenário
+
+Joana faz cotutela UNITINS-UNIFAL comparando duas universidades públicas brasileiras como sistemas viáveis (vide [Personagem](../personagem-narrativo.qmd)). Para cada conceito do curso, há um uso concreto dos dados:
+
+| Fase | Conceito do curso | Pacote ipeaGIT | Pergunta empírica |
+|---|---|---|---|
+| F1 (Strogatz) | ponto fixo, capacidade de carga | `censobr` | a população em idade universitária de Augustinópolis estabilizou? |
+| F1 (caos) | sensibilidade às condições iniciais | `aopdata` | pequenas mudanças de localização do polo geram grandes mudanças no recrutamento? |
+| F2 (Markov) | distribuição estacionária | `censobr` | a distribuição de escolaridade do município converge ao longo de décadas? |
+| F2 (tempo de mistura) | $t_{\text{mix}}$ | `r5r` + matrículas | quantos semestres até a coorte estabilizar perfil? |
+| F3 (Sterman) | estoque-fluxo | `censobr` longitudinal | população matriculável em cada ano vs ingressantes |
+| F3 (validação) | replicação histórica | `censobr` 2010 + 2022 | modelo prevê população que foi de fato observada? |
+| F4 (VSM) | recursão tripla | `geobr` + `aopdata` | mapear S1=município, S2=microrregião, S3=estado, S4=federal |
+| F4 (BHRF paralelo) | sistema viável aplicado | `geobr` + ANA | adicionar bacia hidrográfica BHRF como camada de comparação |
+
+## Recursos didáticos do próprio IPEA-GIT
+
+O grupo mantém um **livro aberto** em RMarkdown que é, ele próprio, exemplar do estilo "explorable explanation":
+
+[**Introduction to Urban Accessibility: a practical guide in R**](https://ipeagit.github.io/intro_access_book/) — Pereira, Herszenhut & Saraiva (IPEA, atualizado periodicamente). Aborda:
+
+- Conceitos de acessibilidade (cumulativa, gravitacional, dual)
+- Pipeline completo: dados → matriz de viagem → métrica → mapa
+- Estudos de caso brasileiros (São Paulo, Belo Horizonte, Fortaleza)
+- Código R reproduzível em cada capítulo
+
+**Para Joana**: este livro é referência primária da Fase 4 (aplicação) e poderia ser leitura paralela à Semana 19 (BHRF) ou Semana 20 (aplicação própria). Modelo a imitar quando for redigir o próprio diagnóstico.
+
+Há também o pacote `brverse` — meta-pacote que lista os principais pacotes R para dados brasileiros, o equivalente do `tidyverse` para o ecossistema brasileiro de dados públicos. Caminho recomendado de instalação para quem quer começar:
+
+```r
+# Em R:
+install.packages(c("geobr", "censobr", "aopdata", "accessibility"))
+```
+
+```python
+# Em Python (apenas geobr tem versão Python pública):
+pip install geobr
+```
+
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">Eu posso medir, com aopdata, quantos minutos um adolescente de Lagoa da Confusão leva pra chegar ao polo UAB mais próximo. Mas o número sozinho não diz nada. Preciso da matemática do curso pra saber se 90 minutos é "muito" ou "tolerável" — variedade requisita do regulador, banda passante de S2.</div>
+  </div>
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">É exatamente o que faltou no diagnóstico VSM da BHRF na década de 2010 — havia dado de Naturatins, mas não havia formalismo cibernético para interpretá-los como variedade. Os pacotes IPEA-GIT chegam pré-empacotados com geometria; você só precisa aplicar Ashby.</div>
+  </div>
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">Os hexágonos H3 que o aopdata usa são exatamente como pixels — discretização espacial de variável contínua. Cada métrica de acessibilidade num hex é um valor de "intensidade". Vocês podem aplicar morfologia matemática (cap. F1-04) sobre o mapa pra detectar bacias de cobertura, é o mesmo aparato.</div>
+  </div>
+</div>
+```
+
+## Caveat
+
+Os dados do IPEA-GIT são oficiais (IBGE, ANTT, CNES) mas **defasados** — o Censo 2022 saiu em 2024, atualizações dos polos UAB chegam com 1–2 semestres de atraso, dados de evasão acadêmica raramente são públicos no nível municipal. Para a pesquisa de Joana, isso significa que o diagnóstico é sempre sobre o "estado quase-recente", não sobre o tempo presente. **Em VSM, isso é função S4 (fora-e-depois) operando com latência** — limitação real, não falha de método.
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
+
+## Como começar concretamente
+
+Três experimentos curtos que cabem em uma tarde:
+
+1. **Mapa do território**: instale `geobr`, baixe o estado de Tocantins (`read_state("TO")`) e o estado de Minas Gerais (`read_state("MG")`), plote os dois. Marque manualmente Palmas e Alfenas. Pergunta: quanto a geografia força arquiteturas distintas?
+
+2. **Perfil demográfico comparado**: com `censobr`, baixe a faixa etária 18–24 anos para Augustinópolis (TO) e Alfenas (MG) no Censo 2022. Compare a fração da população nessa faixa. Pergunta: a base discente potencial é simétrica entre os dois casos?
+
+3. **Acessibilidade educacional**: com `aopdata`, baixe o tempo médio para escola pública (ensino superior) em ambos os municípios. Pergunta: a "variedade" de oportunidades educacionais $H(D)$ acessível em 60 minutos é maior em qual?
+
+Os três experimentos cabem em ~50 linhas de R. Servem de aquecimento empírico antes da Semana 1 propriamente dita, e geram material para o próprio diagnóstico final (capítulo F4-03).
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>Recursos externos curados</strong><br>
+  <span style="opacity:0.8">IMPA YouTube, ASC, Metaphorum, MIT 15.871, Anki Desktop, Excalidraw — saídas para profundidade.</span><br>
+  <a href="index.html">Continuar →</a>
+</div>
+```

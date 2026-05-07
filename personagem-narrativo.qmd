@@ -52,6 +52,20 @@ São os exemplos canônicos que substituem, ao longo das cartas e memorandos, o 
 | Sensibilidade da taxa de conclusão a perturbações iniciais | Strogatz (caos) | expoente de Lyapunov sobre coorte |
 | Carga de trabalho docente como sistema dinâmico em 2D | Strogatz (fluxos 2D) | retrato de fase |
 
+## O ferramental empírico de Joana
+
+Joana não trabalha apenas com teoria. Cada conceito do curso pode ser testado contra dados reais via os pacotes do **[IPEA-GIT](https://github.com/ipeaGIT)** (R e Python, gratuitos):
+
+- **`geobr`** — limites espaciais oficiais (TO, MG, municípios, setores).
+- **`censobr`** — Censo IBGE em microdados (perfis demográficos de Augustinópolis, Alfenas).
+- **`aopdata`** + **`accessibility`** — Acesso a Oportunidades, com tempos de viagem e métricas formais de variedade $H(D)$ educacional.
+- **`r5r`** — engine de routing multimodal.
+- **`geocodebr`** — geocoding de endereços.
+
+Página dedicada: [Dados reais para a pesquisa de Joana](recursos/dados-reais.qmd) — mostra três experimentos de aquecimento (mapa do território, perfil comparado Augustinópolis-Alfenas, acessibilidade educacional) que cabem em uma tarde e geram material para o diagnóstico final (Semana 20).
+
+A regra é: **diagnóstico cibernético sem mapa é diagnóstico no escuro**. O território vem antes do calendário acadêmico.
+
 ## Convenção operacional
 
 - O slot **"Para o projeto"** que fecha cada `carta-luiz-eduardo.qmd` deve referenciar **um destes indicadores ou outro coerente com a pesquisa de Joana**, conectando o conceito do capítulo ao caso UNITINS, UNIFAL ou à comparação entre os dois.

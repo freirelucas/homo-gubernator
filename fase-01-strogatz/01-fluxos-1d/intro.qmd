@@ -20,7 +20,9 @@ Joana chegou ao polo da UAB-UNITINS em Augustinópolis com o caderno aberto na c
 
 Ela não procurava ainda uma fórmula. Procurava um padrão. *Existe um número de equilíbrio para cada polo? Uma turma que estabiliza vira "estável"? Uma que despenca colapsa para zero?*
 
-Sentou-se na mesa da coordenação, anotou a pergunta no topo da página e começou a desenhar setas: matrícula → trancamento → reativação → conclusão → evasão. Foi o primeiro retrato de fase da vida dela.
+À tarde, abriu o RStudio e em seis linhas de [`geobr`](../../recursos/dados-reais.qmd) e [`censobr`](https://github.com/ipeaGIT/censobr) puxou o shape do município de Augustinópolis e a faixa etária 18–24 anos do Censo 2022. Antes de qualquer cálculo, tinha o **território** em frente — pixel por pixel — do sistema que ia diagnosticar.
+
+Sentou-se com o mapa aberto e começou a desenhar setas: matrícula → trancamento → reativação → conclusão → evasão. Foi o primeiro retrato de fase da vida dela.
 :::
 
 ::: {.simples}
