@@ -51,7 +51,7 @@ Marco principal do calendário externo de quem segue o curso ou tem caso própri
 | Recurso | Encaixe | Comentário |
 |---|---|---|
 | [**ASC 2026 — Confluências Conversacionais**](https://events.asc-cybernetics.org/2026/) | Semanas 21–24 + além | Conferência da American Society for Cybernetics em **Ouro Preto-MG, 3 a 7 de agosto de 2026**. Primeira ASC no Brasil. |
-| [Sessão "Confluências Viáveis"](https://events.asc-cybernetics.org/2026/pt/sessoes-da-conferencia/) — Metaphorum | F4-01, F4-02, F4-03 | Stafford Beer e América Latina. **Inclui demonstração de Syntegration**. Sessão-âncora para tese da Joana. |
+| [Sessão "Confluências Viáveis"](https://events.asc-cybernetics.org/2026/pt/sessoes-da-conferencia/) — Metaphorum | F4-01, F4-02, F4-03 | Stafford Beer e América Latina. **Inclui demonstração de Syntegration**. Sessão-âncora para tese da Joana — paper longo e pôster colaborativo sobre fundação do IDEA. |
 | Sessão "Cartografias em Disputa" | F4-03 + dados-reais | Mapeamento como prática recursiva. Diálogo natural com mapas geobr/aopdata. |
 | Sessão "Confluência Conversacional" | F4-01 + Sintegração | Epistemologias operativas e segunda ordem. |
 | Sessão "Confluências Emaranhadas" | F4-02 + UNITINS | Sabedoria indígena, IA reflexiva. Diálogo com municípios indígenas tocantinenses. |
@@ -65,10 +65,11 @@ Para a tese de Joana e para o(a) leitor(a) com caso próprio: a ASC 2026 funcion
 | Recurso | Encaixe | Comentário |
 |---|---|---|
 | [Metaphorum (UK)](https://metaphorum.org/) | Fase 4 inteira | Comunidade de prática focada na obra de Stafford Beer. Juliana Mariano Alves é membro do Diretório desde 2023. Conferências anuais com apresentações abertas. |
-| [**ESyN2030 — Online Syntegration Pilot**](https://metaphorum.org/projects/esyn2030-info-faq) | F4-03 + intervenção | Adaptação online do protocolo Team Syntegrity, conduzida pelo Metaphorum em jan/2021. Modelo de referência para a sintegração-piloto que Joana propõe. Facilitadores: Leonard, Beatty, Verveen, Walker, Tuddenham, Espinosa. |
+| [**ESyN2030 — Online Syntegration Pilot**](https://metaphorum.org/projects/esyn2030-info-faq) | F4-03 + fundação | Adaptação online do protocolo Team Syntegrity, conduzida pelo Metaphorum em jan/2021. Modelo de referência para a sintegração-piloto de fundação do IDEA. Facilitadores: Leonard, Beatty, Verveen, Walker, Tuddenham, Espinosa. |
 | Beer, S. (1994). *Beyond Dispute: The Invention of Team Syntegrity* (Wiley) | F4-03 + Sintegração | Texto fundador do protocolo. Necessário para quem vai conduzir sintegração própria. |
 | [Team Syntegrity Bibliography](https://metaphorum.org/resources/team-syntegrity-bibliography) | F4-03 | Bibliografia completa Metaphorum sobre Team Syntegrity. |
-| [Sintegração — página dedicada do curso](../metatexto/sintegracao.qmd) | F4-03 + intervenção | Protocolo, ESyN2030, ASC 2026 e aplicação à tese de Joana, em PT-BR. |
+| [Sintegração — página dedicada do curso](../metatexto/sintegracao.qmd) | F4-03 + fundação | Protocolo, ESyN2030, ASC 2026 e aplicação à tese de Joana, em PT-BR. |
+| [**IDEA — Instituto de Diagnóstico Estratégico Aplicado**](../metatexto/idea-think-tank.qmd) | F4-03 + fundação | *Think tank* fictício em fundação, paralelo ao INEP. Caso pedagógico do curso para fundação cibernética de organização. |
 | [American Society for Cybernetics — ASC](https://asc-cybernetics.org/) | Fase 4 inteira | Sociedade fundada 1964. Juliana é Member-at-Large pelo Sul Global desde jan/2024. ASC 2024 (60th Anniversary) program: <https://events.asc-cybernetics.org/2024/program/>. |
 | [Constructivist Foundations Vol. 20 (2025)](https://constructivist.info/20) | F4-01, F4-02 | Inclui @alves2025variety — *Harnessing variety engineering for management of non-trivial systems*. |
 | Espinosa, A. & Walker, J. (2017). *A Complexity Approach to Sustainability* (2ª ed., World Scientific) | F4-01 | Aplicação de VSM a universidades e sustentabilidade. Disponível em bibliotecas universitárias. |

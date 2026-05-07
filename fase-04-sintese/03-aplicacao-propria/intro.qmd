@@ -1,5 +1,5 @@
 ---
-title: "Aplicação própria: diagnóstico VSM de uma coordenação de curso"
+title: "Aplicação própria: diagnóstico VSM + ato fundacional"
 subtitle: "Fase 4 — Capítulo 3 (síntese final)"
 bibliography: ../../bibliografia.bib
 format: html
@@ -16,24 +16,26 @@ format: html
 ::: {.cena}
 [<img src="../../assets/figs/personas/joana.svg" class="persona-icone"/>]{.persona-tag .joana}**Joana, abril de 2026, planejando o último trimestre da tese.**
 
-Joana abriu a planilha com três datas: **junho/2026** — sintegração-piloto na UNITINS, formato online estilo ESyN2030, 30 participantes (cinco coordenadores de polo, seis tutores, oito alunos, três UAB nacional, dois pró-reitoria, quatro externos, dois facilitadores: ela e Juliana). **Julho/2026** — análise dos 12 statements of importance e redação do capítulo metodológico. **Agosto/2026** — apresentação na **ASC 2026 em Ouro Preto**, sessão "Confluências Viáveis" do Metaphorum.
+Em março, ligaram para Joana. Um grupo de fundadores potenciais — pesquisadores aposentados, ex-secretária de educação estadual, fundação privada, sócios de consultoria — estavam montando um *think tank* hipotético chamado **[IDEA — Instituto de Diagnóstico Estratégico Aplicado](../../metatexto/idea-think-tank.qmd)**. A ideia: complementar o INEP. Onde o INEP mede desempenho, o IDEA diagnosticaria viabilidade institucional via aparato cibernético.
 
-A tese, antes vista como diagnóstico VSM acadêmico, virou outra coisa. Ela faria a sintegração — não como observadora, como facilitadora. Os 12 statements seriam **dados primários** produzidos pela própria intervenção. O capítulo final não relataria o problema; reportaria uma tentativa de solução, com resultado mensurável.
+Pediram para Joana ser **consultora do desenho institucional**. Especificamente: conduzir a sintegração-piloto de fundação. Ela aceitou em meio dia.
 
-Em três datas, três identidades de pesquisadora: facilitadora (junho), analista (julho), comunicadora à comunidade ASC (agosto). *A tese era, agora, ato.*
+Naquela manhã abriu a planilha com três datas. **Junho/2026** — sintegração de fundação do IDEA, formato online estilo ESyN2030, 30 participantes (acadêmicos, gestores públicos, sociedade civil, setor privado, internacionais, estudantes, docentes). **Julho/2026** — análise dos 12 statements of importance e redação do capítulo metodológico. **Agosto/2026** — apresentação na **ASC 2026 em Ouro Preto**, sessão "Confluências Viáveis" do Metaphorum.
+
+A tese, antes vista como diagnóstico VSM acadêmico, virou outra coisa: **fundação cibernética documentada**. Os 12 statements seriam dados primários produzidos pela própria intervenção. O capítulo final relataria não um problema, mas um ato. *Em três datas, três identidades de pesquisadora: facilitadora (junho), analista (julho), comunicadora à comunidade ASC (agosto). A tese era, agora, ato.*
 :::
 
 ::: {.simples}
-Um diagnóstico médico bom é aquele que diz o que o paciente tem. Um diagnóstico **excelente** é aquele que vem com um plano de ação testado em outros pacientes parecidos.
+Existem dois tipos de exercício em cibernética: **diagnosticar uma organização que já existe** (arqueologia — escavar o que está lá) e **desenhar uma organização que vai existir** (arquitetura — especificar antes que a história congele).
 
-Este capítulo final é onde sua tese (ou seu trabalho de aplicação) sai do "descrever um problema" e chega no "propor uma intervenção concreta com método replicável". A diferença é grande: a primeira vai pra gaveta, a segunda vai pra reunião do colegiado e pode mudar instituição.
+A primeira sempre tem fricção: as pessoas que já trabalham na organização têm interesses, hábitos, memória. Mexer dói. A segunda é diferente: ninguém ainda foi contratado, nenhum orçamento ainda foi gasto, nenhuma identidade ainda foi declarada. **Você projeta o sistema viável desde o nascimento.**
 
-A ferramenta-chave que o curso recomenda é a **Sintegração** de Stafford Beer — uma forma de organizar uma reunião grande de 30 pessoas que **funciona como dispositivo cibernético**, não como reunião comum. **Cinco dias, formato icosaédrico, sem hierarquia. Saída: 12 declarações de consenso emergente.** Detalhes em [Sintegração](../../metatexto/sintegracao.qmd).
+Este capítulo final é onde sua tese (ou seu trabalho de aplicação) ataca o segundo tipo de exercício. **Você imagina, com método, uma organização que precisa nascer e diz: aqui estão os 12 pontos de identidade, operação e governança que essa organização precisa ter para ser viável.** A ferramenta é a Sintegração de Stafford Beer — protocolo de cinco dias com 30 pessoas que **funciona como dispositivo cibernético**. Detalhes em [Sintegração](../../metatexto/sintegracao.qmd) e [IDEA](../../metatexto/idea-think-tank.qmd).
 :::
 
 ## A pergunta operacional
 
-Capítulo final. Tudo se converge aqui: as três fases técnicas (Strogatz, Markov, Sterman) viram instrumental para diagnóstico VSM concreto de uma coordenação de curso de graduação à escolha do(a) leitor(a). A persona-andaime Joana usa coordenação de Sistemas de Informação UNITINS-Palmas ou Computação UNIFAL-MG; quem lê pode usar a própria experiência institucional, ou seguir Joana como caso.
+Capítulo final. Tudo se converge aqui: as três fases técnicas (Strogatz, Markov, Sterman) viram instrumental para **diagnóstico VSM seguido de ato fundacional concreto**. A persona-andaime Joana atua como consultora-fundadora do IDEA, *think tank* fictício paralelo ao INEP. Quem lê o curso pode (i) seguir Joana e o IDEA como caso, (ii) imaginar uma organização própria a fundar, ou (iii) aplicar o método a uma fundação cibernética em domínio diferente — saúde mental pública, observatório de violência policial, incubadora de cooperativas digitais.
 
 ```{=html}
 <div class="cards-conceito">
@@ -43,11 +45,11 @@ Capítulo final. Tudo se converge aqui: as três fases técnicas (Strogatz, Mark
   </div>
   <div class="card-conceito">
     <h4>Intervenção</h4>
-    <p>Propor sintegração-piloto formato ESyN2030. 30 participantes, 5 dias, online. Pergunta-âncora institucional.</p>
+    <p>Sintegração-piloto formato ESyN2030 para <strong>fundar</strong> organização nova ou refundar uma seção de organização existente. 30 participantes, 5 dias, online.</p>
   </div>
   <div class="card-conceito">
     <h4>Saída teórica</h4>
-    <p>12 statements of importance produzidos pelo grupo. Insumo para nota técnica oficial. Documento autoral.</p>
+    <p>12 statements of importance produzidos pelo grupo. Identidade, operação, antioscilação, alocação, inteligência, sustentabilidade, independência, impacto, replicabilidade, diversidade epistêmica, relação institucional, plano inicial.</p>
   </div>
   <div class="card-conceito">
     <h4>Destino externo</h4>
@@ -60,39 +62,41 @@ Capítulo final. Tudo se converge aqui: as três fases técnicas (Strogatz, Mark
 
 | Semana | Atividade | Entregável |
 |---|---|---|
-| **20** | Definição do sistema-objeto + recursão escolhida + planejamento da sintegração | Um parágrafo de escopo + lista preliminar de 30 participantes |
-| **21** | Diagnóstico VSM em recursão tripla (S1–S5 nominalmente identificados) | Tabela diagnóstica com ausências sistemáticas |
+| **20** | Definição do sistema-objeto + recursão escolhida + planejamento da sintegração de fundação | Um parágrafo de escopo + lista preliminar de 30 participantes |
+| **21** | Diagnóstico VSM em recursão tripla (S1–S5 nominalmente identificados na organização-mãe ou no campo institucional onde nascerá a nova) | Tabela diagnóstica com ausências sistemáticas |
 | **22** | Cálculo qualitativo de variedades $H(D), H(R), H(O)$ + sintegração-piloto | 12 statements of importance |
 | **23** | Análise dos statements + redação do diagnóstico final | ~5.000 palavras |
-| **24** | Comunicação ao colegiado interinstitucional + submissão ASC 2026 | Apresentação + paper para sessão "Confluências Viáveis" |
+| **24** | Comunicação ao colegiado + ato fundacional + submissão ASC 2026 | Apresentação + paper para sessão "Confluências Viáveis" |
 
 ## Critérios de qualidade
 
 @alves2022 oferece o standard duplo: **rigor VSM** (recursão explícita, identificação nominal das funções, proposta de redesenho); **inserção dialógica em literatura internacional** revisada por pares (ASC, Metaphorum, *Constructivist Foundations*). O diagnóstico bom é o que pode ser submetido a essa comunidade.
 
-A **ASC 2026 em Ouro Preto** [@asc2026] é destino concreto. Sessão "Confluências Viáveis" do Metaphorum (Stafford Beer e América Latina) inclui demonstração de Syntegration. Joana submete paper longo + pôster colaborativo com Juliana sobre os 12 statements da sintegração-piloto.
+A **ASC 2026 em Ouro Preto** [@asc2026] é destino concreto. Sessão "Confluências Viáveis" do Metaphorum (Stafford Beer e América Latina) inclui demonstração de Syntegration. Joana submete paper longo + pôster colaborativo com Juliana sobre os 12 statements da sintegração-piloto de fundação do IDEA.
 
-## A sintegração como intervenção
+## A sintegração de fundação como intervenção
 
-A novidade deste capítulo em relação ao roteiro original é a inclusão da **sintegração-piloto** como instrumento de intervenção, não apenas diagnóstico. Detalhes operacionais em [Sintegração como dispositivo de intervenção](../../metatexto/sintegracao.qmd):
+A novidade deste capítulo em relação a roteiros tradicionais de pesquisa institucional é a inclusão da **sintegração-piloto de fundação** como instrumento — não diagnóstico de instituição existente, mas **ato de fundação de organização nova** com VSM desde o desenho. Detalhes operacionais em [Sintegração](../../metatexto/sintegracao.qmd) e [IDEA](../../metatexto/idea-think-tank.qmd):
 
 - Formato online ESyN2030 [@esyn2030]: Zoom + Miro
 - 30 participantes em estrutura icosaédrica (12 times de 5)
 - 5 dias com reverberação
-- Saída: 12 statements of importance
+- Saída: 12 statements of importance que **emergem** do grupo, não impostos pelos fundadores
 - Co-facilitação com Juliana (Diretório Metaphorum)
 
-O custo é baixo (online, gratuito), o resultado é mensurável (12 statements documentados), e produz tese e intervenção simultaneamente. A combinação é rara em pesquisa-ação institucional.
+O custo é baixo (online, gratuito), o resultado é mensurável (12 statements documentados), e produz tese e ato fundacional simultaneamente. Para o IDEA na ficção do curso, é o protocolo que define identidade, operação e governança antes que a organização contrate primeira pessoa ou receba primeira receita. Para o leitor com caso próprio, o método é replicável a qualquer fundação cibernética.
 
 ## Comunicação ao colegiado
 
-Saída final do projeto, antes da ASC: **documento de diagnóstico (~5.000 palavras) + apresentação ao colegiado interinstitucional (UNIFAL ou UNITINS) + os 12 statements da sintegração**. Estrutura sugerida: contexto → recursão escolhida → diagnóstico VSM → variedades → sintegração realizada → 12 statements → roadmap. Tom: rigoroso mas acessível ao leitor não-cibernético.
+Saída final do projeto, antes da ASC: **documento de diagnóstico (~5.000 palavras) + apresentação ao colegiado interinstitucional + os 12 statements da sintegração**. Estrutura sugerida: contexto institucional → recursão escolhida → diagnóstico VSM → variedades → sintegração realizada → 12 statements → roadmap de implementação. Tom: rigoroso mas acessível ao leitor não-cibernético.
+
+Para Joana com IDEA: a "comunicação ao colegiado" é apresentação ao grupo de fundadores potenciais com os 12 statements, transformando-os em **estatuto operacional do think tank**. A organização nasce com a saída da sintegração já incorporada.
 
 ## Conexão com a pesquisa-cenário
 
-Joana entrega a comunicação como capítulo da tese. Quem segue o curso entrega a comunicação como produto final do projeto pessoal. O standard duplo é o mesmo: rigor + inserção dialógica.
+Joana entrega a comunicação como capítulo da tese **e** como ato fundacional do IDEA. Quem segue o curso entrega a comunicação como produto final do projeto pessoal — possivelmente fundação real, possivelmente exercício pedagógico. O standard duplo é o mesmo: rigor + inserção dialógica.
 
-A diferença em 2026 é que **há um destino concreto compartilhado**: a ASC 2026 em Ouro Preto. Quem chegar até a Semana 24 com diagnóstico + sintegração-piloto realizada pode submeter à conferência junto, registrando a primeira onda brasileira de VSM aplicado documentado em comunidade internacional revisada por pares.
+A diferença em 2026 é que **há um destino concreto compartilhado**: a ASC 2026 em Ouro Preto. Quem chegar até a Semana 24 com diagnóstico + sintegração-piloto realizada (real ou em formato pedagógico de exercício) pode submeter à conferência junto, registrando a primeira onda brasileira de **VSM aplicado em fundação cibernética documentada** em comunidade internacional revisada por pares.
 
 ## Voz dos personagens
 
@@ -100,15 +104,15 @@ A diferença em 2026 é que **há um destino concreto compartilhado**: a ASC 202
 <div class="dialogo">
   <div class="fala joana">
     <div class="quem">Joana</div>
-    <div class="o-que">Antes de conhecer Sintegração eu pensava que minha tese terminaria na nota técnica. Agora entendo que o capítulo final tem que <em>mostrar</em> a intervenção acontecendo. A sintegração-piloto é o que separa "tese sobre coordenação" de "tese que produz coordenação".</div>
+    <div class="o-que">A primeira reação ao convite do IDEA foi: "não posso fundar organização durante o doutorado, fora do escopo da tese." A segunda, depois de uma noite: <em>fundação cibernética é o método em ato. Se a tese é sobre viabilidade institucional, fundar uma organização viável usando o aparato é a prova final do conceito.</em></div>
   </div>
   <div class="fala juliana">
     <div class="quem">Juliana</div>
-    <div class="o-que">Co-facilitar com a Joana a sintegração da UNITINS é, para mim, replicar o que aprendi com a Espinosa no ESyN2030. Em cibernética, transmissão acontece pela facilitação compartilhada. A ASC 2026 em Ouro Preto é o lugar onde apresentamos o resultado para a comunidade que sustenta o aparato.</div>
+    <div class="o-que">Co-facilitar com a Joana a sintegração de fundação do IDEA é, para mim, replicar o que aprendi com a Espinosa no ESyN2030. Em cibernética, transmissão acontece pela facilitação compartilhada. A ASC 2026 em Ouro Preto é o lugar onde apresentamos o resultado para a comunidade que sustenta o aparato.</div>
   </div>
   <div class="fala luiz">
     <div class="quem">Luiz Eduardo</div>
-    <div class="o-que">Em PDI, a fase final não é "modelo treinado", é "pipeline em produção com métrica de monitoramento contínuo". Mesma lógica: o capítulo da Joana só fecha quando a intervenção está rodando e mensurada. Submeter à ASC com resultado é a "métrica de validação" da pesquisa-ação.</div>
+    <div class="o-que">Em PDI a fase final não é "modelo treinado", é "pipeline em produção com métrica de monitoramento contínuo". Mesma lógica: o capítulo da Joana só fecha quando o IDEA está fundado e os 12 statements operam como estatuto. Submeter à ASC com resultado é a "métrica de validação" da pesquisa-ação.</div>
   </div>
 </div>
 ```
@@ -123,10 +127,10 @@ A diferença em 2026 é que **há um destino concreto compartilhado**: a ASC 202
 
 ## Pergunta de verificação
 
-Escolha um sistema concreto (curso, coordenação, instituição) e responda em um parágrafo: (i) recursão; (ii) S1-S5 presentes/ausentes; (iii) variedades qualitativas; (iv) intervenção proposta — e se for sintegração, qual a pergunta-âncora e quem seriam os 30 participantes; (v) por que esta intervenção é Conant-Ashby (modelo-como-regulador) e não apenas modelo-descrição.
+Escolha um sistema concreto que você queira **fundar** ou **refundar** (think tank, observatório, diretoria nova de fundação existente, núcleo de pesquisa, cooperativa digital): responda em um parágrafo: (i) função-fim e por que precisa existir; (ii) recursão escolhida; (iii) S1–S5 que você desenha para essa organização desde o nascimento; (iv) variedades qualitativas $H(D), H(R), H(O)$ esperadas; (v) **pergunta-âncora da sintegração de fundação** + **30 participantes** distribuídos por categorias; (vi) por que esta intervenção é Conant-Ashby (modelo-como-regulador) e não apenas modelo-descrição.
 
 ::: {.callout-important}
-Este capítulo não tem solução pronta. É o lugar onde o curso entrega o aparato e o(a) aluno(a) entrega a aplicação própria. **Em 2026, o aparato inclui a sintegração-piloto e o destino ASC Ouro Preto.**
+Este capítulo não tem solução pronta. É o lugar onde o curso entrega o aparato e o(a) aluno(a) entrega a aplicação própria. **Em 2026, o aparato inclui a sintegração-piloto de fundação, o caso pedagógico do IDEA, e o destino ASC Ouro Preto.**
 :::
 
 ```{=html}

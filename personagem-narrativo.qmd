@@ -57,16 +57,18 @@ São os exemplos canônicos que substituem, ao longo das cartas e memorandos, o 
 A tese de Joana **não termina no diagnóstico VSM**. A trajetória das 24 semanas é desenhada para que ela passe por três posições sucessivas:
 
 1. **Observadora** (Semanas 1–11): aplica o aparato matemático aos dados das duas universidades. Identifica padrões, pontos fixos, ciclos institucionais, regimes de oscilação. Não intervém — observa.
-2. **Diagnóstica** (Semanas 12–19): aplica VSM em recursão tripla à coordenação de curso UAB-UNITINS. Identifica nominalmente quais funções (S2, S4) estão ausentes. Posiciona-se como crítica institucional informada.
-3. **Interventora** (Semanas 20–24): propõe e justifica um **protocolo de intervenção concreta**. O modelo de referência aqui é o **ESyN2030** [@esyn2030] — adaptação online do protocolo de **Team Syntegrity** de @beer1994.
+2. **Diagnóstica** (Semanas 12–19): aplica VSM em recursão tripla a coordenações de curso UAB-UNITINS e UNIFAL-MG. Identifica nominalmente quais funções (S2, S4) estão tipicamente ausentes em redes públicas brasileiras. Posiciona-se como crítica institucional informada — sem ainda intervir em instituição real.
+3. **Interventora-consultora** (Semanas 20–24): em março de 2026, é convidada a atuar como **consultora do desenho institucional do [IDEA — Instituto de Diagnóstico Estratégico Aplicado](metatexto/idea-think-tank.qmd)**, *think tank* fictício em fundação, paralelo ao INEP. A intervenção concreta não é em instituição existente, mas no **ato de fundar uma organização nova**, usando o aparato cibernético como arquitetura desde o primeiro dia.
 
-A intervenção que Joana propõe na sua tese é uma **sintegração-piloto** sobre a coordenação UAB-UNITINS. Trinta participantes (cinco coordenadores de polo, seis tutores experientes, oito alunos representantes, três da gestão UAB nacional, dois da pró-reitoria UNITINS, dois da Naturatins se aplicável, dois pesquisadores externos, dois facilitadores), distribuídos em doze times de cinco segundo o icosaedro de Beer. Cinco dias. Pergunta-âncora: *"Como construir um S2 institucional inter-polos para a UAB-UNITINS antes que o S5 do MEC chegue como cautelar?"*
+A escolha pedagógica é deliberada: aplicar VSM a uma organização que **se está construindo** (IDEA fictício) tem risco institucional zero, isola o método de complicações políticas, e mostra o aparato em ato. Diferente de propor intervenção em coordenação UAB real — exercício que sobrecarregaria a tese com fricção que não ilumina o método. O modelo de intervenção é o **ESyN2030** [@esyn2030] — adaptação online do protocolo de **Team Syntegrity** de @beer1994.
 
-Juliana, no Diretório do Metaphorum desde 2023 e participante de sintegrações, é interlocutora natural para co-facilitar.
+A intervenção que Joana conduz é, portanto, uma **sintegração-piloto de fundação do IDEA**, formato ESyN2030. Trinta participantes (oito acadêmicos, seis gestores públicos, cinco da sociedade civil, três do setor privado, quatro internacionais, dois estudantes, dois docentes), distribuídos em doze times de cinco segundo o icosaedro de Beer. Cinco dias online. Pergunta-âncora: *"Que organização precisa existir para diagnosticar viabilidade institucional de redes educacionais públicas brasileiras, e como ela começa?"*
 
-A tese deixa, portanto, de ser "diagnóstico VSM" e vira **diagnóstico cibernético + protocolo de intervenção testado**. É a postura **modelagem-como-regulação** de @alvesschwaninger2025 levada à última consequência: não basta o modelo correto, precisa do dispositivo institucional que o opera.
+Juliana, no Diretório do Metaphorum desde 2023 e participante de sintegrações, é co-facilitadora natural. A saída são os **12 statements of importance** que definem identidade, operação, antioscilação, alocação, inteligência, sustentabilidade, independência, impacto, replicabilidade, diversidade epistêmica, relação com INEP e plano inicial — **emergentes** da reverberação do grupo, não impostos pelos fundadores.
 
-Detalhes do protocolo, do ESyN2030 como modelo, e dos passos práticos para a réplica pedagógica estão em [Sintegração como dispositivo de intervenção](metatexto/sintegracao.qmd).
+A tese deixa de ser "diagnóstico VSM" e vira **diagnóstico cibernético + ato fundacional documentado**. É a postura **modelagem-como-regulação** de @alvesschwaninger2025 levada à última consequência: não basta o modelo correto, precisa do dispositivo institucional que o opera — e, melhor ainda, organização desenhada com VSM desde o nascimento.
+
+Detalhes do think tank fictício em [IDEA](metatexto/idea-think-tank.qmd). Detalhes do protocolo em [Sintegração como dispositivo de intervenção](metatexto/sintegracao.qmd).
 
 ## O destino externo da pesquisa: ASC 2026, Ouro Preto
 
@@ -74,14 +76,14 @@ A trajetória de Joana tem um marco externo definido: a **ASC 2026 — *Confluê
 
 Joana pretende submeter trabalho à sessão **"Confluências Viáveis: Stafford Beer e América Latina"**, organizada pelo Metaphorum, que **inclui demonstração de Syntegration**. A submissão tem dois tempos:
 
-1. **Paper longo** com o diagnóstico VSM completo da coordenação UAB-UNITINS em recursão tripla, comparado ao caso BHRF de @alves2022, posicionando a sintegração-piloto como dispositivo de intervenção testado.
-2. **Pôster colaborativo** redigido com Juliana, registrando os 12 statements of importance produzidos pela sintegração-piloto da UNITINS (caso a sintegração ocorra antes de agosto/2026) ou o protocolo de execução (caso ainda esteja em fase de planejamento).
+1. **Paper longo** com o relato da sintegração-piloto de fundação do IDEA, posicionando-a como exemplo de fundação cibernética de organização e contribuição metodológica para o Sul Global.
+2. **Pôster colaborativo** redigido com Juliana, registrando os 12 statements of importance produzidos pela sintegração e o plano de ação inicial do IDEA — caso a sintegração ocorra antes de agosto/2026 (cronograma viável: junho/2026 sintegração, julho análise, agosto apresentação na ASC).
 
 Outras sessões da ASC 2026 que dialogam com a tese:
 
-- **Cartografias em Disputa** — mapeamento como prática recursiva. Joana pode contribuir com os mapas geobr/aopdata da UAB-UNITINS como cartografia institucional reflexiva.
-- **Confluência Conversacional** — epistemologias operativas e segunda ordem. A sintegração-piloto é, formalmente, uma operação de cibernética de segunda ordem sobre a coordenação.
-- **Confluências Emaranhadas** — sabedoria indígena, teoria quântica, IA reflexiva. Diálogo possível: a UAB-UNITINS atende municípios com presença indígena significativa (Lagoa da Confusão, Tocantínia); a $H(D)$ acessada via censobr/aopdata cobre essa pluralidade.
+- **Cartografias em Disputa** — mapeamento como prática recursiva. Joana pode contribuir com os mapas geobr/aopdata como cartografia institucional reflexiva da rede educacional pública brasileira, insumo para o IDEA.
+- **Confluência Conversacional** — epistemologias operativas e segunda ordem. A sintegração-piloto é, formalmente, uma operação de cibernética de segunda ordem sobre a fundação organizacional.
+- **Confluências Emaranhadas** — sabedoria indígena, teoria quântica, IA reflexiva. Diálogo possível: o IDEA, ao desenhar diversidade epistêmica como statement of importance, abre porta para epistemologias plurais no diagnóstico institucional brasileiro.
 
 A ASC 2026 funciona como **prazo externo durante toda a Semana 24**: a tese de Joana se beneficia de ter um destino concreto, com referees competentes na própria área cibernética, em data fixa. Para o(a) leitor(a) que segue Joana como caso, a ASC 2026 é também alvo possível para versão própria da pesquisa.
 

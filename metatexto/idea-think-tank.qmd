@@ -1,0 +1,177 @@
+---
+title: "IDEA — Instituto de Diagnóstico Estratégico Aplicado"
+subtitle: "Think tank fictício em fundação, paralelo ao INEP"
+bibliography: ../bibliografia.bib
+format: html
+---
+
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao"><span class="label">Tipo</span><span class="valor">Personagem fictício</span></div>
+  <div class="botao"><span class="label">Status</span><span class="valor">Em fundação</span></div>
+  <div class="botao"><span class="label">Quando</span><span class="valor">2026, em paralelo ao INEP</span></div>
+</div>
+```
+
+::: {.callout-warning}
+**O IDEA é fictício.** É um *think tank* hipotético criado para a pedagogia deste curso. Não corresponde a nenhuma organização real. O [INEP](https://www.gov.br/inep/), em contraste, é real — autarquia federal vinculada ao MEC, criada em 1937, responsável por SAEB, ENEM, ENADE, IDEB e Censo Escolar. O IDEA opera, na ficção do curso, como organização paralela ao INEP, com mandato distinto e complementar.
+:::
+
+::: {.cena}
+[<img src="../assets/figs/personas/joana.svg" class="persona-icone"/>]{.persona-tag .joana}**Joana, março de 2026, fim de uma reunião remota.**
+
+Quatro meses antes da defesa, ligaram para Joana. Era um grupo de fundadores potenciais — quatro pesquisadores aposentados de IFEs, uma ex-secretária de educação estadual, um diretor de fundação privada da área educacional, dois sócios de consultoria em políticas públicas. Tinham um nome de trabalho: **IDEA — Instituto de Diagnóstico Estratégico Aplicado**.
+
+A ideia: criar um *think tank* não-governamental que **complementasse** o INEP. Onde o INEP mede desempenho (notas, fluxos, indicadores), o IDEA faria **diagnóstico de viabilidade institucional** — usando aparato cibernético, VSM, modelagem dinâmica. O foco inicial seria educação superior pública brasileira (federais, estaduais, IFs, UAB).
+
+A pergunta para Joana: *"Você toparia ser consultora do desenho institucional do IDEA? Especificamente, conduzir o protocolo de fundação?"*
+
+Joana hesitou meio dia. À noite respondeu sim. **Sua tese deixou de ser observação de duas universidades e virou ato de fundação de organização nova.** Dois meses depois, junho/2026, ela e Juliana co-facilitariam uma sintegração-piloto formato ESyN2030 com 30 atores potenciais para que o grupo decidisse — coletivamente, via reverberation effect — *o que é o IDEA, qual sua função e como começa*.
+:::
+
+## O mandato hipotético
+
+O IDEA, na ficção do curso, opera com três compromissos que o distinguem do INEP:
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>Mandato</h4>
+    <p>Diagnóstico de <strong>viabilidade institucional</strong> de redes educacionais públicas brasileiras, usando aparato cibernético-organizacional (VSM, Markov, SD).</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Forma jurídica</h4>
+    <p>Organização da Sociedade Civil de Interesse Público (OSCIP), independente do MEC, com financiamento misto (federal, fundações privadas, organismos internacionais).</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Complemento ao INEP</h4>
+    <p>Onde INEP mede desempenho (SAEB, ENEM, ENADE, IDEB), IDEA diagnostica <strong>arquitetura institucional</strong>: S2/S4 ausentes, ciclos-limite, regimes oscilatórios.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Saídas</h4>
+    <p>Notas técnicas, diagnósticos VSM, sintegrações sob encomenda, formação de quadros em cibernética organizacional aplicada.</p>
+  </div>
+</div>
+```
+
+A premissa fundamental: o INEP responde *"como está o desempenho?"*. O IDEA responde *"o sistema absorve a variedade que precisa absorver para permanecer viável?"*. As duas perguntas são distintas, complementares, e a segunda quase nunca é feita formalmente no Brasil.
+
+## Por que um think tank é o caso pedagógico ideal
+
+Diferentemente de propor intervenção em instituição existente — onde há atores reais, políticas reais, suscetibilidades reais — **fundar uma organização nova é o terreno limpo para aplicar VSM desde o desenho**. Beer escrevia que diagnosticar VSM em organização existente é arqueologia: descobrir o que já existe, identificar o que falta. Desenhar VSM em organização nova é arquitetura: **especificar S1–S5 antes que a história congele as escolhas**.
+
+Para Joana e para quem segue o curso, o IDEA oferece três vantagens pedagógicas:
+
+1. **Caso baixo-risco**: nenhum funcionário será demitido, nenhum orçamento será cortado, nenhuma instituição será embaraçada. A intervenção é hipotética e sua qualidade é avaliada pela coerência cibernética, não pelo impacto político.
+2. **Recursão clara**: o IDEA é, ele próprio, um sistema viável que se está construindo. Sua S5 (identidade) emergirá da sintegração-piloto. Sua S4 (futuro) será desenhada explicitamente. Sua S2 (antioscilação) precisa ser pensada antes da contratação.
+3. **Replicabilidade**: o protocolo de fundação cibernética que Joana documenta na tese pode ser replicado em qualquer fundação, ONG, autarquia ou nova diretoria que se queira viável desde o início.
+
+## A sintegração-piloto de fundação
+
+A intervenção que Joana conduz — co-facilitada com Juliana, no Diretório do Metaphorum — é a **sintegração-piloto de fundação do IDEA**, formato ESyN2030 [@esyn2030]. Detalhes em [Sintegração como dispositivo de intervenção](sintegracao.qmd).
+
+**Pergunta-âncora**: *"Que organização precisa existir para diagnosticar viabilidade institucional de redes educacionais públicas brasileiras, e como ela começa?"*
+
+**30 participantes em estrutura icosaédrica**:
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>Acadêmicos (8)</h4>
+    <p>Pesquisadores em cibernética, política educacional, gestão pública. Ângulo do conhecimento aplicável.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Gestores públicos (6)</h4>
+    <p>Ex-secretários estaduais, ex-pró-reitores, técnicos do MEC e INEP. Ângulo da viabilidade política e administrativa.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Sociedade civil (5)</h4>
+    <p>Fundações educacionais, terceiro setor, observatórios independentes. Ângulo do impacto e legitimidade.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Setor privado (3)</h4>
+    <p>Consultorias em políticas públicas, edtechs, fundações empresariais. Ângulo da sustentabilidade financeira.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Internacionais (4)</h4>
+    <p>Pesquisadores ASC/Metaphorum (Espinosa, Schwaninger se possível), Banco Mundial Educação, OCDE Education. Ângulo comparado.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Estudantes & docentes (2 + 2)</h4>
+    <p>Representação direta de quem opera nas pontas (UAB, federais, IFs). Ângulo da realidade operacional.</p>
+  </div>
+</div>
+```
+
+**Os 12 statements esperados** — produzidos pela sintegração, não impostos pelos fundadores — devem cobrir:
+
+1. **Identidade** (S5): o que o IDEA é e o que se recusa a ser.
+2. **Operação** (S1): que produtos concretos entrega e em que cadência.
+3. **Antioscilação** (S2): como evita capturar agendas particulares.
+4. **Alocação** (S3): como decide entre projetos e demanda.
+5. **Inteligência** (S4): como monitora tendências educacionais e cibernéticas.
+6. **Sustentabilidade financeira**: composição de receita.
+7. **Independência**: como evita captura governamental e privada.
+8. **Impacto pedagógico**: como mede que o diagnóstico foi útil.
+9. **Replicabilidade**: como o método é absorvido por terceiros.
+10. **Diversidade epistêmica**: representação Sul Global, indígena, periférica.
+11. **Relação com INEP**: parceria, complemento, ou coexistência?
+12. **Plano de ação inicial**: dois primeiros casos concretos a diagnosticar.
+
+A sintegração não decide os 12 antes — eles **emergem**. Os fundadores deixam a sala aceitando o resultado, ou o IDEA não nasce com legitimidade.
+
+## Por que isto sobre quê?
+
+A escolha do IDEA como caso final do curso, em vez da UAB-UNITINS, é deliberada:
+
+- **Risco institucional zero**: a UAB-UNITINS é instituição real com pessoas e orçamento. Propor intervenção sem mandato seria, no mínimo, falta de cuidado.
+- **Pureza pedagógica**: o IDEA permite isolar o aparato cibernético de complicações políticas reais. O leitor avalia o método, não a política.
+- **Continuidade narrativa**: Juliana, no Diretório Metaphorum, é interlocutora natural para fundação cibernética de organização brasileira. O destino ASC 2026 (Ouro Preto) torna-se *anúncio público* da fundação.
+- **Replicabilidade explícita**: o leitor que termina o curso e quer fundar sua própria organização — em qualquer área — tem método.
+
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">A primeira reação foi: "não posso fundar organização durante o doutorado, fora do escopo da tese." A segunda, depois de uma noite: <em>fundação cibernética é o método em ato. Se a tese é sobre viabilidade institucional, fundar uma organização viável usando o aparato é a prova final do conceito.</em></div>
+  </div>
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">No Metaphorum há tradição de pensamento sobre fundação cibernética desde o ESyN2030 — adaptamos o protocolo para distância exatamente para que organizações novas pudessem nascer com S2 robusto desde o primeiro dia. O IDEA é caso natural de aplicação. Co-facilitar com a Joana é continuidade dessa tradição no Sul Global.</div>
+  </div>
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">Em PDI a gente diz que arquitetura de modelo treinada do zero é mais maleável que <em>fine-tuning</em> de modelo grande. O IDEA é arquitetura nova — não há viés institucional acumulado. Se a sintegração for bem conduzida, o resultado tem chance maior de operar como Beer imaginou. Em organizações antigas, o trabalho cibernético é sempre destrutivo antes de construtivo.</div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
+
+## Para o leitor que segue Joana ou tem caso próprio
+
+O IDEA é caso ficcional. Mas a estrutura do exercício é replicável:
+
+1. **Identifique uma lacuna institucional real** no seu domínio (não precisa ser educação). Exemplo: think tank em saúde mental pública? observatório de violência policial? incubadora de cooperativas digitais?
+2. **Desenhe a sintegração de fundação** seguindo o protocolo ([Sintegração](sintegracao.qmd)): pergunta-âncora, 30 participantes diversos, formato ESyN2030, co-facilitação.
+3. **Documente os 12 statements** — não invente. Se você não consegue reunir 30 pessoas, faça versão reduzida (12 participantes, 4 times) com os mesmos princípios.
+4. **Submeta o resultado** à comunidade revisada por pares: ASC 2026, Metaphorum, ESUD, CBM. **A sintegração + os 12 statements são dado primário**.
+
+A diferença entre "estudo descritivo" e "intervenção fundacional cibernética" é, no fim, a diferença entre tese-relatório e tese-instrumento.
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>Sintegração como dispositivo de intervenção</strong><br>
+  <span style="opacity:0.8">O protocolo Team Syntegrity formal: icosaedro, 30 participantes, 5 dias, ESyN2030 online, ASC 2026 demo.</span><br>
+  <a href="sintegracao.html">Continuar →</a>
+</div>
+```

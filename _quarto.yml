@@ -21,6 +21,8 @@ website:
         text: Narrativa
       - href: metatexto/sintegracao.qmd
         text: Sintegração
+      - href: metatexto/idea-think-tank.qmd
+        text: IDEA
       - href: personagem-narrativo.qmd
         text: Personagem
       - href: plano/plano-estudos.qmd

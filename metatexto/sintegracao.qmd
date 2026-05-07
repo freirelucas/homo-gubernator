@@ -121,35 +121,35 @@ Para Joana, a ASC 2026 é simultaneamente:
 
 A coincidência de calendário é favorável: agosto/2026 fica entre as Semanas 21 e 24 do plano de 24 semanas. Quem segue o curso pelo calendário canônico chega à ASC com o diagnóstico já feito e a sintegração-piloto idealmente já conduzida — ou em fase imediata de planejamento.
 
-## Aplicação à tese de Joana
+## Aplicação à tese de Joana — fundação do IDEA
 
-A tese de Joana propõe uma **sintegração-piloto** sobre a coordenação UAB-UNITINS. Detalhes operacionais:
+A tese de Joana propõe uma **sintegração-piloto de fundação** do **[IDEA — Instituto de Diagnóstico Estratégico Aplicado](idea-think-tank.qmd)**, *think tank* fictício em criação como organização paralela ao INEP. A escolha de fundação cibernética em vez de intervenção em organização existente é deliberada: tem risco institucional zero, isola o método cibernético, e mostra Beer em arquitetura, não em arqueologia. Detalhes operacionais:
 
 ```{=html}
 <div class="cards-conceito">
   <div class="card-conceito">
     <h4>Pergunta-âncora</h4>
-    <p><em>"Como construir um S2 institucional inter-polos para a UAB-UNITINS antes que o S5 do MEC chegue como cautelar?"</em></p>
+    <p><em>"Que organização precisa existir para diagnosticar viabilidade institucional de redes educacionais públicas brasileiras, e como ela começa?"</em></p>
   </div>
   <div class="card-conceito">
     <h4>30 participantes</h4>
-    <p>5 coordenadores de polo, 6 tutores experientes, 8 alunos representantes, 3 gestão UAB nacional, 2 pró-reitoria UNITINS, 4 pesquisadores externos, 2 facilitadores.</p>
+    <p>8 acadêmicos, 6 gestores públicos, 5 sociedade civil, 3 setor privado, 4 internacionais, 2 estudantes, 2 docentes — diversidade icosaédrica deliberada.</p>
   </div>
   <div class="card-conceito">
     <h4>Modelo</h4>
-    <p>ESyN2030 (online com Zoom+Miro). Cinco dias. Distribuição em fusos compatíveis com TO+MG.</p>
+    <p>ESyN2030 (online com Zoom+Miro). Cinco dias. Fusos calibrados para participantes brasileiros + internacionais (Reino Unido, EUA).</p>
   </div>
   <div class="card-conceito">
     <h4>Co-facilitação</h4>
-    <p>Joana + Juliana (Diretório Metaphorum). Convidar Angela Espinosa para sessão de abertura, dado vínculo @espinosa2017 + ESyN2030.</p>
+    <p>Joana (consultora-fundadora) + Juliana (Diretório Metaphorum). Angela Espinosa convidada para sessão de abertura, dado vínculo @espinosa2017 + ESyN2030.</p>
   </div>
   <div class="card-conceito">
     <h4>Saída teórica</h4>
-    <p>12 statements of importance sobre coordenação inter-polos UAB. Insumo para nota técnica oficial à pró-reitoria.</p>
+    <p>12 statements of importance sobre identidade, operação, antioscilação, alocação, inteligência, sustentabilidade, independência, impacto, replicabilidade, diversidade epistêmica, relação com INEP e plano inicial.</p>
   </div>
   <div class="card-conceito">
     <h4>Saída pedagógica</h4>
-    <p>Capítulo final da tese. Modelo replicável para outras IFEs e universidades estaduais EaD.</p>
+    <p>Capítulo final da tese + ato de fundação do IDEA + paper para sessão "Confluências Viáveis" da ASC 2026 em Ouro Preto. Método replicável para qualquer fundação cibernética.</p>
   </div>
 </div>
 ```
@@ -160,11 +160,11 @@ A tese de Joana propõe uma **sintegração-piloto** sobre a coordenação UAB-U
 <div class="dialogo">
   <div class="fala juliana">
     <div class="quem">Juliana</div>
-    <div class="o-que">A sintegração é o que faltou no GAN da BHRF até 2023. O grupo se reunia, mas em formato hierárquico tradicional — apenas três vozes dominavam. Beer descobriu que <strong>variedade interna do grupo precisa de protocolo geométrico para emergir</strong>. Sem isso, a função S2 que o grupo deveria executar fica capturada pelos atores que já dominavam antes.</div>
+    <div class="o-que">A sintegração é o que faltou no GAN da BHRF até 2023. O grupo se reunia, mas em formato hierárquico tradicional — apenas três vozes dominavam. Beer descobriu que <strong>variedade interna do grupo precisa de protocolo geométrico para emergir</strong>. Aplicar o protocolo na fundação do IDEA, em vez de tentar consertar o GAN <em>ex post</em>, é exatamente o que o aparato manda.</div>
   </div>
   <div class="fala joana">
     <div class="quem">Joana</div>
-    <div class="o-que">Para a UAB-UNITINS, fazer uma sintegração-piloto custa baixo (custo zero se for online), tem efeito mensurável (12 statements documentados) e produz tese ao mesmo tempo que produz intervenção. Não conheço outro instrumento de pesquisa-ação com essa relação custo-resultado.</div>
+    <div class="o-que">Fazer uma sintegração-piloto online (formato ESyN2030) para fundar o IDEA custa baixo (custo zero, exceto pelo tempo dos participantes), tem efeito mensurável (12 statements documentados) e produz tese ao mesmo tempo que produz <em>ato fundacional</em>. Não conheço outro instrumento de pesquisa-ação com essa relação custo-resultado.</div>
   </div>
   <div class="fala luiz">
     <div class="quem">Luiz Eduardo</div>
