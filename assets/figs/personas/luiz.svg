@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <circle cx="30" cy="30" r="28" fill="#D45A1A" opacity="0.12"/>
+  <!-- cabeça -->
+  <circle cx="30" cy="22" r="7" fill="#D45A1A"/>
+  <!-- corpo -->
+  <path d="M 18 50 L 18 38 Q 18 31 30 31 Q 42 31 42 38 L 42 50 Z" fill="#D45A1A"/>
+  <!-- monitor/laptop em frente -->
+  <rect x="22" y="38" width="16" height="11" rx="1" fill="#FAF8F2" stroke="#1F3A4D" stroke-width="0.7"/>
+  <!-- pixels no monitor -->
+  <rect x="24" y="40" width="2" height="2" fill="#D45A1A"/>
+  <rect x="27" y="40" width="2" height="2" fill="#3F6B85"/>
+  <rect x="30" y="40" width="2" height="2" fill="#E8A33D"/>
+  <rect x="33" y="40" width="2" height="2" fill="#1F3A4D"/>
+  <rect x="24" y="43" width="11" height="1" fill="#3F6B85" opacity="0.5"/>
+  <rect x="24" y="45" width="9" height="1" fill="#3F6B85" opacity="0.4"/>
+</svg>

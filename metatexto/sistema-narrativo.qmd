@@ -1,0 +1,143 @@
+---
+title: "Sistema narrativo do curso"
+subtitle: "Como cada capítulo é arquitetado"
+bibliography: ../bibliografia.bib
+format: html
+---
+
+::: {.callout-tip}
+Esta página documenta o **sistema visual e narrativo** do curso. Inspirado em três tradições: o **Operations Room do Cybersyn** (Bonsiepe/INTEC, Chile, 1972), as **explorable explanations** de Bret Victor e Nicky Case, e a tradição poética de Stafford Beer ("Tigers at play"). Quem escreve um capítulo novo, ou expande um existente, segue este padrão.
+:::
+
+## Os sete blocos canônicos de cada capítulo
+
+Cada capítulo do curso, na ordem em que é lido, tem sete blocos:
+
+1. **Painel Opsroom** (3 botões) — Semana N de 24 · Fase X · Tempo de leitura
+2. **Cena** — abertura narrativa de 1–4 parágrafos com Joana, Juliana ou Luiz Eduardo enfrentando um problema concreto que será iluminado pelo conceito
+3. **Em palavras simples** — tradução do conceito principal para alguém de 10 anos ou para a avó. Sem fórmulas. Fidedigno mas operacional.
+4. **A pergunta operacional** + **Cards de conceito** — entrada formal, com 4 cards de conceitos-chave em painel modular
+5. **Formalização técnica** — densa, com LaTeX, sem manualese
+6. **Voz dos personagens** — pequeno diálogo entre Joana, Juliana e Luiz Eduardo discutindo o conceito sob seus três ângulos (governança, ficção, técnica)
+7. **Pergunta de verificação** + **Próxima parada** — exercício único bem desenhado + CTA visual para o próximo capítulo
+
+## A tradição visual
+
+### Cybersyn Operations Room (1972)
+
+O Opsroom de Stafford Beer e Gui Bonsiepe — sete cadeiras hexagonais brancas com almofadas laranja, painéis de controle em torno, madeira escura, painéis modulares — é a referência visual primária. O curso herda:
+
+- **Paleta**: laranja-queimado (Cybersyn), ocre, azul-petróleo, bone, com adições do cerrado tocantinense (azul-rio do Formoso, verde-cerrado).
+- **Painéis modulares**: cada conceito vira um "painel" no card. O leitor monta seu próprio Opsroom interno conforme avança.
+- **Botões grandes laranja**: `.painel-opsroom .botao` no topo de cada capítulo, evocando os controles físicos das cadeiras.
+- **Hexágonos discretos**: divisores `.hex-divisor` entre seções, homenagem à geometria da sala original.
+- **Tipografia editorial**: Source Serif Pro para corpo (leitura longa), Space Grotesk para *headings* (display, herança HfG Ulm), Inter para UI, JuliaMono para código/LaTeX.
+
+### Explorable explanations (Victor 2011, Case 2017)
+
+Bret Victor argumentou que leitores aprendem mais quando são "leitores ativos" — quando podem manipular o material e ver consequências. Nicky Case operacionalizou isso em séries como *Parable of the Polygons*. O curso herda:
+
+- **Active reading**: cada conceito tem cards ao lado da prosa, permitindo dois caminhos de entrada.
+- **Diálogo dos personagens**: o leitor não é forçado a uma única voz autoritativa; ouve três perspectivas e escolhe.
+- **Em palavras simples**: o "explicar para a avó" é uma forma de *prefab simulation* — o leitor primeiro intui antes de calcular.
+- **Sem fail states**: nenhum exercício é "errado". A pergunta de verificação é convite, não checkpoint.
+
+### Stafford Beer poeta
+
+Beer publicou *Transit; Poems* em 1977 e expôs pinturas em Liverpool. A frase "Tigers at play" — leveza dentro do rigor — é a vibe que tentamos manter. O curso é matemático mas:
+
+- A cena de abertura privilegia a vivência sobre a fórmula.
+- O diálogo dos personagens admite humor e imperfeição.
+- Os hexágonos decorativos não são funcionais — são jogo.
+- O CTA "Próxima parada" usa linguagem de jornada, não de currículo.
+
+## Os três personagens
+
+Cada um tem voz, ícone e cor próprios:
+
+[<img src="../assets/figs/personas/joana.svg" class="persona-icone"/>]{.persona-tag .joana}**Joana Beraldo** — doutoranda ficcional, cotutela UNITINS-UNIFAL. **Fala da vivência institucional**: o que ela vê no polo UAB, o que mede, o que pergunta antes de saber. Verde-cerrado.
+
+[<img src="../assets/figs/personas/juliana.svg" class="persona-icone"/>]{.persona-tag .juliana}**Juliana Mariano Alves** — real, UNITINS, ASC Member-at-Large, Diretório Metaphorum. **Fala da governança**: o que está em jogo institucionalmente, qual o paralelo com BHRF, qual o standard de qualidade. Azul-rio.
+
+[<img src="../assets/figs/personas/luiz.svg" class="persona-icone"/>]{.persona-tag .luiz}**Luiz Eduardo da Silva** — real, UNIFAL-MG. **Fala da técnica**: como o conceito aparece em PDI, em pixel, em algoritmo. Como os mesmos sinais matemáticos vivem em outro vocabulário. Laranja-queimado.
+
+A cena de abertura do capítulo é narrada por **um** dos três (não os três simultaneamente). Quem narra cada cena depende de qual lado do conceito é mais palpável:
+
+| Tipo de conceito | Narrador da cena |
+|---|---|
+| Comportamento agregado (turmas, evasão, calendários) | Joana |
+| Diagnóstico institucional, governança, recursão VSM | Juliana |
+| Algoritmo, sinal, transformação técnica | Luiz Eduardo |
+
+A "voz dos personagens" no penúltimo bloco do capítulo, em contraste, traz **os três juntos** em diálogo curto.
+
+## Em palavras simples — a regra
+
+A seção `:::{.simples}` traduz o conceito-mãe do capítulo para alguém de 10 anos ou a avó. Três regras:
+
+1. **Sem fórmulas.** Nenhuma. Se aparecer um símbolo, falhou.
+2. **Uma metáfora concreta**, do cotidiano. Caixa d'água, panela no fogo, fila do supermercado, jogo da velha — algo físico.
+3. **Termina com uma ponte**: "A matemática só formaliza isso." A função é dizer ao leitor *você já entendeu o essencial; agora vamos só nomear*.
+
+Não é resumo. É **anchor cognitivo**. O leitor pode voltar a ele quando se perder no formalismo.
+
+## Cards de conceito — a regra
+
+`.cards-conceito` aparece **uma vez por capítulo**, depois da pergunta operacional, antes da formalização. Três a cinco cards. Cada um:
+
+- Título curto (≤ 3 palavras), em maiúsculas.
+- Explicação em 1–2 frases.
+- Quando possível, uma fórmula curta entre `<span class="formula">` (renderiza monoespaçado, fundo ocre claro).
+
+Não é redundância com a prosa: é **índice visual**. O leitor que escaneia primeiro os cards e depois decide onde aprofundar tem outra entrada para o conteúdo.
+
+## Painel Opsroom — a regra
+
+`.painel-opsroom` no topo absoluto do capítulo, antes da cena. Três botões fixos:
+
+- **Semana**: "N de 24"
+- **Fase**: nome curto da fase
+- **Tempo**: estimativa de leitura
+
+O botão "ativo" (atual) ganha background laranja-queimado e borda ocre. Os outros são azul-petróleo. Visualmente espelha as cadeiras do Opsroom — controle e localização imediatos.
+
+## Hex-divisor
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
+
+Três hexágonos pequenos centralizados, em cores da paleta. **Uma vez por capítulo, no máximo**, antes da pergunta de verificação. É pausa visual, não decoração — sinaliza que o ferramental técnico foi entregue e o capítulo agora pede aplicação.
+
+## Próxima parada — a regra
+
+`.proximo-passo` no fim de cada capítulo. Texto curto, CTA em laranja apontando para o capítulo seguinte. Linguagem de jornada: "Próxima parada", "Continuar", "Avançar". Não "Capítulo seguinte" nem "Próximo módulo". O curso é caminho, não currículo.
+
+## Quando aplicar a outro capítulo
+
+O **F1-01** ([Fluxos em uma dimensão](../fase-01-strogatz/01-fluxos-1d/intro.qmd)) é o protótipo completo. Outros capítulos foram redigidos antes desta arquitetura existir e estão em prosa densa sem os blocos canônicos.
+
+Para aplicar a um capítulo existente:
+
+1. Criar a **cena** de abertura escolhendo o narrador apropriado.
+2. Criar o **em palavras simples** com metáfora concreta.
+3. Inserir o **painel Opsroom** com os 3 botões.
+4. Quebrar a prosa formal em **cards de conceito** onde fizer sentido (mantém a prosa também).
+5. Adicionar **voz dos personagens** com 3 falas curtas.
+6. Encerrar com **hex-divisor** + **próxima parada**.
+
+Cada migração é trabalho de ~20–40 minutos para um capítulo de 700 palavras. Ordem sugerida: F4-01 (âncora final), F1-02 (continuação imediata da Semana 1), F4-02 (BHRF), depois os 15 restantes.
+
+## Por que não é Moodle
+
+Moodle entrega informação. Este sistema entrega **uma experiência de pensamento acontecendo**. A diferença está em três escolhas:
+
+1. **A vivência precede a fórmula** (cena → palavras simples → formalização).
+2. **A voz nunca é única** (Joana, Juliana, Luiz Eduardo, mais o leitor).
+3. **A travessia é arquitetada** (painéis, hexágonos, cards, próxima parada — o leitor sente onde está).
+
+O ideal é que o(a) leitor(a), depois do curso, lembre menos das fórmulas e mais das **cenas** — e que as fórmulas voltem como ferramentas quando uma cena análoga aparece na vida dele(a).

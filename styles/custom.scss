@@ -8,6 +8,8 @@ $azul-petroleo:    #1F3A4D;
 $grafite:          #1A1A1A;
 $bone:             #FAF8F2;
 $papel:            #FBF6E9;
+$madeira:          #6B4423;  // wood paneling Opsroom
+$verde-cerrado:    #5C7A4F;  // savanna brasileira
 
 $primary:          $laranja-queimado;
 $secondary:        $azul-rio;
@@ -41,38 +43,29 @@ h3 { color: $azul-rio; margin-top: 1.8rem; }
 
 strong, b { color: $azul-petroleo; font-weight: 600; }
 
-// Links
 a {
   border-bottom: 1px solid rgba($laranja-queimado, 0.4);
   text-decoration: none;
 }
 a:hover { border-bottom-color: $azul-petroleo; }
 
-// Navbar
+// Navbar — Opsroom black-with-orange-band
 .navbar {
   background-color: $azul-petroleo !important;
   border-bottom: 3px solid $laranja-queimado;
 }
 .navbar .navbar-brand,
-.navbar .nav-link {
-  color: $bone !important;
-}
-.navbar .nav-link:hover, .navbar .nav-link.active {
-  color: $ocre !important;
-}
+.navbar .nav-link { color: $bone !important; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: $ocre !important; }
 
-// Sidebar
-.sidebar {
-  background-color: $papel !important;
-}
+.sidebar { background-color: $papel !important; }
 
 // Callouts
-.callout-note    { border-left-color: $azul-rio !important; background: rgba(63, 107, 133, 0.06); }
-.callout-tip     { border-left-color: $ocre !important;     background: rgba(232, 163, 61, 0.10); }
+.callout-note    { border-left-color: $azul-rio !important;        background: rgba(63, 107, 133, 0.06); }
+.callout-tip     { border-left-color: $ocre !important;            background: rgba(232, 163, 61, 0.10); }
 .callout-warning { border-left-color: $laranja-queimado !important; background: rgba(212, 90, 26, 0.07); }
 .callout-important { border-left-color: $azul-petroleo !important; background: rgba(31, 58, 77, 0.05); }
 
-// Blockquote
 blockquote {
   border-left: 4px solid $laranja-queimado;
   padding: 0.4em 1.2em;
@@ -81,7 +74,6 @@ blockquote {
   color: $azul-petroleo;
 }
 
-// Código
 code {
   color: $azul-petroleo;
   background: rgba(232, 163, 61, 0.12);
@@ -94,23 +86,13 @@ pre {
   padding: 1em 1.2em;
 }
 
-// Tabelas
 table { border-collapse: collapse; width: 100%; }
-table thead th {
-  background: $azul-petroleo;
-  color: $bone;
-  padding: 0.7em 1em;
-}
+table thead th { background: $azul-petroleo; color: $bone; padding: 0.7em 1em; }
 table tbody tr { border-bottom: 1px solid rgba(31, 58, 77, 0.08); }
 table tbody tr:nth-child(even) { background: rgba(232, 163, 61, 0.04); }
 table td { padding: 0.6em 1em; }
 
-// Figuras
-figcaption, .figure-caption {
-  font-size: 0.9em;
-  color: $azul-rio;
-  font-style: italic;
-}
+figcaption, .figure-caption { font-size: 0.9em; color: $azul-rio; font-style: italic; }
 
 // Hero block (landing)
 .hero-block {
@@ -120,10 +102,7 @@ figcaption, .figure-caption {
   margin: 1.5em 0 2.5em 0;
   text-align: center;
 }
-.hero-block h1, .hero-block h2 {
-  border-bottom: none;
-  margin-top: 0;
-}
+.hero-block h1, .hero-block h2 { border-bottom: none; margin-top: 0; }
 .hero-cta {
   display: inline-block;
   margin-top: 1.5em;
@@ -136,7 +115,7 @@ figcaption, .figure-caption {
 }
 .hero-cta:hover { background: $azul-petroleo; }
 
-// Entry-cards
+// Entry-cards (4 entradas)
 .entry-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -152,11 +131,12 @@ figcaption, .figure-caption {
   text-decoration: none !important;
   color: $grafite !important;
   display: block;
-  border-bottom: 1px solid rgba(31, 58, 77, 0.1);
 }
 .entry-card:hover {
   border-left-color: $azul-petroleo;
   background: $papel;
+  transform: translateY(-2px);
+  transition: transform 0.15s, background 0.15s, border-left-color 0.15s;
 }
 .entry-num {
   font-weight: 700;
@@ -164,46 +144,15 @@ figcaption, .figure-caption {
   font-size: 1.6em;
   font-family: "Space Grotesk", sans-serif;
 }
-.entry-title {
-  font-weight: 600;
-  color: $azul-petroleo;
-  font-size: 1.08em;
-  margin: 0.4em 0 0.3em 0;
-}
-.entry-desc {
-  font-size: 0.9em;
-  line-height: 1.5;
-}
+.entry-title { font-weight: 600; color: $azul-petroleo; font-size: 1.08em; margin: 0.4em 0 0.3em; }
+.entry-desc { font-size: 0.9em; line-height: 1.5; }
 
 // Course-map
-.course-map {
-  background: $papel;
-  border-radius: 10px;
-  padding: 1.5em;
-  margin: 2em 0;
-}
-.phase-row {
-  display: flex;
-  align-items: center;
-  margin: 0.7em 0;
-  font-size: 0.92em;
-}
-.phase-label {
-  flex: 0 0 130px;
-  font-weight: 600;
-  color: $azul-petroleo;
-}
-.phase-weeks {
-  flex: 1;
-  display: flex;
-  gap: 3px;
-}
-.week-dot {
-  flex: 1;
-  height: 22px;
-  border-radius: 3px;
-  background: rgba(31, 58, 77, 0.2);
-}
+.course-map { background: $papel; border-radius: 10px; padding: 1.5em; margin: 2em 0; }
+.phase-row { display: flex; align-items: center; margin: 0.7em 0; font-size: 0.92em; }
+.phase-label { flex: 0 0 130px; font-weight: 600; color: $azul-petroleo; }
+.phase-weeks { flex: 1; display: flex; gap: 3px; }
+.week-dot { flex: 1; height: 22px; border-radius: 3px; background: rgba(31, 58, 77, 0.2); }
 .week-dot.f1 { background: $laranja-queimado; }
 .week-dot.f2 { background: $ocre; }
 .week-dot.f3 { background: $azul-rio; }
@@ -211,7 +160,188 @@ figcaption, .figure-caption {
 .week-dot.review { background: rgba(31, 58, 77, 0.3); }
 .week-dot.write  { background: rgba(212, 90, 26, 0.4); }
 
-// Chapter header card
+// =============================================================================
+// SISTEMA NARRATIVO — Cybersyn Opsroom × Cerrado
+// =============================================================================
+
+// CENA — abertura narrativa de cada capítulo
+.cena {
+  background: linear-gradient(180deg, $bone 0%, $papel 100%);
+  border-radius: 12px;
+  padding: 1.8em 2em;
+  margin: 1em 0 2.5em;
+  border-top: 1px solid rgba($laranja-queimado, 0.3);
+  border-bottom: 1px solid rgba($laranja-queimado, 0.3);
+  position: relative;
+}
+.cena::before {
+  content: "CENA";
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  background: $laranja-queimado;
+  color: $bone;
+  padding: 2px 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  border-radius: 3px;
+}
+.cena p:first-child { margin-top: 0.4em; }
+.cena p:last-child { margin-bottom: 0; }
+.cena p {
+  font-style: italic;
+  color: $azul-petroleo;
+  font-size: 1.05em;
+  line-height: 1.65;
+}
+
+// PERSONAGEM — pequena tag indicando quem narra a cena
+.persona-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-style: normal;
+  font-family: "Inter", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-right: 0.5em;
+}
+.persona-tag.joana    { background: rgba($verde-cerrado, 0.18); color: darken($verde-cerrado, 8%); }
+.persona-tag.juliana  { background: rgba($azul-rio, 0.18);     color: $azul-petroleo; }
+.persona-tag.luiz     { background: rgba($laranja-queimado, 0.15); color: $laranja-queimado; }
+
+// EM PALAVRAS SIMPLES — tradução para criança/avó
+.simples {
+  background: rgba($ocre, 0.10);
+  border: 2px dashed rgba($ocre, 0.5);
+  border-radius: 10px;
+  padding: 1.3em 1.6em;
+  margin: 2em 0;
+  position: relative;
+}
+.simples::before {
+  content: "EM PALAVRAS SIMPLES";
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  background: $ocre;
+  color: $azul-petroleo;
+  padding: 2px 14px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  border-radius: 3px;
+}
+.simples p { font-size: 1.02em; line-height: 1.7; margin: 0.5em 0; }
+.simples p:first-of-type { margin-top: 0.4em; }
+.simples p:last-of-type  { margin-bottom: 0; }
+
+// VOZ DOS PERSONAGENS — diálogo informal Joana/Juliana/Luiz
+.dialogo {
+  background: $bone;
+  border-radius: 10px;
+  padding: 0.8em 1em;
+  margin: 1.5em 0;
+}
+.dialogo .fala {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 1em;
+  padding: 0.7em 0;
+  border-bottom: 1px dotted rgba($azul-petroleo, 0.15);
+  align-items: start;
+}
+.dialogo .fala:last-child { border-bottom: none; }
+.dialogo .fala .quem {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: right;
+  padding-top: 0.2em;
+}
+.dialogo .fala.joana   .quem { color: darken($verde-cerrado, 10%); }
+.dialogo .fala.juliana .quem { color: $azul-petroleo; }
+.dialogo .fala.luiz    .quem { color: $laranja-queimado; }
+.dialogo .fala .o-que { font-size: 0.97em; line-height: 1.55; }
+
+// CARDS de conceito (estilo painel Opsroom)
+.cards-conceito {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1em;
+  margin: 1.8em 0;
+}
+.card-conceito {
+  background: $bone;
+  border: 1px solid rgba($azul-petroleo, 0.12);
+  border-top: 3px solid $laranja-queimado;
+  border-radius: 6px;
+  padding: 1.1em 1.3em;
+  position: relative;
+}
+.card-conceito h4 {
+  font-size: 0.95rem;
+  margin: 0 0 0.5em;
+  color: $azul-petroleo;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.card-conceito p { font-size: 0.9em; line-height: 1.55; margin: 0; }
+.card-conceito .formula {
+  font-family: "JuliaMono", monospace;
+  font-size: 0.92em;
+  background: rgba($ocre, 0.1);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  color: $azul-petroleo;
+}
+
+// PAINEL OPSROOM — bloco "controle" no topo de cada capítulo
+.painel-opsroom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6em;
+  margin: 1em 0 2em;
+  padding: 0;
+}
+.painel-opsroom .botao {
+  background: $azul-petroleo;
+  color: $bone;
+  padding: 0.7em 1em;
+  border-radius: 6px;
+  text-align: center;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  border: 2px solid transparent;
+  transition: border-color 0.15s, background 0.15s;
+}
+.painel-opsroom .botao .label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.66rem;
+  opacity: 0.6;
+  margin-bottom: 0.2em;
+  letter-spacing: 0.1em;
+}
+.painel-opsroom .botao .valor {
+  font-size: 1em;
+  font-weight: 700;
+}
+.painel-opsroom .botao.ativo {
+  background: $laranja-queimado;
+  border-color: $ocre;
+}
+
+// Chapter header card (legacy)
 .chapter-header-card {
   background: linear-gradient(135deg, rgba(31, 58, 77, 0.04), rgba(232, 163, 61, 0.06));
   border-left: 4px solid $azul-petroleo;
@@ -227,8 +357,58 @@ figcaption, .figure-caption {
   letter-spacing: 0.04em;
   font-size: 0.78rem;
 }
-.chapter-meta {
-  color: $azul-rio;
-  font-style: italic;
-  font-size: 0.88rem;
+.chapter-meta { color: $azul-rio; font-style: italic; font-size: 0.88rem; }
+
+// SVG personagens
+.persona-icone {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  display: inline-block;
 }
+
+// Bloco "Próximo passo" — arquitetura de progressão
+.proximo-passo {
+  background: $azul-petroleo;
+  color: $bone;
+  border-radius: 10px;
+  padding: 1.3em 1.5em;
+  margin: 3em 0 1em;
+  text-align: center;
+}
+.proximo-passo h3, .proximo-passo h4 {
+  color: $bone;
+  margin-top: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+.proximo-passo a {
+  display: inline-block;
+  background: $laranja-queimado;
+  color: $bone !important;
+  padding: 0.7em 1.6em;
+  border-radius: 6px;
+  font-weight: 600;
+  border-bottom: none;
+  margin-top: 0.4em;
+}
+.proximo-passo a:hover { background: $ocre; color: $azul-petroleo !important; }
+
+// Hexágono decorativo (homenagem Cybersyn Opsroom)
+.hex-divisor {
+  display: flex;
+  justify-content: center;
+  margin: 3em 0;
+  gap: 1em;
+}
+.hex-divisor .hex {
+  width: 14px;
+  height: 16px;
+  background: $laranja-queimado;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  opacity: 0.5;
+}
+.hex-divisor .hex:nth-child(2) { background: $ocre;       opacity: 0.7; }
+.hex-divisor .hex:nth-child(3) { background: $azul-rio;   opacity: 0.6; }

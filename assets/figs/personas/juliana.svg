@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <circle cx="30" cy="30" r="28" fill="#3F6B85" opacity="0.12"/>
+  <!-- cabeça -->
+  <circle cx="30" cy="22" r="7" fill="#3F6B85"/>
+  <!-- óculos sutis -->
+  <line x1="26" y1="22" x2="34" y2="22" stroke="#1F3A4D" stroke-width="0.8"/>
+  <!-- corpo -->
+  <path d="M 18 50 L 18 38 Q 18 31 30 31 Q 42 31 42 38 L 42 50 Z" fill="#3F6B85"/>
+  <!-- mapa da bacia (rio estilizado na mão) -->
+  <path d="M 36 38 Q 40 41 38 45 Q 36 48 40 51" stroke="#FAF8F2" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <rect x="34" y="35" width="9" height="13" fill="none" stroke="#FAF8F2" stroke-width="0.7"/>
+</svg>

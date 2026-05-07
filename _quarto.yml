@@ -17,6 +17,8 @@ website:
         text: Como estudar
       - href: metatexto/viable-os.qmd
         text: ViableOS
+      - href: metatexto/sistema-narrativo.qmd
+        text: Narrativa
       - href: personagem-narrativo.qmd
         text: Personagem
       - href: plano/plano-estudos.qmd

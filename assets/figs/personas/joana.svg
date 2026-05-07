@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <circle cx="30" cy="30" r="28" fill="#5C7A4F" opacity="0.12"/>
+  <!-- cabeça -->
+  <circle cx="30" cy="22" r="7" fill="#5C7A4F"/>
+  <!-- corpo / mochileira -->
+  <path d="M 18 50 L 18 38 Q 18 31 30 31 Q 42 31 42 38 L 42 50 Z" fill="#5C7A4F"/>
+  <!-- cadernet/livro na mão -->
+  <rect x="40" y="38" width="6" height="9" rx="1" fill="#FAF8F2" stroke="#1F3A4D" stroke-width="0.6"/>
+  <!-- mecha de cabelo -->
+  <path d="M 22 22 Q 19 27 23 32" stroke="#3F2A1A" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>
