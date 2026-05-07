@@ -5,9 +5,56 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao ativo"><span class="label">Semana</span><span class="valor">4 de 24</span></div>
+  <div class="botao"><span class="label">Fase</span><span class="valor">Strogatz</span></div>
+  <div class="botao"><span class="label">Tempo</span><span class="valor">60–90 min</span></div>
+</div>
+```
+
+::: {.cena}
+[<img src="../../assets/figs/personas/juliana.svg" class="persona-icone"/>]{.persona-tag .juliana}**Juliana, palmas-TO, observando a série de outorgas 2010–2024.**
+
+Juliana plotou a sequência: 2010 outorga ampla, chuva farta, sem conflito. 2013 estiagem severa, restrição. 2014 chuva, retomada. 2017 estiagem, ACP do MPTO, restrição. 2019 chuva, retomada. 2022 estiagem moderada, suspensão de outorgas. 2024 chuva, GAN media revisão ampliada.
+
+*O sistema oscila*. Não converge a um equilíbrio "outorga sustentável". Não diverge para um regime único. Volta — sempre — ao padrão crise-restrição-retomada-conflito. Há gente nova nas reuniões; a coreografia é a mesma.
+
+Em linguagem matemática, é ciclo-limite. Em linguagem cibernética, é diagnóstico: o sistema **não tem como sair do ciclo** porque as funções que romperiam o padrão (S4 climática, S2 inter-outorgantes contínua) estão ausentes. O ciclo é o atrator natural do que existe.
+:::
+
+::: {.simples}
+Pense no relógio de pêndulo do seu avô. O peso desce, dá energia. A engrenagem solta a energia em pequenas batidas. O pêndulo balança da esquerda pra direita, da direita pra esquerda. **Ele não para nunca. Mas também não acelera nem desacelera.** Fica num balanço fixo, sempre o mesmo.
+
+Se você der um empurrão pequeno no pêndulo, ele recupera o ritmo em poucos segundos. Se você der um empurrão muito grande, talvez ele saia do ciclo. Mas para perturbações pequenas, ele *volta sempre ao mesmo balanço*.
+
+Isso é um ciclo-limite. Calendários acadêmicos, ciclos eleitorais, ciclos de safra, batimento cardíaco — todos são ciclos-limite. **Saber se um padrão repetitivo é ciclo-limite ou só coincidência muda a estratégia para mexer nele.**
+:::
+
 ## A pergunta operacional
 
 Em sistemas planares dissipativos, oscilações sustentadas só persistem como **ciclos-limite**: trajetórias fechadas isoladas (não há outras curvas fechadas em uma vizinhança). O ciclo-limite é a forma matemática rigorosa do "regime estacionário oscilatório" — coração batendo, oscilador eletrônico, ciclo predador-presa estabilizado.
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>Ciclo-limite</h4>
+    <p>Trajetória fechada <strong>isolada</strong>. Não há outras curvas fechadas próximas. Pode atrair ou repelir.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Poincaré-Bendixson</h4>
+    <p>Em região compacta sem pontos fixos, trajetórias confinadas tendem a ciclo-limite. Garantia de existência.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Van der Pol</h4>
+    <p><span class="formula">ẍ − μ(1−x²)ẋ + x = 0</span>. Modelo canônico de oscilador. <span class="formula">μ→0</span>: sinusoidal; <span class="formula">μ→∞</span>: relaxação.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Conservativo × dissipativo</h4>
+    <p>Lotka-Volterra clássico tem <em>centros</em> (não ciclos-limite). Saturação dissipativa transforma centros em ciclos-limite genuínos.</p>
+  </div>
+</div>
+```
 
 ## Existência: Poincaré-Bendixson
 
@@ -29,6 +76,33 @@ Lotka-Volterra clássico tem centros, não ciclos-limite (é conservativo). Vari
 
 Ciclo-limite é a forma matemática do **ciclo institucional**: orçamento aprovado → execução → relatório → novo orçamento; ou matrícula → curso → trancamento → reativação. A tese de @alves2022 diagnostica o ciclo recorrente outorga-crise-negociação-nova-outorga na BHRF como ciclo-limite institucional: o sistema retorna ao mesmo padrão depois de cada perturbação porque S2 e S4 estão ausentes. Sem antioscilação e sem inteligência de futuro, o ciclo é o atrator natural.
 
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">Diagnóstico crucial: nem todo padrão repetitivo é ciclo-limite. Para confirmar via Poincaré-Bendixson, preciso mostrar que pequenas perturbações decaem para o ciclo. Na BHRF, a evidência empírica é forte — sucessivas crises (2013, 2017, 2022) reproduziram a mesma coreografia. Essa <em>robustez do padrão</em> é o que distingue ciclo-limite de mera repetição contingente.</div>
+  </div>
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">No calendário ano-letivo, a greve interrompe o ciclo, a pandemia reseta inteiramente. Mas em três anos o sistema voltou ao mesmo padrão fevereiro-julho-agosto-dezembro. Isso é ciclo-limite atrativo — perturbação grande deslocou, mas o atrator puxou de volta. Diferente de uma instituição cujo calendário "morresse" depois da pandemia.</div>
+  </div>
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">Em PDI, a iteração de filtros idempotentes (abertura, fechamento) é um caso degenerado: a "trajetória" para no primeiro passo. Não é ciclo-limite, é convergência em uma iteração. Mas iterar com parâmetros que mudam dá origem a oscilação genuína — assunto central do processamento de imagem em vídeo.</div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
+
 ## Pergunta de verificação
 
 Para Van der Pol com $\mu=1$: prove existência de ciclo-limite via Poincaré-Bendixson construindo uma região anular de aprisionamento. Esboce o ciclo. Em linguagem cibernética: qual a "função" do ciclo (S2 efetivo, S4 ausente, ou outra coisa)?
@@ -36,3 +110,12 @@ Para Van der Pol com $\mu=1$: prove existência de ciclo-limite via Poincaré-Be
 ::: {.callout-tip}
 Para Joana: o calendário ano-letivo brasileiro é candidato a ciclo-limite institucional. Quais perturbações (greve, pandemia, mudança de gestão) deslocam transientemente o sistema-curso e quais o realimentam de volta ao ciclo?
 :::
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>Semana 5 — Bifurcações em 2D</strong><br>
+  <span style="opacity:0.8">Combinando bifurcações (Sem 2) e 2D (Sem 3): Hopf super- e subcrítica, bifurcações globais, nascimento de oscilação.</span><br>
+  <a href="../05-bifurcacoes-2d/intro.html">Continuar →</a>
+</div>
+```

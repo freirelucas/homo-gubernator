@@ -5,9 +5,58 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao ativo"><span class="label">Semana</span><span class="valor">6 de 24</span></div>
+  <div class="botao"><span class="label">Fase</span><span class="valor">Strogatz · final</span></div>
+  <div class="botao"><span class="label">Tempo</span><span class="valor">75–105 min</span></div>
+</div>
+```
+
+::: {.cena}
+[<img src="../../assets/figs/personas/juliana.svg" class="persona-icone"/>]{.persona-tag .juliana}**Juliana, ASC 2024, Friends Meeting House, Washington DC, junho.**
+
+Última fala do dia. Juliana subiu ao palco para apresentar o nexo Água-Energia-Alimento como sistema acoplado. Slide 4: três curvas — vazão, demanda elétrica de bombeamento, produção de arroz — sobrepostas em 12 anos da BHRF. Algumas correlações fortes, outras quebradas em momentos específicos.
+
+"Pequenas perturbações de início de safra", disse, "geram trajetórias muito diferentes em três anos. Não é estatística — é dinâmica determinística com expoente de Lyapunov positivo. Pelos meus cálculos, $\lambda \approx 0{,}3$ ano⁻¹ no nexo da BHRF. Isso significa que o horizonte de previsibilidade prática é cerca de três anos."
+
+Pausa na sala. Espejo, no fundo, anotou algo. Pangaro inclinou-se para frente. Pela primeira vez, uma fala do Sul Global no ASC trouxe o caos como diagnóstico institucional, não como metáfora.
+
+Juliana terminou: "*Reguladores que operam em banda passante limitada — e todos os nossos operam — são derrotados por essa sensibilidade. A consequência política é que precisamos redesenhar a banda passante de S2 e S4, não otimizar ainda mais o conhecimento parcial.*"
+:::
+
+::: {.simples}
+Imagine que você está jogando bola de gude num corredor inclinado com algumas pedrinhas no caminho. Você joga a bola exatamente do mesmo lugar, exatamente com a mesma força, dez vezes seguidas.
+
+Nas primeiras vezes, ela bate na primeira pedrinha de jeitos um pouquinho diferentes — milímetros. Mas o jeito que ela bate na primeira muda como ela vai bater na segunda. E na terceira. Em quatro, cinco pedrinhas, **a bola termina em lugares completamente diferentes do corredor**, mesmo você tendo jogado "igual" todas as vezes.
+
+Isso é caos. Não é aleatoriedade. É **multiplicação de pequenas diferenças** ao longo do tempo. Climas, mercados, tráfego de cidade, evasão de coortes — muitos sistemas reais funcionam assim. **A consequência prática é que o futuro distante é genuinamente imprevisível mesmo conhecendo o presente perfeitamente.**
+:::
+
 ## A pergunta operacional
 
 Saímos para 3D. Aqui aparece o último fenômeno qualitativo da Fase 1: **caos determinístico** — sensibilidade exponencial às condições iniciais com trajetórias confinadas a um conjunto invariante de medida zero, o **atrator estranho**. O sistema é determinístico (não há aleatoriedade nas equações), mas previsibilidade prática se perde em escala de tempo $\sim 1/\lambda$, onde $\lambda$ é o expoente de Lyapunov dominante.
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>Sistema de Lorenz</h4>
+    <p><span class="formula">σ=10, β=8/3, ρ=28</span>. Para <span class="formula">ρ&gt;ρ_c≈24.74</span>: caos. Atrator borboleta.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Lyapunov</h4>
+    <p><span class="formula">δ(t) ∼ δ₀ e^(λt)</span>. <span class="formula">λ&gt;0</span>: caos. Lorenz canônico: <span class="formula">λ≈0.9</span>.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Atrator estranho</h4>
+    <p>Conjunto invariante de dimensão de Hausdorff <strong>não-inteira</strong>. Lorenz: <span class="formula">D≈2.06</span>. Auto-similar.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Horizonte de previsibilidade</h4>
+    <p>Tempo característico <span class="formula">∼1/λ</span> além do qual a previsão pontual perde sentido. Para Lorenz: ~1 unidade de tempo.</p>
+  </div>
+</div>
+```
 
 ## Sistema de Lorenz
 
@@ -29,6 +78,33 @@ O atrator de Lorenz tem dimensão de Hausdorff não-inteira ($\approx 2.06$): ne
 
 Caos é o regime onde a Lei de Ashby falha de modo curioso: a variedade $H(D)$ instantânea pode ser pequena, mas a variedade *integrada no tempo* explode exponencialmente. Reguladores que operam em banda passante limitada são derrotados por sensibilidade às condições iniciais. A apresentação ASC 2024 de @alves2022 sobre o nexo Água-Energia-Alimento é, formalmente, uma fala sobre exatamente esse tipo de regime — sistemas dissipativos de três variáveis acopladas onde caos é genérico.
 
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">A consequência política do caos não é "abandonar a previsão". É <em>aceitar o horizonte de previsibilidade</em> e desenhar instituições resilientes a falhas de previsão. S4 cibernético no caos não é otimizar a previsão — é construir sistemas que sobrevivem a previsões erradas.</div>
+  </div>
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">Em coortes UAB com sensibilidade às condições iniciais (perfil socioeconômico, polo de origem, ano de ingresso), prever evasão individual é provavelmente caótico. Mas prever <em>distribuição</em> de evasão pode ser estável. A política deve agir sobre a distribuição, não sobre o indivíduo previsto.</div>
+  </div>
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">Em PDI, descritores robustos a ruído (momentos de Hu, descritores de Fourier) são exatamente a busca pela "distribuição estável" no meio do pixel-a-pixel caótico. Mesma estratégia conceitual da Joana — desistir do indivíduo, salvar a estatística.</div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
+
 ## Pergunta de verificação
 
 Para o sistema de Lorenz com parâmetros canônicos: simule duas trajetórias com condições iniciais $\mathbf{x}_0$ e $\mathbf{x}_0 + (10^{-6}, 0, 0)$. Plote $\|\mathbf{x}_1(t) - \mathbf{x}_2(t)\|$ em escala log-linear. Estime $\lambda$. Em linguagem cibernética: que tipo de regulador funcionaria, em princípio, neste sistema?
@@ -36,3 +112,12 @@ Para o sistema de Lorenz com parâmetros canônicos: simule duas trajetórias co
 ::: {.callout-tip}
 Para Joana: nas séries históricas de evasão por polo UAB-UNITINS, estime expoente de Lyapunov empírico. A sensibilidade ao perfil socioeconômico inicial da coorte é maior do que a tradição da pesquisa em educação supõe?
 :::
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>Semana 7 — Cadeias finitas (Fase 2 começa)</strong><br>
+  <span style="opacity:0.8">Saímos do determinístico para o estocástico. Cadeias de Markov: probabilidade no espaço de estados.</span><br>
+  <a href="../../fase-02-markov/01-cadeias-finitas/intro.html">Continuar →</a>
+</div>
+```

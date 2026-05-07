@@ -5,11 +5,66 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao ativo"><span class="label">Semana</span><span class="valor">18 de 24</span></div>
+  <div class="botao"><span class="label">Fase</span><span class="valor">Síntese · âncora</span></div>
+  <div class="botao"><span class="label">Tempo</span><span class="valor">90–120 min</span></div>
+</div>
+```
+
+::: {.cena}
+[<img src="../../assets/figs/personas/juliana.svg" class="persona-icone"/>]{.persona-tag .juliana}**Juliana, sexta-feira, mesa de reunião do GAN, Cristalândia-TO.**
+
+Sete pessoas em torno de uma mesa: dois fiscais da Naturatins, um promotor do MPTO, dois engenheiros agrônomos representando rizicultores, um técnico da ANA via videoconferência, ela. Pauta única: a outorga conjunta da safra 2026 dado o regime de chuvas projetado.
+
+Em quatro horas de reunião, observou três falhas estruturais — a Naturatins não tinha dado em tempo real, o MPTO operava por ação tardia, os rizicultores planejavam isoladamente. *Cada um era ótimo no seu pedaço. O sistema, como sistema, não estava em lugar nenhum.*
+
+No caderno escreveu: "S2 ausente. S3 fraco. S4 inexistente. Esta reunião é embrião — pode virar S2 estável se durar." Saiu da sala vinte minutos tarde para o almoço, sabendo que tinha capítulo de tese.
+:::
+
+::: {.simples}
+Imagine uma orquestra sem maestro. Cada músico é ótimo. Cada instrumento toca certo. Mas ninguém escuta o outro, ninguém marca compasso, ninguém decide *qual* música tocar nem *quando* parar.
+
+Isso pode funcionar por algum tempo se todos vierem de uma mesma escola. Mas quando muda o repertório, quando entra músico novo, quando o palco ficar diferente — o som vira ruído.
+
+**O Modelo do Sistema Viável de Stafford Beer é a partitura do maestro**: cinco funções que, juntas, transformam um conjunto de boas execuções num sistema que aprende, se adapta, sobrevive. As funções têm nomes engraçados (S1, S2, S3, S4, S5), mas o que cada uma faz é direto: tocar, coordenar, alocar, prever, decidir o que somos.
+:::
+
 ## A pergunta operacional
 
 Por que três fases técnicas — Strogatz, Markov, Sterman — convergem para o **Modelo do Sistema Viável** (VSM) de @beer1979 e não para qualquer outra ontologia organizacional? A resposta curta: porque o VSM é a única arquitetura que torna *operável* a Lei da Variedade Requisita de @ashby1956. Operável no sentido literal: oferece cinco posições de observação (S1–S5) e seis canais de informação que, em conjunto, permitem ao analista responder à pergunta diagnóstica fundamental — *este sistema absorve a variedade que precisa absorver para permanecer viável?* — com algo mais consistente do que a intuição.
 
 Este capítulo articula três pontos: (i) o que cada fase técnica anterior contribui para a linguagem do VSM; (ii) como a obra de Juliana Mariano Alves traduz essa linguagem para a governança hídrica brasileira (BHRF — Bacia Hidrográfica do Rio Formoso, Tocantins); (iii) o que isso implica para a **pesquisa-cenário do curso** — a comparação ficcional, conduzida por Joana Beraldo, entre a UNITINS (Palmas-TO, EaD via UAB) e a UNIFAL-MG (Alfenas, presencial) como dois sistemas viáveis com a mesma função-fim e arquiteturas opostas (vide [Personagem](../../personagem-narrativo.qmd)).
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>S1 Operação</h4>
+    <p>Cada divisão autônoma que produz a saída-fim. Outorga, política finalística, polo UAB.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>S2 Antioscilação</h4>
+    <p>Coordenação lateral entre S1s. Impede oscilação por uso conflitante. <em>Clearing house</em>.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>S3 + S3* Aqui-agora</h4>
+    <p>Aloca recursos entre S1s, audita. <span class="formula">S3*</span> = canal esporádico de verificação.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>S4 Fora-e-depois</h4>
+    <p>Inteligência: ambiente externo, futuro, adaptação.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>S5 Política/identidade</h4>
+    <p>Define o que o sistema é e o que se recusa a ser.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Sinal algedônico</h4>
+    <p>Canal vertical baixíssima banda S1 → S5 em emergência. Contorna S2/S3/S4.</p>
+  </div>
+</div>
+```
 
 ## A Lei da Variedade Requisita, formalizada
 
@@ -129,6 +184,33 @@ A peça central dos memorandos é o caso BHRF: bacia hidrográfica do Rio Formos
 **Figuras canônicas referenciadas:** `#fig-vsm-recursão` (cinco subsistemas em recursão $\mathcal{S}_n \supset \mathcal{S}_{n+1}$) e `#fig-conant-ashby` (homomorfismo regulador-sistema). Pendentes em SVG; vide [Recursos > Excalidraw](../../recursos/index.qmd).
 :::
 
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">O VSM dá nome ao que eu via desde 2018 no GAN sem conseguir nomear. Não é "falta de governança" no abstrato — é S2 estruturalmente ausente. O nome muda a intervenção: você não pede "mais governança", pede um cargo concreto cujo trabalho é coordenar lateralmente.</div>
+  </div>
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">Aplicado ao polo UAB-UNITINS de Augustinópolis: cada turma é um S1, a coordenação local é S2/S3, a pró-reitoria é S3/S4, a UAB nacional é S4/S5. Diagnóstico: S2 inter-polos é o que mais falta. Cada coordenação local descobre os problemas das outras tarde demais.</div>
+  </div>
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">Em PDI a hierarquia é a mesma: filtragem (baixo) → segmentação (médio) → interpretação (alto). Cada nível é S1 do nível superior. Um pixel mal segmentado é diagnóstico de S2 ausente entre filtros. Uma interpretação errada é S5 confuso. Beer escreveu o aparato genérico — eu só uso o vocabulário em outro domínio.</div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
+
 ## Pergunta de verificação
 
 Identifique, na sua experiência educacional concreta (curso em que estuda, coordenação que conhece, polo UAB que frequenta) ou no caso-andaime de Joana (UNITINS ou UNIFAL-MG), **um sistema concreto** (um curso, uma disciplina-marco, um indicador acadêmico) que você queira diagnosticar. Em um parágrafo: (a) descreva-o como um sistema viável de uma recursão escolhida (qual é o S1?); (b) liste quais dos cinco subsistemas estão claramente presentes e quais estão visivelmente ausentes; (c) estime, qualitativamente, $H(D)$, $H(R)$ e $H(O)$, e diga onde está a lacuna de variedade dominante; (d) proponha uma intervenção do tipo "atenuar $H(D)$", "ampliar $H(R)$" ou "alargar $H(O)$" e justifique.
@@ -138,3 +220,12 @@ Esta pergunta volta na semana 20 (capítulo F4-03), onde será a base do diagnó
 ::: {.callout-note}
 Este capítulo é o farol pedagógico do curso. Releia-o ao iniciar cada nova fase técnica — os conceitos das fases farão sentido em camadas diferentes a cada releitura.
 :::
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>Semana 19 — Bacia do Formoso: caso BHRF</strong><br>
+  <span style="opacity:0.8">A teoria do VSM aplicada num conflito real: outorgas, MPTO 2016, GAN, recursão tripla.</span><br>
+  <a href="../02-bacia-formoso-caso/intro.html">Continuar →</a>
+</div>
+```

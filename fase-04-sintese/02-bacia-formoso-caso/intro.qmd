@@ -5,6 +5,34 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao ativo"><span class="label">Semana</span><span class="valor">19 de 24</span></div>
+  <div class="botao"><span class="label">Fase</span><span class="valor">Síntese · caso</span></div>
+  <div class="botao"><span class="label">Tempo</span><span class="valor">75–105 min</span></div>
+</div>
+```
+
+::: {.cena}
+[<img src="../../assets/figs/personas/juliana.svg" class="persona-icone"/>]{.persona-tag .juliana}**Juliana, julho de 2020, dia da decisão judicial.**
+
+A notícia chegou pelo WhatsApp no meio da tarde: a Justiça Estadual atendeu a cautelar do MPTO. Outorgas suspensas. Pela primeira vez na história do Tocantins, um juiz interrompeu juridicamente um regime de captação como medida ambiental.
+
+Juliana fechou o notebook do balanço hídrico aberto há três horas. Em 2016 ela tinha começado a tese acreditando que o caso BHRF era *um* problema entre tantos. Em 2020, com a decisão na mão, percebeu: era *o* caso. Não pelo tamanho da bacia. Pela estrutura. Múltiplos outorgantes autônomos sem antioscilação, agência reguladora sem instrumentos de tempo real, ANA federal e Naturatins estadual com identidades conflitantes, MP entrando como S5 emergencial via Judiciário.
+
+A decisão criava o problema teórico que faltava: *como, agora, construir o S2 que nunca existiu, sob pressão de um S5 externo que não vai embora?* Em vinte minutos rabiscou três páginas — a primeira versão do que viraria o capítulo metodológico da tese.
+:::
+
+::: {.simples}
+Imagine um condomínio com vinte casas, todas com poço próprio puxando água do mesmo lençol freático. Cada família tem outorga individual. Cada uma planeja seu uso pensando só em si. Ninguém conversa com ninguém.
+
+Funciona enquanto chove. Quando o lençol baixa, viram inimigos: cada poço bombeia mais para "não ficar pra trás", o lençol baixa ainda mais, em três anos o condomínio inteiro fica sem água.
+
+A Bacia do Formoso é exatamente isso, mas em escala de cinco municípios e bilhões de litros. **A solução não é mais outorga ou menos outorga. É inventar o "síndico do lençol" — uma função que ninguém tinha pensado em criar.**
+
+Esse "síndico", em linguagem de Beer, chama-se S2. O caso BHRF é o relato de como o sistema descobriu, sob pressão judicial, que precisava dele.
+:::
+
 ## A pergunta operacional
 
 Aplicar o aparato cibernético da Fase 4 a um caso real é o que separa pedagogia de retórica. O caso da **Bacia Hidrográfica do Rio Formoso (BHRF)**, no sudoeste do Tocantins, foi diagnosticado por @alves2022 em sua tese de doutorado com diagnóstico VSM em recursão tripla — federal, estadual, usuários. Este capítulo reconstrói o caso com detalhe documental e extrai as lições transferíveis para análogos institucionais, incluindo a pesquisa-cenário UNITINS↔UNIFAL-MG conduzida por Joana Beraldo.
@@ -91,6 +119,33 @@ A pergunta-pesquisa de Joana herda o argumento BHRF: **seria possível um "GAN e
 
 A diferença substantiva é onde a pesquisa de Joana ganha valor próprio. Não basta transpor o aparato; é preciso identificar **o que muda quando o recurso compartilhado é discente, não hídrico**.
 
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">A lição não-óbvia da BHRF é que o GAN nasceu reativamente, sob pressão judicial. Antes de 2016 ninguém propunha S2 inter-outorgantes — era considerado intromissão na autonomia produtiva. Foi preciso uma cautelar suspendendo todas as outorgas para o sistema reconhecer que precisava da função.</div>
+  </div>
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">No setor educacional, qual seria a "cautelar" que faria a UAB-UNITINS reconhecer a necessidade de S2 inter-polos? Provavelmente o MEC bloqueando habilitação de polos por evasão acima de 60%. Mas isso ainda não aconteceu — então o S2 educacional permanece estruturalmente ausente.</div>
+  </div>
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">Em PDI o equivalente seria a integração de pixels vizinhos: cada pixel é S1, o filtro lateral é S2. Sem o filtro, ruído de pixel isolado domina o sinal. O modelo de Beer dá nome ao filtro institucional que falta — e aí cabe a engenharia: como construir o filtro?</div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
+
 ## Pergunta de verificação
 
 **Factual.** Liste, com base no texto: (a) ano de início da Ação Civil Pública; (b) dois atores institucionais que compõem o GAN; (c) duas etapas estruturantes do projeto; (d) qual recursão VSM tem S4 mais ausente. Cite caveats explícitos onde a fonte é secundária.
@@ -106,3 +161,12 @@ Algumas afirmações processuais sobre a ACP nº 001070-72.2016.8.27.2716 são r
 ::: {.callout-note}
 **Figura referenciada**: `#fig-bhrf-recursao-tripla` (diagrama VSM da BHRF em recursão tripla — federal, estadual, usuários). Pendente em SVG.
 :::
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>Semana 20 — Aplicação própria: diagnóstico de coordenação de curso</strong><br>
+  <span style="opacity:0.8">Tudo converge aqui. As três fases técnicas viram instrumental para diagnosticar um sistema concreto à sua escolha.</span><br>
+  <a href="../03-aplicacao-propria/intro.html">Continuar →</a>
+</div>
+```

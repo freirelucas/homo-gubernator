@@ -5,9 +5,56 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao ativo"><span class="label">Semana</span><span class="valor">3 de 24</span></div>
+  <div class="botao"><span class="label">Fase</span><span class="valor">Strogatz</span></div>
+  <div class="botao"><span class="label">Tempo</span><span class="valor">60–90 min</span></div>
+</div>
+```
+
+::: {.cena}
+[<img src="../../assets/figs/personas/luiz.svg" class="persona-icone"/>]{.persona-tag .luiz}**Luiz Eduardo, laboratório de PDI, UNIFAL-MG, quarta-feira.**
+
+Luiz Eduardo abriu o exercício favorito da disciplina: aplicar três filtros sucessivos — sharpening, blur, sharpening — sobre a mesma foto de um pixel ruidoso. Cada filtro é simples. A composição é estranha: para certos parâmetros do *blur*, o pixel oscila entre escuro e claro, escuro e claro, indefinidamente. Para outros, estabiliza num valor médio.
+
+Onde, em uma dimensão, a iteração de um filtro sempre converge ou diverge monotonamente, em duas dimensões — quando o estado é o par (intensidade, gradiente local) — abre-se um espaço novo. **Trajetórias podem fechar.** O pixel pode oscilar sem nunca se decidir.
+
+Esse é o assunto da semana: o que muda quando o sistema sai da reta e ganha um plano para se mover.
+:::
+
+::: {.simples}
+Imagine um patinador no gelo. Ele só pode andar pra frente e pra trás (uma dimensão). Em algum momento ele para — não tem como ficar girando.
+
+Agora dê a ele um plano (duas dimensões). Ele pode andar pra frente, pra trás, e pros lados. **Pode começar a fazer círculos.** Pode acelerar e desacelerar dentro do círculo. Pode escolher um círculo grande ou um pequeno.
+
+A diferença entre uma e duas dimensões parece pequena, mas é o que separa um sistema que sempre encontra o equilíbrio de um sistema que pode ficar oscilando indefinidamente — coração batendo, predador-presa em ciclo, política em alternância eleitoral. É isso que vamos estudar.
+:::
+
 ## A pergunta operacional
 
 Saímos da reta. Em duas dimensões, $\dot{\mathbf{x}}=\mathbf{F}(\mathbf{x})$ com $\mathbf{x}=(x,y)$, abre-se a possibilidade de **trajetórias fechadas** — oscilações sustentadas. A monotonicidade que protegia a Fase 1 evapora. O retrato de fase passa a ser um plano com setas: o problema é classificar, qualitativamente, o que acontece próximo aos pontos fixos e entre eles.
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>Jacobiana</h4>
+    <p>Matriz <span class="formula">J = ∂F_i/∂x_j</span> avaliada em <span class="formula">x*</span>. Captura linearização local.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>T-D plane</h4>
+    <p>Traço <span class="formula">T</span> e determinante <span class="formula">D</span> de <span class="formula">J</span> classificam: sela, nó, foco, centro.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Nulóclinas</h4>
+    <p>Curvas <span class="formula">ẋ=0</span> e <span class="formula">ẏ=0</span>. Interseções = pontos fixos. Permitem esboçar sem integrar.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Conservativo × dissipativo</h4>
+    <p>Conservativo: <span class="formula">∇·F = 0</span>, áreas preservadas. Dissipativo: <span class="formula">∇·F &lt; 0</span>, atratores possíveis.</p>
+  </div>
+</div>
+```
 
 ## Linearização e jacobiana
 
@@ -36,6 +83,33 @@ Um sistema é **conservativo** quando existe função $H(\mathbf{x})$ constante 
 
 Em VSM, S2 (antioscilação) é a função que aparece exatamente quando o espaço de estados ganha dimensão suficiente para oscilar. A passagem de F1-01 para F1-03 espelha a passagem de S1 isolado para S1 acoplado: cada operação isolada é monótona; o conjunto delas, sem S2, oscila.
 
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">Filtros recursivos com feedback são naturalmente sistemas 2D — o estado é (saída atual, derivada). Quando o coeficiente do feedback ultrapassa um limite, o ponto fixo vira foco instável e a saída oscila. Em PDI a gente projeta o filtro pra evitar isso. Em política, a gente herda o filtro e tem que diagnosticar o que aconteceu.</div>
+  </div>
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">A oscilação entre regime de chuva e regime de seca, na BHRF, vista como sistema 2D (água acumulada × demanda agropecuária), é candidata a ciclo-limite — assunto da Semana 4. Antes disso, precisamos saber se as nulóclinas se cruzam, em quantos pontos, e qual a classificação de cada um.</div>
+  </div>
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">Engajamento × desempenho discente é par natural. Engajamento alto puxa desempenho pra cima (nota cresce); desempenho baixo crônico desmotiva (engajamento cai). Esse acoplamento pode dar retrato de fase com foco estável (turma boa), foco instável (turma fora-de-eixo), ou ciclo-limite (turma yo-yo).</div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
+
 ## Pergunta de verificação
 
 Para o sistema $\dot{x} = -x + y$, $\dot{y} = x - y - y^3$: localize pontos fixos, calcule a jacobiana em cada um, classifique, esboce nulóclinas e retrato de fase. Em linguagem cibernética: o sistema é conservativo ou dissipativo? Que função VSM ele exemplifica?
@@ -43,3 +117,12 @@ Para o sistema $\dot{x} = -x + y$, $\dot{y} = x - y - y^3$: localize pontos fixo
 ::: {.callout-tip}
 Para Joana: modele em 2D a dinâmica conjunta de *engajamento* (acessos à plataforma) e *desempenho* (nota corrente) de coorte UAB-UNITINS. As nulóclinas correspondem a quais políticas de monitoria?
 :::
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>Semana 4 — Ciclos-limite</strong><br>
+  <span style="opacity:0.8">Em 2D, oscilações sustentadas só persistem como atratores isolados. Poincaré-Bendixson, Van der Pol, ciclos institucionais.</span><br>
+  <a href="../04-ciclos-limite/intro.html">Continuar →</a>
+</div>
+```

@@ -5,9 +5,56 @@ bibliography: ../../bibliografia.bib
 format: html
 ---
 
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao ativo"><span class="label">Semana</span><span class="valor">5 de 24</span></div>
+  <div class="botao"><span class="label">Fase</span><span class="valor">Strogatz</span></div>
+  <div class="botao"><span class="label">Tempo</span><span class="valor">60–90 min</span></div>
+</div>
+```
+
+::: {.cena}
+[<img src="../../assets/figs/personas/joana.svg" class="persona-icone"/>]{.persona-tag .joana}**Joana, sexta-feira, fim do semestre.**
+
+Joana foi olhar dados nacionais. Em uma planilha do MEC, a oferta de vagas EaD UAB foi crescendo gradualmente entre 2016 e 2022. Em 2023 algo aconteceu: um corte orçamentário federal de 28% no programa. Em 2024, a oferta voltou — mas não no mesmo padrão. Antes era oferta estável-crescente. Depois passou a oscilar, semestre por semestre, abrindo e fechando turmas inteiras de polos.
+
+Não foi mudança de tendência. Foi mudança de **regime**: de estacionário para oscilatório. *Algo nasceu naquele momento de corte que não estava lá antes.*
+
+A literatura tem nome para isso: bifurcação de Hopf. E há uma pergunta diagnóstica importante: nasceu suave (Hopf supercrítica, S2 frágil mas presente) ou súbita (subcrítica, S2 ausente)? A resposta determina a estratégia de retorno ao regime estável.
+:::
+
+::: {.simples}
+Imagine que você está aprendendo a andar de bicicleta. No começo você precisa pedalar **sempre** pra não cair. Para — cai. Continua pedalando — anda em linha reta.
+
+Aí alguém aumenta a inclinação da rua. Você continua pedalando. Em uma certa inclinação, sua linha reta vira um zigue-zague pequeno. Em mais inclinação, o zigue-zague vira um S grande. Em mais ainda, você cai porque o sistema "bicicleta + você" não consegue mais manter linha estável.
+
+**A inclinação que faz a linha reta virar zigue-zague é uma bifurcação de Hopf**. Antes, equilíbrio fixo. Depois, equilíbrio oscilatório (zigue-zague). É um nascimento de oscilação.
+:::
+
 ## A pergunta operacional
 
 Em F1-02 vimos bifurcações 1D — colisão, troca, quebra de simetria de pontos fixos. Em 2D abre-se um repertório maior: além das três 1D (que persistem), aparecem **bifurcações de Hopf** (nascimento de ciclos-limite a partir de pontos fixos) e bifurcações **globais** (reorganização do retrato de fase em escala não-local). É aqui que o vocabulário de Strogatz torna-se rico o suficiente para descrever transições de regime de sistemas reais complexos.
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>Hopf supercrítica</h4>
+    <p>Foco estável → foco instável + ciclo-limite estável de amplitude <span class="formula">∼√(r−r_c)</span>. Transição <strong>suave</strong>.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Hopf subcrítica</h4>
+    <p>Ciclo-limite de amplitude finita aparece de uma vez. Histerese. Transição <strong>abrupta</strong>, com salto.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Sela-nó de ciclos</h4>
+    <p>Dois ciclos-limite (estável + instável) colidem e desaparecem. Bifurcação <strong>global</strong>, não-local.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>Homoclínica</h4>
+    <p>Ciclo cresce até tangenciar uma sela. Período diverge. Diagnóstico-fronteira de regime.</p>
+  </div>
+</div>
+```
 
 ## Bifurcação de Hopf
 
@@ -30,6 +77,33 @@ Não-detectáveis pela linearização local. Três tipos canônicos:
 
 Hopf é o cenário formal de **emergência de oscilação institucional**: o sistema operava em regime estacionário e, ao cruzar um limiar (orçamento, demanda, tensão), passa a oscilar. Diagnóstico-chave: a oscilação nasceu suave (Hopf supercrítica — sintoma de S2 deficiente mas presente) ou súbita (subcrítica — sintoma de S2 ausente)? @alvesschwaninger2025 trata casos análogos no contexto de governança hídrica.
 
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">Se a oscilação UAB pós-2023 for Hopf subcrítica, recompor orçamento ao nível pré-corte não vai trazer de volta o regime estável — fica preso no ciclo. Tem que recompor com folga. Histerese institucional.</div>
+  </div>
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">A bifurcação subcrítica é o pesadelo da gestão pública. Você corta cinco por cento "para apertar o cinto", o sistema entra em regime oscilatório, e descobrir que precisaria de doze por cento <em>a mais</em> para sair do ciclo. A política tem que conhecer o tipo de bifurcação <em>antes</em> de cruzar o limiar.</div>
+  </div>
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">No PDI, filtros adaptativos com ganho variável têm Hopf no ganho. Aumentar o ganho um pouco demais faz a saída oscilar entre overshoot e undershoot. A solução prática: limitar o ganho abaixo de um margem do <span class="formula">r_c</span> teórico — segurança via subutilização.</div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="hex-divisor">
+  <span class="hex"></span>
+  <span class="hex"></span>
+  <span class="hex"></span>
+</div>
+```
+
 ## Pergunta de verificação
 
 Para o sistema $\dot{r} = r(\mu - r^2)$, $\dot{\theta} = 1$ (em coordenadas polares): identifique a bifurcação que ocorre em $\mu=0$, classifique como super- ou subcrítica, esboce os retratos de fase para $\mu<0$ e $\mu>0$. Em linguagem cibernética: que tipo de oscilação institucional o cenário descreve?
@@ -37,3 +111,12 @@ Para o sistema $\dot{r} = r(\mu - r^2)$, $\dot{\theta} = 1$ (em coordenadas pola
 ::: {.callout-tip}
 Para Joana: a coexistência entre presencial UNIFAL e EaD UNITINS no orçamento federal pode sofrer Hopf subcrítica? Sob quais condições?
 :::
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>Semana 6 — Caos e atrator de Lorenz</strong><br>
+  <span style="opacity:0.8">Saímos para 3D. Determinístico mas imprevisível. Sensibilidade exponencial às condições iniciais.</span><br>
+  <a href="../06-caos-lorenz/intro.html">Continuar →</a>
+</div>
+```
