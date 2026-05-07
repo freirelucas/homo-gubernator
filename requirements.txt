@@ -8,3 +8,8 @@ jupyter
 ipykernel
 nbformat
 pysd>=3.14
+
+# Cartografia opcional (instalar via pip ou conda conforme necessidade)
+# geopandas>=0.14    # análise espacial vetorial
+# cartopy>=0.22      # projeções cartográficas robustas (Cap. F4-02, F4-03)
+# pygmt>=0.13        # mapas de qualidade publicação (use `conda install -c conda-forge pygmt`)

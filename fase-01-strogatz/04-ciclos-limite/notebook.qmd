@@ -5,10 +5,106 @@ execute:
   eval: false
 ---
 
-```python
-# placeholder: ativar via subagent notebook-builder
-# 1. carregar matplotlibrc
-# 2. integrar/simular o sistema-modelo do capítulo
-# 3. plotar trajetórias / retrato de fase / distribuição
-# 4. interpretar
+::: {.callout-note}
+Notebook executável após registro do kernel localmente: `pip install -r requirements.txt && python -m ipykernel install --user --name python3`. Para ativar a execução também na CI, remova `eval: false` do header.
+:::
+
+## Setup
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.integrate import solve_ivp
+
+laranja_queimado = "#D45A1A"
+ocre             = "#E8A33D"
+azul_rio         = "#3F6B85"
+azul_petroleo    = "#1F3A4D"
+grafite          = "#1A1A1A"
 ```
+
+## Oscilador de Van der Pol
+
+$\ddot{x} - \mu(1-x^2)\dot{x} + x = 0$, reescrito como sistema 2D em $(x, y=\dot{x})$:
+
+$$
+\dot{x} = y, \qquad \dot{y} = \mu(1-x^2)y - x
+$$
+
+```{python}
+def vdp(t, X, mu):
+    x, y = X
+    return [y, mu * (1 - x**2) * y - x]
+```
+
+## Ciclo-limite emergente para três valores de $\mu$
+
+```{python}
+fig, axes = plt.subplots(1, 3, figsize=(14, 4.2))
+
+t_span = (0, 60)
+t_eval = np.linspace(*t_span, 4000)
+inits = [(0.1, 0.1), (3, -2)]  # interna e externa ao ciclo
+
+for ax, mu, titulo in zip(axes, [0.1, 1.0, 5.0],
+                           ["$\\mu=0.1$ (quase-sinusoidal)",
+                            "$\\mu=1$ (canônico)",
+                            "$\\mu=5$ (relaxação)"]):
+    for x0, c in zip(inits, [laranja_queimado, azul_rio]):
+        sol = solve_ivp(vdp, t_span, x0, args=(mu,), t_eval=t_eval, rtol=1e-9)
+        # transiente (50%) cinza, ciclo-limite final em cor
+        n = len(sol.t); m = n // 2
+        ax.plot(sol.y[0][:m], sol.y[1][:m], color="lightgray", lw=0.4, alpha=0.6)
+        ax.plot(sol.y[0][m:], sol.y[1][m:], color=c, lw=1.5)
+    ax.plot(0, 0, "o", color="white", mec=grafite, mew=1.5, ms=10, zorder=5)
+    ax.set_title(titulo); ax.set_xlabel("$x$"); ax.set_ylabel("$y=\\dot{x}$")
+    ax.set_xlim(-3.5, 3.5); ax.grid(alpha=0.25)
+
+fig.suptitle("Van der Pol — duas condições iniciais convergem ao mesmo ciclo-limite", y=1.03)
+fig.tight_layout()
+plt.show()
+```
+
+## Série temporal: variação do regime com $\mu$
+
+```{python}
+fig, ax = plt.subplots(figsize=(10, 4))
+for mu, c in zip([0.1, 1.0, 5.0], [azul_rio, ocre, laranja_queimado]):
+    sol = solve_ivp(vdp, (0, 30), [2, 0], args=(mu,),
+                    t_eval=np.linspace(0, 30, 2000), rtol=1e-9)
+    ax.plot(sol.t, sol.y[0], color=c, lw=1.6, label=f"$\\mu={mu}$")
+ax.set_xlabel("$t$"); ax.set_ylabel("$x(t)$")
+ax.set_title("Transição $\\mu$ pequeno → grande: sinusoidal vira oscilação de relaxação")
+ax.legend(frameon=False)
+ax.grid(alpha=0.25)
+fig.tight_layout()
+plt.show()
+```
+
+## Região de aprisionamento (Poincaré-Bendixson)
+
+```{python}
+fig, ax = plt.subplots(figsize=(7, 7))
+mu = 1.0
+# Ciclo-limite (referência)
+sol = solve_ivp(vdp, (0, 100), [2, 0], args=(mu,),
+                t_eval=np.linspace(50, 100, 2000), rtol=1e-9)
+ax.plot(sol.y[0], sol.y[1], color=azul_petroleo, lw=2, label="ciclo-limite")
+# Borda anular interna (raio pequeno) e externa (raio grande)
+theta = np.linspace(0, 2*np.pi, 200)
+for raio, c in [(0.5, ocre), (3.0, laranja_queimado)]:
+    ax.plot(raio*np.cos(theta), raio*np.sin(theta), color=c, lw=1.5, ls="--",
+            label=f"borda $r={raio}$")
+ax.plot(0, 0, "o", color="white", mec=grafite, mew=1.5, ms=10, zorder=5)
+ax.set_xlim(-4, 4); ax.set_ylim(-4, 4)
+ax.set_xlabel("$x$"); ax.set_ylabel("$y$")
+ax.set_title("Poincaré-Bendixson: região anular sem pontos fixos com campo apontando para dentro\n contém ciclo-limite necessariamente.")
+ax.legend(frameon=False, fontsize=9)
+ax.set_aspect("equal"); ax.grid(alpha=0.25)
+fig.tight_layout()
+plt.show()
+```
+
+## Interpretação cibernética
+
+Ciclo-limite é a forma matemática do **ciclo institucional**: orçamento → execução → relatório → novo orçamento; safra → estiagem → conflito → nova safra. Quando o sistema retorna ao mesmo padrão depois de cada perturbação, o ciclo é o **atrator natural** do que existe. Em VSM, ciclos-limite emergem na ausência de S2 (antioscilação efetiva) e/ou S4 (inteligência de futuro). Romper o ciclo exige **engenharia de variedade** — não esforço heroico no mesmo padrão.

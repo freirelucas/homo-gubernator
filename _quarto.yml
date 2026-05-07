@@ -41,6 +41,8 @@ website:
         text: Revisão
       - href: recursos/index.qmd
         text: Recursos
+      - href: recursos/notebook-cartografia.qmd
+        text: Cartografia
   sidebar:
     - title: "Semanas 1–24"
       style: docked

@@ -5,10 +5,93 @@ execute:
   eval: false
 ---
 
-```python
-# placeholder: ativar via subagent notebook-builder
-# 1. carregar matplotlibrc
-# 2. integrar/simular o sistema-modelo do capítulo
-# 3. plotar trajetórias / retrato de fase / distribuição
-# 4. interpretar
+::: {.callout-note}
+Notebook executável após registro do kernel localmente: `pip install -r requirements.txt && python -m ipykernel install --user --name python3`. Para ativar a execução também na CI, remova `eval: false` do header.
+:::
+
+## Setup
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D  # noqa
+from scipy.integrate import solve_ivp
+
+laranja_queimado = "#D45A1A"
+ocre             = "#E8A33D"
+azul_rio         = "#3F6B85"
+azul_petroleo    = "#1F3A4D"
+grafite          = "#1A1A1A"
 ```
+
+## Sistema de Lorenz
+
+$\dot{x} = \sigma(y-x), \dot{y} = x(\rho-z) - y, \dot{z} = xy - \beta z$. Parâmetros canônicos: $\sigma=10, \beta=8/3, \rho=28$ — regime caótico.
+
+```{python}
+def lorenz(t, X, sigma=10.0, beta=8/3, rho=28.0):
+    x, y, z = X
+    return [sigma*(y - x), x*(rho - z) - y, x*y - beta*z]
+```
+
+## Atrator estranho — projeção 3D
+
+```{python}
+sol = solve_ivp(lorenz, (0, 60), [1.0, 1.0, 1.0],
+                t_eval=np.linspace(0, 60, 12000), rtol=1e-9)
+
+fig = plt.figure(figsize=(9, 7))
+ax = fig.add_subplot(111, projection="3d")
+ax.plot(sol.y[0], sol.y[1], sol.y[2], color=laranja_queimado, lw=0.4)
+ax.set_xlabel("$x$"); ax.set_ylabel("$y$"); ax.set_zlabel("$z$")
+ax.set_title("Atrator de Lorenz — borboleta (12.000 passos, $\\sigma=10, \\beta=8/3, \\rho=28$)")
+fig.tight_layout()
+plt.show()
+```
+
+## Sensibilidade às condições iniciais
+
+Duas trajetórias com $\delta_0 = 10^{-6}$ de separação inicial.
+
+```{python}
+x0 = np.array([1.0, 1.0, 1.0])
+delta0 = 1e-6
+sol1 = solve_ivp(lorenz, (0, 25), x0,           t_eval=np.linspace(0, 25, 5000), rtol=1e-10)
+sol2 = solve_ivp(lorenz, (0, 25), x0 + np.array([delta0, 0, 0]),
+                                                t_eval=np.linspace(0, 25, 5000), rtol=1e-10)
+
+dist = np.linalg.norm(sol1.y - sol2.y, axis=0)
+
+fig, axes = plt.subplots(1, 2, figsize=(13, 4.5))
+
+# Painel 1: x(t) das duas trajetórias
+axes[0].plot(sol1.t, sol1.y[0], color=azul_petroleo, lw=0.8, label="$\\mathbf{x}_0$")
+axes[0].plot(sol2.t, sol2.y[0], color=laranja_queimado, lw=0.8, label="$\\mathbf{x}_0 + (10^{-6}, 0, 0)$")
+axes[0].set_xlabel("$t$"); axes[0].set_ylabel("$x(t)$")
+axes[0].set_title("Duas trajetórias divergem visivelmente após $t \\sim 15$")
+axes[0].legend(frameon=False); axes[0].grid(alpha=0.25)
+
+# Painel 2: distância em escala log
+axes[1].semilogy(sol1.t, dist, color=ocre, lw=1.2)
+# Ajuste linear no regime exponencial inicial (t entre 0 e 18)
+mask = (sol1.t > 0) & (sol1.t < 18)
+slope, intercept = np.polyfit(sol1.t[mask], np.log(dist[mask]), 1)
+axes[1].semilogy(sol1.t, np.exp(slope*sol1.t + intercept),
+                 color=azul_petroleo, lw=1.5, ls="--",
+                 label=f"$\\lambda \\approx {slope:.3f}$ (Lyapunov empírico)")
+axes[1].axhline(delta0, color=grafite, ls=":", alpha=0.5, label=f"$\\delta_0={delta0}$")
+axes[1].set_xlabel("$t$")
+axes[1].set_ylabel(r"$\|\mathbf{x}_1(t) - \mathbf{x}_2(t)\|$")
+axes[1].set_title("Divergência exponencial → $\\lambda > 0$ confirma caos")
+axes[1].legend(frameon=False); axes[1].grid(alpha=0.25, which="both")
+
+fig.tight_layout()
+plt.show()
+
+print(f"Expoente de Lyapunov dominante estimado: λ ≈ {slope:.3f}")
+print(f"Horizonte de previsibilidade: 1/λ ≈ {1/slope:.2f} unidades de tempo")
+```
+
+## Interpretação cibernética
+
+Caos é o regime onde a Lei de Ashby falha de modo curioso: $H(D)$ instantânea pode ser pequena, mas $H(D)$ **integrada no tempo** explode exponencialmente. Reguladores que operam em banda passante limitada são derrotados por sensibilidade às condições iniciais. A apresentação ASC 2024 de @alves2022 sobre o nexo Água-Energia-Alimento é, formalmente, fala sobre exatamente esse regime — sistemas dissipativos de três variáveis acopladas onde caos é genérico. **Consequência operacional**: previsão pontual perde sentido após $\sim 1/\lambda$; o trabalho cibernético deve focar em *distribuições estáveis* (ergodicidade no atrator), não em trajetórias individuais.

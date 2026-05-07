@@ -5,10 +5,115 @@ execute:
   eval: false
 ---
 
-```python
-# placeholder: ativar via subagent notebook-builder
-# 1. carregar matplotlibrc
-# 2. integrar/simular o sistema-modelo do capítulo
-# 3. plotar trajetórias / retrato de fase / distribuição
-# 4. interpretar
+::: {.callout-note}
+Notebook executável após registro do kernel localmente: `pip install -r requirements.txt && python -m ipykernel install --user --name python3`. Para ativar a execução também na CI, remova `eval: false` do header.
+:::
+
+## Setup
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Paleta Cybersyn-Cerrado
+laranja_queimado = "#D45A1A"
+ocre             = "#E8A33D"
+azul_rio         = "#3F6B85"
+azul_petroleo    = "#1F3A4D"
+grafite          = "#1A1A1A"
+bone             = "#FAF8F2"
 ```
+
+## Tridente supercrítica $\dot{x}=rx-x^3$
+
+Pontos fixos: $x^*=0$ sempre; $x^*=\pm\sqrt{r}$ para $r>0$. Estabilidade muda em $r=0$.
+
+```{python}
+def f(x, r):
+    return r * x - x**3
+
+def potential(x, r):
+    """V(x) = -∫f dx = -rx²/2 + x⁴/4"""
+    return -r * x**2 / 2 + x**4 / 4
+```
+
+## Três retratos de fase ($r=-0.5, 0, 0.5$)
+
+```{python}
+fig, axes = plt.subplots(1, 3, figsize=(13, 3.2))
+
+x_grid = np.linspace(-1.4, 1.4, 25)
+for ax, r, titulo in zip(axes, [-0.5, 0.0, 0.5],
+                          ["$r=-0.5$ (sub-bifurcação)",
+                           "$r=0$ (crítico)",
+                           "$r=0.5$ (super-bifurcação)"]):
+    f_vals = f(x_grid, r)
+    ax.axhline(0, color=grafite, lw=0.5)
+    for x, fv in zip(x_grid, f_vals):
+        if abs(fv) < 1e-3: continue
+        sgn = np.sign(fv)
+        ax.annotate("", xy=(x + sgn * 0.12, 0), xytext=(x, 0),
+                    arrowprops=dict(arrowstyle="->",
+                                    color=laranja_queimado if sgn > 0 else azul_rio, lw=1.2))
+    if r > 0:
+        for xp in [-np.sqrt(r), np.sqrt(r)]:
+            ax.plot(xp, 0, "o", color=azul_petroleo, ms=10, zorder=5)
+        ax.plot(0, 0, "o", color="white", mec=grafite, mew=2, ms=10, zorder=5)
+    else:
+        ax.plot(0, 0, "o", color=azul_petroleo, ms=10, zorder=5)
+    ax.set_xlim(-1.5, 1.5); ax.set_ylim(-0.6, 0.6); ax.set_yticks([])
+    ax.set_title(titulo, fontsize=11)
+    ax.set_xlabel("$x$")
+fig.suptitle("Retrato de fase: setas seguem o sinal de $f(x)=rx-x^3$", y=1.02)
+fig.tight_layout()
+plt.show()
+```
+
+## Diagrama de bifurcação $(r, x^*)$
+
+```{python}
+r_vals = np.linspace(-0.8, 0.8, 200)
+fig, ax = plt.subplots(figsize=(8, 5))
+
+# Ramo x*=0: estável para r<0, instável para r>0
+ax.plot(r_vals[r_vals <= 0], np.zeros_like(r_vals[r_vals <= 0]),
+        color=azul_petroleo, lw=2.5, label="estável")
+ax.plot(r_vals[r_vals >= 0], np.zeros_like(r_vals[r_vals >= 0]),
+        color=laranja_queimado, lw=2.5, ls="--", label="instável")
+
+# Ramos x* = ±√r para r>0 (estáveis)
+r_pos = r_vals[r_vals > 0]
+ax.plot(r_pos,  np.sqrt(r_pos), color=azul_petroleo, lw=2.5)
+ax.plot(r_pos, -np.sqrt(r_pos), color=azul_petroleo, lw=2.5)
+
+ax.axvline(0, color=grafite, ls=":", alpha=0.4)
+ax.set_xlabel("$r$ (parâmetro de controle)")
+ax.set_ylabel("$x^*$ (ponto fixo)")
+ax.set_title("Bifurcação tridente supercrítica — quebra de simetria em $r=0$")
+ax.legend(frameon=False)
+fig.tight_layout()
+plt.show()
+```
+
+## Potencial $V(x)$ para os três regimes
+
+```{python}
+x = np.linspace(-1.3, 1.3, 200)
+fig, ax = plt.subplots(figsize=(8, 4))
+for r, c, lbl in zip([-0.5, 0.0, 0.5],
+                      [azul_rio, ocre, laranja_queimado],
+                      ["$r=-0.5$: poço único",
+                       "$r=0$: degenerado",
+                       "$r=0.5$: poço duplo"]):
+    ax.plot(x, potential(x, r), color=c, lw=2, label=lbl)
+ax.set_xlabel("$x$"); ax.set_ylabel("$V(x)$")
+ax.set_title("Potencial $V(x)=-rx^2/2 + x^4/4$ — emergência da bifurcação")
+ax.legend(frameon=False)
+ax.axhline(0, color=grafite, lw=0.4)
+fig.tight_layout()
+plt.show()
+```
+
+## Interpretação cibernética
+
+Em $r<0$ o sistema tem regulador único — homeostase em $x^*=0$. Em $r=0$ o regulador degenera: o critério linear $f'(x^*)$ se anula. Em $r>0$ o regulador antigo perdeu estabilidade e dois atratores nasceram simétricos. **S5 (política/identidade) decide qual ramo o sistema seguirá** — a dinâmica não força. Engenharia da variedade ativa, em linguagem de Alves (2025).

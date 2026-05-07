@@ -1,0 +1,234 @@
+---
+title: "Tutorial — cartografia em três níveis"
+subtitle: "matplotlib, cartopy, PyGMT — quando usar cada um"
+jupyter: python3
+execute:
+  eval: false
+---
+
+```{=html}
+<div class="painel-opsroom">
+  <div class="botao"><span class="label">Trilha</span><span class="valor">Empírica · Cartográfica</span></div>
+  <div class="botao"><span class="label">Quando</span><span class="valor">Sob demanda (F4-02, F4-03)</span></div>
+  <div class="botao"><span class="label">Tempo</span><span class="valor">~1h leitura + experimentação</span></div>
+</div>
+```
+
+::: {.callout-note}
+Tutorial **standalone** sobre cartografia em Python. Não é parte sequencial do curso; é referência para os capítulos com componente espacial (F4-02 BHRF e F4-03 IDEA). Compara três bibliotecas em ordem crescente de complexidade e qualidade visual: `matplotlib`, `cartopy`, `PyGMT`.
+:::
+
+## A pergunta operacional
+
+Quando vale aprender uma biblioteca de cartografia mais sofisticada? **Quando o destino do mapa exige.** Três cenários canônicos:
+
+```{=html}
+<div class="cards-conceito">
+  <div class="card-conceito">
+    <h4>matplotlib puro</h4>
+    <p>Choropleth simples, scatter geo, contornos. Sem projeção real. Distorção aceitável em recortes municipais ou regionais.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>cartopy</h4>
+    <p>Projeções cartográficas robustas. Linhas costeiras, fronteiras, tiles de relevo. Adequado para mapas de país a continente.</p>
+  </div>
+  <div class="card-conceito">
+    <h4>PyGMT</h4>
+    <p>Qualidade de publicação científica. Relevo SRTM, controle PostScript, layouts complexos com inset. Para paper revisado.</p>
+  </div>
+</div>
+```
+
+## Setup compartilhado
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+laranja_queimado = "#D45A1A"
+ocre             = "#E8A33D"
+azul_rio         = "#3F6B85"
+azul_petroleo    = "#1F3A4D"
+grafite          = "#1A1A1A"
+```
+
+## Nível 1 — matplotlib puro: choropleth pedagógico
+
+Para slides, página web, blog. Distorção em latitude alta é aceitável em recortes municipais.
+
+```{python}
+# Dataset: bounding boxes estilizados de UFs brasileiras + valor sintético
+# (na prática, usar geobrasil ou geobr para shapes oficiais)
+ufs_estilizadas = {
+    "TO": {"box": [-50, -45, -13, -5], "valor": 0.82},   # alta variedade
+    "MG": {"box": [-51, -39, -23, -14], "valor": 0.61},  # média variedade
+    "SP": {"box": [-53, -44, -25, -19], "valor": 0.34},  # baixa variedade
+    "PA": {"box": [-58, -46, -10,  3], "valor": 0.71},   # alta variedade
+    "BA": {"box": [-46, -37, -18, -8], "valor": 0.55},
+}
+
+fig, ax = plt.subplots(figsize=(9, 8))
+cmap = plt.get_cmap("YlOrBr")
+
+for uf, info in ufs_estilizadas.items():
+    w, e, s, n = info["box"]
+    cor = cmap(info["valor"])
+    ax.fill([w, e, e, w, w], [s, s, n, n, s], color=cor, edgecolor=grafite, lw=1.2)
+    ax.text((w+e)/2, (s+n)/2, uf, ha="center", va="center",
+            fontsize=12, fontweight="bold")
+
+ax.set_xlim(-60, -34); ax.set_ylim(-25, 5)
+ax.set_xlabel("Longitude (°)"); ax.set_ylabel("Latitude (°)")
+ax.set_title("Choropleth pedagógico de variedade institucional (estilizado)\n— matplotlib puro, sem projeção real")
+ax.set_aspect("equal"); ax.grid(alpha=0.2)
+
+# Colorbar manual
+sm = plt.cm.ScalarMappable(cmap=cmap, norm=plt.Normalize(0, 1))
+sm.set_array([])
+cbar = fig.colorbar(sm, ax=ax, fraction=0.04, pad=0.04)
+cbar.set_label("$H(D)$ educacional normalizada")
+
+fig.tight_layout()
+plt.show()
+```
+
+**Quando usar**: slide de aula, página web, blog. Distorção em latitude alta aceitável em recortes UF-pequenos. **Quando NÃO usar**: comparações entre regiões muito separadas em latitude (Amazônia vs Sul) — a distorção vira erro visual.
+
+## Nível 2 — cartopy: projeção robusta
+
+```{python}
+# import cartopy.crs as ccrs
+# import cartopy.feature as cfeature
+#
+# fig = plt.figure(figsize=(10, 9))
+# ax = plt.axes(projection=ccrs.AlbersEqualArea(
+#     central_longitude=-50, central_latitude=-15,
+#     standard_parallels=(-5, -25)))
+#
+# ax.set_extent([-75, -34, -34, 5], crs=ccrs.PlateCarree())
+# ax.add_feature(cfeature.LAND.with_scale("50m"), facecolor=ocre, alpha=0.15)
+# ax.add_feature(cfeature.OCEAN.with_scale("50m"), facecolor="white")
+# ax.add_feature(cfeature.COASTLINE.with_scale("50m"), edgecolor=grafite, lw=0.6)
+# ax.add_feature(cfeature.BORDERS.with_scale("50m"), edgecolor=grafite, lw=0.4)
+#
+# # Adicionar shapes UF via shapereader (omitido por brevidade)
+# # ax.add_feature(...)
+#
+# # Pontos: capitais
+# capitais = [
+#     ("Palmas", -48.36, -10.18),
+#     ("BH", -43.94, -19.92),
+#     ("Brasília", -47.93, -15.78),
+# ]
+# for nome, lon, lat in capitais:
+#     ax.plot(lon, lat, "o", color=laranja_queimado, ms=8,
+#             transform=ccrs.PlateCarree(), zorder=5)
+#     ax.text(lon + 0.5, lat, nome, fontsize=10,
+#             transform=ccrs.PlateCarree())
+#
+# ax.gridlines(draw_labels=True, alpha=0.3)
+# ax.set_title("Brasil — projeção Albers Equal Area com cartopy")
+# fig.tight_layout()
+# plt.show()
+```
+
+A versão acima fica como **referência** (`eval: false` global). Para gerar:
+
+```bash
+pip install cartopy
+# Em Linux pode requerer: apt install libgeos-dev libproj-dev
+```
+
+**Quando usar**: comparações inter-regionais (Norte vs Sul), apresentações onde projeção importa (não distorcer áreas), publicações de revistas regionais. **Quando NÃO usar**: necessidade de relevo SRTM nativo ou layouts complexos com inset — aí é PyGMT.
+
+## Nível 3 — PyGMT: qualidade publicação
+
+Adequado a paper revisado por pares (ASC 2026, JBHE, *Environmental Management*).
+
+```{python}
+# import pygmt
+#
+# fig = pygmt.Figure()
+#
+# # Mapa do Brasil com relevo SRTM (1 arc-min)
+# region = [-75, -34, -34, 5]
+# fig.basemap(region=region, projection="M15c", frame=["WSne", "a5f5"])
+# fig.grdimage(grid="@earth_relief_01m", region=region,
+#              cmap="oleron", shading=True)
+# fig.coast(shorelines="0.5p,white",
+#           borders=["1/0.8p,white", "2/0.4p,white"],
+#           region=region)
+#
+# # Capitais
+# fig.plot(x=[-48.36, -43.94, -47.93],
+#          y=[-10.18, -19.92, -15.78],
+#          style="c0.35c", fill="orange", pen="1.5p,black")
+# fig.text(x=[-48.36, -43.94, -47.93],
+#          y=[-10.18, -19.92, -15.78],
+#          text=["Palmas", "BH", "Brasília"],
+#          font="11p,Helvetica-Bold,white",
+#          justify="LM", offset="0.5c/0c")
+#
+# # Inset com hemisfério para contexto
+# with fig.inset(position="jBR+w3.5c+o0.2c", margin=0):
+#     fig.coast(region="g", projection="G-50/-15/?",
+#               land="lightgray", water="white", area_thresh=10000)
+#     fig.plot(x=[-75, -34, -34, -75, -75],
+#              y=[-34, -34, 5, 5, -34],
+#              pen="1p,red", close=True)
+#
+# # Escala (colorbar)
+# fig.colorbar(frame='af+l"Elevação (m)"', position="JMR+o0.5c/0c+w8c")
+#
+# # Salvar em alta resolução para paper
+# fig.savefig("brasil-pygmt.pdf")
+# fig.savefig("brasil-pygmt.png", dpi=300)
+# fig.show()
+```
+
+```bash
+# Instalação recomendada (traz GMT compilado)
+conda install -c conda-forge pygmt
+# Ou via pip + GMT separado (mais trabalhoso)
+```
+
+**Quando usar**: paper revisado por pares, ASC 2026, livro acadêmico. **Quando NÃO usar**: prototipagem rápida ou figuras descartáveis — overhead de aprendizado não compensa.
+
+## Comparação operacional
+
+| Critério | matplotlib | cartopy | PyGMT |
+|---|---|---|---|
+| Instalação | `pip` simples | `pip` + libgeos | `conda` (recomendado) |
+| Tempo de aprendizado | ~30 min | ~3 horas | ~10 horas |
+| Projeções | nenhuma | Cartopy CRS (todas) | GMT projections (todas) |
+| Relevo SRTM | manual | tile providers | nativo (`@earth_relief`) |
+| Tipografia | matplotlib | matplotlib | PostScript completo |
+| Inset | manual com `add_axes` | `inset_axes` | `with fig.inset()` nativo |
+| Saída vetorial | PDF/SVG | PDF/SVG | PostScript/PDF/SVG |
+| Custo de uso esporádico | baixo | médio | alto |
+
+## Para a pesquisa de Joana
+
+Recomendação operacional para a tese:
+
+1. **Capítulos pedagógicos do diagnóstico** (Sem 11–19): matplotlib + dados ipeaGIT. Suficiente para sala de aula e drafts.
+2. **Diagnóstico VSM com recortes territoriais comparados** (Sem 20–22): cartopy se houver comparação inter-regional necessária.
+3. **Mapa-síntese para paper longo ASC 2026** (Sem 24): **PyGMT**. Um único mapa de qualidade publicação justifica o investimento.
+4. **Pôster da sintegração-piloto IDEA**: PyGMT também — pôster acadêmico exige resolução alta.
+
+## Recursos externos
+
+- [PyGMT — documentação oficial](https://www.pygmt.org/)
+- [Comunidade GMT no Zenodo](https://zenodo.org/communities/generic-mapping-tools/)
+- [PyGMT tutorial SciPy 2021](https://github.com/GenericMappingTools/scipy2021)
+- [cartopy — documentação](https://scitools.org.uk/cartopy/docs/latest/)
+- [GMT workshops oficiais](https://www.generic-mapping-tools.org/workshops/)
+
+```{=html}
+<div class="proximo-passo">
+  <h4>Próxima parada</h4>
+  <strong>Notebook F4-02 — cartografia da BHRF aplicada</strong><br>
+  <span style="opacity:0.8">Use os três níveis acima para mapear a Bacia do Formoso. Versão final em PyGMT entra no paper ASC 2026.</span><br>
+  <a href="../fase-04-sintese/02-bacia-formoso-caso/notebook.html">Continuar →</a>
+</div>
+```

@@ -133,6 +133,16 @@ Os dados do IPEA-GIT são oficiais (IBGE, ANTT, CNES) mas **defasados** — o Ce
 </div>
 ```
 
+## Cartografia avançada — quando e por quê PyGMT
+
+Para mapas de qualidade publicação adequada a paper revisado por pares (ASC 2026, *Environmental Management*, *Constructivist Foundations*) ou pôster acadêmico, `geobr + matplotlib` deixa de ser suficiente. **PyGMT** [@pygmt] — interface Python para o canônico **Generic Mapping Tools** [@wessel2019] — é a opção padrão.
+
+Tutorial standalone comparando matplotlib, cartopy e PyGMT, com exemplos sobre Brasil: [`recursos/notebook-cartografia.qmd`](notebook-cartografia.qmd). Aplicação ao caso BHRF: [`fase-04-sintese/02-bacia-formoso-caso/notebook.qmd`](../fase-04-sintese/02-bacia-formoso-caso/notebook.html).
+
+::: {.callout-tip}
+**Regra prática**: PyGMT só vale aprender para o entregável final (paper ASC 2026, pôster sintegração IDEA, capítulo da tese). Para todas as figuras intermediárias do curso, `geobr + matplotlib` (caminho 1) é mais barato e suficiente.
+:::
+
 ## Como começar concretamente
 
 Três experimentos curtos que cabem em uma tarde:

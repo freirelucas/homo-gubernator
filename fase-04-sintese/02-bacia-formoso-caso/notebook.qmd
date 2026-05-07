@@ -1,14 +1,172 @@
 ---
-title: "Notebook — Bacia do Formoso: caso BHRF"
+title: "Notebook — Bacia do Formoso: cartografia da BHRF"
 jupyter: python3
 execute:
   eval: false
 ---
 
-```python
-# placeholder: ativar via subagent notebook-builder
-# 1. carregar matplotlibrc
-# 2. integrar/simular o sistema-modelo do capítulo
-# 3. plotar trajetórias / retrato de fase / distribuição
-# 4. interpretar
+::: {.callout-note}
+**Notebook de cartografia.** Demonstra dois caminhos para mapear a Bacia Hidrográfica do Rio Formoso: (1) `geobr + matplotlib` para mapas pedagógicos; (2) `PyGMT` para mapa de qualidade publicação adequado a paper na ASC 2026. Para a versão simples, basta `pip install -r requirements.txt`. Para PyGMT, instalação adicional: `conda install -c conda-forge pygmt` (mais simples que pip, traz GMT compilado). Tutorial standalone comparativo em [`recursos/notebook-cartografia.qmd`](../../recursos/notebook-cartografia.qmd).
+:::
+
+## Setup
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+laranja_queimado = "#D45A1A"
+ocre             = "#E8A33D"
+azul_rio         = "#3F6B85"
+azul_petroleo    = "#1F3A4D"
+grafite          = "#1A1A1A"
+bone             = "#FAF8F2"
+```
+
+## Caminho 1 — geobr + matplotlib (pedagógico)
+
+Para uso em sala de aula, página web pedagógica, ou figura simples em texto.
+
+```{python}
+# Em R seria mais natural; em Python via geobrasil ou recriação manual.
+# Aqui mostramos o esqueleto:
+#
+#   import geobrasil as gb  # pip install geobrasil
+#   tocantins = gb.read_state(code_state=17)  # GeoDataFrame
+#   municipios_to = gb.read_municipality(code_state=17)
+#   formoso = municipios_to[municipios_to.code_muni.isin([1709500, 1712504])]
+#   # 1709500 = Lagoa da Confusão; 1712504 = Cristalândia (próximo)
+
+# Versão didática: bounding box estilizado de Tocantins + recorte BHRF
+fig, ax = plt.subplots(figsize=(9, 9))
+
+# Tocantins aproximado por bounding box estilizado
+to_x = [-50.5, -45.5, -45.5, -50.5, -50.5]
+to_y = [-13.5, -13.5,  -5.0,  -5.0, -13.5]
+ax.fill(to_x, to_y, color=ocre, alpha=0.18, edgecolor=azul_petroleo, lw=2)
+ax.plot([-50.5, -45.5], [-9.5, -9.5], color=grafite, lw=0.4, ls=":")  # paralelo
+
+# Microrregião do Formoso (recorte sudoeste de TO)
+bhrf_x = [-49.8, -49.0, -49.0, -49.8, -49.8]
+bhrf_y = [-11.6, -11.6, -10.5, -10.5, -11.6]
+ax.fill(bhrf_x, bhrf_y, color=azul_rio, alpha=0.5, edgecolor=azul_petroleo, lw=2,
+        label="Bacia Hidrográfica do Rio Formoso")
+
+# Pontos: Cristalândia, Lagoa da Confusão, Formoso do Araguaia
+for nome, lon, lat, c in [
+    ("Cristalândia",        -49.18, -10.58, laranja_queimado),
+    ("Lagoa da Confusão",   -49.62, -10.79, laranja_queimado),
+    ("Formoso do Araguaia", -49.53, -11.79, laranja_queimado),
+    ("Palmas (capital)",    -48.36,  -10.18, azul_petroleo),
+]:
+    ax.plot(lon, lat, "o", color=c, ms=10, mec=grafite, mew=1, zorder=5)
+    ax.annotate(nome, (lon, lat), xytext=(8, 6), textcoords="offset points",
+                fontsize=9, color=grafite)
+
+# Rio Formoso simbolizado (linha)
+ax.plot([-49.7, -49.4, -49.5, -49.6], [-11.5, -11.0, -10.7, -10.5],
+        color=azul_petroleo, lw=2.5)
+
+ax.set_xlabel("Longitude (°W)"); ax.set_ylabel("Latitude (°)")
+ax.set_xlim(-51, -45); ax.set_ylim(-14, -5)
+ax.set_title("Bacia Hidrográfica do Rio Formoso (BHRF) — Tocantins (esquemático)")
+ax.legend(frameon=False, loc="upper right")
+ax.grid(alpha=0.2)
+ax.set_aspect("equal")
+fig.tight_layout()
+plt.show()
+```
+
+::: {.callout-warning}
+Esta versão é **estilizada** (bounding boxes em vez de polígonos reais) para facilitar leitura sem dependência do servidor IBGE. Para produção: usar `geobr::read_state("TO")` em R ou `geobrasil` em Python para shapes oficiais. Em ambiente local com geobr instalado, substitua o bloco acima pela versão real.
+:::
+
+## Caminho 2 — PyGMT (qualidade publicação)
+
+Para paper na ASC 2026, sessão "Cartografias em Disputa" da Metaphorum, ou contribuição ao IDEA. Use PyGMT.
+
+```{python}
+# import pygmt
+#
+# fig = pygmt.Figure()
+#
+# # Mapa do Tocantins com relevo (SRTM via @earth_relief)
+# region = [-51, -45, -14, -5]   # [W, E, S, N]
+# fig.basemap(region=region, projection="M15c", frame=["WSne", "a2f1"])
+# fig.grdimage(grid="@earth_relief_03s", region=region, cmap="oleron", shading=True)
+# fig.coast(shorelines="0.5p,white", borders=["1/0.8p,white"], region=region)
+#
+# # Recorte BHRF como retângulo destacado
+# fig.plot(x=[-49.8, -49.0, -49.0, -49.8, -49.8],
+#          y=[-11.6, -11.6, -10.5, -10.5, -11.6],
+#          pen="2p,red", close=True)
+#
+# # Pontos: cidades-chave
+# fig.plot(x=[-49.18, -49.62, -49.53, -48.36],
+#          y=[-10.58, -10.79, -11.79, -10.18],
+#          style="c0.3c", fill="orange", pen="1p,black")
+# fig.text(x=[-49.18, -49.62, -49.53, -48.36],
+#          y=[-10.58, -10.79, -11.79, -10.18],
+#          text=["Cristalândia", "Lagoa da Confusão", "Formoso do Araguaia", "Palmas"],
+#          font="9p,Helvetica,black", justify="LM", offset="0.4c/0c")
+#
+# # Rio Formoso simbólico
+# fig.plot(x=[-49.7, -49.4, -49.5, -49.6],
+#          y=[-11.5, -11.0, -10.7, -10.5],
+#          pen="3p,blue@30")
+#
+# # Inset com Brasil mostrando localização
+# with fig.inset(position="jTL+w4c+o0.2c", margin=0):
+#     fig.coast(region="BR", projection="M3.5c", land="lightgray", borders="1/thin",
+#               water="white")
+#     fig.plot(x=[-51, -45, -45, -51, -51], y=[-14, -14, -5, -5, -14],
+#              pen="1p,red", close=True)
+#
+# fig.savefig("bhrf-pygmt.png", dpi=300)
+# fig.show()
+```
+
+A versão acima fica como **referência** (não-executada — `eval: false`). Para gerar a figura real:
+
+```bash
+# 1. instalar PyGMT (recomendado conda)
+conda install -c conda-forge pygmt
+# 2. abrir Quarto preview deste notebook removendo `eval: false`
+quarto preview fase-04-sintese/02-bacia-formoso-caso/notebook.qmd
+```
+
+A saída esperada é mapa A4 com relevo SRTM, hidrografia simbólica, recorte BHRF em destaque vermelho, cidades anotadas em sans-serif, inset Brasil para contexto. Adequado para paper revisado por pares.
+
+## Comparação de uso
+
+| Caminho | Pedagógico (geobr + matplotlib) | Publicação (PyGMT) |
+|---|---|---|
+| Instalação | `pip install -r requirements.txt` | `conda install -c conda-forge pygmt` |
+| Tempo de aprendizado | ~1 hora | ~5 horas |
+| Qualidade visual | Suficiente para slides e web | Adequada para paper revisado |
+| Relevo / hidrografia | Manual via geopandas | `@earth_relief` integrado |
+| Tipografia | Padrão matplotlib | Controle PostScript completo |
+| Quando usar | Página web do curso, sala de aula | ASC 2026, JBHE, *Environmental Management* |
+
+## Interpretação cibernética
+
+Mapas não são neutros. Em cibernética de segunda ordem (sessão "Cartografias em Disputa" da ASC 2026), a escolha de projeção, recorte, cor e legenda **constrói** o objeto que diz descrever. Para a tese de Joana sobre o IDEA: o mapa da BHRF não é decoração — é evidência da $H(D)$ territorial que o sistema regulador precisa absorver. Cada município omitido é variedade subtraída. Cada cor escolhida é decisão de S5 sobre o que é "central" e o que é "fundo".
+
+## Voz dos personagens
+
+```{=html}
+<div class="dialogo">
+  <div class="fala juliana">
+    <div class="quem">Juliana</div>
+    <div class="o-que">Para a apresentação na ASC 2026, o mapa da BHRF precisa estar no padrão das publicações do Schwaninger e do Espinosa — referência visual cuidada. PyGMT entrega isso. matplotlib não.</div>
+  </div>
+  <div class="fala luiz">
+    <div class="quem">Luiz Eduardo</div>
+    <div class="o-que">Em PDI, a diferença entre matplotlib e PyGMT é análoga à diferença entre <span class="formula">imshow</span> e um pipeline de tone-mapping HDR. Mesma informação, controle radiométrico distinto. Para slide didático, o primeiro é suficiente. Para print de jornal científico, o segundo é necessário.</div>
+  </div>
+  <div class="fala joana">
+    <div class="quem">Joana</div>
+    <div class="o-que">Vou usar geobr+matplotlib em todos os mapas pedagógicos do curso, e PyGMT só para o mapa-síntese do paper ASC. Custo de aprendizado vale a pena para a entrega final, não para cada figura intermediária.</div>
+  </div>
+</div>
 ```
